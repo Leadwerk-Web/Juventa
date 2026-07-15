@@ -25,7 +25,25 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-<link rel="stylesheet" href="css/styles.css?v=35" />
+<link rel="stylesheet" href="css/styles.css?v=40" />
+<noscript><style>.reveal{opacity:1!important;transform:none!important;}</style></noscript>
+<script>
+(function () {
+  try {
+    var s = JSON.parse(localStorage.getItem("juventa-a11y") || "{}");
+    var root = document.documentElement;
+    var scales = { sm: 0.875, lg: 1.125, xl: 1.25 };
+    if (s.font && s.font !== "normal" && scales[s.font]) {
+      root.setAttribute("data-a11y-font", s.font);
+      root.style.zoom = scales[s.font];
+    }
+    if (s.contrast) root.classList.add("a11y-contrast");
+    if (s.underline) root.classList.add("a11y-underline-links");
+    if (s.motion) root.classList.add("a11y-reduced-motion");
+    if (s.lineHeight) root.classList.add("a11y-line-height");
+  } catch (e) {}
+})();
+</script>
 
 <script type="application/ld+json">
 {
@@ -116,19 +134,13 @@
 
     <div class="hero__media" id="heroSlider" aria-hidden="true">
       <div class="hero__slide is-active">
-        <img src="assets/images/cafe-2.png" alt="" width="1024" height="683" fetchpriority="high" />
+        <img src="assets/images/Hero1.png" alt="" width="1920" height="1080" fetchpriority="high" />
       </div>
       <div class="hero__slide">
-        <img src="assets/images/zimmer-1.png" alt="" width="1024" height="683" loading="lazy" />
+        <img src="assets/images/Hero2.png" alt="" width="1920" height="1080" loading="lazy" />
       </div>
       <div class="hero__slide">
-        <img src="assets/images/cafe-1.png" alt="" width="1024" height="683" loading="lazy" />
-      </div>
-      <div class="hero__slide">
-        <img src="assets/images/kueche-1.png" alt="" width="1024" height="683" loading="lazy" />
-      </div>
-      <div class="hero__slide">
-        <img src="assets/images/team.png" alt="" width="960" height="540" loading="lazy" />
+        <img src="assets/images/Hero3.png" alt="" width="1920" height="1080" loading="lazy" />
       </div>
     </div>
     <div class="hero__overlay" aria-hidden="true"></div>
@@ -253,15 +265,20 @@
     <div class="container story__grid">
       <div class="story__collage reveal">
         <div class="story__collage-img story__collage-img--tall">
-          <img src="assets/images/cafe-2.png" alt="Blick aus dem Café der Brückenmühle durch die historischen Rundbogenfenster auf die Gernsbacher Altstadt" loading="lazy" width="1024" height="683" />
+          <img src="assets/images/Hero1.png" alt="Die Brückenmühle Gernsbach – historisches Ambiente trifft modernes Betreutes Wohnen" loading="lazy" width="1920" height="1080" />
         </div>
         <div class="story__collage-stack">
           <div class="story__collage-img story__collage-img--top">
-            <img src="assets/images/zimmer-1.png" alt="Helles Apartment mit Wohnbereich in der Brückenmühle" loading="lazy" width="1024" height="683" />
+            <img src="assets/images/Hero2.png" alt="Moderne Apartments in der Brückenmühle Gernsbach" loading="lazy" width="1920" height="1080" />
           </div>
-          <div class="story__collage-img story__collage-img--bottom">
-            <img src="assets/images/cafe-1.png" alt="Das hauseigene Café der Brückenmühle" loading="lazy" width="1024" height="683" />
-          </div>
+          <button type="button" class="story__collage-img story__collage-img--bottom story__video-trigger" data-video-src="assets/video/Imagefilm_Juventa_Website_UT.mp4" aria-label="Imagefilm abspielen: Juventa Brückenmühle">
+            <video class="story__video-preview" autoplay muted loop playsinline preload="metadata" poster="assets/images/Hero3.png" aria-hidden="true">
+              <source src="assets/video/Imagefilm_Juventa_Website_UT.mp4" type="video/mp4" />
+            </video>
+            <span class="story__video-play" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </span>
+          </button>
         </div>
       </div>
 
@@ -312,7 +329,7 @@
 
         <article class="areas-panel">
           <button class="areas-panel__trigger" type="button" aria-expanded="false" aria-controls="areas-panel-2">
-            <img class="areas-panel__img" src="assets/images/kueche-1.png" alt="" width="1024" height="683" loading="lazy" />
+            <img class="areas-panel__img" src="assets/images/Apartment.jpeg" alt="" width="1024" height="683" loading="lazy" />
             <span class="areas-panel__overlay" aria-hidden="true"></span>
             <span class="areas-panel__label">
               <span class="areas-panel__icon" aria-hidden="true">
@@ -334,7 +351,7 @@
 
         <article class="areas-panel">
           <button class="areas-panel__trigger" type="button" aria-expanded="false" aria-controls="areas-panel-3">
-            <img class="areas-panel__img" src="assets/images/cafe-1.png" alt="" width="1024" height="683" loading="lazy" />
+            <img class="areas-panel__img" src="assets/images/Leistungen-wave.png" alt="" width="1024" height="683" loading="lazy" />
             <span class="areas-panel__overlay" aria-hidden="true"></span>
             <span class="areas-panel__label">
               <span class="areas-panel__icon" aria-hidden="true">
@@ -356,7 +373,7 @@
 
         <article class="areas-panel">
           <button class="areas-panel__trigger" type="button" aria-expanded="false" aria-controls="areas-panel-4">
-            <img class="areas-panel__img" src="assets/images/team.png" alt="" width="960" height="540" loading="lazy" />
+            <img class="areas-panel__img" src="assets/images/Mobile-Pflege.png" alt="" width="1024" height="683" loading="lazy" />
             <span class="areas-panel__overlay" aria-hidden="true"></span>
             <span class="areas-panel__label">
               <span class="areas-panel__icon" aria-hidden="true">
@@ -385,7 +402,7 @@
       <div class="apartments__intro reveal">
         <p class="eyebrow">Apartments &amp; Ausstattung</p>
         <h2 id="apart-title">Ihr eigenes Zuhause –<br />mit dem Komfort eines Hotels</h2>
-        <a class="apartments__scroll" href="#service" aria-label="Weiter zu Betreuung &amp; Service">
+        <a class="apartments__scroll" href="#apartmentsSlider" aria-label="Zu den Apartment-Bildern scrollen">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
         </a>
       </div>
@@ -619,7 +636,7 @@
       </div>
       <div class="cafe__media reveal">
         <div class="cafe__media-frame">
-          <img src="assets/images/cafe-1.png" alt="Das hauseigene Café der Brückenmühle mit Blick auf die historische Architektur" loading="lazy" width="1024" height="683" />
+          <img src="assets/images/Hero3.png" alt="Das hauseigene Café der Brückenmühle – Herzstück des Hauses" loading="lazy" width="1920" height="1080" />
           <span class="cafe__badge">Café · Brückenmühle</span>
         </div>
       </div>
@@ -815,7 +832,7 @@
           </div>
         </div>
         <div class="contact__visual">
-          <img src="assets/images/team.png" alt="Juventa Team – persönliche Beratung zum Betreuten Wohnen in der Brückenmühle" width="960" height="540" loading="lazy" />
+          <img src="assets/images/Kontakt.png" alt="Persönliche Beratung zum Betreuten Wohnen in der Brückenmühle Gernsbach" width="1024" height="683" loading="lazy" />
           <span class="contact__visual-overlay" aria-hidden="true"></span>
         </div>
       </div>
@@ -877,6 +894,57 @@
     </div>
   </div>
 </footer>
+
+<!-- Barrierefreiheit -->
+<aside class="a11y" id="a11yWidget" aria-label="Barrierefreiheit">
+  <button class="a11y__toggle" id="a11yToggle" type="button" aria-expanded="false" aria-controls="a11yPanel" aria-label="Barrierefreiheit öffnen">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="4" r="2"/><path d="M12 6v6M8 20l4-6 4 6M6 14h12"/></svg>
+  </button>
+  <div class="a11y__panel" id="a11yPanel" hidden>
+    <div class="a11y__head">
+      <h2 class="a11y__title" id="a11yTitle">Barrierefreiheit</h2>
+      <button class="a11y__close" id="a11yClose" type="button" aria-label="Barrierefreiheit schließen">&times;</button>
+    </div>
+    <div class="a11y__body">
+      <div class="a11y__group">
+        <span class="a11y__label" id="a11yFontLabel">Schriftgröße</span>
+        <div class="a11y__font-btns" role="group" aria-labelledby="a11yFontLabel">
+          <button class="a11y__font-btn" type="button" data-a11y-font="sm" aria-pressed="false" aria-label="Kleinere Schrift">A−</button>
+          <button class="a11y__font-btn is-active" type="button" data-a11y-font="normal" aria-pressed="true" aria-label="Normale Schrift">A</button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="lg" aria-pressed="false" aria-label="Größere Schrift">A+</button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="xl" aria-pressed="false" aria-label="Sehr große Schrift">A++</button>
+        </div>
+      </div>
+      <div class="a11y__group">
+        <button class="a11y__option" type="button" id="a11yContrast" aria-pressed="false">
+          <span class="a11y__option-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v18"/></svg></span>
+          <span>Hoher Kontrast</span>
+        </button>
+        <button class="a11y__option" type="button" id="a11yUnderline" aria-pressed="false">
+          <span class="a11y__option-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 20h12M8 6v6a4 4 0 0 0 8 0V6"/></svg></span>
+          <span>Links unterstreichen</span>
+        </button>
+        <button class="a11y__option" type="button" id="a11yMotion" aria-pressed="false">
+          <span class="a11y__option-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M10 9l-5 3 5 3V9zM14 9l5 3-5 3V9z"/></svg></span>
+          <span>Animationen reduzieren</span>
+        </button>
+        <button class="a11y__option" type="button" id="a11yLineHeight" aria-pressed="false">
+          <span class="a11y__option-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg></span>
+          <span>Zeilenabstand vergrößern</span>
+        </button>
+      </div>
+      <button class="a11y__reset" type="button" id="a11yReset">Einstellungen zurücksetzen</button>
+    </div>
+  </div>
+</aside>
+
+<div class="video-lightbox" id="videoLightbox" hidden role="dialog" aria-modal="true" aria-label="Video">
+  <button type="button" class="video-lightbox__backdrop" data-video-close aria-label="Video schließen"></button>
+  <div class="video-lightbox__dialog" role="document">
+    <button type="button" class="video-lightbox__close" data-video-close aria-label="Video schließen">&times;</button>
+    <video class="video-lightbox__player" id="videoLightboxPlayer" controls playsinline preload="metadata"></video>
+  </div>
+</div>
 
 <script src="js/main.js" defer></script>
 </body>

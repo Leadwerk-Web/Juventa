@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Design Handout · Juventa Brückenmühle</title>
+<meta name="description" content="Visuelles Style- und Komponenten-Manual der Juventa Startseite – Brückenmühle Gernsbach." />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="icon" href="assets/images/logo.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css?v=38" />
+<link rel="stylesheet" href="css/design-handout.css" />
+</head>
+<body class="handout">
+
+<div class="handout__layout">
+  <aside class="handout__nav" aria-label="Inhaltsverzeichnis">
+    <div class="handout__brand">
+      <img src="assets/images/logo.svg" alt="" width="42" height="53" />
+      <div>
+        <strong>Juventa</strong>
+        <span>Design Handout</span>
+      </div>
+    </div>
+    <nav>
+      <ul class="handout__toc">
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#farben">Farbigkeit</a></li>
+        <li><a href="#typografie">Typografie</a></li>
+        <li><a href="#headlines">Headlinestruktur</a></li>
+        <li><a href="#buttons">Buttons</a></li>
+        <li><a href="#cta">CTA-Elemente</a></li>
+        <li><a href="#navigation">Navigation</a></li>
+        <li><a href="#hero">Hero-Section</a></li>
+        <li><a href="#layout">Grid &amp; Layout</a></li>
+        <li><a href="#cards">Kacheln &amp; Cards</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#slider">Slider</a></li>
+        <li><a href="#komponenten">Weitere UI</a></li>
+        <li><a href="#barrierefreiheit">Barrierefreiheit</a></li>
+        <li><a href="#zusammenfassung">Zusammenfassung</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="handout__main">
+    <!-- 1. INTRO -->
+    <header class="handout__hero" id="intro">
+      <p class="eyebrow">Design-Dokumentation</p>
+      <h1>UI-System &amp; Gestaltungselemente</h1>
+      <p class="handout__hero-lead">
+        Dieses Handout dokumentiert das visuelle System der Juventa-Startseite
+        <em>Betreutes Wohnen Brückenmühle Gernsbach</em> – Farben, Typografie,
+        Komponenten und Layoutprinzipien in kompakter, kuratierter Form.
+      </p>
+      <div class="handout__meta">
+        <span>Stand: Juli 2026</span>
+        <span>Quelle: index.html</span>
+        <span>PDF-tauglich</span>
+      </div>
+    </header>
+
+    <!-- 2. FARBEN -->
+    <section class="handout__section" id="farben">
+      <header class="handout__section-head">
+        <h2>Farbigkeit &amp; Farbkonzept</h2>
+        <p>Warme Naturtöne treffen auf vertrauensvolles Waldgrün – die Palette verbindet regionale Geborgenheit mit professioneller Pflegekompetenz.</p>
+      </header>
+
+      <h3 class="section-label" style="margin-bottom:1.25rem;">Primärfarben</h3>
+      <div class="handout__grid-3" style="margin-bottom:2.5rem;">
+        <div class="handout__swatch">
+          <div class="handout__swatch-color" style="background:#2F5B5C;"></div>
+          <div class="handout__swatch-info">
+            <strong>Primary / Forest</strong>
+            <code>#2F5B5C</code>
+            <span>Buttons, Labels, Akzente, Pflege-Boxen, Kontakt-Panel</span>
+          </div>
+        </div>
+        <div class="handout__swatch">
+          <div class="handout__swatch-color" style="background:#244848;"></div>
+          <div class="handout__swatch-info">
+            <strong>Primary Dark</strong>
+            <code>#244848</code>
+            <span>Verläufe, Hover-Zustände, dunkle Flächen</span>
+          </div>
+        </div>
+        <div class="handout__swatch">
+          <div class="handout__swatch-color" style="background:#3d7273;"></div>
+          <div class="handout__swatch-info">
+            <strong>Primary Light</strong>
+            <code>#3d7273</code>
+            <span>Aufhellung in Verläufen und dezenten Flächen</span>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="section-label" style="margin-bottom:1.25rem;">Akzentfarben</h3>
+      <div class="handout__grid-3" style="margin-bottom:2.5rem;">
+        <div class="handout__swatch">
+          <div class="handout__swatch-color" style="background:#BE8871;"></div>
+          <div class="handout__swatch-info">
+            <strong>Terracotta / Accent 1</strong>
+            <code>#BE8871</code>
+            <span>Eyebrow-Linien, Logo-Akzent, FAQ-Badge, Hover-Highlights</span>
+          </div>
+        </div>
+        <div class="handout__swatch">
+          <div class="handout__swatch-color" style="background:#A5715C;"></div>
+          <div class="handout__swatch-info">
+            <strong>Terracotta Dark</strong>
+            <code>#A5715C</code>
+            <span>Verläufe in Badges, dunklere Hover-Töne</span>
+          </div>
+        </div>
+        <div class="handout__swatch">
+          <div class="handout__swatch-color" style="background:#AF9E88;"></div>
+          <div class="handout__swatch-info">
+            <strong>Sand / Accent 2</strong>
+            <code>#AF9E88</code>
+            <span>Warme Sekundärtöne, Headline-Verläufe, dezente Akzente</span>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="section-label" style="margin-bottom:1.25rem;">Neutrale Farben</h3>
+      <div class="handout__grid-4">
+        <div class="handout__swatch">
+          <div class="handout__swatch-color" style="background:#F3ECE4;"></div>
+          <div class="handout__swatch-info"><strong>Cream</strong><code>#F3ECE4</code><span>Body-Hintergrund</span></div>
+        </div>
+        <div class="handout__swatch">
+          <div class="handout__swatch-color" style="background:#FFFAF8;border-bottom:1px solid #eee;"></div>
+          <div class="handout__swatch-info"><strong>Warm White</strong><code>#FFFAF8</code><span>Section--cream</span></div>
+        </div>
+        <div class="handout__swatch">
+          <div class="handout__swatch-color" style="background:#1e2d33;"></div>
+          <div class="handout__swatch-info"><strong>Ink</strong><code>#1e2d33</code><span>Fließtext, Headlines</span></div>
+        </div>
+        <div class="handout__swatch">
+          <div class="handout__swatch-color" style="background:#424241;"></div>
+          <div class="handout__swatch-info"><strong>Anthracite</strong><code>#424241</code><span>Footer (Logo-Ton)</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. TYPOGRAFIE -->
+    <section class="handout__section" id="typografie">
+      <header class="handout__section-head">
+        <h2>Typografie</h2>
+        <p>Zwei Google Fonts bilden ein klares Duett: Manrope für Headlines, Inter für UI und Fließtext – gut lesbar, auch für ältere Zielgruppen.</p>
+      </header>
+
+      <div class="handout__card" style="margin-bottom:2rem;">
+        <table class="handout__table">
+          <thead>
+            <tr><th>Rolle</th><th>Schrift</th><th>Gewicht</th><th>CSS-Variable / Wert</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Headlines</td><td>Manrope</td><td>400–700</td><td><code>--font-head</code></td></tr>
+            <tr><td>Fließtext &amp; UI</td><td>Inter</td><td>400–700</td><td><code>--font-sans</code></td></tr>
+            <tr><td>Body-Größe</td><td>Inter</td><td>400</td><td><code>--fs-body: 1.0625rem</code></td></tr>
+            <tr><td>Zeilenhöhe Body</td><td>—</td><td>—</td><td><code>line-height: 1.75</code></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="handout__card handout__type-sample">
+        <div class="handout__type-row">
+          <div class="handout__type-meta">H1 / Hero</div>
+          <div><h1 style="margin:0;">Geschichte trifft Geborgenheit</h1><p class="handout__spec">clamp(2.2rem, 5.4vw, 4.2rem) · Manrope 400 · lh 1.2</p></div>
+        </div>
+        <div class="handout__type-row">
+          <div class="handout__type-meta">H2 / Section</div>
+          <div><h2 style="margin:0;">Ihr eigenes Zuhause</h2><p class="handout__spec">clamp(1.9rem, 4vw, 3rem) · Manrope 400</p></div>
+        </div>
+        <div class="handout__type-row">
+          <div class="handout__type-meta">H3 / Card</div>
+          <div><h3 style="margin:0;">Barrierearme Bäder</h3><p class="handout__spec">clamp(1.2rem, 2vw, 1.45rem) · Manrope 600–700</p></div>
+        </div>
+        <div class="handout__type-row">
+          <div class="handout__type-meta">Lead</div>
+          <div><p class="lead" style="margin:0;">Im Herzen von Gernsbach erwacht die historische Brückenmühle neu.</p><p class="handout__spec">--fs-lead · Inter · lh 1.55</p></div>
+        </div>
+        <div class="handout__type-row">
+          <div class="handout__type-meta">Fließtext</div>
+          <div><p style="margin:0;color:var(--c-ink-soft);">Selbstbestimmt leben, sicher begleitet – mit persönlicher Betreuung im Murgtal.</p><p class="handout__spec">1.0625rem · Inter 400 · --c-ink-soft</p></div>
+        </div>
+        <div class="handout__type-row">
+          <div class="handout__type-meta">Label / Eyebrow</div>
+          <div><span class="section-label">Apartments &amp; Ausstattung</span><p class="handout__spec">0.8rem · Inter 700 · letter-spacing 0.18em · uppercase</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. HEADLINESTRUKTUR -->
+    <section class="handout__section" id="headlines">
+      <header class="handout__section-head">
+        <h2>Headlinestruktur</h2>
+        <p>Eine klare visuelle Hierarchie: Eyebrow → H2 → Lead → Fließtext. Akzent-Wörter werden per Gradient oder Farbe hervorgehoben.</p>
+      </header>
+
+      <div class="handout__grid-2">
+        <div class="handout__showcase">
+          <div class="handout__showcase-label">Standard-Section</div>
+          <div class="handout__showcase-body handout__showcase-body--cream">
+            <header class="section-head" style="margin:0 auto;">
+              <span class="section-label">FAQ</span>
+              <h2>Häufig gestellte Fragen</h2>
+              <p class="section-head__sub">Antworten auf das, was Interessentinnen und Interessenten uns am häufigsten fragen.</p>
+            </header>
+          </div>
+        </div>
+        <div class="handout__showcase">
+          <div class="handout__showcase-label">Hero / Akzent-Headline</div>
+          <div class="handout__showcase-body handout__showcase-body--dark">
+            <span class="hero__eyebrow">Betreutes Wohnen im Murgtal</span>
+            <h2 class="hero__title" style="font-size:1.75rem;margin-top:0.5rem;">Ihr Zuhause in der <span class="headline-accent headline-accent--light">Brückenmühle</span>.</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="handout__card" style="margin-top:1.5rem;">
+        <h3>Hierarchie-Ebenen</h3>
+        <ul>
+          <li><strong>Eyebrow / Section-Label</strong> – thematische Einordnung, Terracotta-Linie links</li>
+          <li><strong>H1</strong> – nur im Hero, emotional und großzügig</li>
+          <li><strong>H2</strong> – Sektionsüberschriften, oft zweizeilig</li>
+          <li><strong>H3</strong> – Karten, Features, FAQ-Fragen</li>
+          <li><strong>Headline-Accent</strong> – Gradient (Primary → Terracotta) oder Weiß auf dunklem Grund</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5. BUTTONS -->
+    <section class="handout__section" id="buttons">
+      <header class="handout__section-head">
+        <h2>Buttons</h2>
+        <p>Pill-förmige Buttons mit integriertem Pfeil-Kreis. Primär in Waldgrün, Varianten für helle und dunkle Kontexte.</p>
+      </header>
+
+      <div class="handout__grid-2">
+        <div class="handout__showcase">
+          <div class="handout__showcase-label">Primär &amp; Varianten</div>
+          <div class="handout__showcase-body">
+            <div class="handout__btn-row" style="margin-bottom:1.5rem;">
+              <div class="handout__btn-state">
+                <small>Primary</small>
+                <a class="btn btn--primary" href="#">Beratung vereinbaren<span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+              </div>
+              <div class="handout__btn-state">
+                <small>Large</small>
+                <a class="btn btn--primary btn--lg" href="#">Jetzt vormerken<span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+              </div>
+            </div>
+            <div class="handout__btn-row">
+              <a class="btn btn--outline" href="#">Outline</a>
+              <a class="btn btn--outline-accent" href="#">Outline Accent</a>
+              <a class="btn btn--ghost" href="#">Ghost</a>
+            </div>
+          </div>
+        </div>
+        <div class="handout__showcase">
+          <div class="handout__showcase-label">Auf dunklem Grund</div>
+          <div class="handout__showcase-body handout__showcase-body--dark">
+            <div class="handout__btn-row">
+              <a class="btn btn--primary" href="#">Jetzt anrufen<span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+              <a class="btn btn--outline-light" href="#">Kontakt aufnehmen<span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="handout__card" style="margin-top:1.5rem;">
+        <h3>Stilmerkmale</h3>
+        <table class="handout__table">
+          <tbody>
+            <tr><th>Form</th><td>Pill (<code>border-radius: 50px</code>)</td></tr>
+            <tr><th>Padding</th><td>15px 18px 15px 28px (lg: 17px 20px 17px 32px)</td></tr>
+            <tr><th>Pfeil</th><td>Kreis rechts (<code>.btn__arrow</code>), 22–26px</td></tr>
+            <tr><th>Hover</th><td><code>translateY(-3px)</code>, stärkerer Schatten</td></tr>
+            <tr><th>Schrift</th><td>Inter 700, 15–16px, keine Unterstreichung</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 6. CTA -->
+    <section class="handout__section" id="cta">
+      <header class="handout__section-head">
+        <h2>CTA-Elemente</h2>
+        <p>Call-to-Actions sind klar erkennbar: Primärbutton mit Pfeil, wiederkehrend im Hero, in Sektionen und im Kontaktblock.</p>
+      </header>
+
+      <div class="handout__grid-2">
+        <div>
+          <img class="handout__shot" src="assets/handout/hero.png" alt="Hero-Section mit CTA-Buttons" width="1440" height="900" loading="lazy" />
+          <p class="handout__shot-caption">Hero: Primär-CTA „Jetzt vormerken“ + sekundärer Telefon-Link mit Play-Icon.</p>
+        </div>
+        <div class="handout__card">
+          <h3>CTA-Prinzipien</h3>
+          <ul>
+            <li><strong>Primär:</strong> Waldgrün, weiße Schrift, Schatten – Hauptaktion</li>
+            <li><strong>Sekundär:</strong> Telefon-Link mit Icon-Kreis, ohne Button-Rahmen</li>
+            <li><strong>Kontakt:</strong> Ghost-Buttons auf grünem Panel</li>
+            <li><strong>FAQ-Abschluss:</strong> CTA unter dem Akkordeon</li>
+            <li><strong>Nav-CTA:</strong> „Beratung vereinbaren“ – immer sichtbar</li>
+          </ul>
+          <p class="handout__spec">Wiedererkennung durch Pfeil-Kreis und konsistente Formulierungen</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. NAVIGATION -->
+    <section class="handout__section" id="navigation">
+      <header class="handout__section-head">
+        <h2>Navigation</h2>
+        <p>Sticky Header mit Overlay-Modus über dem Hero. Logo zentriert, Links symmetrisch – auf Mobile als Drawer.</p>
+      </header>
+
+      <div class="handout__showcase" style="margin-bottom:1.5rem;">
+        <div class="handout__showcase-label">Desktop-Navigation (scrolled)</div>
+        <div class="handout__showcase-body handout__showcase-body--cream">
+          <div class="handout__mini-nav">
+            <img src="assets/images/logo.svg" alt="" width="48" height="61" />
+            <div class="handout__mini-nav-links">
+              <a href="#">Betreutes Wohnen</a>
+              <a href="#">Apartments</a>
+              <a href="#" class="active">Pflege</a>
+              <a href="#">Café</a>
+              <a href="#">FAQ</a>
+            </div>
+            <a class="btn btn--primary" href="#" style="font-size:13px;padding:12px 14px 12px 20px;">Beratung<span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="handout__grid-2">
+        <div class="handout__card">
+          <h3>Verhalten</h3>
+          <ul>
+            <li>Sticky, Höhe per <code>--header-h</code></li>
+            <li>Overlay über Hero: transparent, weiße Links</li>
+            <li>Ab Scroll: weißer Hintergrund, dunkle Links</li>
+            <li>Aktiver Link: Primary-Farbe + Unterstreichung</li>
+            <li>Mobile: Hamburger → Vollbild-Drawer + Overlay</li>
+          </ul>
+        </div>
+        <div class="handout__card">
+          <h3>Barrierefreiheit (Navigation)</h3>
+          <ul>
+            <li>Skip-Link „Zum Inhalt springen“</li>
+            <li><code>aria-expanded</code> am Menü-Toggle</li>
+            <li>Scroll-Spy für aktive Sektion</li>
+            <li>Escape schließt Mobile-Nav</li>
+            <li>Widget-Leiste → <a href="#barrierefreiheit">eigenes Kapitel</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. HERO -->
+    <section class="handout__section" id="hero">
+      <header class="handout__section-head">
+        <h2>Hero-Section</h2>
+        <p>Vollflächiger Bild-Slider mit Text links und vier Kategorie-Karten am unteren Rand – emotionaler Einstieg in die Seite.</p>
+      </header>
+
+      <img class="handout__shot" src="assets/handout/hero.png" alt="Hero-Section der Juventa Startseite" width="1440" height="900" loading="lazy" />
+
+      <div class="handout__grid-3" style="margin-top:1.5rem;">
+        <div class="handout__card">
+          <h3>Medien</h3>
+          <p>4 Hintergrundslides, automatischer Wechsel (5,5s), sanfter Zoom. Dunkles Overlay für Lesbarkeit.</p>
+        </div>
+        <div class="handout__card">
+          <h3>Textblock</h3>
+          <p>Eyebrow, H1 mit Light-Accent, Subline, Primär-CTA + Telefon-Link mit Play-Icon.</p>
+        </div>
+        <div class="handout__card">
+          <h3>Karten-Leiste</h3>
+          <p>4 Hero-Cards (Betreutes Wohnen, Apartments, Service, Pflege) – halbtransparent, Hover-Akzent.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. LAYOUT -->
+    <section class="handout__section" id="layout">
+      <header class="handout__section-head">
+        <h2>Grid &amp; Layoutsystem</h2>
+        <p>Ein konsistentes Raster mit maximal 1280px Inhaltsbreite, fluiden Abständen und abwechselnden Hintergründen.</p>
+      </header>
+
+      <div class="handout__card" style="margin-bottom:1.5rem;">
+        <table class="handout__table">
+          <thead><tr><th>Token</th><th>Wert</th><th>Einsatz</th></tr></thead>
+          <tbody>
+            <tr><td><code>--maxw</code></td><td>1280px</td><td>Container-Breite</td></tr>
+            <tr><td><code>--gutter</code></td><td>clamp(1.25rem, 4vw, 1.75rem)</td><td>Seitenabstand</td></tr>
+            <tr><td><code>.section</code></td><td>padding-block clamp(4.5rem, 9vw, 6.5rem)</td><td>Sektions-Rhythmus</td></tr>
+            <tr><td><code>--r-sm … --r-xl</code></td><td>12 / 20 / 28 / 40px</td><td>Border-Radius-Skala</td></tr>
+            <tr><td><code>--shadow-xs … lg</code></td><td>4 Stufen</td><td>Tiefe für Cards &amp; Panels</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="handout__grid-2">
+        <div class="handout__card">
+          <h3>Spaltenlogik</h3>
+          <ul>
+            <li><strong>Story / About:</strong> Collage links, Text rechts (1.05fr / 1fr)</li>
+            <li><strong>Apartments:</strong> Intro links, Feature-Grid rechts</li>
+            <li><strong>Café:</strong> Gespiegelt – Text links, Bild rechts bis Viewport</li>
+            <li><strong>FAQ:</strong> Bild links (sticky), Akkordeon rechts</li>
+            <li><strong>Kontakt:</strong> 50/50 Panel + Bild</li>
+          </ul>
+        </div>
+        <div class="handout__card">
+          <h3>Hintergrund-Rhythmus</h3>
+          <ul>
+            <li><strong>Cream</strong> (#FFFAF8): Bereiche, Apartments, Pflege, Café, Über Juventa</li>
+            <li><strong>Sand/Cream</strong> (#F3ECE4): Body, FAQ, Kontakt-Umfeld</li>
+            <li><strong>Standard:</strong> Willkommen, Service, Standort</li>
+            <li>Abwechslung schafft visuelle Atmung ohne Brüche</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. CARDS -->
+    <section class="handout__section" id="cards">
+      <header class="handout__section-head">
+        <h2>Kachelelemente &amp; Cards</h2>
+        <p>Mehrere Card-Typen für unterschiedliche Inhalte – von Hero-Karten bis Feature-Grids und Akkordeon-Panels.</p>
+      </header>
+
+      <div class="handout__grid-2" style="margin-bottom:1.5rem;">
+        <div class="handout__showcase">
+          <div class="handout__showcase-label">Hero-Card</div>
+          <div class="handout__showcase-body handout__showcase-body--dark" style="padding:0;">
+            <a class="hero__card" href="#" style="display:block;border-radius:var(--r-md);max-width:280px;">
+              <span class="hero__card-num">01</span>
+              <h3>Betreutes Wohnen</h3>
+              <p>Selbstbestimmt in der Brückenmühle</p>
+            </a>
+          </div>
+        </div>
+        <div class="handout__showcase">
+          <div class="handout__showcase-label">Feature-Card (Apartments)</div>
+          <div class="handout__showcase-body handout__showcase-body--cream">
+            <div class="handout__feature-item">
+              <span class="apartments__feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 12h16"/><path d="M12 4v16"/><circle cx="12" cy="12" r="9"/></svg>
+              </span>
+              <h3>Barrierearme Bäder</h3>
+              <p>Bodengleiche Duschen und durchdachte Grundrisse.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="handout__grid-3">
+        <div class="handout__card">
+          <h3>Bereiche-Akkordeon</h3>
+          <p>Horizontale Panels mit Bild, Overlay und expandierbarem Inhalt. Hover/Click aktiviert Panel.</p>
+        </div>
+        <div class="handout__card">
+          <h3>Story-Collage</h3>
+          <p>3 Bilder in asymmetrischem Raster, abgerundete Ecken, dezenter Schatten, Hover-Zoom.</p>
+        </div>
+        <div class="handout__card">
+          <h3>FAQ-Badge</h3>
+          <p>Terracotta-Kachel über dem Bild, 60% Breite, Icon + Kurztext.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. FAQ -->
+    <section class="handout__section" id="faq">
+      <header class="handout__section-head">
+        <h2>FAQ / Accordion</h2>
+        <p>Weiße Akkordeon-Karten mit Primary-Toggle-Kreis. Ein Panel öffnet sich per Klick – barrierefrei mit ARIA.</p>
+      </header>
+
+      <div class="handout__showcase">
+        <div class="handout__showcase-label">Live-Ausschnitt</div>
+        <div class="handout__showcase-body" style="padding:0;">
+          <img class="handout__shot" src="assets/handout/faq-live.png" alt="FAQ-Sektion der Juventa Startseite – Bild, Akkordeon und CTA" width="1440" height="900" loading="lazy" style="border:none;border-radius:0;box-shadow:none;" />
+        </div>
+        <p class="handout__shot-caption" style="padding:0.75rem 1.25rem 1rem;">FAQ: Bild links mit Badge, weiße Akkordeon-Karten rechts, CTA darunter.</p>
+      </div>
+    </section>
+
+    <!-- 12. SLIDER -->
+    <section class="handout__section" id="slider">
+      <header class="handout__section-head">
+        <h2>Slider / Carousel</h2>
+        <p>Zwei Slider-Typen: Hero-Hintergrund (automatisch) und Apartment-Bildslider (manuell mit Pfeilen).</p>
+      </header>
+
+      <div class="handout__grid-2">
+        <div class="handout__card">
+          <h3>Hero-Slider</h3>
+          <ul>
+            <li>4 Vollbild-Slides, Crossfade</li>
+            <li>Automatisch alle 5,5 Sekunden</li>
+            <li>Respektiert <code>prefers-reduced-motion</code></li>
+            <li>Kein sichtbares Pagination-UI</li>
+          </ul>
+        </div>
+        <div class="handout__card">
+          <h3>Apartment-Slider</h3>
+          <ul>
+            <li>4 Zimmer-Bilder, Nummer-Badge (01–04)</li>
+            <li>Prev/Next-Pfeile in der Fußleiste</li>
+            <li>Hover-Overlay mit CTA-Link</li>
+            <li>Textblock: Titel + Beschreibung links</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="handout__showcase" style="margin-top:1.5rem;">
+        <div class="handout__showcase-label">Apartment-Slider (Struktur)</div>
+        <div class="handout__showcase-body handout__showcase-body--cream" style="padding:0;">
+          <iframe class="handout__iframe" src="index.html#apartmentsSlider" title="Apartment-Slider Ausschnitt" style="height:420px;" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. WEITERE KOMPONENTEN -->
+    <section class="handout__section" id="komponenten">
+      <header class="handout__section-head">
+        <h2>Weitere UI-Komponenten</h2>
+        <p>Ergänzende Bausteine, die das System tragen – von Listen über Badges bis zu Section-Headern.</p>
+      </header>
+
+      <div class="handout__grid-3">
+        <div class="handout__showcase">
+          <div class="handout__showcase-label">Tick-Liste</div>
+          <div class="handout__showcase-body">
+            <ul class="ticks">
+              <li>Hauseigenes Café</li>
+              <li>24h-Notrufdienst</li>
+              <li>Ambulante Pflege angebunden</li>
+            </ul>
+          </div>
+        </div>
+        <div class="handout__showcase">
+          <div class="handout__showcase-label">Werte-Badges</div>
+          <div class="handout__showcase-body handout__showcase-body--cream">
+            <p class="about__values"><span>Menschlichkeit</span><span>Fachkompetenz</span><span>Sicherheit</span></p>
+          </div>
+        </div>
+        <div class="handout__showcase">
+          <div class="handout__showcase-label">Pflege-Zitat-Box</div>
+          <div class="handout__showcase-body" style="padding:0;">
+            <div class="care__note" style="margin:0;border-radius:0;">
+              <div class="care__note-inner">
+                <blockquote class="care__quote"><p>„Pflege ist für uns mehr als eine Leistung."</p></blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="handout__showcase">
+          <div class="handout__showcase-label">Scroll-Pfeil</div>
+          <div class="handout__showcase-body handout__showcase-body--cream">
+            <a class="apartments__scroll" href="#" aria-label="Nach unten scrollen">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="handout__showcase">
+          <div class="handout__showcase-label">Section-Header</div>
+          <div class="handout__showcase-body">
+            <span class="section-label">Standort</span>
+            <h2 style="font-size:1.5rem;margin:0;">Mitten in Gernsbach</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 14. BARRIEREFREIHEIT -->
+    <section class="handout__section" id="barrierefreiheit">
+      <header class="handout__section-head">
+        <h2>Barrierefreiheit</h2>
+        <p>Fixe Sidebar-Leiste links am Viewport: Schriftgröße, Kontrast, Link-Stil, Animationen und Zeilenabstand – Einstellungen werden in <code>localStorage</code> gespeichert.</p>
+      </header>
+
+      <div class="handout__grid-2">
+        <div class="handout__showcase">
+          <div class="handout__showcase-label">Live-Ausschnitt · Widget geöffnet</div>
+          <div class="handout__showcase-body handout__showcase-body--sand handout__a11y-demo">
+            <div class="handout__a11y-layout" aria-hidden="true">
+              <button class="a11y__toggle" type="button" tabindex="-1">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="4" r="2"/><path d="M12 6v6M8 20l4-6 4 6M6 14h12"/></svg>
+              </button>
+              <div class="a11y__panel handout__a11y-panel">
+                <div class="a11y__head">
+                  <h2 class="a11y__title">Barrierefreiheit</h2>
+                  <button class="a11y__close" type="button" tabindex="-1">&times;</button>
+                </div>
+                <div class="a11y__body">
+                  <div class="a11y__group">
+                    <span class="a11y__label">Schriftgröße</span>
+                    <div class="a11y__font-btns">
+                      <button class="a11y__font-btn" type="button" tabindex="-1">A−</button>
+                      <button class="a11y__font-btn is-active" type="button" tabindex="-1">A</button>
+                      <button class="a11y__font-btn" type="button" tabindex="-1">A+</button>
+                      <button class="a11y__font-btn" type="button" tabindex="-1">A++</button>
+                    </div>
+                  </div>
+                  <div class="a11y__group">
+                    <button class="a11y__option" type="button" aria-pressed="true" tabindex="-1">
+                      <span class="a11y__option-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v18"/></svg></span>
+                      <span>Hoher Kontrast</span>
+                    </button>
+                    <button class="a11y__option" type="button" aria-pressed="false" tabindex="-1">
+                      <span class="a11y__option-icon"><svg viewBox="0 0 24 24"><path d="M6 20h12M8 6v6a4 4 0 0 0 8 0V6"/></svg></span>
+                      <span>Links unterstreichen</span>
+                    </button>
+                    <button class="a11y__option" type="button" aria-pressed="false" tabindex="-1">
+                      <span class="a11y__option-icon"><svg viewBox="0 0 24 24"><path d="M10 9l-5 3 5 3V9zM14 9l5 3-5 3V9z"/></svg></span>
+                      <span>Animationen reduzieren</span>
+                    </button>
+                    <button class="a11y__option" type="button" aria-pressed="false" tabindex="-1">
+                      <span class="a11y__option-icon"><svg viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg></span>
+                      <span>Zeilenabstand vergrößern</span>
+                    </button>
+                  </div>
+                  <button class="a11y__reset" type="button" tabindex="-1">Einstellungen zurücksetzen</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="handout__card">
+          <h3>Funktionen</h3>
+          <ul>
+            <li><strong>Schriftgröße:</strong> A− / A / A+ / A++ via Zoom</li>
+            <li><strong>Hoher Kontrast:</strong> erhöhte Lesbarkeit, angepasste Buttons</li>
+            <li><strong>Links unterstreichen:</strong> klarere Link-Erkennung</li>
+            <li><strong>Animationen reduzieren:</strong> Reveal &amp; Slider deaktiviert</li>
+            <li><strong>Zeilenabstand:</strong> line-height 2.1 für Fließtext</li>
+            <li><strong>Zurücksetzen:</strong> alle Optionen auf Standard</li>
+          </ul>
+          <h3 style="margin-top:1.25rem;">Verhalten</h3>
+          <ul>
+            <li>Fix links, vertikal zentriert (Mobile: unten)</li>
+            <li>Toggle öffnet Panel · Escape &amp; Klick außerhalb schließen</li>
+            <li>Speicherung unter <code>juventa-a11y</code></li>
+            <li>Early-Load-Script verhindert Flackern beim Laden</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="handout__card" style="margin-top:1.5rem;">
+        <h3>Weitere A11y-Maßnahmen auf der Seite</h3>
+        <table class="handout__table">
+          <tbody>
+            <tr><th>Skip-Link</th><td>„Zum Inhalt springen“ für Tastatur-Nutzer</td></tr>
+            <tr><th>Semantik</th><td>Landmarks, ARIA an Akkordeon, FAQ, Navigation</td></tr>
+            <tr><th>Fokus</th><td><code>:focus-visible</code> mit Primary-Outline</td></tr>
+            <tr><th>Medien</th><td>Alt-Texte, <code>aria-hidden</code> bei dekorativen Elementen</td></tr>
+            <tr><th>Reduced Motion</th><td>Respektiert <code>prefers-reduced-motion</code></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 15. ZUSAMMENFASSUNG -->
+    <section class="handout__summary" id="zusammenfassung">
+      <h2>Designcharakter &amp; Zusammenfassung</h2>
+      <p>Das UI-System der Juventa Brückenmühle-Seite verbindet editorial Ruhe mit klarer Conversion-Orientierung – warm, vertrauensvoll und regional verwurzelt.</p>
+
+      <div class="handout__summary-grid">
+        <article>
+          <h3>Gesamtwirkung</h3>
+          <p>Hochwertig und einladend – wie ein Boutique-Hotel im historischen Gewand. Viel Weißraum, warme Töne, keine visuelle Hektik.</p>
+        </article>
+        <article>
+          <h3>Prinzipien</h3>
+          <p>Klarheit vor Dekoration. Wiederkehrende Patterns (Eyebrow → Headline → Content). Abwechselnde Section-Hintergründe. Konsistente CTAs.</p>
+        </article>
+        <article>
+          <h3>Stärken</h3>
+          <p>Stimmiges Farbsystem, lesbare Typografie, barrierefreie Interaktionen, modulare Sektionen und durchgängige Button-Sprache.</p>
+        </article>
+      </div>
+    </section>
+
+    <p class="handout__footer-note">
+      Juventa GmbH · Design Handout · Erstellt auf Basis von <a href="index.html">index.html</a> · Brückenmühle Gernsbach
+    </p>
+  </main>
+</div>
+
+<script>
+(function () {
+  const links = document.querySelectorAll(".handout__toc a");
+  const sections = [...links].map((a) => document.querySelector(a.getAttribute("href"))).filter(Boolean);
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const id = "#" + entry.target.id;
+        links.forEach((a) => a.classList.toggle("is-active", a.getAttribute("href") === id));
+      }
+    });
+  }, { rootMargin: "-30% 0px -60% 0px", threshold: 0 });
+
+  sections.forEach((s) => observer.observe(s));
+})();
+</script>
+</body>
+</html>
