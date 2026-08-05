@@ -17,7 +17,7 @@
   const navToggle = document.getElementById("navToggle");
   const navClose = document.getElementById("navClose");
   const navOverlay = document.getElementById("navOverlay");
-  const navLinks = document.querySelectorAll(".nav__link, .nav__cta");
+  const navLinks = document.querySelectorAll(".nav__link, .nav__cta, .nav__sub a, .nav__drawer-sub a");
 
   function setHeaderHeight() {
     if (!header) return;
@@ -172,7 +172,7 @@
   });
 
   /* ---------- Aktive Sektion in der Navigation ---------- */
-  const spyLinks = Array.from(document.querySelectorAll(".nav__link"));
+  const spyLinks = Array.from(document.querySelectorAll(".nav__track > .nav__link, .nav__item > .nav__link, .nav__list--drawer > li > .nav__link"));
   const sections = [...new Set(
     spyLinks
       .map((a) => document.querySelector(a.getAttribute("href")))

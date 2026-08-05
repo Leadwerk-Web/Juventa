@@ -4,16 +4,16 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Betreutes Wohnen Gernsbach | Brückenmühle – Juventa</title>
-<meta name="description" content="Betreutes Wohnen in der historischen Brückenmühle Gernsbach: 9 moderne, barrierearme Apartments, hauseigenes Café, 24h-Notruf und ambulante Pflege durch Juventa. Selbstbestimmt leben im Murgtal – persönlich begleitet. Jetzt vormerken." />
+<title>Juventa – Ambulante Pflege &amp; Betreutes Wohnen | Baden-Baden &amp; Gernsbach</title>
+<meta name="description" content="Juventa – so geht Pflege: ambulante Pflege als Kerngeschäft in Baden-Baden und Umgebung sowie Betreutes Wohnen in der Brückenmühle Gernsbach. Persönliche Beratung zu Pflegegrad, Finanzierung und Betreuung." />
 <meta name="theme-color" content="#FFFAF8" />
 <link rel="canonical" href="https://juventa-pflege.de/" />
 
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="de_DE" />
 <meta property="og:site_name" content="Juventa – so geht Pflege" />
-<meta property="og:title" content="Betreutes Wohnen in der Brückenmühle Gernsbach | Juventa" />
-<meta property="og:description" content="Geschichte trifft Geborgenheit: moderne Apartments, hauseigenes Café und persönliche Betreuung im Herzen von Gernsbach – ambulante Pflege durch Juventa angebunden." />
+<meta property="og:title" content="Juventa – Ambulante Pflege &amp; Betreutes Wohnen" />
+<meta property="og:description" content="Ambulante Pflege in Baden-Baden und Umgebung – plus Betreutes Wohnen in der Brückenmühle Gernsbach. Persönlich, kompetent und nah an den Menschen." />
 <meta property="og:url" content="https://juventa-pflege.de/" />
 <meta property="og:image" content="assets/images/cafe-2.png" />
 <meta name="twitter:card" content="summary_large_image" />
@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-<link rel="stylesheet" href="css/styles.css?v=40" />
+<link rel="stylesheet" href="css/styles.css?v=41" />
 <noscript><style>.reveal{opacity:1!important;transform:none!important;}</style></noscript>
 <script>
 (function () {
@@ -48,15 +48,16 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "AssistedLiving",
-  "name": "Juventa – Betreutes Wohnen Brückenmühle Gernsbach",
-  "description": "Betreutes Wohnen in der historischen Brückenmühle Gernsbach mit 9 modernen, barrierearmen Apartments, hauseigenem Café, 24h-Notrufdienst und angebundener ambulanter Pflege durch Juventa.",
+  "@type": "Organization",
+  "name": "Juventa GmbH",
+  "alternateName": "Juventa – so geht Pflege",
+  "description": "Ambulante Pflege in Baden-Baden und Umgebung sowie Betreutes Wohnen in der Brückenmühle Gernsbach – inkl. Beratung zu Pflegegrad und Finanzierung.",
   "url": "https://juventa-pflege.de/",
   "logo": "assets/images/wortmarke.png",
   "image": "assets/images/cafe-2.png",
   "telephone": "+49 178 52 54 075",
   "email": "info@juventa-pflege.de",
-  "areaServed": ["Gernsbach", "Murgtal", "Baden-Baden", "Rastatt", "Schwarzwald"],
+  "areaServed": ["Baden-Baden", "Gernsbach", "Murgtal", "Rastatt", "Karlsruhe", "Schwarzwald"],
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Sonnenplatz 2",
@@ -112,10 +113,18 @@
     },
     {
       "@type": "Question",
+      "name": "Sind die Preise inklusive Grundservice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Der Grundservice ist verpflichtend und bereits in den Gesamtpreisen für das Betreute Wohnen enthalten. Aktuelle Preise nennen wir im persönlichen Beratungsgespräch."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Kann ich mich schon jetzt vormerken lassen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, gerne. In der Phase vor der Eröffnung informieren wir Sie persönlich über verfügbare Apartments, Ausstattung und Leistungen."
+        "text": "Ja, gerne – für Apartments in der Brückenmühle und auch für die geplante Pflege-WG in Baden-Baden."
       }
     }
   ]
@@ -130,7 +139,7 @@
 
 <!-- ============ HERO (BSP-Stil) ============ -->
 <div class="hero-shell" id="start">
-  <section class="hero" data-hero aria-label="Willkommen in der Brückenmühle Gernsbach">
+  <section class="hero" data-hero aria-label="Willkommen bei Juventa – Ambulante Pflege und Betreutes Wohnen">
 
     <div class="hero__media" id="heroSlider" aria-hidden="true">
       <div class="hero__slide is-active">
@@ -158,36 +167,66 @@
 
           <div class="nav__inner">
             <div class="nav__track">
-              <a href="#betreutes-wohnen" class="nav__link">Betreutes Wohnen</a>
-              <a href="#apartments" class="nav__link">Apartments</a>
+              <div class="nav__item nav__item--has-sub">
+                <a href="#betreutes-wohnen" class="nav__link">Betreutes Wohnen</a>
+                <ul class="nav__sub" aria-label="Unterpunkte Betreutes Wohnen">
+                  <li><a href="#betreutes-wohnen">Konzept &amp; Vision</a></li>
+                  <li><a href="#apartments">Apartments &amp; Ausstattung</a></li>
+                </ul>
+              </div>
+              <a href="#cafe" class="nav__link">Café &amp; Gemeinschaft</a>
+              <div class="nav__item nav__item--has-sub">
+                <a href="#pflege" class="nav__link">Pflege &amp; Beratung</a>
+                <ul class="nav__sub" aria-label="Unterpunkte Pflege &amp; Beratung">
+                  <li><a href="#pflege">Ambulante Pflege</a></li>
+                  <li><a href="#pflege-leistungen">Leistungen</a></li>
+                  <li><a href="#pflege-finanzierung">Pflegegrade &amp; Finanzierung</a></li>
+                  <li><a href="#pflege-beratung">Beratung</a></li>
+                  <li><a href="#pflege-24h">24-Stunden-Versorgung</a></li>
+                </ul>
+              </div>
               <a href="#service" class="nav__link">Betreuung &amp; Service</a>
-              <a href="#pflege" class="nav__link">Pflege</a>
               <a class="header__logo header__logo--desktop" href="#start" aria-label="Juventa Startseite">
                 <img src="assets/images/logo.svg" alt="" width="94" height="119" />
               </a>
-              <a href="#cafe" class="nav__link">Café &amp; Gemeinschaft</a>
-              <a href="#standort" class="nav__link">Standort</a>
+              <a href="#standort" class="nav__link">Standorte</a>
+              <a href="#ueber" class="nav__link">Über Juventa</a>
               <a href="#faq" class="nav__link">FAQ</a>
               <a href="#kontakt" class="nav__link">Kontakt</a>
               <a href="#kontakt" class="btn btn--primary nav__cta">
-                Beratung vereinbaren
+                Beratung anfragen
                 <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
               </a>
             </div>
           </div>
 
           <ul class="nav__list nav__list--drawer">
-            <li><a href="#betreutes-wohnen" class="nav__link">Betreutes Wohnen</a></li>
-            <li><a href="#apartments" class="nav__link">Apartments</a></li>
-            <li><a href="#service" class="nav__link">Betreuung &amp; Service</a></li>
-            <li><a href="#pflege" class="nav__link">Pflege</a></li>
+            <li class="nav__drawer-group">
+              <a href="#betreutes-wohnen" class="nav__link">Betreutes Wohnen</a>
+              <ul class="nav__drawer-sub">
+                <li><a href="#betreutes-wohnen">Konzept &amp; Vision</a></li>
+                <li><a href="#apartments">Apartments &amp; Ausstattung</a></li>
+              </ul>
+            </li>
             <li><a href="#cafe" class="nav__link">Café &amp; Gemeinschaft</a></li>
-            <li><a href="#standort" class="nav__link">Standort</a></li>
+            <li class="nav__drawer-group">
+              <a href="#pflege" class="nav__link">Pflege &amp; Beratung</a>
+              <ul class="nav__drawer-sub">
+                <li><a href="#pflege">Ambulante Pflege</a></li>
+                <li><a href="#pflege-leistungen">Leistungen</a></li>
+                <li><a href="#pflege-finanzierung">Pflegegrade &amp; Finanzierung</a></li>
+                <li><a href="#pflege-beratung">Beratung</a></li>
+                <li><a href="#pflege-24h">24-Stunden-Versorgung</a></li>
+              </ul>
+            </li>
+            <li><a href="#service" class="nav__link">Betreuung &amp; Service</a></li>
+            <li><a href="#standort" class="nav__link">Standorte</a></li>
+            <li><a href="#ueber" class="nav__link">Über Juventa</a></li>
             <li><a href="#faq" class="nav__link">FAQ</a></li>
             <li><a href="#kontakt" class="nav__link">Kontakt</a></li>
           </ul>
           <a href="#kontakt" class="btn btn--primary nav__cta nav__cta--drawer">
-            Beratung vereinbaren
+            Beratung anfragen
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
         </nav>
@@ -196,15 +235,15 @@
 
     <div class="container hero__body">
       <div class="hero__content reveal">
-        <span class="hero__eyebrow">Betreutes Wohnen im Murgtal</span>
-        <h1 class="hero__title">Geschichte trifft Geborgenheit –<br />Ihr Zuhause in der <span class="headline-accent headline-accent--light">Brückenmühle</span>.</h1>
+        <span class="hero__eyebrow">Juventa – so geht Pflege</span>
+        <h1 class="hero__title">Nähe, Kompetenz und Geborgenheit –<br />für ein Leben in <span class="headline-accent headline-accent--light">Selbstbestimmung</span>.</h1>
         <p class="hero__sub">
-          Barrierearme Apartments, hauseigenes Café und persönliche Betreuung in Gernsbach –
-          selbstbestimmt leben, sicher begleitet.
+          Ambulante Pflege in Baden-Baden und Umgebung – und Betreutes Wohnen in der Brückenmühle Gernsbach.
+          Wir begleiten Menschen und Angehörige persönlich durch Alltag, Pflegegrad und Finanzierung.
         </p>
         <div class="hero__actions">
           <a href="#kontakt" class="btn btn--primary btn--lg">
-            Jetzt vormerken lassen
+            Beratung anfragen
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
           <a href="tel:+4917852540750" class="hero__play" aria-label="Rufen Sie uns an unter +49 178 52 54 075">
@@ -212,7 +251,7 @@
               <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             </span>
             <span class="hero__play-text">
-              <small>Direkt anrufen</small>
+              <small>Rückruf oder direkt anrufen</small>
               <strong>+49 178 52 54 075</strong>
             </span>
           </a>
@@ -224,34 +263,20 @@
 
   <div class="hero__cards">
     <div class="container">
-      <div class="hero__cards-inner reveal">
+      <div class="hero__cards-inner hero__cards-inner--dual reveal">
+        <a href="#pflege" class="hero__card">
+          <span class="hero__card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </span>
+          <h2>Ambulante Pflege</h2>
+          <p>Professionelle Pflege zu Hause in Baden-Baden und Umgebung – mit Beratung zu Pflegegrad und Finanzierung.</p>
+        </a>
         <a href="#betreutes-wohnen" class="hero__card">
           <span class="hero__card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
           </span>
           <h2>Betreutes Wohnen</h2>
-          <p>Selbstbestimmt leben – mit Sicherheit, Service und Gemeinschaft im historischen Ambiente.</p>
-        </a>
-        <a href="#apartments" class="hero__card">
-          <span class="hero__card-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M3 9h18M3 15h18M15 3v18"/></svg>
-          </span>
-          <h2>Apartments</h2>
-          <p>Helle, barrierearme Wohnungen mit hochwertiger Ausstattung – wie im Boutique-Hotel.</p>
-        </a>
-        <a href="#service" class="hero__card">
-          <span class="hero__card-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-          </span>
-          <h2>Betreuung &amp; Service</h2>
-          <p>Alltagsbegleitung und Grundservice – dezent, verlässlich und genau dann, wenn Sie es brauchen.</p>
-        </a>
-        <a href="#pflege" class="hero__card">
-          <span class="hero__card-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-          </span>
-          <h2>Pflege</h2>
-          <p>Ambulante Pflege und Beratung – direkt angebunden an Juventa, mit vertrauten Gesichtern.</p>
+          <p>Selbstbestimmt leben in der Brückenmühle Gernsbach – mit Service, Café und angebundener Pflege.</p>
         </a>
       </div>
     </div>
@@ -260,18 +285,18 @@
 
 <main id="hauptinhalt">
 
-  <!-- ============ STORY ============ -->
+  <!-- ============ STORY / JUVENTA ============ -->
   <section class="story section" id="konzept" aria-labelledby="story-title">
     <div class="container story__grid">
       <div class="story__collage reveal">
         <div class="story__collage-img story__collage-img--tall">
-          <img src="assets/images/Hero1.png" alt="Die Brückenmühle Gernsbach – historisches Ambiente trifft modernes Betreutes Wohnen" loading="lazy" width="1920" height="1080" />
+          <img src="assets/images/Hero1.png" alt="Juventa – ambulante Pflege und Betreutes Wohnen in der Region" loading="lazy" width="1920" height="1080" />
         </div>
         <div class="story__collage-stack">
           <div class="story__collage-img story__collage-img--top">
-            <img src="assets/images/Hero2.png" alt="Moderne Apartments in der Brückenmühle Gernsbach" loading="lazy" width="1920" height="1080" />
+            <img src="assets/images/Hero2.png" alt="Persönliche Betreuung und modernes Wohnen bei Juventa" loading="lazy" width="1920" height="1080" />
           </div>
-          <button type="button" class="story__collage-img story__collage-img--bottom story__video-trigger" data-video-src="assets/video/Imagefilm_Juventa_Website_UT.mp4" aria-label="Imagefilm abspielen: Juventa Brückenmühle">
+          <button type="button" class="story__collage-img story__collage-img--bottom story__video-trigger" data-video-src="assets/video/Imagefilm_Juventa_Website_UT.mp4" aria-label="Imagefilm abspielen: Juventa">
             <video class="story__video-preview" autoplay muted loop playsinline preload="metadata" poster="assets/images/Hero3.png" aria-hidden="true">
               <source src="assets/video/Imagefilm_Juventa_Website_UT.mp4" type="video/mp4" />
             </video>
@@ -283,14 +308,17 @@
       </div>
 
       <div class="story__text reveal">
-        <span class="section-label">Willkommen</span>
-        <h2 id="story-title">Ein Ort, an dem Geschichte<br />wieder lebendig wird</h2>
-        <p class="story__lead">Im Herzen von Gernsbach erwacht die historische Brückenmühle neu – als modernes Betreutes Wohnen im Schwarzwald.</p>
-        <p>Historischer Charme und zeitgemäßer Komfort: helle Apartments, hauseigenes Café und Betreuung genau dann, wenn Sie sie brauchen.</p>
-        <a class="btn btn--primary" href="#betreutes-wohnen">
-          Unser Konzept im Detail
-          <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
+        <span class="section-label">Über uns</span>
+        <h2 id="story-title">Juventa – Pflege und Begleitung,<br />die den Menschen in den Mittelpunkt stellt</h2>
+        <p class="story__lead">Wir sind in der Region verwurzelt: ambulante Pflege als Kerngeschäft – und Betreutes Wohnen als starkes Angebot für ein selbstbestimmtes Leben.</p>
+        <p>Unsere Werte prägen jeden Tag: Menschlichkeit, Fachkompetenz und Sicherheit. Ob zu Hause in Baden-Baden oder in der Brückenmühle Gernsbach – wir hören zu, denken mit und finden Lösungen.</p>
+        <div class="story__actions">
+          <a class="btn btn--primary" href="#pflege">
+            Zur ambulanten Pflege
+            <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <a class="btn btn--outline" href="#betreutes-wohnen">Zum Betreuten Wohnen</a>
+        </div>
       </div>
     </div>
   </section>
@@ -299,9 +327,9 @@
   <section class="areas section section--cream" id="betreutes-wohnen" aria-labelledby="areas-title">
     <div class="container">
       <header class="section-head">
-        <p class="eyebrow">Vier Bereiche, ein Zuhause</p>
-        <h2 id="areas-title">Alles, was ein gutes Leben im Alter ausmacht</h2>
-        <p class="section-head__sub">Von den eigenen vier Wänden bis zur verlässlichen Pflege – in der Brückenmühle greift alles ineinander.</p>
+        <p class="eyebrow">Betreutes Wohnen · Brückenmühle</p>
+        <h2 id="areas-title">Konzept &amp; Vision: selbstbestimmt wohnen, sicher begleitet</h2>
+        <p class="section-head__sub">In der historischen Brückenmühle Gernsbach verbinden wir eigenständiges Wohnen mit Service, Gemeinschaft und angebundener ambulanter Pflege.</p>
       </header>
 
       <div class="areas__accordion reveal" role="tablist" aria-label="Vier Bereiche, ein Zuhause">
@@ -320,8 +348,8 @@
             <span class="areas-panel__num">01</span>
             <h3 class="areas-panel__heading">Betreutes Wohnen</h3>
             <p class="areas-panel__text">Selbstbestimmt leben – mit dem guten Gefühl, nie allein zu sein. Eigenständig wohnen, sicher umsorgt, mit Gemeinschaft und Aktivitäten im Haus.</p>
-            <a class="btn btn--primary areas-panel__link" href="#betreutes-wohnen">
-              Mehr erfahren
+            <a class="btn btn--primary areas-panel__link" href="#apartments">
+              Apartments &amp; Preise ansehen
               <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
           </div>
@@ -499,125 +527,8 @@
     </div>
   </section>
 
-  <!-- ============ BETREUUNG & SERVICE ============ -->
-  <section class="service section" id="service" aria-labelledby="service-title">
-    <div class="container">
-      <header class="section-head">
-        <p class="eyebrow">Betreuung &amp; Service</p>
-        <h2 id="service-title">Im Alltag gut aufgehoben –<br />mit Leistungen, die zu Ihnen passen</h2>
-        <p class="section-head__sub">Ein klarer Grundservice sorgt für Ruhe – zusätzliche Wahlleistungen buchen Sie ganz nach Bedarf dazu.</p>
-      </header>
-
-      <div class="service__columns">
-        <div class="servicecol reveal">
-          <span class="servicecol__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </span>
-          <p class="servicecol__kicker">Was Sicherheit gibt</p>
-          <ul class="servicelist">
-            <li>Persönliche, feste Ansprechpartner</li>
-            <li>24h-Notrufdienst</li>
-            <li>LivyCare-Sturzprävention</li>
-            <li>Medizinische Versorgung nach Bedarf</li>
-          </ul>
-        </div>
-        <div class="servicecol reveal">
-          <span class="servicecol__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-          </span>
-          <p class="servicecol__kicker">Was den Alltag erleichtert</p>
-          <ul class="servicelist">
-            <li>Alltagsbegleitung &amp; Unterstützung</li>
-            <li>Hauswirtschaftliche Hilfe</li>
-            <li>Verpflegung &amp; Speisepaket</li>
-            <li>Gemeinsame Aktivitäten</li>
-          </ul>
-        </div>
-        <div class="servicecol reveal">
-          <span class="servicecol__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M4 21v-7"/><path d="M4 10V3"/><path d="M12 21v-9"/><path d="M12 8V3"/><path d="M20 21v-5"/><path d="M20 12V3"/><path d="M2 14h6"/><path d="M10 8h6"/><path d="M18 16h4"/></svg>
-          </span>
-          <p class="servicecol__kicker">Was individuell dazukommt</p>
-          <ul class="servicelist">
-            <li>Wahl- &amp; Zusatzleistungen</li>
-            <li>Room-Service aufs Apartment</li>
-            <li>Begleitung zu Terminen</li>
-            <li>Individuelle Betreuungspakete</li>
-          </ul>
-        </div>
-      </div>
-      <div class="service__cta reveal">
-        <a class="btn btn--primary" href="#kontakt">Service entdecken<span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ PFLEGE ============ -->
-  <section class="care section section--cream" id="pflege" aria-labelledby="care-title">
-    <div class="container care__wrap">
-      <div class="care__layout">
-        <div class="care__intro reveal">
-          <p class="eyebrow">Pflege &amp; Beratung</p>
-          <h2 id="care-title">Gut begleitet, wenn Pflege<br />zum Thema wird</h2>
-          <p class="lead">Ein Sturz, eine Diagnose, weniger Zeit – und plötzlich ist alles anders. Dann ist es gut, jemanden an der Seite zu haben, der sich auskennt. Juventa hört zu, denkt mit und findet individuelle Lösungen.</p>
-          <a class="btn btn--primary" href="#kontakt">Pflegeberatung anfragen<span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-        </div>
-
-        <ul class="care__features reveal">
-          <li>
-            <span class="care__feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M12 2v4M6 6l3 3M18 6l-3 3"/><circle cx="12" cy="14" r="8"/><path d="M12 11v6M9 14h6"/></svg>
-            </span>
-            <h3>Ambulante Pflege durch Juventa</h3>
-            <p>Vertraute Pflegekräfte direkt vor Ort – ohne Umzug in eine Pflegeeinrichtung.</p>
-          </li>
-          <li>
-            <span class="care__feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/><path d="M12 9v3"/></svg>
-            </span>
-            <h3>Medizinische &amp; hauswirtschaftliche Versorgung</h3>
-            <p>Von der Medikamentengabe bis zur Haushaltsführung – alles aus einer Hand.</p>
-          </li>
-          <li>
-            <span class="care__feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a6.5 6.5 0 0 1 13 0"/></svg>
-            </span>
-            <h3>Körperpflege &amp; Unterstützung</h3>
-            <p>Würdevolle Hilfe im Alltag – mit Respekt für Ihre Gewohnheiten und Ihr Tempo.</p>
-          </li>
-          <li>
-            <span class="care__feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-            </span>
-            <h3>Einfühlsame Demenzbetreuung</h3>
-            <p>Behutsame Begleitung, die Orientierung gibt und den Menschen in den Mittelpunkt stellt.</p>
-          </li>
-          <li>
-            <span class="care__feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="4"/><circle cx="17" cy="7" r="4"/><path d="M3 21v-1a6 6 0 0 1 12 0v1"/><path d="M13 20v-1a4 4 0 0 1 8 0v1"/></svg>
-            </span>
-            <h3>Beratung &amp; Entlastung für Angehörige</h3>
-            <p>Persönliche Gespräche, Orientierung und Entlastung – damit niemand allein bleibt.</p>
-          </li>
-        </ul>
-      </div>
-
-      <aside class="care__note reveal" aria-label="Hinweis zur ambulanten Pflege">
-        <div class="care__note-inner">
-          <blockquote class="care__quote">
-            <p>„Pflege soll keine Angst machen. Sie soll Sicherheit geben.“</p>
-          </blockquote>
-          <div class="care__note-body">
-            <p class="care__note-kicker">Ambulante Pflege von Juventa</p>
-            <p class="care__meta">Direkt an die Brückenmühle angebunden – mit vertrauten Gesichtern und verlässlicher Erreichbarkeit im Raum Baden-Baden und Rastatt.</p>
-          </div>
-        </div>
-      </aside>
-    </div>
-  </section>
-
   <!-- ============ CAFÉ ============ -->
-  <section class="cafe section section--cream" id="cafe" aria-labelledby="cafe-title">
+  <section class="cafe section" id="cafe" aria-labelledby="cafe-title">
     <div class="container cafe__grid">
       <div class="cafe__text reveal">
         <p class="eyebrow">Das Herzstück des Hauses</p>
@@ -630,7 +541,7 @@
           <li>7 Tage Service – auch wenn das Café geschlossen hat</li>
         </ul>
         <a class="btn btn--primary" href="#kontakt">
-          Café &amp; Gemeinschaft erleben
+          Beratung zum Café anfragen
           <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </a>
       </div>
@@ -643,8 +554,131 @@
     </div>
   </section>
 
-  <!-- ============ STANDORT ============ -->
-  <section class="location section section--cream" id="standort" aria-labelledby="loc-title">
+  <!-- ============ PFLEGE & BERATUNG (Kerngeschäft) ============ -->
+  <section class="care section section--cream" id="pflege" aria-labelledby="care-title">
+    <div class="container care__wrap">
+      <div class="care__layout">
+        <div class="care__intro reveal">
+          <p class="eyebrow">Kerngeschäft · Pflege &amp; Beratung</p>
+          <h2 id="care-title">Ambulante Pflege – unser Herzstück</h2>
+          <p class="lead">Ein Sturz, eine Diagnose, weniger Zeit – und plötzlich ist alles anders. Dann ist es gut, jemanden an der Seite zu haben, der sich auskennt. Juventa hört zu, denkt mit und findet individuelle Lösungen – zu Hause in Baden-Baden und Umgebung.</p>
+          <a class="btn btn--primary" href="#kontakt">Pflegeberatung anfragen<span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        </div>
+
+        <ul class="care__features reveal">
+          <li id="pflege-ambulante">
+            <span class="care__feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </span>
+            <h3>Ambulante Pflege</h3>
+            <p>Vertraute Pflegekräfte zu Hause – medizinisch, hauswirtschaftlich und einfühlsam. Auch an die Brückenmühle angebunden.</p>
+          </li>
+          <li id="pflege-leistungen">
+            <span class="care__feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12h6M9 16h6"/></svg>
+            </span>
+            <h3>Leistungen</h3>
+            <p>Körperpflege, Medikamente, Hauswirtschaft, Demenzbetreuung und Entlastung für Angehörige – nach Ihrem Bedarf.</p>
+          </li>
+          <li id="pflege-finanzierung">
+            <span class="care__feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </span>
+            <h3>Pflegegrade &amp; Finanzierung</h3>
+            <p>Wir helfen durch den Pflegegrad- und Finanzierungsdschungel – verständlich, persönlich und ohne Fachchinesisch.</p>
+          </li>
+          <li id="pflege-beratung">
+            <span class="care__feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </span>
+            <h3>Beratung</h3>
+            <p>Nahbar, unverbindlich und auf Augenhöhe – für Pflegebedürftige und Angehörige, von der ersten Orientierung bis zur konkreten Planung.</p>
+          </li>
+          <li id="pflege-24h">
+            <span class="care__feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </span>
+            <h3>24-Stunden-Versorgung</h3>
+            <p>Gemeinsam mit Kooperationspartnern – wenn der Bedarf über die klassische ambulante Pflege hinausgeht.</p>
+          </li>
+          <li>
+            <span class="care__feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </span>
+            <h3>Einfühlsame Demenzbetreuung</h3>
+            <p>Behutsame Begleitung, die Orientierung gibt und den Menschen in den Mittelpunkt stellt.</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="coming__panel reveal" id="pflege-wg" aria-labelledby="coming-title">
+        <div class="coming__content">
+          <p class="eyebrow">Pflege-Wohngemeinschaft</p>
+          <h2 id="coming-title">Pflege-WG Baden-Baden</h2>
+          <p>Neben ambulanter Pflege und Betreutem Wohnen entsteht ein weiteres Angebot: eine Pflege-Wohngemeinschaft in Baden-Baden. Interessentinnen und Interessenten können sich bereits jetzt vormerken lassen.</p>
+          <a class="btn btn--light btn--lg coming__cta" href="#kontakt">Für die Pflege-WG vormerken<span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        </div>
+        <span class="coming__badge">in Planung</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BETREUUNG & SERVICE ============ -->
+  <section class="service section" id="service" aria-labelledby="service-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow">Betreuung &amp; Service</p>
+        <h2 id="service-title">Im Alltag gut aufgehoben –<br />mit Leistungen, die zu Ihnen passen</h2>
+        <p class="section-head__sub">Der Grundservice ist verpflichtend und schafft Verlässlichkeit. Wahl- und Zusatzleistungen buchen Sie flexibel dazu – Preise besprechen wir transparent im Gespräch.</p>
+      </header>
+
+      <div class="service__columns">
+        <div class="servicecol reveal">
+          <span class="servicecol__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </span>
+          <p class="servicecol__kicker">Grundservice</p>
+          <ul class="servicelist">
+            <li>Persönliche, feste Ansprechpartner</li>
+            <li>Alltagsbegleitung &amp; Orientierung</li>
+            <li>Verlässliche Erreichbarkeit im Haus</li>
+            <li>Verpflichtend – im Gesamtpreis enthalten</li>
+          </ul>
+        </div>
+        <div class="servicecol reveal">
+          <span class="servicecol__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          </span>
+          <p class="servicecol__kicker">Sicherheit &amp; Technik</p>
+          <ul class="servicelist">
+            <li>24h-Notrufdienst</li>
+            <li>LivyCare-Sturzprävention</li>
+            <li>Technische Unterstützung für mehr Sicherheit</li>
+            <li>Ideal, um LivyCare später auszubauen</li>
+          </ul>
+        </div>
+        <div class="servicecol reveal">
+          <span class="servicecol__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 21v-7"/><path d="M4 10V3"/><path d="M12 21v-9"/><path d="M12 8V3"/><path d="M20 21v-5"/><path d="M20 12V3"/><path d="M2 14h6"/><path d="M10 8h6"/><path d="M18 16h4"/></svg>
+          </span>
+          <p class="servicecol__kicker">Wahl- &amp; Zusatzleistungen</p>
+          <ul class="servicelist">
+            <li>Hauswirtschaftliche Hilfe</li>
+            <li>Verpflegung &amp; Speisepaket</li>
+            <li>Room-Service &amp; Begleitung zu Terminen</li>
+            <li>Individuelle Betreuungspakete</li>
+          </ul>
+        </div>
+      </div>
+      <div class="service__cta reveal">
+        <a class="btn btn--primary" href="#kontakt">Leistungen &amp; Preise besprechen<span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        <a class="btn btn--outline" href="#kontakt">Rückruf vereinbaren</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STANDORTE ============ -->
+  <section class="location section" id="standort" aria-labelledby="loc-title">
     <div class="location__panel">
       <div class="location__bg">
         <video class="location__video" autoplay muted loop playsinline poster="assets/images/cafe-2.png" aria-hidden="true">
@@ -654,16 +688,16 @@
       </div>
       <div class="container location__inner">
         <div class="location__text reveal">
-          <p class="eyebrow eyebrow--light">Standort Gernsbach</p>
-          <h2 id="loc-title">Mitten in der Altstadt,<br />umgeben vom Schwarzwald</h2>
-          <p class="lead">Die Brückenmühle liegt zentral in Gernsbach – und doch naturnah. Von hier sind es nur wenige Schritte in die historische Altstadt, an die Murg und hinaus in die Wälder des Murgtals.</p>
+          <p class="eyebrow eyebrow--light">Standorte</p>
+          <h2 id="loc-title">Baden-Baden &amp; Gernsbach –<br />nah an den Menschen</h2>
+          <p class="lead">Unsere ambulante Pflege findet vor allem in Baden-Baden und Umgebung statt. Das Betreute Wohnen in der Brückenmühle liegt mitten in Gernsbach – zentral und doch naturnah im Murgtal.</p>
           <ul class="location__list">
-            <li>Historische Altstadt &amp; Murg in Gehweite</li>
-            <li>Spazierwege direkt vor der Tür</li>
-            <li>Gute Erreichbarkeit, zentrale Lage im Murgtal</li>
+            <li><strong>Baden-Baden:</strong> Schwerpunkt ambulante Pflege · Büro Sonnenplatz 2</li>
+            <li><strong>Gernsbach:</strong> Betreutes Wohnen Brückenmühle · Altstadt &amp; Murgtal</li>
+            <li>Gute Erreichbarkeit im Raum Rastatt und darüber hinaus</li>
           </ul>
           <a class="btn btn--primary" href="#kontakt">
-            Lage &amp; Anfahrt anfragen
+            Standort &amp; Anfahrt besprechen
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
         </div>
@@ -672,7 +706,7 @@
   </section>
 
   <!-- ============ ÜBER JUVENTA ============ -->
-  <section class="about section section--cream" id="ueber" aria-labelledby="about-title">
+  <section class="about section" id="ueber" aria-labelledby="about-title">
     <div class="container about__grid">
       <div class="about__collage reveal">
         <div class="about__collage-img about__collage-img--tall">
@@ -680,20 +714,95 @@
         </div>
         <div class="about__collage-stack">
           <div class="about__collage-img about__collage-img--top">
-            <img src="assets/images/kueche-2.png" alt="Moderne Ausstattung in der Brückenmühle" loading="lazy" width="1024" height="683" />
+            <img src="assets/images/kueche-2.png" alt="Moderne Ausstattung und Alltag bei Juventa" loading="lazy" width="1024" height="683" />
           </div>
           <div class="about__collage-img about__collage-img--bottom">
-            <img src="assets/images/cafe-2.png" alt="Gemeinschaftsbereich in der Brückenmühle Gernsbach" loading="lazy" width="1024" height="683" />
+            <img src="assets/images/cafe-2.png" alt="Gemeinschaft und Begegnung bei Juventa" loading="lazy" width="1024" height="683" />
           </div>
         </div>
       </div>
 
       <div class="about__text reveal">
         <span class="section-label">Über Juventa</span>
-        <h2 id="about-title">Juventa – so geht Pflege</h2>
-        <p class="about__lead">Hinter Juventa stehen Fee Schmid und Fabian Lepold, beide fest in der Region verwurzelt.</p>
-        <p>Mit mehr als einem Jahrzehnt Erfahrung in der ambulanten Pflege, in ambulant betreuten Wohngemeinschaften, im Betreuten Wohnen und in der Palliativpflege begleiten wir täglich hunderte Menschen im Raum Karlsruhe. Dieses Wissen und unsere Vision bringen wir nun in die Brückenmühle nach Gernsbach – für ein Leben im Alter voller Freiheit, Selbstbestimmung und Lebensfreude.</p>
-        <p class="about__values"><span>Menschlichkeit</span><span>Fachkompetenz</span><span>Sicherheit</span></p>
+        <h2 id="about-title">Team, Ansprechpartner &amp; Philosophie</h2>
+        <p class="about__lead">Hinter Juventa stehen Fee Schmid und Fabian Lepold – fest in der Region verwurzelt und mit klarer Haltung: Pflege auf Augenhöhe.</p>
+        <p>Mit mehr als einem Jahrzehnt Erfahrung in der ambulanten Pflege, in ambulant betreuten Wohngemeinschaften, im Betreuten Wohnen und in der Palliativpflege begleiten wir täglich Menschen und Angehörige. Dieses Wissen bringen wir nach Baden-Baden, Gernsbach und in die Region – für Selbstbestimmung, Sicherheit und Lebensfreude.</p>
+        <div class="about__people">
+          <div>
+            <strong>Fee Schmid</strong>
+            <span>Ansprechpartnerin · Pflege &amp; Beratung</span>
+          </div>
+          <div>
+            <strong>Fabian Lepold</strong>
+            <span>Ansprechpartner · Konzept &amp; Entwicklung</span>
+          </div>
+        </div>
+        <a class="btn btn--primary" href="#kontakt">Persönlich Kontakt aufnehmen<span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWS / RATGEBER TEASER ============ -->
+  <section class="news section section--cream" id="ratgeber" aria-labelledby="news-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow">News &amp; Ratgeber</p>
+        <h2 id="news-title">Wissen, das Orientierung gibt</h2>
+        <p class="section-head__sub">Regelmäßig neue Beiträge rund um Pflege, Finanzierung, Pflegegrad, Entlastungsleistungen und Betreutes Wohnen – auch aus unserem Newsletter.</p>
+      </header>
+      <div class="news__grid">
+        <article class="news__card reveal">
+          <a class="news__card-link" href="#kontakt">
+            <div class="news__media">
+              <img src="assets/images/Mobile-Pflege.png" alt="" width="800" height="520" loading="lazy" />
+            </div>
+            <div class="news__body">
+              <div class="news__meta">
+                <span class="news__tag">Pflegegrad</span>
+                <time datetime="2026-03-12">12. März 2026</time>
+              </div>
+              <h3>Den Pflegegrad verstehen</h3>
+              <p>Was bedeuten die Pflegegrade – und welche Leistungen stehen Ihnen konkret zu? Ein Überblick für Angehörige und Betroffene.</p>
+              <span class="news__more">Beitrag lesen</span>
+            </div>
+          </a>
+        </article>
+        <article class="news__card reveal">
+          <a class="news__card-link" href="#kontakt">
+            <div class="news__media">
+              <img src="assets/images/Verhinderungspflege.png" alt="" width="800" height="520" loading="lazy" />
+            </div>
+            <div class="news__body">
+              <div class="news__meta">
+                <span class="news__tag">Finanzierung</span>
+                <time datetime="2026-02-26">26. Februar 2026</time>
+              </div>
+              <h3>Kosten klar im Blick</h3>
+              <p>Wie Pflegeversicherung, Entlastungsleistungen und Eigenanteil zusammenspielen – verständlich erklärt.</p>
+              <span class="news__more">Beitrag lesen</span>
+            </div>
+          </a>
+        </article>
+        <article class="news__card reveal">
+          <a class="news__card-link" href="#kontakt">
+            <div class="news__media">
+              <img src="assets/images/Kontakt.png" alt="" width="800" height="520" loading="lazy" />
+            </div>
+            <div class="news__body">
+              <div class="news__meta">
+                <span class="news__tag">Alltag</span>
+                <time datetime="2026-02-10">10. Februar 2026</time>
+              </div>
+              <h3>Tipps für Angehörige</h3>
+              <p>Praktische Impulse für den Pflegealltag – nahbar, konkret und ohne Fachchinesisch.</p>
+              <span class="news__more">Beitrag lesen</span>
+            </div>
+          </a>
+        </article>
+      </div>
+      <div class="news__cta reveal">
+        <a class="btn btn--primary" href="#kontakt">Newsletter / Beiträge anfragen<span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        <p class="news__hint">Die eigene Ratgeberseite wird sukzessive mit Inhalten befüllt.</p>
       </div>
     </div>
   </section>
@@ -773,12 +882,24 @@
             <article class="faq__item">
               <h3 class="faq__question">
                 <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="faq-panel-5" id="faq-trigger-5">
-                  <span>Kann ich mich schon jetzt vormerken lassen?</span>
+                  <span>Sind die Preise inklusive Grundservice?</span>
                   <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
                 </button>
               </h3>
               <div class="faq__panel" id="faq-panel-5" role="region" aria-labelledby="faq-trigger-5" hidden>
-                <p>Ja, gerne. In der Phase vor der Eröffnung informieren wir Sie persönlich über verfügbare Apartments, Ausstattung und Leistungen. So können Sie ohne Druck planen und sich frühzeitig einen Platz sichern.</p>
+                <p>Ja. Der Grundservice ist verpflichtend und bereits in den Gesamtpreisen für das Betreute Wohnen enthalten. So sehen Sie von Anfang an den realistischen Gesamtbetrag – ohne spätere Überraschungen. Aktuelle Preise nennen wir Ihnen gerne im persönlichen Beratungsgespräch.</p>
+              </div>
+            </article>
+
+            <article class="faq__item">
+              <h3 class="faq__question">
+                <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="faq-panel-6" id="faq-trigger-6">
+                  <span>Kann ich mich schon jetzt vormerken lassen?</span>
+                  <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+                </button>
+              </h3>
+              <div class="faq__panel" id="faq-panel-6" role="region" aria-labelledby="faq-trigger-6" hidden>
+                <p>Ja, gerne – für Apartments in der Brückenmühle und auch für die geplante Pflege-WG in Baden-Baden. Wir informieren Sie persönlich über Verfügbarkeiten, Ausstattung und nächste Schritte.</p>
               </div>
             </article>
           </div>
@@ -801,9 +922,9 @@
       <div class="contact__wrap reveal">
         <div class="contact__panel">
           <span class="section-label">Kontakt</span>
-          <h2 id="contact-title">Lassen Sie uns gemeinsam herausfinden, <span class="headline-accent">welche Betreuung passt.</span></h2>
+          <h2 id="contact-title">Lassen Sie uns gemeinsam herausfinden, <span class="headline-accent">welche Unterstützung passt.</span></h2>
           <p>
-            Sie haben Fragen zu den Apartments, zur Betreuung, zum Service oder zur Pflege in der Brückenmühle?
+            Ob ambulante Pflege, Betreutes Wohnen, Pflegegrad, Finanzierung oder die geplante Pflege-WG:
             Wir nehmen uns Zeit für ein persönliches Gespräch – unverbindlich und auf Augenhöhe.
           </p>
           <div class="contact__items">
@@ -822,22 +943,23 @@
           </div>
           <div class="contact__actions">
             <a href="tel:+4917852540750" class="btn btn--primary btn--lg">
-              Jetzt anrufen
+              Rückruf / Anrufen
               <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
-            <a href="mailto:info@juventa-pflege.de?subject=Anfrage%20Br%C3%BCckenm%C3%BChle%20Gernsbach" class="btn btn--outline-light btn--lg">
-              Kontakt aufnehmen
+            <a href="mailto:info@juventa-pflege.de?subject=Beratung%20anfragen%20%E2%80%93%20Juventa" class="btn btn--outline-light btn--lg">
+              Beratung anfragen
               <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
           </div>
         </div>
         <div class="contact__visual">
-          <img src="assets/images/Kontakt.png" alt="Persönliche Beratung zum Betreuten Wohnen in der Brückenmühle Gernsbach" width="1024" height="683" loading="lazy" />
+          <img src="assets/images/Kontakt.png" alt="Persönliche Beratung bei Juventa – ambulante Pflege und Betreutes Wohnen" width="1024" height="683" loading="lazy" />
           <span class="contact__visual-overlay" aria-hidden="true"></span>
         </div>
       </div>
     </div>
   </section>
+
 
 </main>
 
@@ -869,13 +991,16 @@
     <div class="site-footer__col">
       <h3>Entdecken</h3>
       <ul>
+        <li><a href="#pflege">Pflege &amp; Beratung</a></li>
         <li><a href="#betreutes-wohnen">Betreutes Wohnen</a></li>
-        <li><a href="#apartments">Apartments</a></li>
         <li><a href="#service">Betreuung &amp; Service</a></li>
-        <li><a href="#pflege">Pflege</a></li>
         <li><a href="#cafe">Café &amp; Gemeinschaft</a></li>
-        <li><a href="#standort">Standort</a></li>
+        <li><a href="#pflege-wg">Pflege-WG (demnächst)</a></li>
+        <li><a href="#standort">Standorte</a></li>
+        <li><a href="#ueber">Über Juventa</a></li>
+        <li><a href="#ratgeber">News &amp; Ratgeber</a></li>
         <li><a href="#faq">FAQ</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
       </ul>
     </div>
 
@@ -884,13 +1009,13 @@
       <ul>
         <li><a href="https://juventa-pflege.de/impressum/">Impressum</a></li>
         <li><a href="https://juventa-pflege.de/datenschutz/">Datenschutz</a></li>
-        <li><a href="#kontakt">Downloads &amp; Exposé</a></li>
+        <li><a href="#kontakt">Downloads (auf Anfrage)</a></li>
       </ul>
     </div>
   </div>
   <div class="site-footer__bottom">
     <div class="container">
-      <p>© <span data-year>2026</span> Juventa GmbH · Betreutes Wohnen Brückenmühle Gernsbach</p>
+      <p>© <span data-year>2026</span> Juventa GmbH · Ambulante Pflege Baden-Baden · Betreutes Wohnen Brückenmühle Gernsbach</p>
     </div>
   </div>
 </footer>
