@@ -35,7 +35,7 @@
   }
 
   .page {
-    max-width: 1240px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 2.75rem 1.5rem 3rem;
   }
@@ -190,13 +190,15 @@
 
   .rail-wrap {
     position: relative;
-    width: min(100%, 1160px);
+    width: 100%;
+    max-width: 1320px; /* gleich wie .cols */
   }
 
   .rail {
     position: absolute;
-    left: calc(100% / 16);
-    right: calc(100% / 16);
+    /* Mitte der ersten bzw. letzten Spalte (8 Spalten, gap 0.5rem) */
+    left: calc((100% - 7 * 0.5rem) / 16);
+    right: calc((100% - 7 * 0.5rem) / 16);
     top: 0;
     height: 1.5px;
     background: var(--line);
@@ -204,10 +206,10 @@
 
   .cols {
     display: grid;
-    grid-template-columns: repeat(7, minmax(0, 1fr));
+    grid-template-columns: repeat(8, minmax(0, 1fr));
     gap: 0.5rem;
     width: 100%;
-    max-width: 1160px;
+    max-width: 1320px;
     align-items: start;
   }
 
@@ -389,13 +391,6 @@
       <p>Juventa – Ambulante Pflege als Kerngeschäft, Betreutes Wohnen als starkes Angebot</p>
     </header>
 
-    <p class="note">
-      <strong>Startseite:</strong> Präsentiert die Juventa. Ambulante Pflege und Betreutes Wohnen
-      stehen gleich zu Beginn nebeneinander – Pflege ist das Kerngeschäft, Betreutes Wohnen ein
-      wichtiges Angebot, nicht der alleinige Schwerpunkt. „Preisübersicht“ ist kein eigener Hauptmenüpunkt, sondern jeweils Unterpunkt von Betreutem Wohnen,
-      Betreuung &amp; Service und Pflege &amp; Beratung (Ambulante Pflege). „Standorte“ ist kein eigener Hauptmenüpunkt, sondern Unterpunkt von Über Juventa. Stellenanzeigen steht als eigener Hauptmenüpunkt direkt hinter Über Juventa.
-    </p>
-
     <div class="tree" aria-label="Sitemap">
       <div class="box box--home">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
@@ -504,9 +499,12 @@
           </div>
           <div class="stem" aria-hidden="true"></div>
           <ul class="subs">
+            <li class="box box--sub">Warum Juventa</li>
+            <li class="box box--sub">Vorteile</li>
             <li class="box box--sub">Pflegefachkraft</li>
             <li class="box box--sub">Präsenzkraft / Hauswirtschaft</li>
             <li class="box box--sub">Initiativbewerbung</li>
+            <li class="box box--sub">FAQ Bewerbung</li>
           </ul>
         </div>
 
@@ -519,28 +517,18 @@
           </div>
           <div class="stem" aria-hidden="true"></div>
           <ul class="subs">
+            <li class="box box--sub">Orientierung</li>
             <li class="box box--sub">Ambulante Pflege</li>
+            <li class="box box--sub">Welche Unterstützung?</li>
             <li class="box box--sub">Pflegegrad &amp; Kosten</li>
             <li class="box box--sub">Betreutes Wohnen</li>
             <li class="box box--sub">Angehörige</li>
+            <li class="box box--sub">Gut zu wissen</li>
+            <li class="box box--sub">Alle Fragen &amp; Antworten</li>
           </ul>
         </div>
 
-        <!-- 8 News -->
-        <div class="col">
-          <div class="stem" aria-hidden="true"></div>
-          <div class="box box--main">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-            News &amp; Ratgeber
-          </div>
-          <div class="stem" aria-hidden="true"></div>
-          <ul class="subs">
-            <li class="box box--sub">Beitragsübersicht</li>
-            <li class="box box--sub">Einzelbeiträge</li>
-          </ul>
-        </div>
-
-        <!-- 9 Kontakt -->
+        <!-- 8 Kontakt -->
         <div class="col">
           <div class="stem" aria-hidden="true"></div>
           <div class="box box--main">
@@ -599,7 +587,7 @@
       </div>
     </div>
 
-    <p class="doc-foot">Abstimmungsdokument · <a href="pflege-beratung.html">Pflege &amp; Beratung</a> · <a href="betreutes-wohnen.html">Betreutes Wohnen</a> · <a href="betreuung-service.html">Betreuung &amp; Service</a> · <a href="index.html">Aktueller One-Pager</a></p>
+    <p class="doc-foot">Abstimmungsdokument · <a href="index.html">Startseite</a> · <a href="pflege-beratung.html">Pflege &amp; Beratung</a> · <a href="betreutes-wohnen.html">Betreutes Wohnen</a> · <a href="betreuung-service.html">Betreuung &amp; Service</a> · <a href="ueber-juventa.html">Über Juventa</a> · <a href="stellenanzeigen.html">Stellenanzeigen</a> · <a href="wissen.html">Wissen</a></p>
   </div>
 </body>
 </html>
