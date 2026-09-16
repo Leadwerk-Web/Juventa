@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 760" width="640" height="760" role="img" aria-label="Einzugsgebiet Juventa: Baden-Baden und Umgebung">
+  <defs>
+    <linearGradient id="land" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E8DDD0"/>
+      <stop offset="100%" stop-color="#F3ECE4"/>
+    </linearGradient>
+    <linearGradient id="forest" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3d7273"/>
+      <stop offset="100%" stop-color="#2F5B5C"/>
+    </linearGradient>
+    <linearGradient id="catchment" x1="0.2" y1="0.1" x2="0.9" y2="0.95">
+      <stop offset="0%" stop-color="#BE8871" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#2F5B5C" stop-opacity="0.18"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#2F5B5C" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Base region -->
+  <rect width="640" height="760" fill="#FFFAF8"/>
+
+  <!-- Soft landscape frame -->
+  <path d="M70 90 C120 40 280 30 360 70 C460 120 560 90 590 170 C620 270 600 420 570 520 C540 630 470 700 340 720 C210 740 90 680 60 560 C30 430 20 250 70 90 Z" fill="url(#land)" filter="url(#soft)"/>
+
+  <!-- Black Forest suggestion (east) -->
+  <path d="M360 140 C420 160 500 190 540 280 C575 370 560 500 520 600 C480 690 400 710 340 700 C380 620 410 520 400 420 C390 300 360 200 360 140 Z" fill="url(#forest)" opacity="0.22"/>
+
+  <!-- Rhine plain suggestion (west) -->
+  <path d="M90 180 C140 160 180 220 170 300 C160 390 120 470 100 540 C70 500 55 400 60 320 C65 250 70 200 90 180 Z" fill="#2F5B5C" opacity="0.06"/>
+
+  <!-- Catchment area -->
+  <ellipse cx="330" cy="400" rx="210" ry="185" fill="url(#catchment)" stroke="#BE8871" stroke-width="2.5" stroke-dasharray="8 7" transform="rotate(-18 330 400)"/>
+
+  <!-- Subtle rivers / Murg -->
+  <path d="M300 160 C320 250 350 320 390 400 C430 480 470 560 500 650" fill="none" stroke="#2F5B5C" stroke-opacity="0.22" stroke-width="3" stroke-linecap="round"/>
+  <path d="M120 280 C180 300 230 340 270 390 C310 440 340 500 360 560" fill="none" stroke="#2F5B5C" stroke-opacity="0.12" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Town labels (non-interactive context) -->
+  <g fill="#5c6d74" font-family="Manrope, Inter, Arial, sans-serif" font-size="15" font-weight="600">
+    <text x="145" y="250">Rastatt</text>
+    <text x="95" y="430">Bühl</text>
+    <text x="170" y="500">Sinzheim</text>
+    <text x="430" y="300">Forbach</text>
+    <text x="455" y="470">Weisenbach</text>
+    <text x="200" y="330">Kuppenheim</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(72 680)">
+    <rect width="18" height="12" rx="3" fill="#BE8871" fill-opacity="0.35" stroke="#BE8871" stroke-width="1.5"/>
+    <text x="28" y="11" fill="#5c6d74" font-family="Manrope, Inter, Arial, sans-serif" font-size="13" font-weight="500">Einzugsgebiet ambulante Pflege</text>
+  </g>
+</svg>
