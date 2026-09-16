@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title2 desc2">
+  <title id="title2">Grundriss Zweizimmer-Apartment</title>
+  <desc id="desc2">Schematischer Grundriss: Wohnbereich, Schlafzimmer, Küche und Bad</desc>
+  <rect width="640" height="480" fill="#F7F2EC"/>
+  <g fill="none" stroke="#2F5B5C" stroke-width="4" stroke-linejoin="round">
+    <rect x="40" y="40" width="560" height="400" rx="4"/>
+    <path d="M300 40v400"/>
+    <path d="M40 260h260"/>
+    <path d="M300 220h300"/>
+    <path d="M480 220v220"/>
+  </g>
+  <g fill="#2F5B5C" font-family="Manrope, Arial, sans-serif" font-size="18" font-weight="600" text-anchor="middle">
+    <text x="170" y="160">Wohnen</text>
+    <text x="170" y="360">Küche</text>
+    <text x="390" y="140">Schlafen</text>
+    <text x="560" y="320">Bad</text>
+    <text x="390" y="360">Diele</text>
+  </g>
+  <g stroke="#BE8871" stroke-width="3" fill="none">
+    <path d="M300 160v40"/>
+    <path d="M180 260v-30"/>
+    <path d="M480 300v40"/>
+  </g>
+  <text x="320" y="460" fill="#8B8076" font-family="DM Sans, Arial, sans-serif" font-size="13" text-anchor="middle">Typ B · Zweizimmer · Schema zur Orientierung</text>
+</svg>

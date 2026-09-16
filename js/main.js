@@ -141,6 +141,79 @@
     showApartSlide(0);
   }
 
+  /* ---------- Typ-Galerien (Grundrisse) ---------- */
+  document.querySelectorAll("[data-gallery]").forEach((gallery) => {
+    const slides = gallery.querySelectorAll(".bw-type__slide");
+    const prev = gallery.querySelector("[data-gallery-prev]");
+    const next = gallery.querySelector("[data-gallery-next]");
+    const currentEl = gallery.querySelector("[data-gallery-current]");
+    const totalEl = gallery.querySelector("[data-gallery-total]");
+    let index = 0;
+
+    if (totalEl) totalEl.textContent = String(slides.length);
+
+    function show(i) {
+      if (!slides.length) return;
+      index = (i + slides.length) % slides.length;
+      slides.forEach((slide, n) => slide.classList.toggle("is-active", n === index));
+      if (currentEl) currentEl.textContent = String(index + 1);
+    }
+
+    if (prev) prev.addEventListener("click", () => show(index - 1));
+    if (next) next.addEventListener("click", () => show(index + 1));
+    show(0);
+  });
+
+  /* ---------- Grundriss-Lightbox ---------- */
+  const planLightbox = document.getElementById("planLightbox");
+  const planLightboxImg = document.getElementById("planLightboxImg");
+  const planLightboxTitle = document.getElementById("planLightboxTitle");
+  let planLastFocus = null;
+
+  function openPlanLightbox(src, title, trigger) {
+    if (!planLightbox || !planLightboxImg) return;
+    planLastFocus = trigger || document.activeElement;
+    planLightboxImg.src = src;
+    planLightboxImg.alt = title || "Grundriss";
+    if (planLightboxTitle) planLightboxTitle.textContent = title || "Grundriss";
+    planLightbox.hidden = false;
+    document.body.style.overflow = "hidden";
+    const closeBtn = planLightbox.querySelector(".plan-lightbox__close");
+    if (closeBtn) closeBtn.focus();
+  }
+
+  function closePlanLightbox() {
+    if (!planLightbox || !planLightboxImg) return;
+    planLightbox.hidden = true;
+    planLightboxImg.removeAttribute("src");
+    document.body.style.overflow = "";
+    if (planLastFocus && typeof planLastFocus.focus === "function") {
+      planLastFocus.focus();
+    }
+  }
+
+  document.querySelectorAll("[data-plan-open]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      openPlanLightbox(
+        btn.getAttribute("data-plan-src"),
+        btn.getAttribute("data-plan-title"),
+        btn
+      );
+    });
+  });
+
+  if (planLightbox) {
+    planLightbox.querySelectorAll("[data-plan-close]").forEach((el) => {
+      el.addEventListener("click", closePlanLightbox);
+    });
+  }
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && planLightbox && !planLightbox.hidden) {
+      closePlanLightbox();
+    }
+  });
+
   /* ---------- Scroll-Reveal ---------- */
   const reveals = document.querySelectorAll(".reveal");
   if (prefersReduced || !("IntersectionObserver" in window)) {
