@@ -4041,6 +4041,152 @@ html.a11y-contrast img {
 }
 
 /* =========================================================
+   Betreuung & Service – Unterseite
+   ========================================================= */
+.hero__cards-inner--penta {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.hero__cards-inner--penta .hero__card {
+  padding: 1.7rem 1.05rem;
+}
+
+.bs-layers {
+  display: grid;
+  grid-template-columns: 1.08fr 1fr 1fr;
+  gap: 1rem;
+  margin-top: 0.35rem;
+}
+
+.bs-layer {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(1.6rem, 3vw, 2.15rem) clamp(1.35rem, 2.4vw, 1.85rem) 1.85rem;
+  border-radius: var(--r-lg);
+  border: 1px solid var(--c-line);
+  background: var(--c-white);
+  box-shadow: var(--shadow-xs);
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  transition: transform 0.45s var(--ease), box-shadow 0.45s var(--ease);
+}
+
+.bs-layer:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.bs-layer--core {
+  background: linear-gradient(148deg, var(--primary) 0%, var(--primary-dark) 100%);
+  border-color: transparent;
+  color: #fff;
+}
+
+.bs-layer__kicker {
+  margin: 0 0 0.7rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-1);
+}
+
+.bs-layer--core .bs-layer__kicker {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.bs-layer h3 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.2rem, 1.8vw, 1.45rem);
+  font-weight: 600;
+  color: var(--primary);
+  letter-spacing: -0.02em;
+}
+
+.bs-layer--core h3 { color: #fff; }
+
+.bs-layer p {
+  margin: 0 0 1.25rem;
+  color: var(--c-ink-soft);
+  line-height: 1.6;
+  font-size: 0.98rem;
+}
+
+.bs-layer--core p { color: rgba(255, 255, 255, 0.88); }
+
+.bs-layer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.bs-layer li {
+  position: relative;
+  padding-left: 1.05rem;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: var(--c-ink);
+}
+
+.bs-layer--core li { color: rgba(255, 255, 255, 0.92); }
+
+.bs-layer li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-1);
+}
+
+.bs-layer--core li::before { background: #fff; }
+
+.bs-layer__hint {
+  margin-top: auto;
+  padding-top: 1.25rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--accent-1);
+}
+
+.bs-layer--core .bs-layer__hint { color: rgba(255, 255, 255, 0.75); }
+
+.apartments__features--spaced {
+  margin-top: clamp(2rem, 4vw, 3rem);
+}
+
+.apartments__features--tri {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.apartments__features--tri li {
+  max-width: none;
+}
+
+@media (max-width: 1100px) {
+  .hero__cards-inner--penta {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .hero__cards-inner--penta .hero__card {
+    padding: 1.7rem 1.25rem;
+  }
+  .bs-layers { grid-template-columns: 1fr; }
+  .apartments__features--tri { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 720px) {
+  .hero__cards-inner--penta { grid-template-columns: 1fr; }
+}
+
+/* =========================================================
    Reduced Motion
    ========================================================= */
 @media (prefers-reduced-motion: reduce) {
