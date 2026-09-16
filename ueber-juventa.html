@@ -84,6 +84,54 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wer steckt hinter Juventa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hinter Juventa stehen Fee Schmid und Fabian Lepold – mit Erfahrung in Pflege, Betreuung und Wohnkonzepten. Gemeinsam mit dem Team in Baden-Baden und Gernsbach verbinden wir Fachlichkeit mit Nähe."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wo ist Juventa aktiv?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ambulante Pflege rund um Baden-Baden sowie Betreutes Wohnen in der Brückenmühle Gernsbach. Das Einzugsgebiet umfasst auch Murgtal und Rastatt – Details klären wir gerne im Gespräch."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was unterscheidet Juventa von anderen Anbietern?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wir denken Pflege und Wohnen zusammen: feste Bezugspersonen, verständliche Beratung und ein Alltag, der sich nach Leben anfühlt – nicht nach System."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kann ich das Team persönlich kennenlernen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Ob Beratung, Besichtigung oder Kennenlerngespräch: Wir nehmen uns Zeit und freuen uns auf den direkten Austausch."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Gibt es offene Stellen bei Juventa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Aktuelle Ausschreibungen und Initiativbewerbungen finden Sie auf unserer Seite Stellenanzeigen. Schreiben Sie uns gerne – auch ohne fertiges Stellenprofil."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body class="page-sub">
 
@@ -161,10 +209,10 @@
                   <li><a href="#team">Team &amp; Ansprechpartner</a></li>
                   <li><a href="#standort">Standorte</a></li>
                   <li><a href="#philosophie">Philosophie &amp; Werte</a></li>
-                  <li><a href="#stellen">Stellenangebote</a></li>
                 </ul>
               </div>
-              <a href="index.html#faq" class="nav__link">FAQ</a>
+              <a href="stellenanzeigen.html" class="nav__link">Stellenanzeigen</a>
+              <a href="wissen.html" class="nav__link">Wissen</a>
               <a href="#kontakt" class="nav__link">Kontakt</a>
               <a href="#kontakt" class="btn btn--primary nav__cta">
                 Beratung anfragen
@@ -211,10 +259,10 @@
                 <li><a href="#team">Team &amp; Ansprechpartner</a></li>
                 <li><a href="#standort">Standorte</a></li>
                 <li><a href="#philosophie">Philosophie &amp; Werte</a></li>
-                <li><a href="#stellen">Stellenangebote</a></li>
               </ul>
             </li>
-            <li><a href="index.html#faq" class="nav__link">FAQ</a></li>
+            <li><a href="stellenanzeigen.html" class="nav__link">Stellenanzeigen</a></li>
+            <li><a href="wissen.html" class="nav__link">Wissen</a></li>
             <li><a href="#kontakt" class="nav__link">Kontakt</a></li>
           </ul>
           <a href="#kontakt" class="btn btn--primary nav__cta nav__cta--drawer">
@@ -277,11 +325,11 @@
           <h2>Philosophie &amp; Werte</h2>
           <p>Haltung, die man im Alltag spürt.</p>
         </a>
-        <a href="#stellen" class="hero__card">
+        <a href="stellenanzeigen.html" class="hero__card">
           <span class="hero__card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
           </span>
-          <h2>Stellenangebote</h2>
+          <h2>Stellenanzeigen</h2>
           <p>Gute Pflege braucht Menschen mit Herz.</p>
         </a>
       </nav>
@@ -635,20 +683,12 @@
             Zur ambulanten Pflege
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
-          <a class="btn btn--outline" href="#stellen">Zum Team werden</a>
+          <a class="btn btn--outline" href="stellenanzeigen.html">Zum Team werden</a>
         </div>
       </div>
-      <div class="story__collage reveal">
+      <div class="story__collage story__collage--single reveal">
         <div class="story__collage-img story__collage-img--tall">
           <img src="assets/images/Leistungen-wave.png" alt="Individuelle Pflege und Beratung bei Juventa" loading="lazy" width="1920" height="1080" />
-        </div>
-        <div class="story__collage-stack">
-          <div class="story__collage-img story__collage-img--top">
-            <img src="assets/images/cafe-2.png" alt="Gemeinschaft und Begegnung bei Juventa" loading="lazy" width="1024" height="683" />
-          </div>
-          <div class="story__collage-img story__collage-img--bottom">
-            <img src="assets/images/kueche-2.png" alt="Alltag und Zuhause-Gefühl bei Juventa" loading="lazy" width="1024" height="683" />
-          </div>
         </div>
       </div>
     </div>
@@ -711,23 +751,15 @@
   <!-- ============ STELLEN ============ -->
   <section class="story section" id="stellen" aria-labelledby="stellen-title">
     <div class="container story__grid">
-      <div class="story__collage reveal">
+      <div class="story__collage story__collage--single reveal">
         <div class="story__collage-img story__collage-img--tall">
           <img src="assets/images/Kontakt.png" alt="Persönliches Miteinander im Team von Juventa" loading="lazy" width="1024" height="683" />
-        </div>
-        <div class="story__collage-stack">
-          <div class="story__collage-img story__collage-img--top">
-            <img src="assets/images/team.png" alt="Team von Juventa bei der Arbeit" loading="lazy" width="1024" height="683" />
-          </div>
-          <div class="story__collage-img story__collage-img--bottom">
-            <img src="assets/images/Hero3.png" alt="Gemeinschaft und Alltag bei Juventa" loading="lazy" width="1920" height="1080" />
-          </div>
         </div>
       </div>
 
       <div class="story__text reveal">
         <span class="section-label">Stellenangebote</span>
-        <h2 id="stellen-title">Gute Pflege braucht Menschen<br />mit <span class="headline-accent">Herz.</span></h2>
+        <h2 id="stellen-title">Gute Pflege braucht Menschen<br />mit Herz.</h2>
         <p class="story__lead">
           Bei Juventa zählt nicht nur Erfahrung – sondern Menschlichkeit, Teamgeist und Freude am Umgang mit Menschen.
         </p>
@@ -744,11 +776,11 @@
           <li>Entwicklung mit dem Unternehmen</li>
         </ul>
         <div class="story__actions">
-          <a class="btn btn--primary" href="mailto:info@juventa-pflege.de?subject=Bewerbung%20%E2%80%93%20Juventa">
-            Initiativ bewerben
+          <a class="btn btn--primary" href="stellenanzeigen.html">
+            Alle Stellenanzeigen
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
-          <a class="btn btn--outline" href="tel:+4917852540750">Telefonisch melden</a>
+          <a class="btn btn--outline" href="mailto:info@juventa-pflege.de?subject=Bewerbung%20%E2%80%93%20Juventa">Initiativ bewerben</a>
         </div>
       </div>
     </div>
@@ -760,20 +792,116 @@
         <p class="eyebrow">Aktuell</p>
         <h2 id="stellen-hinweis-title">Offene Stellen – und Initiativbewerbungen</h2>
         <p class="section-head__sub">
-          Konkrete Ausschreibungen erscheinen hier, sobald Positionen frei werden.
-          Bis dahin freuen wir uns über Menschen, die sich melden möchten.
+          Pflegefachkraft, Präsenzkraft und Initiativbewerbung: Details und Bewerbung finden Sie auf unserer Karriereseite.
         </p>
       </header>
       <div class="uj-jobs__panel">
         <div class="uj-jobs__item">
-          <h3>Initiativbewerbung</h3>
-          <p>Pflege, Betreuung, Hauswirtschaft oder Verwaltung: Schreiben Sie uns, wer Sie sind und was Sie mitbringen.</p>
-          <a class="btn btn--outline" href="mailto:info@juventa-pflege.de?subject=Initiativbewerbung%20%E2%80%93%20Juventa">E-Mail senden</a>
+          <h3>Offene Stellen</h3>
+          <p>Aktuelle Ausschreibungen, Rahmenbedingungen und der Weg zur Bewerbung – alles an einem Ort.</p>
+          <a class="btn btn--outline" href="stellenanzeigen.html">Zur Karriereseite</a>
         </div>
         <div class="uj-jobs__item">
           <h3>Gespräch ohne Bewerbung</h3>
           <p>Erst kennenlernen? Rufen Sie an. Wir erzählen offen, wie der Alltag bei Juventa aussieht – und was uns wichtig ist.</p>
           <a class="btn btn--outline" href="tel:+4917852540750">+49 178 52 54 075</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq section" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="section-label">FAQ</span>
+        <h2 id="faq-title">Fragen zu Juventa</h2>
+        <p class="section-head__sub">Kurz beantwortet – zu Team, Standorten, Haltung und dem Einstieg ins Gespräch.</p>
+      </header>
+
+      <div class="faq__wrap">
+        <div class="faq__media reveal">
+          <div class="faq__img">
+            <img src="assets/images/team.png" alt="Team und Ansprechpartner bei Juventa" width="1024" height="683" loading="lazy" />
+          </div>
+          <div class="faq__badge">
+            <span class="faq__badge-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </span>
+            <span>Nähe, Kompetenz und Selbstbestimmung – das ist Juventa.</span>
+          </div>
+        </div>
+
+        <div class="faq__content">
+          <div class="faq__list reveal">
+            <article class="faq__item">
+              <h3 class="faq__question">
+                <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="uj-faq-1" id="uj-faq-trigger-1">
+                  <span>Wer steckt hinter Juventa?</span>
+                  <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+                </button>
+              </h3>
+              <div class="faq__panel" id="uj-faq-1" role="region" aria-labelledby="uj-faq-trigger-1" hidden>
+                <p>Hinter Juventa stehen Fee Schmid und Fabian Lepold – mit Erfahrung in Pflege, Betreuung und Wohnkonzepten. Gemeinsam mit dem Team in Baden-Baden und Gernsbach verbinden wir Fachlichkeit mit Nähe.</p>
+              </div>
+            </article>
+
+            <article class="faq__item">
+              <h3 class="faq__question">
+                <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="uj-faq-2" id="uj-faq-trigger-2">
+                  <span>Wo ist Juventa aktiv?</span>
+                  <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+                </button>
+              </h3>
+              <div class="faq__panel" id="uj-faq-2" role="region" aria-labelledby="uj-faq-trigger-2" hidden>
+                <p>Ambulante Pflege rund um Baden-Baden sowie Betreutes Wohnen in der Brückenmühle Gernsbach. Das Einzugsgebiet umfasst auch Murgtal und Rastatt – Details klären wir gerne im Gespräch.</p>
+              </div>
+            </article>
+
+            <article class="faq__item">
+              <h3 class="faq__question">
+                <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="uj-faq-3" id="uj-faq-trigger-3">
+                  <span>Was unterscheidet Juventa von anderen Anbietern?</span>
+                  <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+                </button>
+              </h3>
+              <div class="faq__panel" id="uj-faq-3" role="region" aria-labelledby="uj-faq-trigger-3" hidden>
+                <p>Wir denken Pflege und Wohnen zusammen: feste Bezugspersonen, verständliche Beratung und ein Alltag, der sich nach Leben anfühlt – nicht nach System.</p>
+              </div>
+            </article>
+
+            <article class="faq__item">
+              <h3 class="faq__question">
+                <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="uj-faq-4" id="uj-faq-trigger-4">
+                  <span>Kann ich das Team persönlich kennenlernen?</span>
+                  <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+                </button>
+              </h3>
+              <div class="faq__panel" id="uj-faq-4" role="region" aria-labelledby="uj-faq-trigger-4" hidden>
+                <p>Ja. Ob Beratung, Besichtigung oder Kennenlerngespräch: Wir nehmen uns Zeit und freuen uns auf den direkten Austausch.</p>
+              </div>
+            </article>
+
+            <article class="faq__item">
+              <h3 class="faq__question">
+                <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="uj-faq-5" id="uj-faq-trigger-5">
+                  <span>Gibt es offene Stellen bei Juventa?</span>
+                  <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+                </button>
+              </h3>
+              <div class="faq__panel" id="uj-faq-5" role="region" aria-labelledby="uj-faq-trigger-5" hidden>
+                <p>Ja. Aktuelle Ausschreibungen und Initiativbewerbungen finden Sie auf unserer Seite Stellenanzeigen. Schreiben Sie uns gerne – auch ohne fertiges Stellenprofil.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="faq__cta reveal">
+            <p>Noch Fragen zu Juventa?</p>
+            <a href="#kontakt" class="btn btn--primary btn--lg">
+              Persönlich sprechen
+              <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -854,6 +982,8 @@
         <li><a href="pflege-beratung.html">Pflege &amp; Beratung</a></li>
         <li><a href="betreuung-service.html">Betreuung &amp; Service</a></li>
         <li><a href="ueber-juventa.html">Über Juventa</a></li>
+        <li><a href="stellenanzeigen.html">Stellenanzeigen</a></li>
+        <li><a href="wissen.html">Wissen</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
       </ul>
     </div>
