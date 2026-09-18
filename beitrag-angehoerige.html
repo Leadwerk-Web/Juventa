@@ -28,10 +28,10 @@
 <a class="skip-link" href="#hauptinhalt">Zum Inhalt springen</a>
 <div class="nav-overlay" id="navOverlay" hidden aria-hidden="true"></div>
 <div class="hero-shell" id="start">
-  <section class="hero" data-lw-section="hero" data-hero aria-label="Beitrag: Tipps für Angehörige">
-    <div class="hero__media" id="heroSlider" aria-hidden="true">
-      <div class="hero__slide is-active">
-        <img src="assets/images/img-kontakt.webp" alt="" width="1920" height="1080" fetchpriority="high" data-lw-decorative="true" />
+  <section class="hero" data-hero aria-label="Beitrag: Tipps für Angehörige">
+    <div class="hero__media" id="heroSlider" aria-hidden="true" data-lw-section="hero-media" data-lw-repeater="hero.slides">
+      <div class="hero__slide is-active" data-lw-item-key="slide-1">
+        <img src="assets/images/img-kontakt.webp" alt="" width="1920" height="1080" fetchpriority="high" data-lw-decorative="true" data-lw-field="hero-media.image" data-lw-type="image" />
       </div>
     </div>
     <div class="hero__overlay" aria-hidden="true"></div>
@@ -94,7 +94,7 @@
               <a href="wissen.html" class="nav__link" aria-current="page">Wissen</a>
               <a href="kontakt.html" class="nav__link">Kontakt</a>
               <a href="kontakt.html" class="btn btn--primary nav__cta">
-                Beratung anfragen
+                <span>Beratung anfragen</span>
                 <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
               </a>
             </div>
@@ -144,148 +144,148 @@
             <li><a href="kontakt.html" class="nav__link">Kontakt</a></li>
           </ul>
           <a href="kontakt.html" class="btn btn--primary nav__cta nav__cta--drawer">
-            Beratung anfragen
+            <span>Beratung anfragen</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
         </nav>
       </div>
     </header>
-    <div class="container hero__body">
+    <div class="container hero__body" data-lw-section="hero">
       <div class="hero__content reveal">
         <ol class="doc-crumb" aria-label="Brotkrumen">
-            <li><a href="index.html">Startseite</a></li>
-            <li><a href="wissen.html">Wissen</a></li>
-            <li>Angehörige</li>
+            <li data-lw-field="hero.item" data-lw-type="richtext"><a href="index.html">Startseite</a></li>
+            <li data-lw-field="hero.item_2" data-lw-type="richtext"><a href="wissen.html">Wissen</a></li>
+            <li data-lw-field="hero.item_3" data-lw-type="richtext">Angehörige</li>
         </ol>
-        <span class="hero__eyebrow">Wissen · Alltag</span>
+        <span class="hero__eyebrow" data-lw-field="hero.eyebrow" data-lw-type="text">Wissen · Alltag</span>
         <h1 class="hero__title" data-lw-field="hero.title" data-lw-type="richtext">Tipps für Angehörige</h1>
-        <p class="hero__sub">Praktische Impulse für den Pflegealltag – nahbar, konkret und ohne Fachchinesisch.</p>
+        <p class="hero__sub" data-lw-field="hero.copy" data-lw-type="textarea">Praktische Impulse für den Pflegealltag – nahbar, konkret und ohne Fachchinesisch.</p>
       </div>
     </div>
   </section>
 </div>
 <main id="hauptinhalt">
-  <section class="section">
+  <section class="section" id="artikel" data-lw-section="artikel">
     <div class="container">
       <div class="article-layout">
         <article class="doc-panel article-body reveal">
-          <h2>Wenn der Alltag plötzlich kippt</h2>
-          <p>Ein Sturz, eine Diagnose, weniger Kraft – und innerhalb weniger Tage organisieren Angehörige Termine, Medikamente, Einkauf und Sorge. Das ist viel. Zu viel für eine Person, die gleichzeitig Tochter, Sohn, Partnerin oder Partner bleiben möchte.</p>
-          <p>Ein erster guter Schritt: nicht alles allein entscheiden. Schreiben Sie auf, was jetzt brennt und was warten kann. Dann holen Sie sich eine zweite Meinung – von der Pflegekasse, der Hausarztpraxis oder von uns.</p>
-          <blockquote class="article-pull">Gute Pflege entlastet nicht nur den Menschen, der Hilfe braucht. Sie gibt Angehörigen wieder Luft zum Atmen.</blockquote>
-          <h2>Fünf Impulse, die sofort helfen</h2>
+          <h2 data-lw-field="artikel.heading" data-lw-type="richtext">Wenn der Alltag plötzlich kippt</h2>
+          <p data-lw-field="artikel.copy" data-lw-type="textarea">Ein Sturz, eine Diagnose, weniger Kraft – und innerhalb weniger Tage organisieren Angehörige Termine, Medikamente, Einkauf und Sorge. Das ist viel. Zu viel für eine Person, die gleichzeitig Tochter, Sohn, Partnerin oder Partner bleiben möchte.</p>
+          <p data-lw-field="artikel.copy_2" data-lw-type="textarea">Ein erster guter Schritt: nicht alles allein entscheiden. Schreiben Sie auf, was jetzt brennt und was warten kann. Dann holen Sie sich eine zweite Meinung – von der Pflegekasse, der Hausarztpraxis oder von uns.</p>
+          <blockquote class="article-pull" data-lw-field="artikel.quote" data-lw-type="textarea">Gute Pflege entlastet nicht nur den Menschen, der Hilfe braucht. Sie gibt Angehörigen wieder Luft zum Atmen.</blockquote>
+          <h2 data-lw-field="artikel.heading_2" data-lw-type="richtext">Fünf Impulse, die sofort helfen</h2>
           <ol>
-            <li><strong>Einen festen Ansprechpartner wählen.</strong> Eine Nummer, ein Gesicht. Wechselnde Tourenpläne machen unsicher.</li>
-            <li><strong>Unterlagen sammeln.</strong> Versichertenkarte, Medikamentenplan, Vollmacht, Pflegebescheid – an einem Ort.</li>
-            <li><strong>Pausen einplanen.</strong> Verhinderungspflege gibt es genau dafür. Schuldgefühle gehören nicht ins Formular.</li>
-            <li><strong>Den Menschen fragen, nicht nur über ihn sprechen.</strong> Was ist ihm wichtig? Was soll bleiben, wie es war?</li>
-            <li><strong>Früh über Wohnen nachdenken.</strong> Manchmal reicht Hilfe zu Hause. Manchmal gibt die Brückenmühle mehr Sicherheit, ohne ein Heim zu sein.</li>
+            <li data-lw-field="artikel.item" data-lw-type="richtext"><strong>Einen festen Ansprechpartner wählen.</strong> Eine Nummer, ein Gesicht. Wechselnde Tourenpläne machen unsicher.</li>
+            <li data-lw-field="artikel.item_2" data-lw-type="richtext"><strong>Unterlagen sammeln.</strong> Versichertenkarte, Medikamentenplan, Vollmacht, Pflegebescheid – an einem Ort.</li>
+            <li data-lw-field="artikel.item_3" data-lw-type="richtext"><strong>Pausen einplanen.</strong> Verhinderungspflege gibt es genau dafür. Schuldgefühle gehören nicht ins Formular.</li>
+            <li data-lw-field="artikel.item_4" data-lw-type="richtext"><strong>Den Menschen fragen, nicht nur über ihn sprechen.</strong> Was ist ihm wichtig? Was soll bleiben, wie es war?</li>
+            <li data-lw-field="artikel.item_5" data-lw-type="richtext"><strong>Früh über Wohnen nachdenken.</strong> Manchmal reicht Hilfe zu Hause. Manchmal gibt die Brückenmühle mehr Sicherheit, ohne ein Heim zu sein.</li>
           </ol>
-          <h2>Juventa steht daneben, nicht darüber</h2>
-          <p>Wir hören zu, ordnen Pflegegrad und Finanzierung ein und sagen ehrlich, was wir leisten können. Ob ambulante Pflege in Baden-Baden, Betreuung im Haus oder Betreutes Wohnen in Gernsbach: Sie behalten die Entscheidung. Wir liefern Klarheit.</p>
-          <p class="article-note">Wenn Sie unsicher sind, reicht ein Anruf. Ein erstes Gespräch verpflichtet zu nichts.</p>
+          <h2 data-lw-field="artikel.heading_3" data-lw-type="richtext">Juventa steht daneben, nicht darüber</h2>
+          <p data-lw-field="artikel.copy_3" data-lw-type="textarea">Wir hören zu, ordnen Pflegegrad und Finanzierung ein und sagen ehrlich, was wir leisten können. Ob ambulante Pflege in Baden-Baden, Betreuung im Haus oder Betreutes Wohnen in Gernsbach: Sie behalten die Entscheidung. Wir liefern Klarheit.</p>
+          <p class="article-note" data-lw-field="artikel.copy_4" data-lw-type="textarea">Wenn Sie unsicher sind, reicht ein Anruf. Ein erstes Gespräch verpflichtet zu nichts.</p>
         </article>
         <aside class="article-aside reveal">
           <div class="article-aside__card">
-            <h2>In diesem Beitrag</h2>
+            <h2 data-lw-field="artikel.heading_4" data-lw-type="richtext">In diesem Beitrag</h2>
             <ul>
-              <li><a href="#hauptinhalt">Erste Schritte</a></li>
-              <li><a href="pflege-beratung.html#beratung">Zur Beratung</a></li>
-              <li><a href="wissen.html#fuer-angehoerige">FAQ für Angehörige</a></li>
+              <li data-lw-field="artikel.item_6" data-lw-type="richtext"><a href="#hauptinhalt">Erste Schritte</a></li>
+              <li data-lw-field="artikel.item_7" data-lw-type="richtext"><a href="pflege-beratung.html#beratung">Zur Beratung</a></li>
+              <li data-lw-field="artikel.item_8" data-lw-type="richtext"><a href="wissen.html#fuer-angehoerige">FAQ für Angehörige</a></li>
             </ul>
           </div>
           <div class="article-aside__card">
-            <h2>Kurz notiert</h2>
+            <h2 data-lw-field="artikel.heading_5" data-lw-type="richtext">Kurz notiert</h2>
             <div class="article-aside__meta">
-              <span>Thema: Alltag</span>
-              <span>10. Februar 2026</span>
-              <span>Lesezeit: ca. 5 Minuten</span>
+              <span data-lw-field="artikel.meta" data-lw-type="text">Thema: Alltag</span>
+              <span data-lw-field="artikel.meta_2" data-lw-type="text">10. Februar 2026</span>
+              <span data-lw-field="artikel.meta_3" data-lw-type="text">Lesezeit: ca. 5 Minuten</span>
             </div>
           </div>
         </aside>
       </div>
     </div>
   </section>
-  <section class="section section--cream" aria-labelledby="related-title">
+  <section class="section section--cream" aria-labelledby="related-title" data-lw-section="related">
     <div class="container">
       <header class="section-head reveal">
-        <p class="eyebrow">Weiterlesen</p>
-        <h2 id="related-title">Weitere Beiträge</h2>
+        <p class="eyebrow" data-lw-field="related.eyebrow" data-lw-type="text">Weiterlesen</p>
+        <h2 id="related-title" data-lw-field="related.heading" data-lw-type="richtext">Weitere Beiträge</h2>
       </header>
-      <div class="news__grid related-grid">
-          <article class="news__card">
+      <div class="news__grid related-grid" data-lw-repeater="news.cards">
+          <article class="news__card" data-lw-item-key="card-1">
             <a class="news__card-link" href="beitrag-pflegegrad.html">
               <div class="news__media">
-                <img src="assets/images/mobile-pflege.webp" alt="" width="800" height="520" loading="lazy" data-lw-decorative="true" />
+                <img src="assets/images/mobile-pflege.webp" alt="" width="800" height="520" loading="lazy" data-lw-decorative="true" data-lw-field="related.image" data-lw-type="image" />
               </div>
               <div class="news__body">
                 <div class="news__meta">
-                  <span class="news__tag">Pflegegrad</span>
-                  <time datetime="2026-03-12">12. März 2026</time>
+                  <span class="news__tag" data-lw-field="related.tag" data-lw-type="text">Pflegegrad</span>
+                  <time datetime="2026-03-12" data-lw-field="related.date" data-lw-type="text">12. März 2026</time>
                 </div>
-                <h3>Den Pflegegrad verstehen</h3>
-                <p>Welche Grade es gibt und wie der Antrag gelingt.</p>
-                <span class="news__more">Beitrag lesen</span>
+                <h3 data-lw-field="related.heading" data-lw-type="richtext">Den Pflegegrad verstehen</h3>
+                <p data-lw-field="related.copy" data-lw-type="textarea">Welche Grade es gibt und wie der Antrag gelingt.</p>
+                <span class="news__more" data-lw-field="related.more" data-lw-type="text">Beitrag lesen</span>
               </div>
             </a>
           </article>
-          <article class="news__card">
+          <article class="news__card" data-lw-item-key="card-2">
             <a class="news__card-link" href="beitrag-kosten.html">
               <div class="news__media">
-                <img src="assets/images/verhinderungspflege.webp" alt="" width="800" height="520" loading="lazy" data-lw-decorative="true" />
+                <img src="assets/images/verhinderungspflege.webp" alt="" width="800" height="520" loading="lazy" data-lw-decorative="true" data-lw-field="related.image" data-lw-type="image" />
               </div>
               <div class="news__body">
                 <div class="news__meta">
-                  <span class="news__tag">Finanzierung</span>
-                  <time datetime="2026-02-26">26. Februar 2026</time>
+                  <span class="news__tag" data-lw-field="related.tag" data-lw-type="text">Finanzierung</span>
+                  <time datetime="2026-02-26" data-lw-field="related.date" data-lw-type="text">26. Februar 2026</time>
                 </div>
-                <h3>Kosten klar im Blick</h3>
-                <p>Was die Kasse trägt und was privat bleibt.</p>
-                <span class="news__more">Beitrag lesen</span>
+                <h3 data-lw-field="related.heading" data-lw-type="richtext">Kosten klar im Blick</h3>
+                <p data-lw-field="related.copy" data-lw-type="textarea">Was die Kasse trägt und was privat bleibt.</p>
+                <span class="news__more" data-lw-field="related.more" data-lw-type="text">Beitrag lesen</span>
               </div>
             </a>
           </article>
       </div>
     </div>
   </section>
-  <section class="contact section" id="kontakt" aria-labelledby="contact-title">
+  <section class="contact section" id="kontakt" aria-labelledby="contact-title" data-lw-section="kontakt">
     <div class="container">
       <div class="contact__wrap reveal">
         <div class="contact__panel">
-          <span class="section-label">Kontakt</span>
-          <h2 id="contact-title">Lassen Sie uns gemeinsam herausfinden, <span class="headline-accent">welche Unterstützung passt.</span></h2>
-          <p>Ob ambulante Pflege, Betreutes Wohnen, Pflegegrad oder Finanzierung: Wir nehmen uns Zeit für ein persönliches Gespräch – unverbindlich und auf Augenhöhe.</p>
-          <div class="contact__items">
-            <div class="contact__item">
+          <span class="section-label" data-lw-field="kontakt.eyebrow" data-lw-type="text">Kontakt</span>
+          <h2 id="contact-title" data-lw-field="kontakt.heading" data-lw-type="richtext">Lassen Sie uns gemeinsam herausfinden, <span class="headline-accent">welche Unterstützung passt.</span></h2>
+          <p data-lw-field="kontakt.copy" data-lw-type="textarea">Ob ambulante Pflege, Betreutes Wohnen, Pflegegrad oder Finanzierung: Wir nehmen uns Zeit für ein persönliches Gespräch – unverbindlich und auf Augenhöhe.</p>
+          <div class="contact__items" data-lw-repeater="contact.items">
+            <div class="contact__item" data-lw-item-key="item-1">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
               <div><strong>Mobil</strong><a href="tel:+491785254075">+49 178 5254075</a></div>
             </div>
-            <div class="contact__item">
+            <div class="contact__item" data-lw-item-key="item-2">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
               <div><strong>Festnetz</strong><a href="tel:+4972219959934">+49 7221 9959934</a></div>
             </div>
-            <div class="contact__item">
+            <div class="contact__item" data-lw-item-key="item-3">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></span>
               <div><strong>E-Mail</strong><a href="mailto:info@juventa-pflege.de">info@juventa-pflege.de</a></div>
             </div>
-            <div class="contact__item">
+            <div class="contact__item" data-lw-item-key="item-4">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
               <div><strong>Adresse</strong><span>Sonnenplatz 2, 76530 Baden-Baden</span></div>
             </div>
           </div>
           <div class="contact__actions">
             <a href="tel:+491785254075" class="btn btn--primary btn--lg">
-              Rückruf / Anrufen
+              <span data-lw-field="kontakt.cta" data-lw-type="text">Rückruf / Anrufen</span>
               <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
             <a href="mailto:info@juventa-pflege.de?subject=Beratung%20%E2%80%93%20Juventa" class="btn btn--outline-light btn--lg">
-              Beratung anfragen
+              <span data-lw-field="kontakt.cta_2" data-lw-type="text">Beratung anfragen</span>
               <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
           </div>
         </div>
         <div class="contact__visual">
-          <img src="assets/images/img-kontakt.webp" alt="Persönliche Beratung bei Juventa" width="1024" height="683" loading="lazy" />
+          <img src="assets/images/img-kontakt.webp" alt="Persönliche Beratung bei Juventa" width="1024" height="683" loading="lazy" data-lw-field="kontakt.image" data-lw-type="image" />
           <span class="contact__visual-overlay" aria-hidden="true"></span>
         </div>
       </div>
@@ -353,10 +353,10 @@
       <div class="a11y__group">
         <span class="a11y__label" id="a11yFontLabel">Schriftgröße</span>
         <div class="a11y__font-btns" role="group" aria-labelledby="a11yFontLabel">
-          <button class="a11y__font-btn" type="button" data-a11y-font="sm" aria-pressed="false" aria-label="Kleinere Schrift">A−</button>
-          <button class="a11y__font-btn is-active" type="button" data-a11y-font="normal" aria-pressed="true" aria-label="Normale Schrift">A</button>
-          <button class="a11y__font-btn" type="button" data-a11y-font="lg" aria-pressed="false" aria-label="Größere Schrift">A+</button>
-          <button class="a11y__font-btn" type="button" data-a11y-font="xl" aria-pressed="false" aria-label="Sehr große Schrift">A++</button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="sm" aria-pressed="false" aria-label="Kleinere Schrift"><span>A−</span></button>
+          <button class="a11y__font-btn is-active" type="button" data-a11y-font="normal" aria-pressed="true" aria-label="Normale Schrift"><span>A</span></button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="lg" aria-pressed="false" aria-label="Größere Schrift"><span>A+</span></button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="xl" aria-pressed="false" aria-label="Sehr große Schrift"><span>A++</span></button>
         </div>
       </div>
       <div class="a11y__group">

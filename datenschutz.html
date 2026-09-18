@@ -28,10 +28,10 @@
 <a class="skip-link" href="#hauptinhalt">Zum Inhalt springen</a>
 <div class="nav-overlay" id="navOverlay" hidden aria-hidden="true"></div>
 <div class="hero-shell" id="start">
-  <section class="hero" data-lw-section="hero" data-hero aria-label="Datenschutz">
-    <div class="hero__media" id="heroSlider" aria-hidden="true">
-      <div class="hero__slide is-active">
-        <img src="assets/images/team.webp" alt="" width="1920" height="1080" fetchpriority="high" data-lw-decorative="true" />
+  <section class="hero" data-hero aria-label="Datenschutz">
+    <div class="hero__media" id="heroSlider" aria-hidden="true" data-lw-section="hero-media" data-lw-repeater="hero.slides">
+      <div class="hero__slide is-active" data-lw-item-key="slide-1">
+        <img src="assets/images/team.webp" alt="" width="1920" height="1080" fetchpriority="high" data-lw-decorative="true" data-lw-field="hero-media.image" data-lw-type="image" />
       </div>
     </div>
     <div class="hero__overlay" aria-hidden="true"></div>
@@ -94,7 +94,7 @@
               <a href="wissen.html" class="nav__link">Wissen</a>
               <a href="kontakt.html" class="nav__link">Kontakt</a>
               <a href="kontakt.html" class="btn btn--primary nav__cta">
-                Beratung anfragen
+                <span>Beratung anfragen</span>
                 <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
               </a>
             </div>
@@ -144,114 +144,114 @@
             <li><a href="kontakt.html" class="nav__link">Kontakt</a></li>
           </ul>
           <a href="kontakt.html" class="btn btn--primary nav__cta nav__cta--drawer">
-            Beratung anfragen
+            <span>Beratung anfragen</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
         </nav>
       </div>
     </header>
-    <div class="container hero__body">
+    <div class="container hero__body" data-lw-section="hero">
       <div class="hero__content reveal">
         <ol class="doc-crumb" aria-label="Brotkrumen">
-            <li><a href="index.html">Startseite</a></li>
-            <li>Datenschutz</li>
+            <li data-lw-field="hero.item" data-lw-type="richtext"><a href="index.html">Startseite</a></li>
+            <li data-lw-field="hero.item_2" data-lw-type="richtext">Datenschutz</li>
         </ol>
-        <span class="hero__eyebrow">Rechtliches</span>
+        <span class="hero__eyebrow" data-lw-field="hero.eyebrow" data-lw-type="text">Rechtliches</span>
         <h1 class="hero__title" data-lw-field="hero.title" data-lw-type="richtext">Datenschutzbestimmungen</h1>
-        <p class="hero__sub">Wie Juventa mit personenbezogenen Daten umgeht, die über diese Website oder auf anderem Weg bei uns ankommen.</p>
+        <p class="hero__sub" data-lw-field="hero.copy" data-lw-type="textarea">Wie Juventa mit personenbezogenen Daten umgeht, die über diese Website oder auf anderem Weg bei uns ankommen.</p>
       </div>
     </div>
   </section>
 </div>
 <main id="hauptinhalt">
-  <section class="section">
+  <section class="section" data-lw-section="section-1">
     <div class="container">
       <div class="doc-panel reveal">
         <div class="legal-grid">
           <article class="legal-card" id="einfuehrung">
-            <h2>Einführung</h2>
-            <p>In diesen Datenschutzbestimmungen stellt die Juventa GmbH ihre Vorgehensweise bezüglich der von Benutzerinnen und Benutzern erfassten Daten dar, die auf diese Website zugreifen oder uns auf andere Weise personenbezogene Daten bereitstellen.</p>
-            <p>Zuständige Behörde im Sinne der Datenschutz-Grundverordnung (DSGVO): Amtsgericht Mannheim.</p>
+            <h2 data-lw-field="section-1.heading" data-lw-type="richtext">Einführung</h2>
+            <p data-lw-field="section-1.copy" data-lw-type="textarea">In diesen Datenschutzbestimmungen stellt die Juventa GmbH ihre Vorgehensweise bezüglich der von Benutzerinnen und Benutzern erfassten Daten dar, die auf diese Website zugreifen oder uns auf andere Weise personenbezogene Daten bereitstellen.</p>
+            <p data-lw-field="section-1.copy_2" data-lw-type="textarea">Zuständige Behörde im Sinne der Datenschutz-Grundverordnung (DSGVO): Amtsgericht Mannheim.</p>
           </article>
           <article class="legal-card" id="verantwortliche">
-            <h2>Verantwortliche Stelle</h2>
-            <p>Juventa Pflege GmbH, Sonnenplatz 2, 76530 Baden-Baden, E-Mail: <a href="mailto:info@juventa-pflege.de">info@juventa-pflege.de</a>, Tel.: <a href="tel:+4972219959934">+49 7221 9959934</a>.</p>
+            <h2 data-lw-field="section-1.heading_2" data-lw-type="richtext">Verantwortliche Stelle</h2>
+            <p data-lw-field="section-1.copy_3" data-lw-type="textarea">Juventa Pflege GmbH, Sonnenplatz 2, 76530 Baden-Baden, E-Mail: <a href="mailto:info@juventa-pflege.de">info@juventa-pflege.de</a>, Tel.: <a href="tel:+4972219959934">+49 7221 9959934</a>.</p>
           </article>
           <article class="legal-card" id="rechte">
-            <h2>Speicherung und Rechte</h2>
-            <p>Wir speichern personenbezogene Daten so lange, wie es für die Bereitstellung unserer Services, die Einhaltung rechtlicher Verpflichtungen sowie die Beilegung von Streitigkeiten erforderlich ist. Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch, Datenübertragbarkeit und Beschwerde bei einer Aufsichtsbehörde. Diese Rechte gelten nicht uneingeschränkt.</p>
-            <p>Anfragen richten Sie an <a href="mailto:info@juventa-pflege.de">info@juventa-pflege.de</a>.</p>
+            <h2 data-lw-field="section-1.heading_3" data-lw-type="richtext">Speicherung und Rechte</h2>
+            <p data-lw-field="section-1.copy_4" data-lw-type="textarea">Wir speichern personenbezogene Daten so lange, wie es für die Bereitstellung unserer Services, die Einhaltung rechtlicher Verpflichtungen sowie die Beilegung von Streitigkeiten erforderlich ist. Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch, Datenübertragbarkeit und Beschwerde bei einer Aufsichtsbehörde. Diese Rechte gelten nicht uneingeschränkt.</p>
+            <p data-lw-field="section-1.copy_5" data-lw-type="textarea">Anfragen richten Sie an <a href="mailto:info@juventa-pflege.de">info@juventa-pflege.de</a>.</p>
           </article>
           <article class="legal-card" id="grundlage">
-            <h2>Grundlage der Datenerfassung</h2>
-            <p>Die Verarbeitung ist erforderlich, um vertragliche Pflichten zu erfüllen, Services bereitzustellen, berechtigte Interessen zu wahren und rechtlichen Pflichten nachzukommen. Über das Kontaktformular verarbeiten wir Vorname, Nachname, E-Mail, Telefonnummer und Nachricht, um Ihre Anfrage zu beantworten (Art. 6 Abs. 1 lit. b und f DSGVO). Die Einwilligung in die Kenntnisnahme der Datenschutzerklärung erfolgt über das Formular (Art. 6 Abs. 1 lit. a DSGVO).</p>
+            <h2 data-lw-field="section-1.heading_4" data-lw-type="richtext">Grundlage der Datenerfassung</h2>
+            <p data-lw-field="section-1.copy_6" data-lw-type="textarea">Die Verarbeitung ist erforderlich, um vertragliche Pflichten zu erfüllen, Services bereitzustellen, berechtigte Interessen zu wahren und rechtlichen Pflichten nachzukommen. Über das Kontaktformular verarbeiten wir Vorname, Nachname, E-Mail, Telefonnummer und Nachricht, um Ihre Anfrage zu beantworten (Art. 6 Abs. 1 lit. b und f DSGVO). Die Einwilligung in die Kenntnisnahme der Datenschutzerklärung erfolgt über das Formular (Art. 6 Abs. 1 lit. a DSGVO).</p>
           </article>
           <article class="legal-card" id="daten">
-            <h2>Welche Daten werden erfasst?</h2>
-            <p>Nicht personenbezogene Daten können technische Angaben Ihres Geräts und Nutzungsdaten umfassen. Personenbezogene Daten können Gerätedaten (etwa IP-Adresse) und von Ihnen angegebene Kontaktdaten sein.</p>
+            <h2 data-lw-field="section-1.heading_5" data-lw-type="richtext">Welche Daten werden erfasst?</h2>
+            <p data-lw-field="section-1.copy_7" data-lw-type="textarea">Nicht personenbezogene Daten können technische Angaben Ihres Geräts und Nutzungsdaten umfassen. Personenbezogene Daten können Gerätedaten (etwa IP-Adresse) und von Ihnen angegebene Kontaktdaten sein.</p>
           </article>
           <article class="legal-card" id="quellen">
-            <h2>Quellen und Weitergabe</h2>
-            <p>Daten erhalten wir von Ihnen selbst, durch die Nutzung der Website oder von Dienstleistern, soweit das für Hosting, Formularversand und Betrieb nötig ist. Eine Weitergabe erfolgt nur, soweit diese Hinweise das beschreiben oder eine gesetzliche Pflicht besteht.</p>
+            <h2 data-lw-field="section-1.heading_6" data-lw-type="richtext">Quellen und Weitergabe</h2>
+            <p data-lw-field="section-1.copy_8" data-lw-type="textarea">Daten erhalten wir von Ihnen selbst, durch die Nutzung der Website oder von Dienstleistern, soweit das für Hosting, Formularversand und Betrieb nötig ist. Eine Weitergabe erfolgt nur, soweit diese Hinweise das beschreiben oder eine gesetzliche Pflicht besteht.</p>
           </article>
           <article class="legal-card" id="cookies">
-            <h2>Cookies und Analyse</h2>
-            <p>Diese statische Fassung setzt keine Marketing-Cookies. Technisch notwendige Speicherung kann für den Betrieb der Seite erforderlich sein. Die bisherige Live-Website nutzte zusätzlich Consent- und Analyse-Werkzeuge; ob und welche Dienste auf der späteren WordPress-Instanz laufen, wird dort gesondert ausgewiesen.</p>
+            <h2 data-lw-field="section-1.heading_7" data-lw-type="richtext">Cookies und Analyse</h2>
+            <p data-lw-field="section-1.copy_9" data-lw-type="textarea">Diese statische Fassung setzt keine Marketing-Cookies. Technisch notwendige Speicherung kann für den Betrieb der Seite erforderlich sein. Die bisherige Live-Website nutzte zusätzlich Consent- und Analyse-Werkzeuge; ob und welche Dienste auf der späteren WordPress-Instanz laufen, wird dort gesondert ausgewiesen.</p>
           </article>
           <article class="legal-card" id="formular">
-            <h2>Kontaktformular</h2>
-            <p>Nach dem Import verarbeitet WPForms Lite die Formulardaten und stellt sie der hinterlegten Empfängeradresse zu. Details zu Speicherdauer und Auftragsverarbeitung ergeben sich aus dem Betrieb der WordPress-Installation.</p>
+            <h2 data-lw-field="section-1.heading_8" data-lw-type="richtext">Kontaktformular</h2>
+            <p data-lw-field="section-1.copy_10" data-lw-type="textarea">Nach dem Import verarbeitet WPForms Lite die Formulardaten und stellt sie der hinterlegten Empfängeradresse zu. Details zu Speicherdauer und Auftragsverarbeitung ergeben sich aus dem Betrieb der WordPress-Installation.</p>
           </article>
           <article class="legal-card" id="minderjaehrige">
-            <h2>Minderjährige</h2>
-            <p>Das Angebot richtet sich nicht an Kinder. Personenbezogene Daten Minderjähriger sollen uns nicht übermittelt werden.</p>
+            <h2 data-lw-field="section-1.heading_9" data-lw-type="richtext">Minderjährige</h2>
+            <p data-lw-field="section-1.copy_11" data-lw-type="textarea">Das Angebot richtet sich nicht an Kinder. Personenbezogene Daten Minderjähriger sollen uns nicht übermittelt werden.</p>
           </article>
           <article class="legal-card" id="aenderungen">
-            <h2>Änderungen</h2>
-            <p>Wir können diese Hinweise anpassen, wenn sich Dienste oder Rechtslage ändern. Es gilt die jeweils auf dieser Seite veröffentlichte Fassung.</p>
+            <h2 data-lw-field="section-1.heading_10" data-lw-type="richtext">Änderungen</h2>
+            <p data-lw-field="section-1.copy_12" data-lw-type="textarea">Wir können diese Hinweise anpassen, wenn sich Dienste oder Rechtslage ändern. Es gilt die jeweils auf dieser Seite veröffentlichte Fassung.</p>
           </article>
         </div>
       </div>
     </div>
   </section>
-  <section class="contact section" id="kontakt" aria-labelledby="contact-title">
+  <section class="contact section" id="kontakt" aria-labelledby="contact-title" data-lw-section="kontakt">
     <div class="container">
       <div class="contact__wrap reveal">
         <div class="contact__panel">
-          <span class="section-label">Kontakt</span>
-          <h2 id="contact-title">Lassen Sie uns gemeinsam herausfinden, <span class="headline-accent">welche Unterstützung passt.</span></h2>
-          <p>Ob ambulante Pflege, Betreutes Wohnen, Pflegegrad oder Finanzierung: Wir nehmen uns Zeit für ein persönliches Gespräch – unverbindlich und auf Augenhöhe.</p>
-          <div class="contact__items">
-            <div class="contact__item">
+          <span class="section-label" data-lw-field="kontakt.eyebrow" data-lw-type="text">Kontakt</span>
+          <h2 id="contact-title" data-lw-field="kontakt.heading" data-lw-type="richtext">Lassen Sie uns gemeinsam herausfinden, <span class="headline-accent">welche Unterstützung passt.</span></h2>
+          <p data-lw-field="kontakt.copy" data-lw-type="textarea">Ob ambulante Pflege, Betreutes Wohnen, Pflegegrad oder Finanzierung: Wir nehmen uns Zeit für ein persönliches Gespräch – unverbindlich und auf Augenhöhe.</p>
+          <div class="contact__items" data-lw-repeater="contact.items">
+            <div class="contact__item" data-lw-item-key="item-1">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
               <div><strong>Mobil</strong><a href="tel:+491785254075">+49 178 5254075</a></div>
             </div>
-            <div class="contact__item">
+            <div class="contact__item" data-lw-item-key="item-2">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
               <div><strong>Festnetz</strong><a href="tel:+4972219959934">+49 7221 9959934</a></div>
             </div>
-            <div class="contact__item">
+            <div class="contact__item" data-lw-item-key="item-3">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></span>
               <div><strong>E-Mail</strong><a href="mailto:info@juventa-pflege.de">info@juventa-pflege.de</a></div>
             </div>
-            <div class="contact__item">
+            <div class="contact__item" data-lw-item-key="item-4">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
               <div><strong>Adresse</strong><span>Sonnenplatz 2, 76530 Baden-Baden</span></div>
             </div>
           </div>
           <div class="contact__actions">
             <a href="tel:+491785254075" class="btn btn--primary btn--lg">
-              Rückruf / Anrufen
+              <span data-lw-field="kontakt.cta" data-lw-type="text">Rückruf / Anrufen</span>
               <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
             <a href="mailto:info@juventa-pflege.de?subject=Beratung%20%E2%80%93%20Juventa" class="btn btn--outline-light btn--lg">
-              Beratung anfragen
+              <span data-lw-field="kontakt.cta_2" data-lw-type="text">Beratung anfragen</span>
               <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
           </div>
         </div>
         <div class="contact__visual">
-          <img src="assets/images/img-kontakt.webp" alt="Persönliche Beratung bei Juventa" width="1024" height="683" loading="lazy" />
+          <img src="assets/images/img-kontakt.webp" alt="Persönliche Beratung bei Juventa" width="1024" height="683" loading="lazy" data-lw-field="kontakt.image" data-lw-type="image" />
           <span class="contact__visual-overlay" aria-hidden="true"></span>
         </div>
       </div>
@@ -319,10 +319,10 @@
       <div class="a11y__group">
         <span class="a11y__label" id="a11yFontLabel">Schriftgröße</span>
         <div class="a11y__font-btns" role="group" aria-labelledby="a11yFontLabel">
-          <button class="a11y__font-btn" type="button" data-a11y-font="sm" aria-pressed="false" aria-label="Kleinere Schrift">A−</button>
-          <button class="a11y__font-btn is-active" type="button" data-a11y-font="normal" aria-pressed="true" aria-label="Normale Schrift">A</button>
-          <button class="a11y__font-btn" type="button" data-a11y-font="lg" aria-pressed="false" aria-label="Größere Schrift">A+</button>
-          <button class="a11y__font-btn" type="button" data-a11y-font="xl" aria-pressed="false" aria-label="Sehr große Schrift">A++</button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="sm" aria-pressed="false" aria-label="Kleinere Schrift"><span>A−</span></button>
+          <button class="a11y__font-btn is-active" type="button" data-a11y-font="normal" aria-pressed="true" aria-label="Normale Schrift"><span>A</span></button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="lg" aria-pressed="false" aria-label="Größere Schrift"><span>A+</span></button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="xl" aria-pressed="false" aria-label="Sehr große Schrift"><span>A++</span></button>
         </div>
       </div>
       <div class="a11y__group">

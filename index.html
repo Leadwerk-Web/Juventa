@@ -119,17 +119,17 @@
 
 <!-- ============ HERO (BSP-Stil) ============ -->
 <div class="hero-shell" id="start">
-  <section class="hero" data-lw-section="hero" data-hero aria-label="Willkommen bei Juventa – Ambulante Pflege und Betreutes Wohnen">
+  <section class="hero" data-hero aria-label="Willkommen bei Juventa – Ambulante Pflege und Betreutes Wohnen">
 
-    <div class="hero__media" id="heroSlider" aria-hidden="true">
-      <div class="hero__slide is-active">
-        <img src="assets/images/hero1.webp" alt="" width="1920" height="1080" fetchpriority="high" data-lw-decorative="true" />
+    <div class="hero__media" id="heroSlider" aria-hidden="true" data-lw-section="hero-media" data-lw-repeater="hero.slides">
+      <div class="hero__slide is-active" data-lw-item-key="slide-1">
+        <img src="assets/images/hero1.webp" alt="" width="1920" height="1080" fetchpriority="high" data-lw-decorative="true" data-lw-field="hero-media.image" data-lw-type="image" />
       </div>
-      <div class="hero__slide">
-        <img src="assets/images/hero2.webp" alt="" width="1920" height="1080" loading="lazy" data-lw-decorative="true" />
+      <div class="hero__slide" data-lw-item-key="slide-2">
+        <img src="assets/images/hero2.webp" alt="" width="1920" height="1080" loading="lazy" data-lw-decorative="true" data-lw-field="hero-media.image" data-lw-type="image" />
       </div>
-      <div class="hero__slide">
-        <img src="assets/images/hero3.webp" alt="" width="1920" height="1080" loading="lazy" data-lw-decorative="true" />
+      <div class="hero__slide" data-lw-item-key="slide-3">
+        <img src="assets/images/hero3.webp" alt="" width="1920" height="1080" loading="lazy" data-lw-decorative="true" data-lw-field="hero-media.image" data-lw-type="image" />
       </div>
     </div>
     <div class="hero__overlay" aria-hidden="true"></div>
@@ -194,7 +194,7 @@
               <a href="wissen.html" class="nav__link">Wissen</a>
               <a href="kontakt.html" class="nav__link">Kontakt</a>
               <a href="kontakt.html" class="btn btn--primary nav__cta">
-                Beratung anfragen
+                <span>Beratung anfragen</span>
                 <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
               </a>
             </div>
@@ -245,24 +245,24 @@
             <li><a href="kontakt.html" class="nav__link">Kontakt</a></li>
           </ul>
           <a href="kontakt.html" class="btn btn--primary nav__cta nav__cta--drawer">
-            Beratung anfragen
+            <span>Beratung anfragen</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
         </nav>
       </div>
     </header>
 
-    <div class="container hero__body">
+    <div class="container hero__body" data-lw-section="hero">
       <div class="hero__content reveal">
-        <span class="hero__eyebrow">Juventa – so geht Pflege</span>
+        <span class="hero__eyebrow" data-lw-field="hero.eyebrow" data-lw-type="text">Juventa – so geht Pflege</span>
         <h1 class="hero__title" data-lw-field="hero.title" data-lw-type="richtext">Nähe, Kompetenz und Geborgenheit&nbsp;–<br />für ein Leben in <span class="headline-accent headline-accent--light">Selbstbestimmung</span>.</h1>
-        <p class="hero__sub">
+        <p class="hero__sub" data-lw-field="hero.copy" data-lw-type="textarea">
           Ambulante Pflege in Baden-Baden und Umgebung – und Betreutes Wohnen in der Brückenmühle Gernsbach.
           Wir begleiten Menschen und Angehörige persönlich durch Alltag, Pflegegrad und Finanzierung.
         </p>
         <div class="hero__actions">
           <a href="kontakt.html" class="btn btn--primary btn--lg">
-            Beratung anfragen
+            <span data-lw-field="hero.cta" data-lw-type="text">Beratung anfragen</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
           <a href="tel:+491785254075" class="hero__play" aria-label="Rufen Sie uns an unter +49 178 5254075">
@@ -280,22 +280,22 @@
 
   </section>
 
-  <div class="hero__cards">
+  <div class="hero__cards" data-lw-section="offers">
     <div class="container">
-      <div class="hero__cards-inner hero__cards-inner--dual reveal">
-        <a href="betreutes-wohnen.html" class="hero__card">
+      <div class="hero__cards-inner hero__cards-inner--dual reveal" data-lw-repeater="offers.cards">
+        <a href="betreutes-wohnen.html" class="hero__card" data-lw-item-key="card-1">
           <span class="hero__card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
           </span>
-          <h2>Betreutes Wohnen</h2>
-          <p>Selbstbestimmt leben in der Brückenmühle Gernsbach – mit Service, Café und angebundener Pflege.</p>
+          <h2 data-lw-field="offers.heading" data-lw-type="richtext">Betreutes Wohnen</h2>
+          <p data-lw-field="offers.copy" data-lw-type="textarea">Selbstbestimmt leben in der Brückenmühle Gernsbach – mit Service, Café und angebundener Pflege.</p>
         </a>
-        <a href="pflege-beratung.html" class="hero__card">
+        <a href="pflege-beratung.html" class="hero__card" data-lw-item-key="card-2">
           <span class="hero__card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
           </span>
-          <h2>Ambulante Pflege</h2>
-          <p>Professionelle Pflege zu Hause in Baden-Baden und Umgebung – mit Beratung zu Pflegegrad und Finanzierung.</p>
+          <h2 data-lw-field="offers.heading" data-lw-type="richtext">Ambulante Pflege</h2>
+          <p data-lw-field="offers.copy" data-lw-type="textarea">Professionelle Pflege zu Hause in Baden-Baden und Umgebung – mit Beratung zu Pflegegrad und Finanzierung.</p>
         </a>
       </div>
     </div>
@@ -305,18 +305,18 @@
 <main id="hauptinhalt">
 
   <!-- ============ STORY / JUVENTA ============ -->
-  <section class="story section" id="konzept" aria-labelledby="story-title">
+  <section class="story section" id="konzept" aria-labelledby="story-title" data-lw-section="konzept">
     <div class="container story__grid">
       <div class="story__collage reveal">
         <div class="story__collage-img story__collage-img--tall">
-          <img src="assets/images/hero1.webp" alt="Juventa – ambulante Pflege und Betreutes Wohnen in der Region" loading="lazy" width="1920" height="1080" />
+          <img src="assets/images/hero1.webp" alt="Juventa – ambulante Pflege und Betreutes Wohnen in der Region" loading="lazy" width="1920" height="1080" data-lw-field="konzept.image" data-lw-type="image" />
         </div>
         <div class="story__collage-stack">
           <div class="story__collage-img story__collage-img--top">
-            <img src="assets/images/hero2.webp" alt="Persönliche Betreuung und modernes Wohnen bei Juventa" loading="lazy" width="1920" height="1080" />
+            <img src="assets/images/hero2.webp" alt="Persönliche Betreuung und modernes Wohnen bei Juventa" loading="lazy" width="1920" height="1080" data-lw-field="konzept.image_2" data-lw-type="image" />
           </div>
           <button type="button" class="story__collage-img story__collage-img--bottom story__video-trigger" data-video-open data-src="assets/video/gernsbach.mp4" aria-label="Imagefilm abspielen: Juventa">
-            <video class="story__video-preview" autoplay muted loop playsinline preload="metadata" poster="assets/images/hero3.webp" aria-hidden="true">
+            <video class="story__video-preview" autoplay muted loop playsinline preload="metadata" poster="assets/images/hero3.webp" aria-hidden="true" src="assets/video/gernsbach.mp4" data-lw-field="konzept.video" data-lw-type="video">
               <source src="assets/video/gernsbach.mp4" type="video/mp4" />
             </video>
             <span class="story__video-play" aria-hidden="true">
@@ -327,114 +327,114 @@
       </div>
 
       <div class="story__text reveal">
-        <span class="section-label">Über uns</span>
-        <h2 id="story-title">Juventa – Pflege und Begleitung,<br />die den Menschen in den Mittelpunkt stellt</h2>
-        <p class="story__lead">Wir sind in der Region verwurzelt: ambulante Pflege als Kerngeschäft – und Betreutes Wohnen als starkes Angebot für ein selbstbestimmtes Leben.</p>
-        <p>Unsere Werte prägen jeden Tag: Menschlichkeit, Fachkompetenz und Sicherheit. Ob zu Hause in Baden-Baden oder in der Brückenmühle Gernsbach – wir hören zu, denken mit und finden Lösungen.</p>
+        <span class="section-label" data-lw-field="konzept.eyebrow" data-lw-type="text">Über uns</span>
+        <h2 id="story-title" data-lw-field="konzept.heading" data-lw-type="richtext">Juventa – Pflege und Begleitung,<br />die den Menschen in den Mittelpunkt stellt</h2>
+        <p class="story__lead" data-lw-field="konzept.copy" data-lw-type="textarea">Wir sind in der Region verwurzelt: ambulante Pflege als Kerngeschäft – und Betreutes Wohnen als starkes Angebot für ein selbstbestimmtes Leben.</p>
+        <p data-lw-field="konzept.copy_2" data-lw-type="textarea">Unsere Werte prägen jeden Tag: Menschlichkeit, Fachkompetenz und Sicherheit. Ob zu Hause in Baden-Baden oder in der Brückenmühle Gernsbach – wir hören zu, denken mit und finden Lösungen.</p>
         <div class="story__actions">
           <a class="btn btn--primary" href="pflege-beratung.html">
-            Zur ambulanten Pflege
+            <span data-lw-field="konzept.cta" data-lw-type="text">Zur ambulanten Pflege</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
-          <a class="btn btn--outline" href="betreutes-wohnen.html">Zum Betreuten Wohnen</a>
+          <a class="btn btn--outline" href="betreutes-wohnen.html"><span data-lw-field="konzept.cta_2" data-lw-type="text">Zum Betreuten Wohnen</span></a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============ VIER BEREICHE ============ -->
-  <section class="areas section section--cream" id="betreutes-wohnen" aria-labelledby="areas-title">
+  <section class="areas section section--cream" id="betreutes-wohnen" aria-labelledby="areas-title" data-lw-section="betreutes-wohnen">
     <div class="container">
       <header class="section-head">
-        <p class="eyebrow">Betreutes Wohnen · Brückenmühle</p>
-        <h2 id="areas-title">Konzept &amp; Vision: selbstbestimmt wohnen, sicher begleitet</h2>
-        <p class="section-head__sub">In der historischen Brückenmühle Gernsbach verbinden wir eigenständiges Wohnen mit Service, Gemeinschaft und angebundener ambulanter Pflege.</p>
+        <p class="eyebrow" data-lw-field="betreutes-wohnen.eyebrow" data-lw-type="text">Betreutes Wohnen · Brückenmühle</p>
+        <h2 id="areas-title" data-lw-field="betreutes-wohnen.heading" data-lw-type="richtext">Konzept &amp; Vision: selbstbestimmt wohnen, sicher begleitet</h2>
+        <p class="section-head__sub" data-lw-field="betreutes-wohnen.copy" data-lw-type="textarea">In der historischen Brückenmühle Gernsbach verbinden wir eigenständiges Wohnen mit Service, Gemeinschaft und angebundener ambulanter Pflege.</p>
       </header>
 
-      <div class="areas__accordion reveal" role="tablist" aria-label="Betreutes Wohnen in der Brückenmühle">
-        <article class="areas-panel is-open">
+      <div class="areas__accordion reveal" role="tablist" aria-label="Betreutes Wohnen in der Brückenmühle" data-lw-repeater="areas.panels">
+        <article class="areas-panel is-open" data-lw-item-key="panel-1">
           <button class="areas-panel__trigger" type="button" aria-expanded="true" aria-controls="areas-panel-1">
-            <img class="areas-panel__img" src="assets/images/hero1.webp" alt="" width="1024" height="683" loading="lazy" data-lw-decorative="true" />
+            <img class="areas-panel__img" src="assets/images/hero1.webp" alt="" width="1024" height="683" loading="lazy" data-lw-decorative="true" data-lw-field="betreutes-wohnen.image" data-lw-type="image" />
             <span class="areas-panel__overlay" aria-hidden="true"></span>
             <span class="areas-panel__label">
               <span class="areas-panel__icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
               </span>
-              <span class="areas-panel__title">Konzept &amp; Vision</span>
+              <span class="areas-panel__title" data-lw-field="betreutes-wohnen.title" data-lw-type="text">Konzept &amp; Vision</span>
             </span>
           </button>
           <div class="areas-panel__content" id="areas-panel-1">
-            <span class="areas-panel__num">01</span>
-            <h3 class="areas-panel__heading">Konzept &amp; Vision</h3>
-            <p class="areas-panel__text">In der historischen Brückenmühle entsteht ein Zuhause mit Hotel-Charakter: selbstbestimmt wohnen, sicher begleitet – mit Gemeinschaft, Café und Service direkt im Haus.</p>
+            <span class="areas-panel__num" data-lw-field="betreutes-wohnen.number" data-lw-type="text">01</span>
+            <h3 class="areas-panel__heading" data-lw-field="betreutes-wohnen.heading" data-lw-type="richtext">Konzept &amp; Vision</h3>
+            <p class="areas-panel__text" data-lw-field="betreutes-wohnen.copy" data-lw-type="textarea">In der historischen Brückenmühle entsteht ein Zuhause mit Hotel-Charakter: selbstbestimmt wohnen, sicher begleitet – mit Gemeinschaft, Café und Service direkt im Haus.</p>
             <a class="btn btn--primary areas-panel__link" href="#apartments">
-              Apartments ansehen
+              <span data-lw-field="betreutes-wohnen.cta" data-lw-type="text">Apartments ansehen</span>
               <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
           </div>
         </article>
 
-        <article class="areas-panel">
+        <article class="areas-panel" data-lw-item-key="panel-2">
           <button class="areas-panel__trigger" type="button" aria-expanded="false" aria-controls="areas-panel-2">
-            <img class="areas-panel__img" src="assets/images/apartment.webp" alt="" width="1024" height="683" loading="lazy" data-lw-decorative="true" />
+            <img class="areas-panel__img" src="assets/images/apartment.webp" alt="" width="1024" height="683" loading="lazy" data-lw-decorative="true" data-lw-field="betreutes-wohnen.image" data-lw-type="image" />
             <span class="areas-panel__overlay" aria-hidden="true"></span>
             <span class="areas-panel__label">
               <span class="areas-panel__icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M3 9h18M3 15h18M15 3v18"/></svg>
               </span>
-              <span class="areas-panel__title">Apartments</span>
+              <span class="areas-panel__title" data-lw-field="betreutes-wohnen.title" data-lw-type="text">Apartments</span>
             </span>
           </button>
           <div class="areas-panel__content" id="areas-panel-2" hidden>
-            <span class="areas-panel__num">02</span>
-            <h3 class="areas-panel__heading">Apartments &amp; Ausstattung</h3>
-            <p class="areas-panel__text">Neun helle, barrierearme Einheiten mit ein bis zwei Zimmern, eigener Küche und hochwertiger Ausstattung – voll möbliert oder mit Ihren eigenen Möbeln.</p>
+            <span class="areas-panel__num" data-lw-field="betreutes-wohnen.number" data-lw-type="text">02</span>
+            <h3 class="areas-panel__heading" data-lw-field="betreutes-wohnen.heading" data-lw-type="richtext">Apartments &amp; Ausstattung</h3>
+            <p class="areas-panel__text" data-lw-field="betreutes-wohnen.copy" data-lw-type="textarea">Neun helle, barrierearme Einheiten mit ein bis zwei Zimmern, eigener Küche und hochwertiger Ausstattung – voll möbliert oder mit Ihren eigenen Möbeln.</p>
             <a class="btn btn--primary areas-panel__link" href="#apartments">
-              Ausstattung entdecken
+              <span data-lw-field="betreutes-wohnen.cta" data-lw-type="text">Ausstattung entdecken</span>
               <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
           </div>
         </article>
 
-        <article class="areas-panel">
+        <article class="areas-panel" data-lw-item-key="panel-3">
           <button class="areas-panel__trigger" type="button" aria-expanded="false" aria-controls="areas-panel-3">
-            <img class="areas-panel__img" src="assets/images/hero3.webp" alt="" width="1024" height="683" loading="lazy" data-lw-decorative="true" />
+            <img class="areas-panel__img" src="assets/images/hero3.webp" alt="" width="1024" height="683" loading="lazy" data-lw-decorative="true" data-lw-field="betreutes-wohnen.image" data-lw-type="image" />
             <span class="areas-panel__overlay" aria-hidden="true"></span>
             <span class="areas-panel__label">
               <span class="areas-panel__icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><path d="M6 1v3M10 1v3M14 1v3"/></svg>
               </span>
-              <span class="areas-panel__title">Café &amp; Gemeinschaft</span>
+              <span class="areas-panel__title" data-lw-field="betreutes-wohnen.title" data-lw-type="text">Café &amp; Gemeinschaft</span>
             </span>
           </button>
           <div class="areas-panel__content" id="areas-panel-3" hidden>
-            <span class="areas-panel__num">03</span>
-            <h3 class="areas-panel__heading">Café &amp; Gemeinschaft</h3>
-            <p class="areas-panel__text">Das Herzstück der Brückenmühle: Treffpunkt für Bewohnerinnen, Bewohner und Angehörige – mit Genuss, Begegnung und Raum für den Alltag.</p>
+            <span class="areas-panel__num" data-lw-field="betreutes-wohnen.number" data-lw-type="text">03</span>
+            <h3 class="areas-panel__heading" data-lw-field="betreutes-wohnen.heading" data-lw-type="richtext">Café &amp; Gemeinschaft</h3>
+            <p class="areas-panel__text" data-lw-field="betreutes-wohnen.copy" data-lw-type="textarea">Das Herzstück der Brückenmühle: Treffpunkt für Bewohnerinnen, Bewohner und Angehörige – mit Genuss, Begegnung und Raum für den Alltag.</p>
             <a class="btn btn--primary areas-panel__link" href="#cafe">
-              Café erleben
+              <span data-lw-field="betreutes-wohnen.cta" data-lw-type="text">Café erleben</span>
               <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
           </div>
         </article>
 
-        <article class="areas-panel">
+        <article class="areas-panel" data-lw-item-key="panel-4">
           <button class="areas-panel__trigger" type="button" aria-expanded="false" aria-controls="areas-panel-4">
-            <img class="areas-panel__img" src="assets/images/leistungen-wave.webp" alt="" width="1024" height="683" loading="lazy" data-lw-decorative="true" />
+            <img class="areas-panel__img" src="assets/images/leistungen-wave.webp" alt="" width="1024" height="683" loading="lazy" data-lw-decorative="true" data-lw-field="betreutes-wohnen.image" data-lw-type="image" />
             <span class="areas-panel__overlay" aria-hidden="true"></span>
             <span class="areas-panel__label">
               <span class="areas-panel__icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
               </span>
-              <span class="areas-panel__title">Service im Haus</span>
+              <span class="areas-panel__title" data-lw-field="betreutes-wohnen.title" data-lw-type="text">Service im Haus</span>
             </span>
           </button>
           <div class="areas-panel__content" id="areas-panel-4" hidden>
-            <span class="areas-panel__num">04</span>
-            <h3 class="areas-panel__heading">Betreuung &amp; Service</h3>
-            <p class="areas-panel__text">Verlässliche Betreuung vor Ort, Wahlleistungen und Sicherheitstechnik – genau so viel Unterstützung, wie Sie in der Brückenmühle brauchen.</p>
+            <span class="areas-panel__num" data-lw-field="betreutes-wohnen.number" data-lw-type="text">04</span>
+            <h3 class="areas-panel__heading" data-lw-field="betreutes-wohnen.heading" data-lw-type="richtext">Betreuung &amp; Service</h3>
+            <p class="areas-panel__text" data-lw-field="betreutes-wohnen.copy" data-lw-type="textarea">Verlässliche Betreuung vor Ort, Wahlleistungen und Sicherheitstechnik – genau so viel Unterstützung, wie Sie in der Brückenmühle brauchen.</p>
             <a class="btn btn--primary areas-panel__link" href="betreuung-service.html">
-              Service entdecken
+              <span data-lw-field="betreutes-wohnen.cta" data-lw-type="text">Service entdecken</span>
               <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
           </div>
@@ -444,78 +444,78 @@
   </section>
 
   <!-- ============ APARTMENTS ============ -->
-  <section class="apartments section section--cream" id="apartments" aria-labelledby="apart-title">
+  <section class="apartments section section--cream" id="apartments" aria-labelledby="apart-title" data-lw-section="apartments">
     <div class="container apartments__layout">
       <div class="apartments__intro reveal">
-        <p class="eyebrow">Apartments &amp; Ausstattung</p>
-        <h2 id="apart-title">Ihr eigenes Zuhause –<br />mit dem Komfort eines Hotels</h2>
+        <p class="eyebrow" data-lw-field="apartments.eyebrow" data-lw-type="text">Apartments &amp; Ausstattung</p>
+        <h2 id="apart-title" data-lw-field="apartments.heading" data-lw-type="richtext">Ihr eigenes Zuhause –<br />mit dem Komfort eines Hotels</h2>
         <a class="apartments__scroll" href="#apartmentsSlider" aria-label="Zu den Apartment-Bildern scrollen">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
         </a>
       </div>
 
       <ul class="apartments__features reveal">
-        <li>
+        <li data-lw-field="apartments.item" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M4 12h16"/><path d="M12 4v16"/><circle cx="12" cy="12" r="9"/></svg>
           </span>
-          <h3>Barrierearme Bäder</h3>
-          <p>Bodengleiche Duschen und durchdachte Grundrisse für sicheren Alltag.</p>
+          <h3 data-lw-field="apartments.heading_2" data-lw-type="richtext">Barrierearme Bäder</h3>
+          <p data-lw-field="apartments.copy" data-lw-type="textarea">Bodengleiche Duschen und durchdachte Grundrisse für sicheren Alltag.</p>
         </li>
-        <li>
+        <li data-lw-field="apartments.item_2" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
           </span>
-          <h3>Hochwertige Küchen</h3>
-          <p>Maßgeschneiderte Küchen aus edlen Materialien – zum Kochen und Genießen.</p>
+          <h3 data-lw-field="apartments.heading_3" data-lw-type="richtext">Hochwertige Küchen</h3>
+          <p data-lw-field="apartments.copy_2" data-lw-type="textarea">Maßgeschneiderte Küchen aus edlen Materialien – zum Kochen und Genießen.</p>
         </li>
-        <li>
+        <li data-lw-field="apartments.item_3" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M12 2v4M6 6l3 3M18 6l-3 3"/><path d="M4 14h16"/><path d="M8 18h8"/></svg>
           </span>
-          <h3>Fußbodenheizung</h3>
-          <p>Behagliche Wärme in jedem Raum, ganz ohne störende Heizkörper.</p>
+          <h3 data-lw-field="apartments.heading_4" data-lw-type="richtext">Fußbodenheizung</h3>
+          <p data-lw-field="apartments.copy_3" data-lw-type="textarea">Behagliche Wärme in jedem Raum, ganz ohne störende Heizkörper.</p>
         </li>
-        <li>
+        <li data-lw-field="apartments.item_4" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
           </span>
-          <h3>Möblierung auf Wunsch</h3>
-          <p>Voll möbliert einziehen – oder mit den eigenen liebsten Stücken.</p>
+          <h3 data-lw-field="apartments.heading_5" data-lw-type="richtext">Möblierung auf Wunsch</h3>
+          <p data-lw-field="apartments.copy_4" data-lw-type="textarea">Voll möbliert einziehen – oder mit den eigenen liebsten Stücken.</p>
         </li>
-        <li>
+        <li data-lw-field="apartments.item_5" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg>
           </span>
-          <h3>Historischer Charakter</h3>
-          <p>Rundbögen und Charme der Brückenmühle in jedem Apartment spürbar.</p>
+          <h3 data-lw-field="apartments.heading_6" data-lw-type="richtext">Historischer Charakter</h3>
+          <p data-lw-field="apartments.copy_5" data-lw-type="textarea">Rundbögen und Charme der Brückenmühle in jedem Apartment spürbar.</p>
         </li>
-        <li>
+        <li data-lw-field="apartments.item_6" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
           </span>
-          <h3>Zuhause-Gefühl</h3>
-          <p>Räume, die nach Ihnen aussehen – nicht nach Institution.</p>
+          <h3 data-lw-field="apartments.heading_7" data-lw-type="richtext">Zuhause-Gefühl</h3>
+          <p data-lw-field="apartments.copy_6" data-lw-type="textarea">Räume, die nach Ihnen aussehen – nicht nach Institution.</p>
         </li>
       </ul>
     </div>
 
-    <div class="apartments__slider reveal" id="apartmentsSlider">
+    <div class="apartments__slider reveal" id="apartmentsSlider" data-lw-repeater="apartments.slides">
       <div class="apartments__slider-media" aria-live="polite">
-        <figure class="apartments__slider-slide is-active">
-          <img src="assets/images/zimmer-1.webp" alt="Helles Apartment mit Wohnbereich in der Brückenmühle" width="1024" height="683" loading="lazy" />
+        <figure class="apartments__slider-slide is-active" data-lw-item-key="slide-1">
+          <img src="assets/images/zimmer-1.webp" alt="Helles Apartment mit Wohnbereich in der Brückenmühle" width="1024" height="683" loading="lazy" data-lw-field="apartments.image" data-lw-type="image" />
           <span class="apartments__slider-num" aria-hidden="true">01</span>
         </figure>
-        <figure class="apartments__slider-slide">
-          <img src="assets/images/kueche-2.webp" alt="Hochwertige Küche in einem Apartment der Brückenmühle" width="1024" height="683" loading="lazy" />
+        <figure class="apartments__slider-slide" data-lw-item-key="slide-2">
+          <img src="assets/images/kueche-2.webp" alt="Hochwertige Küche in einem Apartment der Brückenmühle" width="1024" height="683" loading="lazy" data-lw-field="apartments.image" data-lw-type="image" />
           <span class="apartments__slider-num" aria-hidden="true">02</span>
         </figure>
-        <figure class="apartments__slider-slide">
-          <img src="assets/images/kueche-2.webp" alt="Moderne Küchenzeile mit hochwertiger Ausstattung" width="1024" height="683" loading="lazy" />
+        <figure class="apartments__slider-slide" data-lw-item-key="slide-3">
+          <img src="assets/images/kueche-2.webp" alt="Moderne Küchenzeile mit hochwertiger Ausstattung" width="1024" height="683" loading="lazy" data-lw-field="apartments.image" data-lw-type="image" />
           <span class="apartments__slider-num" aria-hidden="true">03</span>
         </figure>
-        <figure class="apartments__slider-slide">
-          <img src="assets/images/cafe-2.webp" alt="Gemütlicher Wohn- und Aufenthaltsbereich in der Brückenmühle" width="1024" height="683" loading="lazy" />
+        <figure class="apartments__slider-slide" data-lw-item-key="slide-4">
+          <img src="assets/images/cafe-2.webp" alt="Gemütlicher Wohn- und Aufenthaltsbereich in der Brückenmühle" width="1024" height="683" loading="lazy" data-lw-field="apartments.image" data-lw-type="image" />
           <span class="apartments__slider-num" aria-hidden="true">04</span>
         </figure>
         <a href="kontakt.html" class="apartments__slider-hover">
@@ -529,9 +529,9 @@
       <div class="container apartments__slider-foot">
         <div class="apartments__slider-bar">
           <div class="apartments__slider-copy">
-            <p class="eyebrow">Apartments &amp; Ausstattung</p>
-            <h3 class="apartments__slider-title">Neun individuelle Einheiten</h3>
-            <p class="apartments__slider-text">Neun individuelle Einheiten mit ein bis zwei Zimmern verbinden historische Atmosphäre mit moderner Ausstattung. Hier zieht kein „Pflegeheim“ ein, sondern ein echtes Zuhause.</p>
+            <p class="eyebrow" data-lw-field="apartments.eyebrow_2" data-lw-type="text">Apartments &amp; Ausstattung</p>
+            <h3 class="apartments__slider-title" data-lw-field="apartments.heading_8" data-lw-type="richtext">Neun individuelle Einheiten</h3>
+            <p class="apartments__slider-text" data-lw-field="apartments.copy_7" data-lw-type="textarea">Neun individuelle Einheiten mit ein bis zwei Zimmern verbinden historische Atmosphäre mit moderner Ausstattung. Hier zieht kein „Pflegeheim“ ein, sondern ein echtes Zuhause.</p>
           </div>
           <div class="apartments__slider-nav">
             <button type="button" class="apartments__slider-btn" data-apartments-prev aria-label="Vorheriges Apartment">
@@ -547,25 +547,25 @@
   </section>
 
   <!-- ============ CAFÉ ============ -->
-  <section class="cafe section" id="cafe" aria-labelledby="cafe-title">
+  <section class="cafe section" id="cafe" aria-labelledby="cafe-title" data-lw-section="cafe">
     <div class="container cafe__grid">
       <div class="cafe__text reveal">
-        <p class="eyebrow">Das Herzstück des Hauses</p>
-        <h2 id="cafe-title">Café &amp; Gemeinschaft</h2>
-        <p class="lead">Ein hauseigenes Café mit Hotel-Charakter – Treffpunkt für Bewohnerinnen, Bewohner, Familie und Freunde. Hier wird gelacht, gefeiert und zusammengesessen.</p>
+        <p class="eyebrow" data-lw-field="cafe.eyebrow" data-lw-type="text">Das Herzstück des Hauses</p>
+        <h2 id="cafe-title" data-lw-field="cafe.heading" data-lw-type="richtext">Café &amp; Gemeinschaft</h2>
+        <p class="lead" data-lw-field="cafe.copy" data-lw-type="textarea">Ein hauseigenes Café mit Hotel-Charakter – Treffpunkt für Bewohnerinnen, Bewohner, Familie und Freunde. Hier wird gelacht, gefeiert und zusammengesessen.</p>
         <ul class="cafe__list">
-          <li>Wechselnde Tagesgerichte, Kuchen &amp; Kaffee</li>
-          <li>Exklusives Speisepaket &amp; vorreservierte Plätze</li>
-          <li>Gemeinschaft ohne Druck, Treffpunkt im Haus</li>
+          <li data-lw-field="cafe.item" data-lw-type="richtext">Wechselnde Tagesgerichte, Kuchen &amp; Kaffee</li>
+          <li data-lw-field="cafe.item_2" data-lw-type="richtext">Exklusives Speisepaket &amp; vorreservierte Plätze</li>
+          <li data-lw-field="cafe.item_3" data-lw-type="richtext">Gemeinschaft ohne Druck, Treffpunkt im Haus</li>
         </ul>
         <a class="btn btn--primary" href="kontakt.html">
-          Beratung zum Café anfragen
+          <span data-lw-field="cafe.cta" data-lw-type="text">Beratung zum Café anfragen</span>
           <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </a>
       </div>
       <div class="cafe__media reveal">
         <div class="cafe__media-frame">
-          <img src="assets/images/hero3.webp" alt="Das hauseigene Café der Brückenmühle – Herzstück des Hauses" loading="lazy" width="1920" height="1080" />
+          <img src="assets/images/hero3.webp" alt="Das hauseigene Café der Brückenmühle – Herzstück des Hauses" loading="lazy" width="1920" height="1080" data-lw-field="cafe.image" data-lw-type="image" />
           <span class="cafe__badge">Café · Brückenmühle</span>
         </div>
       </div>
@@ -573,68 +573,68 @@
   </section>
 
   <!-- ============ PFLEGE & BERATUNG (Kerngeschäft) ============ -->
-  <section class="care section section--cream" id="pflege" aria-labelledby="care-title">
+  <section class="care section section--cream" id="pflege" aria-labelledby="care-title" data-lw-section="pflege">
     <div class="container care__wrap">
       <div class="care__layout">
         <div class="care__intro reveal">
-          <p class="eyebrow">Pflege &amp; Beratung</p>
-          <h2 id="care-title">Ambulante Pflege – unser Herzstück</h2>
-          <p class="lead">Ein Sturz, eine Diagnose, weniger Zeit – und plötzlich ist alles anders. Dann ist es gut, jemanden an der Seite zu haben, der sich auskennt. Juventa hört zu, denkt mit und findet individuelle Lösungen – zu Hause in Baden-Baden und Umgebung.</p>
-          <a class="btn btn--primary" href="pflege-beratung.html">Pflegeberatung anfragen<span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <p class="eyebrow" data-lw-field="pflege.eyebrow" data-lw-type="text">Pflege &amp; Beratung</p>
+          <h2 id="care-title" data-lw-field="pflege.heading" data-lw-type="richtext">Ambulante Pflege – unser Herzstück</h2>
+          <p class="lead" data-lw-field="pflege.copy" data-lw-type="textarea">Ein Sturz, eine Diagnose, weniger Zeit – und plötzlich ist alles anders. Dann ist es gut, jemanden an der Seite zu haben, der sich auskennt. Juventa hört zu, denkt mit und findet individuelle Lösungen – zu Hause in Baden-Baden und Umgebung.</p>
+          <a class="btn btn--primary" href="pflege-beratung.html"><span data-lw-field="pflege.cta" data-lw-type="text">Pflegeberatung anfragen</span><span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
         </div>
 
         <ul class="care__features reveal">
-          <li id="pflege-ambulante">
+          <li id="pflege-ambulante" data-lw-field="pflege.item" data-lw-type="richtext">
             <span class="care__feature-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
             </span>
-            <h3><a href="pflege-beratung.html#ambulante-pflege">Ambulante Pflege</a></h3>
-            <p>Vertraute Pflegekräfte zu Hause – medizinisch, hauswirtschaftlich und einfühlsam. Auch an die Brückenmühle angebunden.</p>
+            <h3 data-lw-field="pflege.heading_2" data-lw-type="richtext"><a href="pflege-beratung.html#ambulante-pflege">Ambulante Pflege</a></h3>
+            <p data-lw-field="pflege.copy_2" data-lw-type="textarea">Vertraute Pflegekräfte zu Hause – medizinisch, hauswirtschaftlich und einfühlsam. Auch an die Brückenmühle angebunden.</p>
           </li>
-          <li id="pflege-leistungen">
+          <li id="pflege-leistungen" data-lw-field="pflege.item_2" data-lw-type="richtext">
             <span class="care__feature-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12h6M9 16h6"/></svg>
             </span>
-            <h3><a href="pflege-beratung.html#leistungen">Leistungen</a></h3>
-            <p>Körperpflege, Medikamente, Hauswirtschaft, Demenzbetreuung und Entlastung für Angehörige – nach Ihrem Bedarf.</p>
+            <h3 data-lw-field="pflege.heading_3" data-lw-type="richtext"><a href="pflege-beratung.html#leistungen">Leistungen</a></h3>
+            <p data-lw-field="pflege.copy_3" data-lw-type="textarea">Körperpflege, Medikamente, Hauswirtschaft, Demenzbetreuung und Entlastung für Angehörige – nach Ihrem Bedarf.</p>
           </li>
-          <li id="pflege-finanzierung">
+          <li id="pflege-finanzierung" data-lw-field="pflege.item_3" data-lw-type="richtext">
             <span class="care__feature-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
             </span>
-            <h3><a href="pflege-beratung.html#finanzierung">Pflegegrade &amp; Finanzierung</a></h3>
-            <p>Wir helfen durch den Pflegegrad- und Finanzierungsdschungel – verständlich, persönlich und ohne Fachchinesisch.</p>
+            <h3 data-lw-field="pflege.heading_4" data-lw-type="richtext"><a href="pflege-beratung.html#finanzierung">Pflegegrade &amp; Finanzierung</a></h3>
+            <p data-lw-field="pflege.copy_4" data-lw-type="textarea">Wir helfen durch den Pflegegrad- und Finanzierungsdschungel – verständlich, persönlich und ohne Fachchinesisch.</p>
           </li>
-          <li id="pflege-beratung">
+          <li id="pflege-beratung" data-lw-field="pflege.item_4" data-lw-type="richtext">
             <span class="care__feature-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
             </span>
-            <h3><a href="pflege-beratung.html#beratung">Beratung</a></h3>
-            <p>Nahbar, unverbindlich und auf Augenhöhe – für Pflegebedürftige und Angehörige, von der ersten Orientierung bis zur konkreten Planung.</p>
+            <h3 data-lw-field="pflege.heading_5" data-lw-type="richtext"><a href="pflege-beratung.html#beratung">Beratung</a></h3>
+            <p data-lw-field="pflege.copy_5" data-lw-type="textarea">Nahbar, unverbindlich und auf Augenhöhe – für Pflegebedürftige und Angehörige, von der ersten Orientierung bis zur konkreten Planung.</p>
           </li>
-          <li id="pflege-24h">
+          <li id="pflege-24h" data-lw-field="pflege.item_5" data-lw-type="richtext">
             <span class="care__feature-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
             </span>
-            <h3><a href="pflege-beratung.html#versorgung-24h">24-Stunden-Versorgung</a></h3>
-            <p>Gemeinsam mit Kooperationspartnern – wenn der Bedarf über die klassische ambulante Pflege hinausgeht.</p>
+            <h3 data-lw-field="pflege.heading_6" data-lw-type="richtext"><a href="pflege-beratung.html#versorgung-24h">24-Stunden-Versorgung</a></h3>
+            <p data-lw-field="pflege.copy_6" data-lw-type="textarea">Gemeinsam mit Kooperationspartnern – wenn der Bedarf über die klassische ambulante Pflege hinausgeht.</p>
           </li>
-          <li>
+          <li data-lw-field="pflege.item_6" data-lw-type="richtext">
             <span class="care__feature-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
             </span>
-            <h3><a href="pflege-beratung.html#leistungen">Einfühlsame Demenzbetreuung</a></h3>
-            <p>Behutsame Begleitung, die Orientierung gibt und den Menschen in den Mittelpunkt stellt.</p>
+            <h3 data-lw-field="pflege.heading_7" data-lw-type="richtext"><a href="pflege-beratung.html#leistungen">Einfühlsame Demenzbetreuung</a></h3>
+            <p data-lw-field="pflege.copy_7" data-lw-type="textarea">Behutsame Begleitung, die Orientierung gibt und den Menschen in den Mittelpunkt stellt.</p>
           </li>
         </ul>
       </div>
 
       <div class="coming__panel reveal" id="pflege-wg" aria-labelledby="coming-title">
         <div class="coming__content">
-          <p class="eyebrow">Pflege-Wohngemeinschaft</p>
-          <h2 id="coming-title">Pflege-WG Baden-Baden</h2>
-          <p>Neben ambulanter Pflege und Betreutem Wohnen entsteht ein weiteres Angebot: eine Pflege-Wohngemeinschaft in Baden-Baden. Interessentinnen und Interessenten können sich bereits jetzt vormerken lassen.</p>
-          <a class="btn btn--light btn--lg coming__cta" href="kontakt.html">Für die Pflege-WG vormerken<span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <p class="eyebrow" data-lw-field="pflege.eyebrow_2" data-lw-type="text">Pflege-Wohngemeinschaft</p>
+          <h2 id="coming-title" data-lw-field="pflege.heading_8" data-lw-type="richtext">Pflege-WG Baden-Baden</h2>
+          <p data-lw-field="pflege.copy_8" data-lw-type="textarea">Neben ambulanter Pflege und Betreutem Wohnen entsteht ein weiteres Angebot: eine Pflege-Wohngemeinschaft in Baden-Baden. Interessentinnen und Interessenten können sich bereits jetzt vormerken lassen.</p>
+          <a class="btn btn--light btn--lg coming__cta" href="kontakt.html"><span data-lw-field="pflege.cta_2" data-lw-type="text">Für die Pflege-WG vormerken</span><span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
         </div>
         <span class="coming__badge">in Planung</span>
       </div>
@@ -642,12 +642,12 @@
   </section>
 
   <!-- ============ BETREUUNG & SERVICE ============ -->
-  <section class="service section" id="service" aria-labelledby="service-title">
+  <section class="service section" id="service" aria-labelledby="service-title" data-lw-section="service">
     <div class="container">
       <header class="section-head">
-        <p class="eyebrow">Betreuung &amp; Service</p>
-        <h2 id="service-title">Im Alltag gut aufgehoben –<br />mit Leistungen, die zu Ihnen passen</h2>
-        <p class="section-head__sub">Mit der Betreuung vor Ort haben Sie immer jemanden vor Ort, der Sie kennt. Wahlleistungen und Pflege-Module buchen Sie flexibel dazu – Preise besprechen wir transparent im Gespräch.</p>
+        <p class="eyebrow" data-lw-field="service.eyebrow" data-lw-type="text">Betreuung &amp; Service</p>
+        <h2 id="service-title" data-lw-field="service.heading" data-lw-type="richtext">Im Alltag gut aufgehoben –<br />mit Leistungen, die zu Ihnen passen</h2>
+        <p class="section-head__sub" data-lw-field="service.copy" data-lw-type="textarea">Mit der Betreuung vor Ort haben Sie immer jemanden vor Ort, der Sie kennt. Wahlleistungen und Pflege-Module buchen Sie flexibel dazu – Preise besprechen wir transparent im Gespräch.</p>
       </header>
 
       <div class="service__columns">
@@ -655,67 +655,67 @@
           <span class="servicecol__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </span>
-          <p class="servicecol__kicker">Betreuung vor Ort</p>
+          <p class="servicecol__kicker" data-lw-field="service.copy_2" data-lw-type="textarea">Betreuung vor Ort</p>
           <ul class="servicelist">
-            <li>Persönliche, feste Ansprechpartner</li>
-            <li>Alltagsbegleitung &amp; Orientierung</li>
-            <li>Verlässliche Erreichbarkeit im Haus</li>
-            <li>Immer jemand vor Ort, der Sie kennt</li>
+            <li data-lw-field="service.item" data-lw-type="richtext">Persönliche, feste Ansprechpartner</li>
+            <li data-lw-field="service.item_2" data-lw-type="richtext">Alltagsbegleitung &amp; Orientierung</li>
+            <li data-lw-field="service.item_3" data-lw-type="richtext">Verlässliche Erreichbarkeit im Haus</li>
+            <li data-lw-field="service.item_4" data-lw-type="richtext">Immer jemand vor Ort, der Sie kennt</li>
           </ul>
         </div>
         <div class="servicecol reveal">
           <span class="servicecol__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
           </span>
-          <p class="servicecol__kicker">Sicherheit &amp; Technik</p>
+          <p class="servicecol__kicker" data-lw-field="service.copy_3" data-lw-type="textarea">Sicherheit &amp; Technik</p>
           <ul class="servicelist">
-            <li>24h-Notrufdienst</li>
-            <li>LivyCare-Sturzprävention</li>
-            <li>Ihr Schutzengel im Hintergrund</li>
-            <li>Ideal, um LivyCare später auszubauen</li>
+            <li data-lw-field="service.item_5" data-lw-type="richtext">24h-Notrufdienst</li>
+            <li data-lw-field="service.item_6" data-lw-type="richtext">LivyCare-Sturzprävention</li>
+            <li data-lw-field="service.item_7" data-lw-type="richtext">Ihr Schutzengel im Hintergrund</li>
+            <li data-lw-field="service.item_8" data-lw-type="richtext">Ideal, um LivyCare später auszubauen</li>
           </ul>
         </div>
         <div class="servicecol reveal">
           <span class="servicecol__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M4 21v-7"/><path d="M4 10V3"/><path d="M12 21v-9"/><path d="M12 8V3"/><path d="M20 21v-5"/><path d="M20 12V3"/><path d="M2 14h6"/><path d="M10 8h6"/><path d="M18 16h4"/></svg>
           </span>
-          <p class="servicecol__kicker">Wahlleistungen &amp; Pflege</p>
+          <p class="servicecol__kicker" data-lw-field="service.copy_4" data-lw-type="textarea">Wahlleistungen &amp; Pflege</p>
           <ul class="servicelist">
-            <li>Hauswirtschaftliche Hilfe</li>
-            <li>Verpflegung &amp; Speisepaket</li>
-            <li>Begleitservice &amp; individuelle Betreuung</li>
-            <li>Module für Grund-, Behandlungs- und individuelle Pflege</li>
+            <li data-lw-field="service.item_9" data-lw-type="richtext">Hauswirtschaftliche Hilfe</li>
+            <li data-lw-field="service.item_10" data-lw-type="richtext">Verpflegung &amp; Speisepaket</li>
+            <li data-lw-field="service.item_11" data-lw-type="richtext">Begleitservice &amp; individuelle Betreuung</li>
+            <li data-lw-field="service.item_12" data-lw-type="richtext">Module für Grund-, Behandlungs- und individuelle Pflege</li>
           </ul>
         </div>
       </div>
       <div class="service__cta reveal">
-        <a class="btn btn--primary" href="betreuung-service.html">Alle Leistungen ansehen<span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-        <a class="btn btn--outline" href="kontakt.html">Rückruf vereinbaren</a>
+        <a class="btn btn--primary" href="betreuung-service.html"><span data-lw-field="service.cta" data-lw-type="text">Alle Leistungen ansehen</span><span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        <a class="btn btn--outline" href="kontakt.html"><span data-lw-field="service.cta_2" data-lw-type="text">Rückruf vereinbaren</span></a>
       </div>
     </div>
   </section>
 
   <!-- ============ STANDORTE ============ -->
-  <section class="location section" id="standort" aria-labelledby="loc-title">
+  <section class="location section" id="standort" aria-labelledby="loc-title" data-lw-section="standort">
     <div class="location__panel">
       <div class="location__bg">
-        <video class="location__video" autoplay muted loop playsinline poster="assets/images/cafe-2.webp" aria-hidden="true">
+        <video class="location__video" autoplay muted loop playsinline poster="assets/images/cafe-2.webp" aria-hidden="true" src="assets/video/gernsbach.mp4" data-lw-field="standort.video" data-lw-type="video">
           <source src="assets/video/gernsbach.mp4" type="video/mp4" />
         </video>
         <div class="location__bg-scrim"></div>
       </div>
       <div class="container location__inner">
         <div class="location__text reveal">
-          <p class="eyebrow eyebrow--light">Standorte</p>
-          <h2 id="loc-title">Baden-Baden &amp; Gernsbach&nbsp;–<br />nah an den Menschen</h2>
-          <p class="lead">Unsere ambulante Pflege findet vor allem in Baden-Baden und Umgebung statt. Das Betreute Wohnen in der Brückenmühle liegt mitten in Gernsbach – zentral und doch naturnah im Murgtal.</p>
+          <p class="eyebrow eyebrow--light" data-lw-field="standort.eyebrow" data-lw-type="text">Standorte</p>
+          <h2 id="loc-title" data-lw-field="standort.heading" data-lw-type="richtext">Baden-Baden &amp; Gernsbach&nbsp;–<br />nah an den Menschen</h2>
+          <p class="lead" data-lw-field="standort.copy" data-lw-type="textarea">Unsere ambulante Pflege findet vor allem in Baden-Baden und Umgebung statt. Das Betreute Wohnen in der Brückenmühle liegt mitten in Gernsbach – zentral und doch naturnah im Murgtal.</p>
           <ul class="location__list">
-            <li><strong>Baden-Baden:</strong> Schwerpunkt ambulante Pflege · Büro Sonnenplatz 2</li>
-            <li><strong>Gernsbach:</strong> Betreutes Wohnen Brückenmühle · Altstadt &amp; Murgtal</li>
-            <li>Gute Erreichbarkeit im Raum Rastatt und darüber hinaus</li>
+            <li data-lw-field="standort.item" data-lw-type="richtext"><strong>Baden-Baden:</strong> Schwerpunkt ambulante Pflege · Büro Sonnenplatz 2</li>
+            <li data-lw-field="standort.item_2" data-lw-type="richtext"><strong>Gernsbach:</strong> Betreutes Wohnen Brückenmühle · Altstadt &amp; Murgtal</li>
+            <li data-lw-field="standort.item_3" data-lw-type="richtext">Gute Erreichbarkeit im Raum Rastatt und darüber hinaus</li>
           </ul>
           <a class="btn btn--primary" href="kontakt.html">
-            Standort &amp; Anfahrt besprechen
+            <span data-lw-field="standort.cta" data-lw-type="text">Standort &amp; Anfahrt besprechen</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
         </div>
@@ -724,206 +724,206 @@
   </section>
 
   <!-- ============ ÜBER JUVENTA ============ -->
-  <section class="about section" id="ueber" aria-labelledby="about-title">
+  <section class="about section" id="ueber" aria-labelledby="about-title" data-lw-section="ueber">
     <div class="container about__grid">
       <div class="about__collage about__collage--single reveal">
         <div class="about__collage-img about__collage-img--tall">
-          <img src="assets/images/team.webp" alt="Das Team von Juventa rund um Fee Schmid und Fabian Lepold" loading="lazy" width="960" height="540" />
+          <img src="assets/images/team.webp" alt="Das Team von Juventa rund um Fee Schmid und Fabian Lepold" loading="lazy" width="960" height="540" data-lw-field="ueber.image" data-lw-type="image" />
         </div>
       </div>
 
       <div class="about__text reveal">
-        <span class="section-label">Über Juventa</span>
-        <h2 id="about-title">Team, Ansprechpartner &amp; Philosophie</h2>
-        <p class="about__lead">Hinter Juventa stehen Fee Schmid und Fabian Lepold – fest in der Region verwurzelt und mit klarer Haltung: Pflege auf Augenhöhe.</p>
-        <p>Mit mehr als einem Jahrzehnt Erfahrung in der ambulanten Pflege, in ambulant betreuten Wohngemeinschaften, im Betreuten Wohnen und in der Palliativpflege begleiten wir täglich Menschen und Angehörige. Dieses Wissen bringen wir nach Baden-Baden, Gernsbach und in die Region – für Selbstbestimmung, Sicherheit und Lebensfreude.</p>
+        <span class="section-label" data-lw-field="ueber.eyebrow" data-lw-type="text">Über Juventa</span>
+        <h2 id="about-title" data-lw-field="ueber.heading" data-lw-type="richtext">Team, Ansprechpartner &amp; Philosophie</h2>
+        <p class="about__lead" data-lw-field="ueber.copy" data-lw-type="textarea">Hinter Juventa stehen Fee Schmid und Fabian Lepold – fest in der Region verwurzelt und mit klarer Haltung: Pflege auf Augenhöhe.</p>
+        <p data-lw-field="ueber.copy_2" data-lw-type="textarea">Mit mehr als einem Jahrzehnt Erfahrung in der ambulanten Pflege, in ambulant betreuten Wohngemeinschaften, im Betreuten Wohnen und in der Palliativpflege begleiten wir täglich Menschen und Angehörige. Dieses Wissen bringen wir nach Baden-Baden, Gernsbach und in die Region – für Selbstbestimmung, Sicherheit und Lebensfreude.</p>
         <div class="about__people">
           <article class="about__person">
             <div class="about__person-photo">
-              <img src="assets/images/fee.webp" alt="Fee Schmid" width="240" height="240" loading="lazy" />
+              <img src="assets/images/fee.webp" alt="Fee Schmid" width="240" height="240" loading="lazy" data-lw-field="ueber.image_2" data-lw-type="image" />
             </div>
             <strong>Fee Schmid</strong>
             <span>Pflege &amp; Beratung</span>
           </article>
           <article class="about__person">
             <div class="about__person-photo">
-              <img src="assets/images/fabian.webp" alt="Fabian Lepold" width="240" height="240" loading="lazy" />
+              <img src="assets/images/fabian.webp" alt="Fabian Lepold" width="240" height="240" loading="lazy" data-lw-field="ueber.image_3" data-lw-type="image" />
             </div>
             <strong>Fabian Lepold</strong>
             <span>Konzept &amp; Entwicklung</span>
           </article>
         </div>
-        <a class="btn btn--primary" href="ueber-juventa.html">Mehr über Juventa<span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        <a class="btn btn--primary" href="ueber-juventa.html"><span data-lw-field="ueber.cta" data-lw-type="text">Mehr über Juventa</span><span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
       </div>
     </div>
   </section>
 
   <!-- ============ NEWS / RATGEBER TEASER ============ -->
-  <section class="news section section--cream" id="ratgeber" aria-labelledby="news-title">
+  <section class="news section section--cream" id="ratgeber" aria-labelledby="news-title" data-lw-section="ratgeber">
     <div class="container">
       <header class="section-head">
-        <p class="eyebrow">News &amp; Ratgeber</p>
-        <h2 id="news-title">Wissen, das Orientierung gibt</h2>
-        <p class="section-head__sub">Regelmäßig neue Beiträge rund um Pflege, Finanzierung, Pflegegrad, Entlastungsleistungen und Betreutes Wohnen – auch aus unserem Newsletter.</p>
+        <p class="eyebrow" data-lw-field="ratgeber.eyebrow" data-lw-type="text">News &amp; Ratgeber</p>
+        <h2 id="news-title" data-lw-field="ratgeber.heading" data-lw-type="richtext">Wissen, das Orientierung gibt</h2>
+        <p class="section-head__sub" data-lw-field="ratgeber.copy" data-lw-type="textarea">Regelmäßig neue Beiträge rund um Pflege, Finanzierung, Pflegegrad, Entlastungsleistungen und Betreutes Wohnen – auch aus unserem Newsletter.</p>
       </header>
-      <div class="news__grid">
-        <article class="news__card reveal">
+      <div class="news__grid" data-lw-repeater="news.cards">
+        <article class="news__card reveal" data-lw-item-key="card-1">
           <a class="news__card-link" href="beitrag-pflegegrad.html">
             <div class="news__media">
-              <img src="assets/images/mobile-pflege.webp" alt="" width="800" height="520" loading="lazy" data-lw-decorative="true" />
+              <img src="assets/images/mobile-pflege.webp" alt="" width="800" height="520" loading="lazy" data-lw-decorative="true" data-lw-field="ratgeber.image" data-lw-type="image" />
             </div>
             <div class="news__body">
               <div class="news__meta">
-                <span class="news__tag">Pflegegrad</span>
-                <time datetime="2026-03-12">12. März 2026</time>
+                <span class="news__tag" data-lw-field="ratgeber.tag" data-lw-type="text">Pflegegrad</span>
+                <time datetime="2026-03-12" data-lw-field="ratgeber.date" data-lw-type="text">12. März 2026</time>
               </div>
-              <h3>Den Pflegegrad verstehen</h3>
-              <p>Was bedeuten die Pflegegrade – und welche Leistungen stehen Ihnen konkret zu? Ein Überblick für Angehörige und Betroffene.</p>
-              <span class="news__more">Beitrag lesen</span>
+              <h3 data-lw-field="ratgeber.heading" data-lw-type="richtext">Den Pflegegrad verstehen</h3>
+              <p data-lw-field="ratgeber.copy" data-lw-type="textarea">Was bedeuten die Pflegegrade – und welche Leistungen stehen Ihnen konkret zu? Ein Überblick für Angehörige und Betroffene.</p>
+              <span class="news__more" data-lw-field="ratgeber.more" data-lw-type="text">Beitrag lesen</span>
             </div>
           </a>
         </article>
-        <article class="news__card reveal">
+        <article class="news__card reveal" data-lw-item-key="card-2">
           <a class="news__card-link" href="beitrag-kosten.html">
             <div class="news__media">
-              <img src="assets/images/verhinderungspflege.webp" alt="" width="800" height="520" loading="lazy" data-lw-decorative="true" />
+              <img src="assets/images/verhinderungspflege.webp" alt="" width="800" height="520" loading="lazy" data-lw-decorative="true" data-lw-field="ratgeber.image" data-lw-type="image" />
             </div>
             <div class="news__body">
               <div class="news__meta">
-                <span class="news__tag">Finanzierung</span>
-                <time datetime="2026-02-26">26. Februar 2026</time>
+                <span class="news__tag" data-lw-field="ratgeber.tag" data-lw-type="text">Finanzierung</span>
+                <time datetime="2026-02-26" data-lw-field="ratgeber.date" data-lw-type="text">26. Februar 2026</time>
               </div>
-              <h3>Kosten klar im Blick</h3>
-              <p>Wie Pflegeversicherung, Entlastungsleistungen und Eigenanteil zusammenspielen – verständlich erklärt.</p>
-              <span class="news__more">Beitrag lesen</span>
+              <h3 data-lw-field="ratgeber.heading" data-lw-type="richtext">Kosten klar im Blick</h3>
+              <p data-lw-field="ratgeber.copy" data-lw-type="textarea">Wie Pflegeversicherung, Entlastungsleistungen und Eigenanteil zusammenspielen – verständlich erklärt.</p>
+              <span class="news__more" data-lw-field="ratgeber.more" data-lw-type="text">Beitrag lesen</span>
             </div>
           </a>
         </article>
-        <article class="news__card reveal">
+        <article class="news__card reveal" data-lw-item-key="card-3">
           <a class="news__card-link" href="beitrag-angehoerige.html">
             <div class="news__media">
-              <img src="assets/images/img-kontakt.webp" alt="" width="800" height="520" loading="lazy" data-lw-decorative="true" />
+              <img src="assets/images/img-kontakt.webp" alt="" width="800" height="520" loading="lazy" data-lw-decorative="true" data-lw-field="ratgeber.image" data-lw-type="image" />
             </div>
             <div class="news__body">
               <div class="news__meta">
-                <span class="news__tag">Alltag</span>
-                <time datetime="2026-02-10">10. Februar 2026</time>
+                <span class="news__tag" data-lw-field="ratgeber.tag" data-lw-type="text">Alltag</span>
+                <time datetime="2026-02-10" data-lw-field="ratgeber.date" data-lw-type="text">10. Februar 2026</time>
               </div>
-              <h3>Tipps für Angehörige</h3>
-              <p>Praktische Impulse für den Pflegealltag – nahbar, konkret und ohne Fachchinesisch.</p>
-              <span class="news__more">Beitrag lesen</span>
+              <h3 data-lw-field="ratgeber.heading" data-lw-type="richtext">Tipps für Angehörige</h3>
+              <p data-lw-field="ratgeber.copy" data-lw-type="textarea">Praktische Impulse für den Pflegealltag – nahbar, konkret und ohne Fachchinesisch.</p>
+              <span class="news__more" data-lw-field="ratgeber.more" data-lw-type="text">Beitrag lesen</span>
             </div>
           </a>
         </article>
       </div>
       <div class="news__cta reveal">
-        <a class="btn btn--primary" href="wissen.html#gut-zu-wissen">Alle Beiträge ansehen<span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-        <p class="news__hint">Drei erste Beiträge zur Orientierung – weitere folgen.</p>
+        <a class="btn btn--primary" href="wissen.html#gut-zu-wissen"><span data-lw-field="ratgeber.cta" data-lw-type="text">Alle Beiträge ansehen</span><span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        <p class="news__hint" data-lw-field="ratgeber.copy_2" data-lw-type="textarea">Drei erste Beiträge zur Orientierung – weitere folgen.</p>
       </div>
     </div>
   </section>
 
   <!-- ============ FAQ ============ -->
-  <section class="faq section" id="faq" aria-labelledby="faq-title">
+  <section class="faq section" id="faq" aria-labelledby="faq-title" data-lw-section="faq">
     <div class="container">
       <header class="section-head reveal">
-        <span class="section-label">FAQ</span>
-        <h2 id="faq-title">Häufig gestellte Fragen</h2>
-        <p class="section-head__sub">Antworten auf das, was Interessentinnen, Interessenten und Angehörige uns am häufigsten fragen – verständlich erklärt.</p>
+        <span class="section-label" data-lw-field="faq.eyebrow" data-lw-type="text">FAQ</span>
+        <h2 id="faq-title" data-lw-field="faq.heading" data-lw-type="richtext">Häufig gestellte Fragen</h2>
+        <p class="section-head__sub" data-lw-field="faq.copy" data-lw-type="textarea">Antworten auf das, was Interessentinnen, Interessenten und Angehörige uns am häufigsten fragen – verständlich erklärt.</p>
       </header>
 
       <div class="faq__wrap">
         <div class="faq__media reveal">
           <div class="faq__img">
-            <img src="assets/images/zimmer-1.webp" alt="Beratungsgespräch in der Brückenmühle Gernsbach" width="1024" height="683" loading="lazy" />
+            <img src="assets/images/zimmer-1.webp" alt="Beratungsgespräch in der Brückenmühle Gernsbach" width="1024" height="683" loading="lazy" data-lw-field="faq.image" data-lw-type="image" />
           </div>
           <div class="faq__badge">
             <span class="faq__badge-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
             </span>
-            <span>Wir nehmen uns Zeit – für Ihre Fragen und Ihre Entscheidung.</span>
+            <span data-lw-field="faq.badge" data-lw-type="text">Wir nehmen uns Zeit – für Ihre Fragen und Ihre Entscheidung.</span>
           </div>
         </div>
 
         <div class="faq__content">
-          <div class="faq__list reveal" id="faqList">
-            <article class="faq__item">
+          <div class="faq__list reveal" id="faqList" data-lw-repeater="faq.items">
+            <article class="faq__item" data-lw-item-key="item-1">
               <h3 class="faq__question">
                 <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="faq-panel-1" id="faq-trigger-1">
-                  <span>Was ist betreutes Wohnen in der Brückenmühle?</span>
+                  <span data-lw-field="faq.question" data-lw-type="text">Was ist betreutes Wohnen in der Brückenmühle?</span>
                   <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
                 </button>
               </h3>
               <div class="faq__panel" id="faq-panel-1" role="region" aria-labelledby="faq-trigger-1" hidden>
-                <p>Sie wohnen in Ihrem eigenen, barrierearmen Apartment – selbstbestimmt und mit dem Komfort eines Hotels. Im Haus stehen Ihnen Betreuung, Service, Café und Gemeinschaft zur Verfügung. Ambulante Pflege durch Juventa kann direkt angebunden werden.</p>
+                <p data-lw-field="faq.copy" data-lw-type="textarea">Sie wohnen in Ihrem eigenen, barrierearmen Apartment – selbstbestimmt und mit dem Komfort eines Hotels. Im Haus stehen Ihnen Betreuung, Service, Café und Gemeinschaft zur Verfügung. Ambulante Pflege durch Juventa kann direkt angebunden werden.</p>
               </div>
             </article>
 
-            <article class="faq__item">
+            <article class="faq__item" data-lw-item-key="item-2">
               <h3 class="faq__question">
                 <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="faq-panel-2" id="faq-trigger-2">
-                  <span>Wie unterscheidet sich das von einem Pflegeheim?</span>
+                  <span data-lw-field="faq.question" data-lw-type="text">Wie unterscheidet sich das von einem Pflegeheim?</span>
                   <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
                 </button>
               </h3>
               <div class="faq__panel" id="faq-panel-2" role="region" aria-labelledby="faq-trigger-2" hidden>
-                <p>Sie haben Ihre eigenen vier Wände, entscheiden selbst über Alltag und Tagesablauf und nutzen Leistungen nach Bedarf. Es gibt keine Pflicht zur Teilnahme – Betreuung und Service sind da, wenn Sie sie brauchen, nicht umgekehrt.</p>
+                <p data-lw-field="faq.copy" data-lw-type="textarea">Sie haben Ihre eigenen vier Wände, entscheiden selbst über Alltag und Tagesablauf und nutzen Leistungen nach Bedarf. Es gibt keine Pflicht zur Teilnahme – Betreuung und Service sind da, wenn Sie sie brauchen, nicht umgekehrt.</p>
               </div>
             </article>
 
-            <article class="faq__item">
+            <article class="faq__item" data-lw-item-key="item-3">
               <h3 class="faq__question">
                 <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="faq-panel-3" id="faq-trigger-3">
-                  <span>Kann ich mein Apartment individuell gestalten?</span>
+                  <span data-lw-field="faq.question" data-lw-type="text">Kann ich mein Apartment individuell gestalten?</span>
                   <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
                 </button>
               </h3>
               <div class="faq__panel" id="faq-panel-3" role="region" aria-labelledby="faq-trigger-3" hidden>
-                <p>Ja. Sie können voll möbliert einziehen oder Ihre eigenen Möbel und liebsten Stücke mitbringen. Die Apartments sind modern, barrierearm und mit hochwertiger Ausstattung – der historische Charakter der Brückenmühle bleibt spürbar.</p>
+                <p data-lw-field="faq.copy" data-lw-type="textarea">Ja. Sie können voll möbliert einziehen oder Ihre eigenen Möbel und liebsten Stücke mitbringen. Die Apartments sind modern, barrierearm und mit hochwertiger Ausstattung – der historische Charakter der Brückenmühle bleibt spürbar.</p>
               </div>
             </article>
 
-            <article class="faq__item">
+            <article class="faq__item" data-lw-item-key="item-4">
               <h3 class="faq__question">
                 <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="faq-panel-4" id="faq-trigger-4">
-                  <span>Wie ist die Pflege organisiert?</span>
+                  <span data-lw-field="faq.question" data-lw-type="text">Wie ist die Pflege organisiert?</span>
                   <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
                 </button>
               </h3>
               <div class="faq__panel" id="faq-panel-4" role="region" aria-labelledby="faq-trigger-4" hidden>
-                <p>Die ambulante Pflege von Juventa ist direkt an die Brückenmühle angebunden – mit vertrauten Gesichtern aus der Region. Pflegeleistungen kommen zu Ihnen ins Apartment, ohne dass Sie den gewohnten Rahmen verlassen müssen.</p>
+                <p data-lw-field="faq.copy" data-lw-type="textarea">Die ambulante Pflege von Juventa ist direkt an die Brückenmühle angebunden – mit vertrauten Gesichtern aus der Region. Pflegeleistungen kommen zu Ihnen ins Apartment, ohne dass Sie den gewohnten Rahmen verlassen müssen.</p>
               </div>
             </article>
 
-            <article class="faq__item">
+            <article class="faq__item" data-lw-item-key="item-5">
               <h3 class="faq__question">
                 <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="faq-panel-5" id="faq-trigger-5">
-                  <span>Sind die Preise inklusive Betreuung vor Ort?</span>
+                  <span data-lw-field="faq.question" data-lw-type="text">Sind die Preise inklusive Betreuung vor Ort?</span>
                   <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
                 </button>
               </h3>
               <div class="faq__panel" id="faq-panel-5" role="region" aria-labelledby="faq-trigger-5" hidden>
-                <p>Ja. Die Betreuung vor Ort ist verpflichtend und bereits in den Gesamtpreisen für das Betreute Wohnen enthalten. So sehen Sie von Anfang an den realistischen Gesamtbetrag – ohne spätere Überraschungen. Aktuelle Preise nennen wir Ihnen gerne im persönlichen Beratungsgespräch.</p>
+                <p data-lw-field="faq.copy" data-lw-type="textarea">Ja. Die Betreuung vor Ort ist verpflichtend und bereits in den Gesamtpreisen für das Betreute Wohnen enthalten. So sehen Sie von Anfang an den realistischen Gesamtbetrag – ohne spätere Überraschungen. Aktuelle Preise nennen wir Ihnen gerne im persönlichen Beratungsgespräch.</p>
               </div>
             </article>
 
-            <article class="faq__item">
+            <article class="faq__item" data-lw-item-key="item-6">
               <h3 class="faq__question">
                 <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="faq-panel-6" id="faq-trigger-6">
-                  <span>Kann ich mich schon jetzt vormerken lassen?</span>
+                  <span data-lw-field="faq.question" data-lw-type="text">Kann ich mich schon jetzt vormerken lassen?</span>
                   <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
                 </button>
               </h3>
               <div class="faq__panel" id="faq-panel-6" role="region" aria-labelledby="faq-trigger-6" hidden>
-                <p>Ja, gerne – für Apartments in der Brückenmühle und auch für die geplante Pflege-WG in Baden-Baden. Wir informieren Sie persönlich über Verfügbarkeiten, Ausstattung und nächste Schritte.</p>
+                <p data-lw-field="faq.copy" data-lw-type="textarea">Ja, gerne – für Apartments in der Brückenmühle und auch für die geplante Pflege-WG in Baden-Baden. Wir informieren Sie persönlich über Verfügbarkeiten, Ausstattung und nächste Schritte.</p>
               </div>
             </article>
           </div>
 
           <div class="faq__cta reveal">
-            <p>Ihre Frage war nicht dabei?</p>
+            <p data-lw-field="faq.copy_2" data-lw-type="textarea">Ihre Frage war nicht dabei?</p>
             <a href="wissen.html" class="btn btn--primary">
-              Zum Wissenscenter
+              <span data-lw-field="faq.cta" data-lw-type="text">Zum Wissenscenter</span>
               <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
           </div>
@@ -933,47 +933,47 @@
   </section>
 
   <!-- ============ KONTAKT ============ -->
-  <section class="contact section" id="kontakt" aria-labelledby="contact-title">
+  <section class="contact section" id="kontakt" aria-labelledby="contact-title" data-lw-section="kontakt">
     <div class="container">
       <div class="contact__wrap reveal">
         <div class="contact__panel">
-          <span class="section-label">Kontakt</span>
-          <h2 id="contact-title">Lassen Sie uns gemeinsam herausfinden, <span class="headline-accent">welche Unterstützung passt.</span></h2>
-          <p>
+          <span class="section-label" data-lw-field="kontakt.eyebrow" data-lw-type="text">Kontakt</span>
+          <h2 id="contact-title" data-lw-field="kontakt.heading" data-lw-type="richtext">Lassen Sie uns gemeinsam herausfinden, <span class="headline-accent">welche Unterstützung passt.</span></h2>
+          <p data-lw-field="kontakt.copy" data-lw-type="textarea">
             Ob ambulante Pflege, Betreutes Wohnen, Pflegegrad, Finanzierung oder die geplante Pflege-WG:
             Wir nehmen uns Zeit für ein persönliches Gespräch – unverbindlich und auf Augenhöhe.
           </p>
-          <div class="contact__items">
-            <div class="contact__item">
+          <div class="contact__items" data-lw-repeater="contact.items">
+            <div class="contact__item" data-lw-item-key="item-1">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
               <div><strong>Mobil</strong><a href="tel:+491785254075">+49 178 5254075</a></div>
             </div>
-            <div class="contact__item">
+            <div class="contact__item" data-lw-item-key="item-2">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
               <div><strong>Festnetz</strong><a href="tel:+4972219959934">+49 7221 9959934</a></div>
             </div>
-            <div class="contact__item">
+            <div class="contact__item" data-lw-item-key="item-3">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></span>
               <div><strong>E-Mail</strong><a href="mailto:info@juventa-pflege.de">info@juventa-pflege.de</a></div>
             </div>
-            <div class="contact__item">
+            <div class="contact__item" data-lw-item-key="item-4">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
               <div><strong>Adresse</strong><span>Sonnenplatz 2, 76530 Baden-Baden</span></div>
             </div>
           </div>
           <div class="contact__actions">
             <a href="tel:+491785254075" class="btn btn--primary btn--lg">
-              Rückruf / Anrufen
+              <span data-lw-field="kontakt.cta" data-lw-type="text">Rückruf / Anrufen</span>
               <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
             <a href="mailto:info@juventa-pflege.de?subject=Beratung%20anfragen%20%E2%80%93%20Juventa" class="btn btn--outline-light btn--lg">
-              Beratung anfragen
+              <span data-lw-field="kontakt.cta_2" data-lw-type="text">Beratung anfragen</span>
               <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
           </div>
         </div>
         <div class="contact__visual">
-          <img src="assets/images/img-kontakt.webp" alt="Persönliche Beratung bei Juventa – ambulante Pflege und Betreutes Wohnen" width="1024" height="683" loading="lazy" />
+          <img src="assets/images/img-kontakt.webp" alt="Persönliche Beratung bei Juventa – ambulante Pflege und Betreutes Wohnen" width="1024" height="683" loading="lazy" data-lw-field="kontakt.image" data-lw-type="image" />
           <span class="contact__visual-overlay" aria-hidden="true"></span>
         </div>
       </div>
@@ -1053,10 +1053,10 @@
       <div class="a11y__group">
         <span class="a11y__label" id="a11yFontLabel">Schriftgröße</span>
         <div class="a11y__font-btns" role="group" aria-labelledby="a11yFontLabel">
-          <button class="a11y__font-btn" type="button" data-a11y-font="sm" aria-pressed="false" aria-label="Kleinere Schrift">A−</button>
-          <button class="a11y__font-btn is-active" type="button" data-a11y-font="normal" aria-pressed="true" aria-label="Normale Schrift">A</button>
-          <button class="a11y__font-btn" type="button" data-a11y-font="lg" aria-pressed="false" aria-label="Größere Schrift">A+</button>
-          <button class="a11y__font-btn" type="button" data-a11y-font="xl" aria-pressed="false" aria-label="Sehr große Schrift">A++</button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="sm" aria-pressed="false" aria-label="Kleinere Schrift"><span>A−</span></button>
+          <button class="a11y__font-btn is-active" type="button" data-a11y-font="normal" aria-pressed="true" aria-label="Normale Schrift"><span>A</span></button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="lg" aria-pressed="false" aria-label="Größere Schrift"><span>A+</span></button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="xl" aria-pressed="false" aria-label="Sehr große Schrift"><span>A++</span></button>
         </div>
       </div>
       <div class="a11y__group">

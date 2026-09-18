@@ -118,17 +118,17 @@
 
 <!-- ============ HERO ============ -->
 <div class="hero-shell" id="start">
-  <section class="hero" data-lw-section="hero" data-hero aria-label="Pflege und Beratung bei Juventa">
+  <section class="hero" data-hero aria-label="Pflege und Beratung bei Juventa">
 
-    <div class="hero__media" id="heroSlider" aria-hidden="true">
-      <div class="hero__slide is-active">
-        <img src="assets/images/mobile-pflege.webp" alt="" width="1920" height="1080" fetchpriority="high" data-lw-decorative="true" />
+    <div class="hero__media" id="heroSlider" aria-hidden="true" data-lw-section="hero-media" data-lw-repeater="hero.slides">
+      <div class="hero__slide is-active" data-lw-item-key="slide-1">
+        <img src="assets/images/mobile-pflege.webp" alt="" width="1920" height="1080" fetchpriority="high" data-lw-decorative="true" data-lw-field="hero-media.image" data-lw-type="image" />
       </div>
-      <div class="hero__slide">
-        <img src="assets/images/leistungen-wave.webp" alt="" width="1920" height="1080" loading="lazy" data-lw-decorative="true" />
+      <div class="hero__slide" data-lw-item-key="slide-2">
+        <img src="assets/images/leistungen-wave.webp" alt="" width="1920" height="1080" loading="lazy" data-lw-decorative="true" data-lw-field="hero-media.image" data-lw-type="image" />
       </div>
-      <div class="hero__slide">
-        <img src="assets/images/24h-pflege.webp" alt="" width="1920" height="1080" loading="lazy" data-lw-decorative="true" />
+      <div class="hero__slide" data-lw-item-key="slide-3">
+        <img src="assets/images/24h-pflege.webp" alt="" width="1920" height="1080" loading="lazy" data-lw-decorative="true" data-lw-field="hero-media.image" data-lw-type="image" />
       </div>
     </div>
     <div class="hero__overlay" aria-hidden="true"></div>
@@ -194,7 +194,7 @@
               <a href="wissen.html" class="nav__link">Wissen</a>
               <a href="kontakt.html" class="nav__link">Kontakt</a>
               <a href="kontakt.html" class="btn btn--primary nav__cta">
-                Beratung anfragen
+                <span>Beratung anfragen</span>
                 <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
               </a>
             </div>
@@ -246,24 +246,24 @@
             <li><a href="kontakt.html" class="nav__link">Kontakt</a></li>
           </ul>
           <a href="kontakt.html" class="btn btn--primary nav__cta nav__cta--drawer">
-            Beratung anfragen
+            <span>Beratung anfragen</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
         </nav>
       </div>
     </header>
 
-    <div class="container hero__body">
+    <div class="container hero__body" data-lw-section="hero">
       <div class="hero__content reveal">
-        <span class="hero__eyebrow">Juventa · Ambulante Pflege</span>
+        <span class="hero__eyebrow" data-lw-field="hero.eyebrow" data-lw-type="text">Juventa · Ambulante Pflege</span>
         <h1 class="hero__title" data-lw-field="hero.title" data-lw-type="richtext">Pflege, die sich nicht wie ein System anfühlt&nbsp;–<br />sondern wie <span class="headline-accent headline-accent--light">Hilfe</span>, die wirklich passt.</h1>
-        <p class="hero__sub">
+        <p class="hero__sub" data-lw-field="hero.copy" data-lw-type="textarea">
           Ambulante Pflege ist unser Kerngeschäft. In Baden-Baden, im Murgtal und im Landkreis Rastatt begleiten wir
           Menschen und Angehörige mit Fachlichkeit, festen Bezugspersonen und klarer Orientierung bei Pflegegrad und Finanzierung.
         </p>
         <div class="hero__actions">
           <a href="kontakt.html" class="btn btn--primary btn--lg">
-            Pflegeberatung anfragen
+            <span data-lw-field="hero.cta" data-lw-type="text">Pflegeberatung anfragen</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
           <a href="tel:+491785254075" class="hero__play" aria-label="Rufen Sie uns an unter +49 178 5254075">
@@ -281,36 +281,36 @@
 
   </section>
 
-  <div class="hero__cards">
+  <div class="hero__cards" data-lw-section="offers">
     <div class="container">
-      <nav class="hero__cards-inner hero__cards-inner--quad reveal" aria-label="Abschnitte dieser Seite">
-        <a href="#ambulante-pflege" class="hero__card">
+      <nav class="hero__cards-inner hero__cards-inner--quad reveal" aria-label="Abschnitte dieser Seite" data-lw-repeater="offers.cards">
+        <a href="#ambulante-pflege" class="hero__card" data-lw-item-key="card-1">
           <span class="hero__card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
           </span>
-          <h2>Ambulante Pflege</h2>
-          <p>Zu Hause betreut – mit vertrauten Gesichtern.</p>
+          <h2 data-lw-field="offers.heading" data-lw-type="richtext">Ambulante Pflege</h2>
+          <p data-lw-field="offers.copy" data-lw-type="textarea">Zu Hause betreut – mit vertrauten Gesichtern.</p>
         </a>
-        <a href="#leistungen" class="hero__card">
+        <a href="#leistungen" class="hero__card" data-lw-item-key="card-2">
           <span class="hero__card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12h6M9 16h6"/></svg>
           </span>
-          <h2>Leistungen</h2>
-          <p>Von Körperpflege bis Entlastung für Angehörige.</p>
+          <h2 data-lw-field="offers.heading" data-lw-type="richtext">Leistungen</h2>
+          <p data-lw-field="offers.copy" data-lw-type="textarea">Von Körperpflege bis Entlastung für Angehörige.</p>
         </a>
-        <a href="#finanzierung" class="hero__card">
+        <a href="#finanzierung" class="hero__card" data-lw-item-key="card-3">
           <span class="hero__card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           </span>
-          <h2>Pflegegrade &amp; Finanzierung</h2>
-          <p>Durch den Finanzierungsdschungel – verständlich.</p>
+          <h2 data-lw-field="offers.heading" data-lw-type="richtext">Pflegegrade &amp; Finanzierung</h2>
+          <p data-lw-field="offers.copy" data-lw-type="textarea">Durch den Finanzierungsdschungel – verständlich.</p>
         </a>
-        <a href="#beratung" class="hero__card">
+        <a href="#beratung" class="hero__card" data-lw-item-key="card-4">
           <span class="hero__card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
           </span>
-          <h2>Beratung</h2>
-          <p>Unverbindlich, nahbar und auf Augenhöhe.</p>
+          <h2 data-lw-field="offers.heading" data-lw-type="richtext">Beratung</h2>
+          <p data-lw-field="offers.copy" data-lw-type="textarea">Unverbindlich, nahbar und auf Augenhöhe.</p>
         </a>
       </nav>
     </div>
@@ -320,189 +320,189 @@
 <main id="hauptinhalt">
 
   <!-- ============ AMBULANTE PFLEGE ============ -->
-  <section class="story section" id="ambulante-pflege" aria-labelledby="ambulante-title">
+  <section class="story section" id="ambulante-pflege" aria-labelledby="ambulante-title" data-lw-section="ambulante-pflege">
     <div class="container story__grid">
       <div class="story__collage reveal">
         <div class="story__collage-img story__collage-img--tall">
-          <img src="assets/images/mobile-pflege.webp" alt="Ambulante Pflege zu Hause durch das Team von Juventa" loading="lazy" width="1920" height="1080" />
+          <img src="assets/images/mobile-pflege.webp" alt="Ambulante Pflege zu Hause durch das Team von Juventa" loading="lazy" width="1920" height="1080" data-lw-field="ambulante-pflege.image" data-lw-type="image" />
         </div>
         <div class="story__collage-stack">
           <div class="story__collage-img story__collage-img--top">
-            <img src="assets/images/team.webp" alt="Feste Bezugspersonen im Juventa-Team" loading="lazy" width="1024" height="683" />
+            <img src="assets/images/team.webp" alt="Feste Bezugspersonen im Juventa-Team" loading="lazy" width="1024" height="683" data-lw-field="ambulante-pflege.image_2" data-lw-type="image" />
           </div>
           <div class="story__collage-img story__collage-img--bottom">
-            <img src="assets/images/leistungen-wave.webp" alt="Individuelle Pflegeplanung im Alltag" loading="lazy" width="1024" height="683" />
+            <img src="assets/images/leistungen-wave.webp" alt="Individuelle Pflegeplanung im Alltag" loading="lazy" width="1024" height="683" data-lw-field="ambulante-pflege.image_3" data-lw-type="image" />
           </div>
         </div>
       </div>
 
       <div class="story__text reveal">
-        <span class="section-label">Ambulante Pflege</span>
-        <h2 id="ambulante-title">Zuhause bleiben dürfen&nbsp;–<br />mit Menschen, die bleiben.</h2>
-        <p class="story__lead">
+        <span class="section-label" data-lw-field="ambulante-pflege.eyebrow" data-lw-type="text">Ambulante Pflege</span>
+        <h2 id="ambulante-title" data-lw-field="ambulante-pflege.heading" data-lw-type="richtext">Zuhause bleiben dürfen&nbsp;–<br />mit Menschen, die bleiben.</h2>
+        <p class="story__lead" data-lw-field="ambulante-pflege.copy" data-lw-type="textarea">
           Ein Sturz, eine Diagnose, weniger Kraft im Alltag: Plötzlich ist vieles anders.
           Dann zählt nicht nur Fachwissen, sondern jemand, der zuhört und mitdenkt.
         </p>
-        <p>
+        <p data-lw-field="ambulante-pflege.copy_2" data-lw-type="textarea">
           Juventa kommt zu Ihnen nach Hause in Baden-Baden, im Murgtal und im Landkreis Rastatt – und begleitet auch
           Bewohnerinnen und Bewohner der Brückenmühle in Gernsbach. Wir planen Pflege individuell, nicht nach Schema.
           Und wenn sich der Bedarf verändert, bleiben die vertrauten Gesichter.
         </p>
         <ul class="bw-checklist">
-          <li>Feste Bezugspersonen statt ständiger Wechsel</li>
-          <li>Individuelle Pflegeplanung statt Standardpaket</li>
-          <li>Anbindung an Betreutes Wohnen, wenn gewünscht</li>
+          <li data-lw-field="ambulante-pflege.item" data-lw-type="richtext">Feste Bezugspersonen statt ständiger Wechsel</li>
+          <li data-lw-field="ambulante-pflege.item_2" data-lw-type="richtext">Individuelle Pflegeplanung statt Standardpaket</li>
+          <li data-lw-field="ambulante-pflege.item_3" data-lw-type="richtext">Anbindung an Betreutes Wohnen, wenn gewünscht</li>
         </ul>
         <div class="story__actions">
           <a class="btn btn--primary" href="#leistungen">
-            Leistungen ansehen
+            <span data-lw-field="ambulante-pflege.cta" data-lw-type="text">Leistungen ansehen</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
-          <a class="btn btn--outline" href="#beratung">Zur Beratung</a>
+          <a class="btn btn--outline" href="#beratung"><span data-lw-field="ambulante-pflege.cta_2" data-lw-type="text">Zur Beratung</span></a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============ HALTUNG ============ -->
-  <section class="section section--cream" aria-labelledby="haltung-title">
+  <section class="section section--cream" aria-labelledby="haltung-title" data-lw-section="haltung">
     <div class="container">
       <header class="section-head reveal">
-        <p class="eyebrow">Unsere Haltung</p>
-        <h2 id="haltung-title">Vier Dinge, die gute Pflege<br />bei Juventa ausmachen</h2>
-        <p class="section-head__sub">Kein Versprechen von Perfektion. Sondern Verlässlichkeit im Alltag – für Pflegebedürftige und Angehörige.</p>
+        <p class="eyebrow" data-lw-field="haltung.eyebrow" data-lw-type="text">Unsere Haltung</p>
+        <h2 id="haltung-title" data-lw-field="haltung.heading" data-lw-type="richtext">Vier Dinge, die gute Pflege<br />bei Juventa ausmachen</h2>
+        <p class="section-head__sub" data-lw-field="haltung.copy" data-lw-type="textarea">Kein Versprechen von Perfektion. Sondern Verlässlichkeit im Alltag – für Pflegebedürftige und Angehörige.</p>
       </header>
       <div class="bw-pillars bw-pillars--quad reveal">
         <article class="bw-pillar">
           <span class="bw-pillar__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
           </span>
-          <h3>Menschlichkeit zuerst</h3>
-          <p>Würde, Zeit und ein offenes Ohr gehören zur Pflege dazu. Technik und Abläufe dienen dem Menschen – nicht umgekehrt.</p>
+          <h3 data-lw-field="haltung.heading_2" data-lw-type="richtext">Menschlichkeit zuerst</h3>
+          <p data-lw-field="haltung.copy_2" data-lw-type="textarea">Würde, Zeit und ein offenes Ohr gehören zur Pflege dazu. Technik und Abläufe dienen dem Menschen – nicht umgekehrt.</p>
         </article>
         <article class="bw-pillar">
           <span class="bw-pillar__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
           </span>
-          <h3>Diskretion</h3>
-          <p>Gute Pflege fällt nicht auf. Wir achten auf Würde und Zurückhaltung – damit sich Betreuung nicht nach Pflege anfühlt.</p>
+          <h3 data-lw-field="haltung.heading_3" data-lw-type="richtext">Diskretion</h3>
+          <p data-lw-field="haltung.copy_3" data-lw-type="textarea">Gute Pflege fällt nicht auf. Wir achten auf Würde und Zurückhaltung – damit sich Betreuung nicht nach Pflege anfühlt.</p>
         </article>
         <article class="bw-pillar">
           <span class="bw-pillar__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </span>
-          <h3>Sicherheit im Alltag</h3>
-          <p>Medizinische Kompetenz, klare Absprachen und verlässliche Besuche. Damit Sie wissen, woran Sie sind – auch an schwierigen Tagen.</p>
+          <h3 data-lw-field="haltung.heading_4" data-lw-type="richtext">Sicherheit im Alltag</h3>
+          <p data-lw-field="haltung.copy_4" data-lw-type="textarea">Medizinische Kompetenz, klare Absprachen und verlässliche Besuche. Damit Sie wissen, woran Sie sind – auch an schwierigen Tagen.</p>
         </article>
         <article class="bw-pillar">
           <span class="bw-pillar__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.5-7 8-7s8 3 8 7"/></svg>
           </span>
-          <h3>Partner für Angehörige</h3>
-          <p>Fragen zu Pflegegrad, Kasse und Organisation müssen Sie nicht allein klären. Wir erklären, begleiten und entlasten.</p>
+          <h3 data-lw-field="haltung.heading_5" data-lw-type="richtext">Partner für Angehörige</h3>
+          <p data-lw-field="haltung.copy_5" data-lw-type="textarea">Fragen zu Pflegegrad, Kasse und Organisation müssen Sie nicht allein klären. Wir erklären, begleiten und entlasten.</p>
         </article>
       </div>
     </div>
   </section>
 
   <!-- ============ LEISTUNGEN ============ -->
-  <section class="apartments section" id="leistungen" aria-labelledby="leistungen-title">
+  <section class="apartments section" id="leistungen" aria-labelledby="leistungen-title" data-lw-section="leistungen">
     <div class="container apartments__layout">
       <div class="apartments__intro reveal">
-        <p class="eyebrow">Leistungen</p>
-        <h2 id="leistungen-title">Was wir übernehmen&nbsp;–<br />genau so viel, wie Sie brauchen</h2>
+        <p class="eyebrow" data-lw-field="leistungen.eyebrow" data-lw-type="text">Leistungen</p>
+        <h2 id="leistungen-title" data-lw-field="leistungen.heading" data-lw-type="richtext">Was wir übernehmen&nbsp;–<br />genau so viel, wie Sie brauchen</h2>
       </div>
 
       <ul class="apartments__features reveal" id="leistungenGrid">
-        <li>
+        <li data-lw-field="leistungen.item" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
           </span>
-          <h3>Behandlungspflege</h3>
-          <p>Ärztlich verordnete Maßnahmen wie Medikamente, Verbände oder Blutzuckerkontrollen – professionell bei Ihnen zu Hause.</p>
+          <h3 data-lw-field="leistungen.heading_2" data-lw-type="richtext">Behandlungspflege</h3>
+          <p data-lw-field="leistungen.copy" data-lw-type="textarea">Ärztlich verordnete Maßnahmen wie Medikamente, Verbände oder Blutzuckerkontrollen – professionell bei Ihnen zu Hause.</p>
         </li>
-        <li>
+        <li data-lw-field="leistungen.item_2" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
           </span>
-          <h3>Grundpflege</h3>
-          <p>Körperpflege, Anziehen, Mobilität und Ernährung – einfühlsam, respektvoll und auf Ihren Rhythmus abgestimmt.</p>
+          <h3 data-lw-field="leistungen.heading_3" data-lw-type="richtext">Grundpflege</h3>
+          <p data-lw-field="leistungen.copy_2" data-lw-type="textarea">Körperpflege, Anziehen, Mobilität und Ernährung – einfühlsam, respektvoll und auf Ihren Rhythmus abgestimmt.</p>
         </li>
-        <li>
+        <li data-lw-field="leistungen.item_3" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
           </span>
-          <h3>Hauswirtschaft</h3>
-          <p>Reinigung, Wäsche oder Einkäufe: Entlastung im Alltag, damit das Zuhause gepflegt und übersichtlich bleibt.</p>
+          <h3 data-lw-field="leistungen.heading_4" data-lw-type="richtext">Hauswirtschaft</h3>
+          <p data-lw-field="leistungen.copy_3" data-lw-type="textarea">Reinigung, Wäsche oder Einkäufe: Entlastung im Alltag, damit das Zuhause gepflegt und übersichtlich bleibt.</p>
         </li>
-        <li>
+        <li data-lw-field="leistungen.item_4" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </span>
-          <h3>Demenzbetreuung</h3>
-          <p>Behutsame Begleitung, die Orientierung gibt und den Menschen in den Mittelpunkt stellt – ohne Hast und ohne Druck.</p>
+          <h3 data-lw-field="leistungen.heading_5" data-lw-type="richtext">Demenzbetreuung</h3>
+          <p data-lw-field="leistungen.copy_4" data-lw-type="textarea">Behutsame Begleitung, die Orientierung gibt und den Menschen in den Mittelpunkt stellt – ohne Hast und ohne Druck.</p>
         </li>
-        <li>
+        <li data-lw-field="leistungen.item_5" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
           </span>
-          <h3>24-Stunden-Pflege</h3>
-          <p>Rund um die Uhr begleitet in der eigenen Häuslichkeit – vermittelt über Partner und abgestimmt mit unserer ambulanten Pflege.</p>
+          <h3 data-lw-field="leistungen.heading_6" data-lw-type="richtext">24-Stunden-Pflege</h3>
+          <p data-lw-field="leistungen.copy_5" data-lw-type="textarea">Rund um die Uhr begleitet in der eigenen Häuslichkeit – vermittelt über Partner und abgestimmt mit unserer ambulanten Pflege.</p>
         </li>
-        <li>
+        <li data-lw-field="leistungen.item_6" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </span>
-          <h3>Ambulant betreute WG</h3>
-          <p>Gemeinschaftliches Wohnen mit ambulanter Pflege – Nähe, Alltag und Fachlichkeit in einem Setting.</p>
+          <h3 data-lw-field="leistungen.heading_7" data-lw-type="richtext">Ambulant betreute WG</h3>
+          <p data-lw-field="leistungen.copy_6" data-lw-type="textarea">Gemeinschaftliches Wohnen mit ambulanter Pflege – Nähe, Alltag und Fachlichkeit in einem Setting.</p>
         </li>
-        <li>
+        <li data-lw-field="leistungen.item_7" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
           </span>
-          <h3>Betreutes Wohnen</h3>
-          <p>Selbstbestimmt wohnen in der Brückenmühle Gernsbach – mit Anschluss an Betreuung und Juventa-Pflege.</p>
+          <h3 data-lw-field="leistungen.heading_8" data-lw-type="richtext">Betreutes Wohnen</h3>
+          <p data-lw-field="leistungen.copy_7" data-lw-type="textarea">Selbstbestimmt wohnen in der Brückenmühle Gernsbach – mit Anschluss an Betreuung und Juventa-Pflege.</p>
         </li>
-        <li>
+        <li data-lw-field="leistungen.item_8" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
           </span>
-          <h3>Verhinderungspflege</h3>
-          <p>Wenn Angehörige pausieren müssen: Wir springen ein – für Tage oder Wochen, flexibel und mit klarer Finanzierungshilfe.</p>
+          <h3 data-lw-field="leistungen.heading_9" data-lw-type="richtext">Verhinderungspflege</h3>
+          <p data-lw-field="leistungen.copy_8" data-lw-type="textarea">Wenn Angehörige pausieren müssen: Wir springen ein – für Tage oder Wochen, flexibel und mit klarer Finanzierungshilfe.</p>
         </li>
-        <li>
+        <li data-lw-field="leistungen.item_9" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </span>
-          <h3>Entlastung für Angehörige</h3>
-          <p>Organisation, Anträge und Alltagshilfe: Wir nehmen Last von Ihren Schultern, ohne Entscheidungen vorwegzunehmen.</p>
+          <h3 data-lw-field="leistungen.heading_10" data-lw-type="richtext">Entlastung für Angehörige</h3>
+          <p data-lw-field="leistungen.copy_9" data-lw-type="textarea">Organisation, Anträge und Alltagshilfe: Wir nehmen Last von Ihren Schultern, ohne Entscheidungen vorwegzunehmen.</p>
         </li>
       </ul>
     </div>
 
     <div class="container pb-relief reveal">
       <div class="pb-relief__media">
-        <img src="assets/images/verhinderungspflege.webp" alt="Entlastung für Angehörige durch Verhinderungspflege bei Juventa" width="1280" height="853" loading="lazy" />
+        <img src="assets/images/verhinderungspflege.webp" alt="Entlastung für Angehörige durch Verhinderungspflege bei Juventa" width="1280" height="853" loading="lazy" data-lw-field="leistungen.image" data-lw-type="image" />
       </div>
       <div class="pb-relief__text">
-        <p class="eyebrow">Wir entlasten Angehörige</p>
-        <h3>Verhinderungspflege ist eine Leistung – damit Sie sorgenfrei Pause machen können</h3>
-        <p>
+        <p class="eyebrow" data-lw-field="leistungen.eyebrow_2" data-lw-type="text">Wir entlasten Angehörige</p>
+        <h3 data-lw-field="leistungen.heading_11" data-lw-type="richtext">Verhinderungspflege ist eine Leistung – damit Sie sorgenfrei Pause machen können</h3>
+        <p data-lw-field="leistungen.copy_10" data-lw-type="textarea">
           Sie kümmern sich mit Herz um einen geliebten Menschen. Doch was, wenn Sie selbst krank, erschöpft oder im Urlaub sind?
           Genau dann springen wir ein: ambulant zu Hause, mit hauswirtschaftlicher Hilfe oder – wenn nötig – mit einer
           24-Stunden-Betreuung über unsere Partner.
         </p>
-        <p>
+        <p data-lw-field="leistungen.copy_11" data-lw-type="textarea">
           Die Finanzierung läuft über die Verhinderungspflege. Verhinderungs- und Kurzzeitpflege kommen aus einem gemeinsamen
           Jahresbudget der Pflegeversicherung – aktuell bis zu 3.539&nbsp;Euro. Juventa unterstützt Sie bei Antrag und Organisation.
         </p>
         <ul class="bw-checklist">
-          <li>Flexible Nutzung nach Ihrer Situation</li>
-          <li>Unterstützung bei Antrag und Finanzierung</li>
-          <li>Ziel: Angehörige sorgenfrei entlasten</li>
+          <li data-lw-field="leistungen.item_10" data-lw-type="richtext">Flexible Nutzung nach Ihrer Situation</li>
+          <li data-lw-field="leistungen.item_11" data-lw-type="richtext">Unterstützung bei Antrag und Finanzierung</li>
+          <li data-lw-field="leistungen.item_12" data-lw-type="richtext">Ziel: Angehörige sorgenfrei entlasten</li>
         </ul>
         <a class="btn btn--primary" href="kontakt.html">
-          Entlastung besprechen
+          <span data-lw-field="leistungen.cta" data-lw-type="text">Entlastung besprechen</span>
           <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </a>
       </div>
@@ -510,68 +510,68 @@
   </section>
 
   <!-- ============ PFLEGEGRADE & FINANZIERUNG ============ -->
-  <section class="section section--cream" id="finanzierung" aria-labelledby="finanzierung-title">
+  <section class="section section--cream" id="finanzierung" aria-labelledby="finanzierung-title" data-lw-section="finanzierung">
     <div class="container">
       <header class="section-head reveal">
-        <p class="eyebrow">Pflegegrade &amp; Finanzierung</p>
-        <h2 id="finanzierung-title">Durch den Dschungel&nbsp;–<br />ohne Fachchinesisch</h2>
-        <p class="section-head__sub">
+        <p class="eyebrow" data-lw-field="finanzierung.eyebrow" data-lw-type="text">Pflegegrade &amp; Finanzierung</p>
+        <h2 id="finanzierung-title" data-lw-field="finanzierung.heading" data-lw-type="richtext">Durch den Dschungel&nbsp;–<br />ohne Fachchinesisch</h2>
+        <p class="section-head__sub" data-lw-field="finanzierung.copy" data-lw-type="textarea">
           Pflegegrad, Sachleistung, Pflegegeld, Eigenanteil: Viele Begriffe, eine klare Frage.
           Was steht Ihnen zu – und wie kommen Sie dort hin?
         </p>
       </header>
 
       <ol class="pb-path reveal">
-        <li class="pb-path__step">
+        <li class="pb-path__step" data-lw-field="finanzierung.item" data-lw-type="richtext">
           <div class="pb-path__top">
             <span class="pb-path__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>
             </span>
           </div>
-          <h3>Pflegegrad verstehen</h3>
-          <p>Was Grad&nbsp;1 bis&nbsp;5 praktisch bedeuten – und welcher Zugang zur Pflegekasse sich daraus ergibt.</p>
+          <h3 data-lw-field="finanzierung.heading_2" data-lw-type="richtext">Pflegegrad verstehen</h3>
+          <p data-lw-field="finanzierung.copy_2" data-lw-type="textarea">Was Grad&nbsp;1 bis&nbsp;5 praktisch bedeuten – und welcher Zugang zur Pflegekasse sich daraus ergibt.</p>
         </li>
-        <li class="pb-path__step">
+        <li class="pb-path__step" data-lw-field="finanzierung.item_2" data-lw-type="richtext">
           <div class="pb-path__top">
             <span class="pb-path__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
             </span>
           </div>
-          <h3>Antrag vorbereiten</h3>
-          <p>Unterlagen, Alltagsschilderung und Gutachten: Wir bereiten Sie vor, damit nichts Wichtiges untergeht.</p>
+          <h3 data-lw-field="finanzierung.heading_3" data-lw-type="richtext">Antrag vorbereiten</h3>
+          <p data-lw-field="finanzierung.copy_3" data-lw-type="textarea">Unterlagen, Alltagsschilderung und Gutachten: Wir bereiten Sie vor, damit nichts Wichtiges untergeht.</p>
         </li>
-        <li class="pb-path__step">
+        <li class="pb-path__step" data-lw-field="finanzierung.item_3" data-lw-type="richtext">
           <div class="pb-path__top">
             <span class="pb-path__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
             </span>
           </div>
-          <h3>Leistungen kombinieren</h3>
-          <p>Sachleistung, Pflegegeld, Verhinderungspflege, Entlastungsbetrag – die Mischung, die zu Ihrem Alltag passt.</p>
+          <h3 data-lw-field="finanzierung.heading_4" data-lw-type="richtext">Leistungen kombinieren</h3>
+          <p data-lw-field="finanzierung.copy_4" data-lw-type="textarea">Sachleistung, Pflegegeld, Verhinderungspflege, Entlastungsbetrag – die Mischung, die zu Ihrem Alltag passt.</p>
         </li>
-        <li class="pb-path__step">
+        <li class="pb-path__step" data-lw-field="finanzierung.item_4" data-lw-type="richtext">
           <div class="pb-path__top">
             <span class="pb-path__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
             </span>
           </div>
-          <h3>Kosten transparent machen</h3>
-          <p>Was die Kasse trägt, was privat bleibt: ehrlich vorgerechnet – ohne Druck und ohne Überraschungen.</p>
+          <h3 data-lw-field="finanzierung.heading_5" data-lw-type="richtext">Kosten transparent machen</h3>
+          <p data-lw-field="finanzierung.copy_5" data-lw-type="textarea">Was die Kasse trägt, was privat bleibt: ehrlich vorgerechnet – ohne Druck und ohne Überraschungen.</p>
         </li>
       </ol>
 
       <aside class="pb-finance-cta reveal" aria-labelledby="finance-cta-title">
         <div class="pb-finance-cta__copy">
-          <p class="pb-finance-cta__eyebrow">Gut zu wissen</p>
-          <h3 id="finance-cta-title">Ohne Pflegegrad möglich?</h3>
-          <p>
+          <p class="pb-finance-cta__eyebrow" data-lw-field="finanzierung.copy_6" data-lw-type="textarea">Gut zu wissen</p>
+          <h3 id="finance-cta-title" data-lw-field="finanzierung.heading_6" data-lw-type="richtext">Ohne Pflegegrad möglich?</h3>
+          <p data-lw-field="finanzierung.copy_7" data-lw-type="textarea">
             Für Leistungen der Pflegeversicherung brauchen Sie in der Regel einen Pflegegrad.
             Ohne Grad lassen sich gewünschte Leistungen privat vereinbaren.
             Wir prüfen gemeinsam, was sinnvoll ist – und helfen beim Antrag.
           </p>
         </div>
         <a class="btn btn--light btn--lg" href="kontakt.html">
-          Finanzierung klären
+          <span data-lw-field="finanzierung.cta" data-lw-type="text">Finanzierung klären</span>
           <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </a>
       </aside>
@@ -579,32 +579,32 @@
   </section>
 
   <!-- ============ BERATUNG ============ -->
-  <section class="cafe section section--white" id="beratung" aria-labelledby="beratung-title">
+  <section class="cafe section section--white" id="beratung" aria-labelledby="beratung-title" data-lw-section="beratung">
     <div class="container cafe__grid">
       <div class="cafe__text reveal">
-        <p class="eyebrow">Beratung</p>
-        <h2 id="beratung-title">Welche Pflege ist für mich die richtige?</h2>
-        <p class="lead">
+        <p class="eyebrow" data-lw-field="beratung.eyebrow" data-lw-type="text">Beratung</p>
+        <h2 id="beratung-title" data-lw-field="beratung.heading" data-lw-type="richtext">Welche Pflege ist für mich die richtige?</h2>
+        <p class="lead" data-lw-field="beratung.copy" data-lw-type="textarea">
           Sie müssen diese Entscheidung nicht alleine treffen. Viele Angehörige stehen plötzlich vor Fragen:
           Was ist organisatorisch möglich? Was trägt die Kasse? In einem persönlichen Beratungsgespräch
           nimmt Juventa sich Zeit, hört zu und erklärt verständlich.
         </p>
         <ul class="cafe__list">
-          <li>Erstgespräch unverbindlich und ohne Druck</li>
-          <li>Für Pflegebedürftige und Angehörige</li>
-          <li>Von der ersten Orientierung bis zur konkreten Planung</li>
+          <li data-lw-field="beratung.item" data-lw-type="richtext">Erstgespräch unverbindlich und ohne Druck</li>
+          <li data-lw-field="beratung.item_2" data-lw-type="richtext">Für Pflegebedürftige und Angehörige</li>
+          <li data-lw-field="beratung.item_3" data-lw-type="richtext">Von der ersten Orientierung bis zur konkreten Planung</li>
         </ul>
         <div class="story__actions">
           <a class="btn btn--primary" href="kontakt.html">
-            Beratungsgespräch vereinbaren
+            <span data-lw-field="beratung.cta" data-lw-type="text">Beratungsgespräch vereinbaren</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
-          <a class="btn btn--outline" href="#preise">Zur Preisübersicht</a>
+          <a class="btn btn--outline" href="#preise"><span data-lw-field="beratung.cta_2" data-lw-type="text">Zur Preisübersicht</span></a>
         </div>
       </div>
       <div class="cafe__media reveal">
         <div class="cafe__media-frame">
-          <img src="assets/images/img-kontakt.webp" alt="Persönliche Pflegeberatung bei Juventa" loading="lazy" width="1024" height="683" />
+          <img src="assets/images/img-kontakt.webp" alt="Persönliche Pflegeberatung bei Juventa" loading="lazy" width="1024" height="683" data-lw-field="beratung.image" data-lw-type="image" />
           <span class="cafe__badge">Auf Augenhöhe</span>
         </div>
       </div>
@@ -612,86 +612,86 @@
 
     <div class="container">
       <ol class="pb-path pb-path--tri reveal">
-        <li class="pb-path__step">
+        <li class="pb-path__step" data-lw-field="beratung.item_4" data-lw-type="richtext">
           <div class="pb-path__top">
             <span class="pb-path__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
             </span>
           </div>
-          <h3>Situation schildern</h3>
-          <p>Ob erste Unsicherheit, akuter Bedarf oder Entlastung für Angehörige: Wir hören zu – ohne Timer und ohne Verkaufsdruck.</p>
+          <h3 data-lw-field="beratung.heading_2" data-lw-type="richtext">Situation schildern</h3>
+          <p data-lw-field="beratung.copy_2" data-lw-type="textarea">Ob erste Unsicherheit, akuter Bedarf oder Entlastung für Angehörige: Wir hören zu – ohne Timer und ohne Verkaufsdruck.</p>
         </li>
-        <li class="pb-path__step">
+        <li class="pb-path__step" data-lw-field="beratung.item_5" data-lw-type="richtext">
           <div class="pb-path__top">
             <span class="pb-path__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
             </span>
           </div>
-          <h3>Persönlich beraten lassen</h3>
-          <p>Wir ordnen Pflegegrad, Leistungen und Organisation ein. Sie erhalten eine ehrliche Einschätzung, was realistisch ist.</p>
+          <h3 data-lw-field="beratung.heading_3" data-lw-type="richtext">Persönlich beraten lassen</h3>
+          <p data-lw-field="beratung.copy_3" data-lw-type="textarea">Wir ordnen Pflegegrad, Leistungen und Organisation ein. Sie erhalten eine ehrliche Einschätzung, was realistisch ist.</p>
         </li>
-        <li class="pb-path__step">
+        <li class="pb-path__step" data-lw-field="beratung.item_6" data-lw-type="richtext">
           <div class="pb-path__top">
             <span class="pb-path__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
             </span>
           </div>
-          <h3>Passende Unterstützung finden</h3>
-          <p>Gemeinsam entscheiden wir den nächsten Schritt: ambulante Pflege zu Hause, Entlastung, 24-Stunden-Versorgung oder Betreutes Wohnen.</p>
+          <h3 data-lw-field="beratung.heading_4" data-lw-type="richtext">Passende Unterstützung finden</h3>
+          <p data-lw-field="beratung.copy_4" data-lw-type="textarea">Gemeinsam entscheiden wir den nächsten Schritt: ambulante Pflege zu Hause, Entlastung, 24-Stunden-Versorgung oder Betreutes Wohnen.</p>
         </li>
       </ol>
     </div>
   </section>
 
   <!-- ============ 24-STUNDEN-VERSORGUNG ============ -->
-  <section class="story section section--cream" id="versorgung-24h" aria-labelledby="versorgung-title">
+  <section class="story section section--cream" id="versorgung-24h" aria-labelledby="versorgung-title" data-lw-section="versorgung-24h">
     <div class="container story__grid story__grid--flip">
       <div class="story__text reveal">
-        <span class="section-label">24-Stunden-Versorgung</span>
-        <h2 id="versorgung-title">Muss ich mein Zuhause verlassen?<br />Die Antwort lautet: Nein.</h2>
-        <p class="story__lead">
+        <span class="section-label" data-lw-field="versorgung-24h.eyebrow" data-lw-type="text">24-Stunden-Versorgung</span>
+        <h2 id="versorgung-title" data-lw-field="versorgung-24h.heading" data-lw-type="richtext">Muss ich mein Zuhause verlassen?<br />Die Antwort lautet: Nein.</h2>
+        <p class="story__lead" data-lw-field="versorgung-24h.copy" data-lw-type="textarea">
           Wenn der Pflegebedarf wächst, bleiben wir rund um die Uhr für Sie da –
           in der gewohnten Umgebung, sicher begleitet und persönlich betreut.
         </p>
-        <p>
+        <p data-lw-field="versorgung-24h.copy_2" data-lw-type="textarea">
           Gemeinsam mit ausgewählten Kooperationspartnern organisieren wir Alltagsbegleitung und Fachpflege im Zusammenspiel:
           Wir finden die Betreuungsperson, die zu Ihnen passt. Unser ambulanter Dienst kommt regelmäßig ins Haus –
           für medizinische Pflege und klare Absprachen.
         </p>
         <ul class="bw-checklist">
-          <li>Vertraute Umgebung bleibt – kein Umzug nötig</li>
-          <li>Gemeinsam finden wir die Betreuungsperson, die zu Ihnen passt</li>
-          <li>Abstimmung mit der ambulanten Pflege von Juventa</li>
-          <li>Voraussetzung: separater Schlafplatz für die Betreuungskraft</li>
+          <li data-lw-field="versorgung-24h.item" data-lw-type="richtext">Vertraute Umgebung bleibt – kein Umzug nötig</li>
+          <li data-lw-field="versorgung-24h.item_2" data-lw-type="richtext">Gemeinsam finden wir die Betreuungsperson, die zu Ihnen passt</li>
+          <li data-lw-field="versorgung-24h.item_3" data-lw-type="richtext">Abstimmung mit der ambulanten Pflege von Juventa</li>
+          <li data-lw-field="versorgung-24h.item_4" data-lw-type="richtext">Voraussetzung: separater Schlafplatz für die Betreuungskraft</li>
         </ul>
         <div class="story__actions">
           <a class="btn btn--primary" href="kontakt.html">
-            24-Stunden-Versorgung anfragen
+            <span data-lw-field="versorgung-24h.cta" data-lw-type="text">24-Stunden-Versorgung anfragen</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
         </div>
       </div>
       <div class="story__collage story__collage--single reveal">
         <div class="story__collage-img story__collage-img--tall">
-          <img src="assets/images/24h-pflege.webp" alt="24-Stunden-Versorgung in der eigenen Häuslichkeit" loading="lazy" width="1920" height="1080" />
+          <img src="assets/images/24h-pflege.webp" alt="24-Stunden-Versorgung in der eigenen Häuslichkeit" loading="lazy" width="1920" height="1080" data-lw-field="versorgung-24h.image" data-lw-type="image" />
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============ PREISÜBERSICHT ============ -->
-  <section class="section" id="preise" aria-labelledby="preise-title">
+  <section class="section" id="preise" aria-labelledby="preise-title" data-lw-section="preise">
     <div class="container">
       <div class="bw-rates reveal">
         <div class="bw-rates__intro">
-          <p class="eyebrow">Preisübersicht</p>
-          <h2 id="preise-title">Förderansprüche verstehen – Kosten persönlich klären</h2>
-          <p>
+          <p class="eyebrow" data-lw-field="preise.eyebrow" data-lw-type="text">Preisübersicht</p>
+          <h2 id="preise-title" data-lw-field="preise.heading" data-lw-type="richtext">Förderansprüche verstehen – Kosten persönlich klären</h2>
+          <p data-lw-field="preise.copy" data-lw-type="textarea">
             Online zeigen wir Ihnen, welche Ansprüche die Pflegeversicherung bietet.
             Was bei Ihnen konkret anfällt, rechnen wir im Gespräch durch – transparent und ohne Druck.
           </p>
           <a class="btn btn--primary" href="kontakt.html">
-            Persönliche Kostenklärung
+            <span data-lw-field="preise.cta" data-lw-type="text">Persönliche Kostenklärung</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
         </div>
@@ -726,30 +726,30 @@
       </div>
 
       <div class="bw-rates-include reveal">
-        <h3>Wie wir Sie bei der Pflegefinanzierung beraten</h3>
+        <h3 data-lw-field="preise.heading_2" data-lw-type="richtext">Wie wir Sie bei der Pflegefinanzierung beraten</h3>
         <ul>
-          <li>
+          <li data-lw-field="preise.item" data-lw-type="richtext">
             <span class="bw-rates-include__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/></svg>
             </span>
             <strong>Leistungsbedarf</strong>
             <span>welche Unterstützung zu Hause wirklich nötig ist</span>
           </li>
-          <li>
+          <li data-lw-field="preise.item_2" data-lw-type="richtext">
             <span class="bw-rates-include__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
             </span>
             <strong>Kassenanteil</strong>
             <span>was Pflegegrad und Versicherer decken</span>
           </li>
-          <li>
+          <li data-lw-field="preise.item_3" data-lw-type="richtext">
             <span class="bw-rates-include__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
             </span>
             <strong>Entlastung</strong>
             <span>Verhinderungspflege und Entlastungsbetrag</span>
           </li>
-          <li>
+          <li data-lw-field="preise.item_4" data-lw-type="richtext">
             <span class="bw-rates-include__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
             </span>
@@ -761,44 +761,44 @@
 
       <div class="bw-rates-table-wrap reveal">
         <div class="bw-rates-table-head">
-          <h3>Orientierung auf einen Blick</h3>
-          <p>Online nur Förderansprüche – individuelle Kosten klären wir im persönlichen Gespräch.</p>
+          <h3 data-lw-field="preise.heading_3" data-lw-type="richtext">Orientierung auf einen Blick</h3>
+          <p data-lw-field="preise.copy_2" data-lw-type="textarea">Online nur Förderansprüche – individuelle Kosten klären wir im persönlichen Gespräch.</p>
         </div>
         <table class="bw-rates-table">
           <thead>
             <tr>
-              <th scope="col">Thema</th>
-              <th scope="col">Hinweis</th>
+              <th scope="col" data-lw-field="preise.cell" data-lw-type="text">Thema</th>
+              <th scope="col" data-lw-field="preise.cell_2" data-lw-type="text">Hinweis</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>1. Erstberatung</td>
-              <td>unverbindlich und kostenfrei</td>
+              <td data-lw-field="preise.cell_3" data-lw-type="text">1. Erstberatung</td>
+              <td data-lw-field="preise.cell_4" data-lw-type="text">unverbindlich und kostenfrei</td>
             </tr>
             <tr>
-              <td>2. Ambulante Pflege (Sach- oder Kombinationsleistung)</td>
-              <td>nach Pflegegrad über die Pflegekasse; Kombinationsleistung möglich</td>
+              <td data-lw-field="preise.cell_5" data-lw-type="text">2. Ambulante Pflege (Sach- oder Kombinationsleistung)</td>
+              <td data-lw-field="preise.cell_6" data-lw-type="text">nach Pflegegrad über die Pflegekasse; Kombinationsleistung möglich</td>
             </tr>
             <tr>
-              <td>3. Verhinderungspflege</td>
-              <td>gemeinsames Jahresbudget mit Kurzzeitpflege: bis zu 3.539&nbsp;€ (Stand 2026)</td>
+              <td data-lw-field="preise.cell_7" data-lw-type="text">3. Verhinderungspflege</td>
+              <td data-lw-field="preise.cell_8" data-lw-type="text">gemeinsames Jahresbudget mit Kurzzeitpflege: bis zu 3.539&nbsp;€ (Stand 2026)</td>
             </tr>
             <tr>
-              <td>4. Entlastungsbetrag</td>
-              <td>bis zu 131&nbsp;€ monatlich</td>
+              <td data-lw-field="preise.cell_9" data-lw-type="text">4. Entlastungsbetrag</td>
+              <td data-lw-field="preise.cell_10" data-lw-type="text">bis zu 131&nbsp;€ monatlich</td>
             </tr>
             <tr>
-              <td>Private Zusatzleistungen</td>
-              <td>nach Aufwand, transparent im Angebot</td>
+              <td data-lw-field="preise.cell_11" data-lw-type="text">Private Zusatzleistungen</td>
+              <td data-lw-field="preise.cell_12" data-lw-type="text">nach Aufwand, transparent im Angebot</td>
             </tr>
             <tr>
-              <td>24-Stunden-Versorgung</td>
-              <td>über Kooperationspartner; Kosten individuell im Gespräch – nicht über die übliche Förderlogik</td>
+              <td data-lw-field="preise.cell_13" data-lw-type="text">24-Stunden-Versorgung</td>
+              <td data-lw-field="preise.cell_14" data-lw-type="text">über Kooperationspartner; Kosten individuell im Gespräch – nicht über die übliche Förderlogik</td>
             </tr>
           </tbody>
         </table>
-        <p class="bw-rates-footnote">
+        <p class="bw-rates-footnote" data-lw-field="preise.copy_3" data-lw-type="textarea">
           Alle Förderbeträge dienen der Orientierung und können sich gesetzlich ändern.
           Den verbindlichen Überblick zu Ihren Kosten erhalten Sie im persönlichen Gespräch.
           <a href="betreutes-wohnen.html#preise">Preise Betreutes Wohnen</a>
@@ -808,127 +808,127 @@
   </section>
 
   <!-- ============ BRÜCKE ============ -->
-  <section class="cafe section section--cream" aria-labelledby="bridge-title">
+  <section class="cafe section section--cream" aria-labelledby="bridge-title" data-lw-section="bridge">
     <div class="container cafe__grid cafe__grid--media-start">
       <div class="cafe__media reveal">
         <div class="cafe__media-frame">
-          <img src="assets/images/apartment.webp" alt="Betreutes Wohnen in der Brückenmühle Gernsbach" loading="lazy" width="1920" height="1080" />
+          <img src="assets/images/apartment.webp" alt="Betreutes Wohnen in der Brückenmühle Gernsbach" loading="lazy" width="1920" height="1080" data-lw-field="bridge.image" data-lw-type="image" />
           <span class="cafe__badge">Brückenmühle</span>
         </div>
       </div>
       <div class="cafe__text reveal">
-        <p class="eyebrow">Mehr als ambulante Pflege zu Hause</p>
-        <h2 id="bridge-title">Pflege, die mitwachsen kann – bis zum eigenen Apartment</h2>
-        <p class="lead">
+        <p class="eyebrow" data-lw-field="bridge.eyebrow" data-lw-type="text">Mehr als ambulante Pflege zu Hause</p>
+        <h2 id="bridge-title" data-lw-field="bridge.heading" data-lw-type="richtext">Pflege, die mitwachsen kann – bis zum eigenen Apartment</h2>
+        <p class="lead" data-lw-field="bridge.copy" data-lw-type="textarea">
           Manchmal reichen regelmäßige Besuche unseres Pflegedienstes zu Hause.
           Manchmal braucht es mehr Nähe im Haus – oder eine ambulant betreute Wohngemeinschaft.
           In der Brückenmühle Gernsbach verbinden wir selbstbestimmtes Wohnen mit dem Anschluss an unsere ambulante Pflege.
         </p>
         <ul class="cafe__list">
-          <li>Ambulante Pflege zu Hause in Baden-Baden, Murgtal und Landkreis Rastatt</li>
-          <li>Mehr Nähe im Haus und ambulant betreute WG-Angebote</li>
-          <li>Betreutes Wohnen in der Brückenmühle mit Juventa-Pflege</li>
+          <li data-lw-field="bridge.item" data-lw-type="richtext">Ambulante Pflege zu Hause in Baden-Baden, Murgtal und Landkreis Rastatt</li>
+          <li data-lw-field="bridge.item_2" data-lw-type="richtext">Mehr Nähe im Haus und ambulant betreute WG-Angebote</li>
+          <li data-lw-field="bridge.item_3" data-lw-type="richtext">Betreutes Wohnen in der Brückenmühle mit Juventa-Pflege</li>
         </ul>
         <div class="story__actions">
           <a class="btn btn--primary" href="betreutes-wohnen.html">
-            Zum Betreuten Wohnen
+            <span data-lw-field="bridge.cta" data-lw-type="text">Zum Betreuten Wohnen</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
-          <a class="btn btn--outline" href="index.html#pflege-wg">Pflege-WG vormerken</a>
+          <a class="btn btn--outline" href="index.html#pflege-wg"><span data-lw-field="bridge.cta_2" data-lw-type="text">Pflege-WG vormerken</span></a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============ FAQ ============ -->
-  <section class="faq section" id="faq" aria-labelledby="faq-title">
+  <section class="faq section" id="faq" aria-labelledby="faq-title" data-lw-section="faq">
     <div class="container">
       <header class="section-head reveal">
-        <span class="section-label">FAQ</span>
-        <h2 id="faq-title">Fragen zu Pflege und Finanzierung</h2>
-        <p class="section-head__sub">Kurz beantwortet – zu Kosten, Pflegegrad, Bezugspersonen und dem, was Angehörige am häufigsten wissen möchten.</p>
+        <span class="section-label" data-lw-field="faq.eyebrow" data-lw-type="text">FAQ</span>
+        <h2 id="faq-title" data-lw-field="faq.heading" data-lw-type="richtext">Fragen zu Pflege und Finanzierung</h2>
+        <p class="section-head__sub" data-lw-field="faq.copy" data-lw-type="textarea">Kurz beantwortet – zu Kosten, Pflegegrad, Bezugspersonen und dem, was Angehörige am häufigsten wissen möchten.</p>
       </header>
 
       <div class="faq__wrap">
         <div class="faq__media reveal">
           <div class="faq__img">
-            <img src="assets/images/mobile-pflege.webp" alt="Ambulante Pflege und Beratung bei Juventa" width="1024" height="683" loading="lazy" />
+            <img src="assets/images/mobile-pflege.webp" alt="Ambulante Pflege und Beratung bei Juventa" width="1024" height="683" loading="lazy" data-lw-field="faq.image" data-lw-type="image" />
           </div>
           <div class="faq__badge">
             <span class="faq__badge-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
             </span>
-            <span>Klare Orientierung statt Fachchinesisch.</span>
+            <span data-lw-field="faq.badge" data-lw-type="text">Klare Orientierung statt Fachchinesisch.</span>
           </div>
         </div>
 
         <div class="faq__content">
-          <div class="faq__list reveal">
-            <article class="faq__item">
+          <div class="faq__list reveal" data-lw-repeater="faq.items">
+            <article class="faq__item" data-lw-item-key="item-1">
               <h3 class="faq__question">
                 <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="pb-faq-1" id="pb-faq-trigger-1">
-                  <span>Was kostet ambulante Pflege und wer übernimmt die Kosten?</span>
+                  <span data-lw-field="faq.question" data-lw-type="text">Was kostet ambulante Pflege und wer übernimmt die Kosten?</span>
                   <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
                 </button>
               </h3>
               <div class="faq__panel" id="pb-faq-1" role="region" aria-labelledby="pb-faq-trigger-1" hidden>
-                <p>Die Kosten hängen vom Pflegegrad und den benötigten Leistungen ab. Die Pflegekasse übernimmt einen Teil der Pflegesachleistungen und des Pflegegeldes – auch als Kombinationsleistung. Juventa berät transparent zu Förderansprüchen und rechnet individuelle Kosten im Gespräch vor.</p>
+                <p data-lw-field="faq.copy" data-lw-type="textarea">Die Kosten hängen vom Pflegegrad und den benötigten Leistungen ab. Die Pflegekasse übernimmt einen Teil der Pflegesachleistungen und des Pflegegeldes – auch als Kombinationsleistung. Juventa berät transparent zu Förderansprüchen und rechnet individuelle Kosten im Gespräch vor.</p>
               </div>
             </article>
 
-            <article class="faq__item">
+            <article class="faq__item" data-lw-item-key="item-2">
               <h3 class="faq__question">
                 <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="pb-faq-2" id="pb-faq-trigger-2">
-                  <span>Wie beantrage ich einen Pflegegrad?</span>
+                  <span data-lw-field="faq.question" data-lw-type="text">Wie beantrage ich einen Pflegegrad?</span>
                   <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
                 </button>
               </h3>
               <div class="faq__panel" id="pb-faq-2" role="region" aria-labelledby="pb-faq-trigger-2" hidden>
-                <p>Sie stellen einen Antrag bei Ihrer Pflegekasse. Ein MDK-Gutachten bewertet den Pflegebedarf. Juventa unterstützt bei der Vorbereitung und erklärt verständlich, welche Unterlagen sinnvoll sind.</p>
+                <p data-lw-field="faq.copy" data-lw-type="textarea">Sie stellen einen Antrag bei Ihrer Pflegekasse. Ein MDK-Gutachten bewertet den Pflegebedarf. Juventa unterstützt bei der Vorbereitung und erklärt verständlich, welche Unterlagen sinnvoll sind.</p>
               </div>
             </article>
 
-            <article class="faq__item">
+            <article class="faq__item" data-lw-item-key="item-3">
               <h3 class="faq__question">
                 <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="pb-faq-3" id="pb-faq-trigger-3">
-                  <span>Kommen bei Juventa feste Pflegekräfte?</span>
+                  <span data-lw-field="faq.question" data-lw-type="text">Kommen bei Juventa feste Pflegekräfte?</span>
                   <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
                 </button>
               </h3>
               <div class="faq__panel" id="pb-faq-3" role="region" aria-labelledby="pb-faq-trigger-3" hidden>
-                <p>Ja. Vertrauen entsteht durch Kontinuität. Deshalb setzen wir auf feste Bezugspersonen, die Sie, Ihren Alltag und Ihre Wünsche kennenlernen.</p>
+                <p data-lw-field="faq.copy" data-lw-type="textarea">Ja. Vertrauen entsteht durch Kontinuität. Deshalb setzen wir auf feste Bezugspersonen, die Sie, Ihren Alltag und Ihre Wünsche kennenlernen.</p>
               </div>
             </article>
 
-            <article class="faq__item">
+            <article class="faq__item" data-lw-item-key="item-4">
               <h3 class="faq__question">
                 <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="pb-faq-4" id="pb-faq-trigger-4">
-                  <span>Was ist der Unterschied zwischen Kurzzeit- und Verhinderungspflege?</span>
+                  <span data-lw-field="faq.question" data-lw-type="text">Was ist der Unterschied zwischen Kurzzeit- und Verhinderungspflege?</span>
                   <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
                 </button>
               </h3>
               <div class="faq__panel" id="pb-faq-4" role="region" aria-labelledby="pb-faq-trigger-4" hidden>
-                <p>Kurzzeitpflege entlastet in Übergangssituationen, zum Beispiel nach dem Krankenhaus. Verhinderungspflege springt ein, wenn Angehörige vorübergehend nicht pflegen können – etwa im Urlaub oder bei eigener Erkrankung. Beides kommt aus einem gemeinsamen Jahresbudget der Pflegeversicherung (aktuell bis zu 3.539&nbsp;€). Juventa unterstützt bei Antrag und Organisation.</p>
+                <p data-lw-field="faq.copy" data-lw-type="textarea">Kurzzeitpflege entlastet in Übergangssituationen, zum Beispiel nach dem Krankenhaus. Verhinderungspflege springt ein, wenn Angehörige vorübergehend nicht pflegen können – etwa im Urlaub oder bei eigener Erkrankung. Beides kommt aus einem gemeinsamen Jahresbudget der Pflegeversicherung (aktuell bis zu 3.539&nbsp;€). Juventa unterstützt bei Antrag und Organisation.</p>
               </div>
             </article>
 
-            <article class="faq__item">
+            <article class="faq__item" data-lw-item-key="item-5">
               <h3 class="faq__question">
                 <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="pb-faq-5" id="pb-faq-trigger-5">
-                  <span>Was brauche ich für eine 24-Stunden-Versorgung zu Hause?</span>
+                  <span data-lw-field="faq.question" data-lw-type="text">Was brauche ich für eine 24-Stunden-Versorgung zu Hause?</span>
                   <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
                 </button>
               </h3>
               <div class="faq__panel" id="pb-faq-5" role="region" aria-labelledby="pb-faq-trigger-5" hidden>
-                <p>Wichtig ist vor allem ein separater Schlafplatz für die Betreuungskraft. Gemeinsam finden wir die Betreuungsperson, die zu Ihnen passt. Planung und Abstimmung mit der ambulanten Pflege organisieren wir mit Ihnen und unseren Kooperationspartnern.</p>
+                <p data-lw-field="faq.copy" data-lw-type="textarea">Wichtig ist vor allem ein separater Schlafplatz für die Betreuungskraft. Gemeinsam finden wir die Betreuungsperson, die zu Ihnen passt. Planung und Abstimmung mit der ambulanten Pflege organisieren wir mit Ihnen und unseren Kooperationspartnern.</p>
               </div>
             </article>
           </div>
 
           <div class="faq__cta reveal">
-            <p>Noch Fragen zur Pflege?</p>
+            <p data-lw-field="faq.copy_2" data-lw-type="textarea">Noch Fragen zur Pflege?</p>
             <a href="kontakt.html" class="btn btn--primary btn--lg">
-              Persönlich sprechen
+              <span data-lw-field="faq.cta" data-lw-type="text">Persönlich sprechen</span>
               <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
           </div>
@@ -938,47 +938,47 @@
   </section>
 
   <!-- ============ KONTAKT ============ -->
-  <section class="contact section" id="kontakt" aria-labelledby="contact-title">
+  <section class="contact section" id="kontakt" aria-labelledby="contact-title" data-lw-section="kontakt">
     <div class="container">
       <div class="contact__wrap reveal">
         <div class="contact__panel">
-          <span class="section-label">Kontakt</span>
-          <h2 id="contact-title">Lassen Sie uns gemeinsam herausfinden, <span class="headline-accent">welche Unterstützung passt.</span></h2>
-          <p>
+          <span class="section-label" data-lw-field="kontakt.eyebrow" data-lw-type="text">Kontakt</span>
+          <h2 id="contact-title" data-lw-field="kontakt.heading" data-lw-type="richtext">Lassen Sie uns gemeinsam herausfinden, <span class="headline-accent">welche Unterstützung passt.</span></h2>
+          <p data-lw-field="kontakt.copy" data-lw-type="textarea">
             Ob ambulante Pflege, Pflegegrad, Finanzierung oder 24-Stunden-Versorgung:
             Wir nehmen uns Zeit – verständlich, persönlich und ohne Druck.
           </p>
-          <div class="contact__items">
-            <div class="contact__item">
+          <div class="contact__items" data-lw-repeater="contact.items">
+            <div class="contact__item" data-lw-item-key="item-1">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
               <div><strong>Mobil</strong><a href="tel:+491785254075">+49 178 5254075</a></div>
             </div>
-            <div class="contact__item">
+            <div class="contact__item" data-lw-item-key="item-2">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
               <div><strong>Festnetz</strong><a href="tel:+4972219959934">+49 7221 9959934</a></div>
             </div>
-            <div class="contact__item">
+            <div class="contact__item" data-lw-item-key="item-3">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></span>
               <div><strong>E-Mail</strong><a href="mailto:info@juventa-pflege.de">info@juventa-pflege.de</a></div>
             </div>
-            <div class="contact__item">
+            <div class="contact__item" data-lw-item-key="item-4">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
               <div><strong>Einsatzgebiet</strong><span>Baden-Baden, Murgtal &amp; Landkreis Rastatt · Brückenmühle Gernsbach</span></div>
             </div>
           </div>
           <div class="contact__actions">
             <a href="tel:+491785254075" class="btn btn--primary btn--lg">
-              Rückruf / Anrufen
+              <span data-lw-field="kontakt.cta" data-lw-type="text">Rückruf / Anrufen</span>
               <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
             <a href="mailto:info@juventa-pflege.de?subject=Pflege%20%26%20Beratung%20%E2%80%93%20Juventa" class="btn btn--outline-light btn--lg">
-              Beratung anfragen
+              <span data-lw-field="kontakt.cta_2" data-lw-type="text">Beratung anfragen</span>
               <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
           </div>
         </div>
         <div class="contact__visual">
-          <img src="assets/images/img-kontakt.webp" alt="Persönliche Beratung zu ambulanter Pflege bei Juventa" width="1024" height="683" loading="lazy" />
+          <img src="assets/images/img-kontakt.webp" alt="Persönliche Beratung zu ambulanter Pflege bei Juventa" width="1024" height="683" loading="lazy" data-lw-field="kontakt.image" data-lw-type="image" />
           <span class="contact__visual-overlay" aria-hidden="true"></span>
         </div>
       </div>
@@ -1054,10 +1054,10 @@
       <div class="a11y__group">
         <span class="a11y__label" id="a11yFontLabel">Schriftgröße</span>
         <div class="a11y__font-btns" role="group" aria-labelledby="a11yFontLabel">
-          <button class="a11y__font-btn" type="button" data-a11y-font="sm" aria-pressed="false" aria-label="Kleinere Schrift">A−</button>
-          <button class="a11y__font-btn is-active" type="button" data-a11y-font="normal" aria-pressed="true" aria-label="Normale Schrift">A</button>
-          <button class="a11y__font-btn" type="button" data-a11y-font="lg" aria-pressed="false" aria-label="Größere Schrift">A+</button>
-          <button class="a11y__font-btn" type="button" data-a11y-font="xl" aria-pressed="false" aria-label="Sehr große Schrift">A++</button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="sm" aria-pressed="false" aria-label="Kleinere Schrift"><span>A−</span></button>
+          <button class="a11y__font-btn is-active" type="button" data-a11y-font="normal" aria-pressed="true" aria-label="Normale Schrift"><span>A</span></button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="lg" aria-pressed="false" aria-label="Größere Schrift"><span>A+</span></button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="xl" aria-pressed="false" aria-label="Sehr große Schrift"><span>A++</span></button>
         </div>
       </div>
       <div class="a11y__group">

@@ -122,17 +122,17 @@
 
 <!-- ============ HERO ============ -->
 <div class="hero-shell" id="start">
-  <section class="hero" data-lw-section="hero" data-hero aria-label="Betreutes Wohnen in der Brückenmühle Gernsbach">
+  <section class="hero" data-hero aria-label="Betreutes Wohnen in der Brückenmühle Gernsbach">
 
-    <div class="hero__media" id="heroSlider" aria-hidden="true">
-      <div class="hero__slide is-active">
-        <img src="assets/images/apartment.webp" alt="" width="1920" height="1080" fetchpriority="high" data-lw-decorative="true" />
+    <div class="hero__media" id="heroSlider" aria-hidden="true" data-lw-section="hero-media" data-lw-repeater="hero.slides">
+      <div class="hero__slide is-active" data-lw-item-key="slide-1">
+        <img src="assets/images/apartment.webp" alt="" width="1920" height="1080" fetchpriority="high" data-lw-decorative="true" data-lw-field="hero-media.image" data-lw-type="image" />
       </div>
-      <div class="hero__slide">
-        <img src="assets/images/hero1.webp" alt="" width="1920" height="1080" loading="lazy" data-lw-decorative="true" />
+      <div class="hero__slide" data-lw-item-key="slide-2">
+        <img src="assets/images/hero1.webp" alt="" width="1920" height="1080" loading="lazy" data-lw-decorative="true" data-lw-field="hero-media.image" data-lw-type="image" />
       </div>
-      <div class="hero__slide">
-        <img src="assets/images/zimmer-1.webp" alt="" width="1920" height="1080" loading="lazy" data-lw-decorative="true" />
+      <div class="hero__slide" data-lw-item-key="slide-3">
+        <img src="assets/images/zimmer-1.webp" alt="" width="1920" height="1080" loading="lazy" data-lw-decorative="true" data-lw-field="hero-media.image" data-lw-type="image" />
       </div>
     </div>
     <div class="hero__overlay" aria-hidden="true"></div>
@@ -198,7 +198,7 @@
               <a href="wissen.html" class="nav__link">Wissen</a>
               <a href="kontakt.html" class="nav__link">Kontakt</a>
               <a href="kontakt.html" class="btn btn--primary nav__cta">
-                Beratung anfragen
+                <span>Beratung anfragen</span>
                 <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
               </a>
             </div>
@@ -250,24 +250,24 @@
             <li><a href="kontakt.html" class="nav__link">Kontakt</a></li>
           </ul>
           <a href="kontakt.html" class="btn btn--primary nav__cta nav__cta--drawer">
-            Beratung anfragen
+            <span>Beratung anfragen</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
         </nav>
       </div>
     </header>
 
-    <div class="container hero__body">
+    <div class="container hero__body" data-lw-section="hero">
       <div class="hero__content reveal">
-        <span class="hero__eyebrow">Brückenmühle · Gernsbach</span>
+        <span class="hero__eyebrow" data-lw-field="hero.eyebrow" data-lw-type="text">Brückenmühle · Gernsbach</span>
         <h1 class="hero__title" data-lw-field="hero.title" data-lw-type="richtext">Wohnen, das nach Ihnen aussieht&nbsp;–<br />nicht nach einer <span class="headline-accent headline-accent--light">Einrichtung</span>.</h1>
-        <p class="hero__sub">
+        <p class="hero__sub" data-lw-field="hero.copy" data-lw-type="textarea">
           In der historischen Brückenmühle verbinden wir eigene Apartments mit Alltagssicherheit,
           Gemeinschaft und dem Anschluss an die ambulante Pflege von Juventa.
         </p>
         <div class="hero__actions">
           <a href="kontakt.html" class="btn btn--primary btn--lg">
-            Apartment vormerken
+            <span data-lw-field="hero.cta" data-lw-type="text">Apartment vormerken</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
           <a href="tel:+491785254075" class="hero__play" aria-label="Rufen Sie uns an unter +49 178 5254075">
@@ -285,36 +285,36 @@
 
   </section>
 
-  <div class="hero__cards">
+  <div class="hero__cards" data-lw-section="offers">
     <div class="container">
-      <nav class="hero__cards-inner hero__cards-inner--quad reveal" aria-label="Abschnitte dieser Seite">
-        <a href="#konzept" class="hero__card">
+      <nav class="hero__cards-inner hero__cards-inner--quad reveal" aria-label="Abschnitte dieser Seite" data-lw-repeater="offers.cards">
+        <a href="#konzept" class="hero__card" data-lw-item-key="card-1">
           <span class="hero__card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5L19 22l-7-4-7 4 2.5-8.5L2 9h7z"/></svg>
           </span>
-          <h2>Konzept &amp; Vision</h2>
-          <p>Selbstbestimmt leben – begleitet, wenn Sie es brauchen.</p>
+          <h2 data-lw-field="offers.heading" data-lw-type="richtext">Konzept &amp; Vision</h2>
+          <p data-lw-field="offers.copy" data-lw-type="textarea">Selbstbestimmt leben – begleitet, wenn Sie es brauchen.</p>
         </a>
-        <a href="#apartments" class="hero__card">
+        <a href="#apartments" class="hero__card" data-lw-item-key="card-2">
           <span class="hero__card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
           </span>
-          <h2>Apartments</h2>
-          <p>Neun Einheiten mit Hotel-Komfort und Zuhause-Gefühl.</p>
+          <h2 data-lw-field="offers.heading" data-lw-type="richtext">Apartments</h2>
+          <p data-lw-field="offers.copy" data-lw-type="textarea">Neun Einheiten mit Hotel-Komfort und Zuhause-Gefühl.</p>
         </a>
-        <a href="#grundrisse" class="hero__card">
+        <a href="#grundrisse" class="hero__card" data-lw-item-key="card-3">
           <span class="hero__card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M3 9h18M3 15h18M15 3v18"/></svg>
           </span>
-          <h2>Grundrisse</h2>
-          <p>Ein- und Zweizimmerwohnungen – klar und übersichtlich.</p>
+          <h2 data-lw-field="offers.heading" data-lw-type="richtext">Grundrisse</h2>
+          <p data-lw-field="offers.copy" data-lw-type="textarea">Ein- und Zweizimmerwohnungen – klar und übersichtlich.</p>
         </a>
-        <a href="#preise" class="hero__card">
+        <a href="#preise" class="hero__card" data-lw-item-key="card-4">
           <span class="hero__card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           </span>
-          <h2>Preisübersicht</h2>
-          <p>Gesamtpreise inklusive verpflichtender Betreuung vor Ort.</p>
+          <h2 data-lw-field="offers.heading" data-lw-type="richtext">Preisübersicht</h2>
+          <p data-lw-field="offers.copy" data-lw-type="textarea">Gesamtpreise inklusive verpflichtender Betreuung vor Ort.</p>
         </a>
       </nav>
     </div>
@@ -324,157 +324,157 @@
 <main id="hauptinhalt">
 
   <!-- ============ KONZEPT & VISION ============ -->
-  <section class="story section" id="konzept" aria-labelledby="konzept-title">
+  <section class="story section" id="konzept" aria-labelledby="konzept-title" data-lw-section="konzept">
     <div class="container story__grid">
       <div class="story__collage reveal">
         <div class="story__collage-img story__collage-img--tall">
-          <img src="assets/images/hero1.webp" alt="Historische Brückenmühle Gernsbach – Ort für Betreutes Wohnen" loading="lazy" width="1920" height="1080" />
+          <img src="assets/images/hero1.webp" alt="Historische Brückenmühle Gernsbach – Ort für Betreutes Wohnen" loading="lazy" width="1920" height="1080" data-lw-field="konzept.image" data-lw-type="image" />
         </div>
         <div class="story__collage-stack">
           <div class="story__collage-img story__collage-img--top">
-            <img src="assets/images/hero2.webp" alt="Helle Wohnatmosphäre in der Brückenmühle" loading="lazy" width="1920" height="1080" />
+            <img src="assets/images/hero2.webp" alt="Helle Wohnatmosphäre in der Brückenmühle" loading="lazy" width="1920" height="1080" data-lw-field="konzept.image_2" data-lw-type="image" />
           </div>
           <div class="story__collage-img story__collage-img--bottom">
-            <img src="assets/images/hero3.webp" alt="Gemeinschaft und Begegnung im Haus" loading="lazy" width="1920" height="1080" />
+            <img src="assets/images/hero3.webp" alt="Gemeinschaft und Begegnung im Haus" loading="lazy" width="1920" height="1080" data-lw-field="konzept.image_3" data-lw-type="image" />
           </div>
         </div>
       </div>
 
       <div class="story__text reveal">
-        <span class="section-label">Konzept &amp; Vision</span>
-        <h2 id="konzept-title">Ein Zuhause mit Haltung:<br />eigenständig, verbunden, sicher.</h2>
-        <p class="story__lead">
+        <span class="section-label" data-lw-field="konzept.eyebrow" data-lw-type="text">Konzept &amp; Vision</span>
+        <h2 id="konzept-title" data-lw-field="konzept.heading" data-lw-type="richtext">Ein Zuhause mit Haltung:<br />eigenständig, verbunden, sicher.</h2>
+        <p class="story__lead" data-lw-field="konzept.copy" data-lw-type="textarea">
           Die Brückenmühle ist kein Pflegeheim und kein Hotelzimmer auf Dauer.
           Sie ist ein Ort, an dem Alltag, Würde und Nachbarschaft zusammengehören.
         </p>
-        <p>
+        <p data-lw-field="konzept.copy_2" data-lw-type="textarea">
           Sie behalten Ihre eigenen vier Wände und entscheiden über Tagesrhythmus, Besuch und Einrichtung.
           Gleichzeitig sind Service, Café und die ambulante Pflege von Juventa nur wenige Schritte entfernt –
           ohne dass Sie Leistungen buchen müssen, die Sie nicht brauchen.
         </p>
         <ul class="bw-checklist">
-          <li>Eigene Apartments statt Stationsflur</li>
-          <li>Gemeinschaft, wenn Sie Anschluss suchen</li>
-          <li>Pflegeanschluss, wenn der Bedarf wächst</li>
+          <li data-lw-field="konzept.item" data-lw-type="richtext">Eigene Apartments statt Stationsflur</li>
+          <li data-lw-field="konzept.item_2" data-lw-type="richtext">Gemeinschaft, wenn Sie Anschluss suchen</li>
+          <li data-lw-field="konzept.item_3" data-lw-type="richtext">Pflegeanschluss, wenn der Bedarf wächst</li>
         </ul>
         <div class="story__actions">
           <a class="btn btn--primary" href="#apartments">
-            Apartments ansehen
+            <span data-lw-field="konzept.cta" data-lw-type="text">Apartments ansehen</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
-          <a class="btn btn--outline" href="index.html#cafe">Zum Café</a>
+          <a class="btn btn--outline" href="index.html#cafe"><span data-lw-field="konzept.cta_2" data-lw-type="text">Zum Café</span></a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============ WARUM ANDERS ============ -->
-  <section class="section section--cream" aria-labelledby="anders-title">
+  <section class="section section--cream" aria-labelledby="anders-title" data-lw-section="anders">
     <div class="container">
       <header class="section-head reveal">
-        <p class="eyebrow">Was das ausmacht</p>
-        <h2 id="anders-title">Mehr als vier Wände –<br />ein Alltag, der zu Ihnen passt</h2>
-        <p class="section-head__sub">Drei Leitgedanken, die das Wohnkonzept in der Brückenmühle tragen.</p>
+        <p class="eyebrow" data-lw-field="anders.eyebrow" data-lw-type="text">Was das ausmacht</p>
+        <h2 id="anders-title" data-lw-field="anders.heading" data-lw-type="richtext">Mehr als vier Wände –<br />ein Alltag, der zu Ihnen passt</h2>
+        <p class="section-head__sub" data-lw-field="anders.copy" data-lw-type="textarea">Drei Leitgedanken, die das Wohnkonzept in der Brückenmühle tragen.</p>
       </header>
       <div class="bw-pillars reveal">
         <article class="bw-pillar">
           <span class="bw-pillar__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.5-7 8-7s8 3 8 7"/></svg>
           </span>
-          <h3>Selbstbestimmung zuerst</h3>
-          <p>Sie bestimmen, wie voll Ihr Kalender ist. Ob stiller Morgen auf dem Sofa oder Kaffee im Café: Der Alltag gehört Ihnen.</p>
+          <h3 data-lw-field="anders.heading_2" data-lw-type="richtext">Selbstbestimmung zuerst</h3>
+          <p data-lw-field="anders.copy_2" data-lw-type="textarea">Sie bestimmen, wie voll Ihr Kalender ist. Ob stiller Morgen auf dem Sofa oder Kaffee im Café: Der Alltag gehört Ihnen.</p>
         </article>
         <article class="bw-pillar">
           <span class="bw-pillar__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </span>
-          <h3>Sicherheit ohne Bevormundung</h3>
-          <p>Betreuung vor Ort und Technik schaffen Verlässlichkeit im Haus. Zusätzliche Unterstützung kommt erst, wenn Sie sie wirklich wollen.</p>
+          <h3 data-lw-field="anders.heading_3" data-lw-type="richtext">Sicherheit ohne Bevormundung</h3>
+          <p data-lw-field="anders.copy_3" data-lw-type="textarea">Betreuung vor Ort und Technik schaffen Verlässlichkeit im Haus. Zusätzliche Unterstützung kommt erst, wenn Sie sie wirklich wollen.</p>
         </article>
         <article class="bw-pillar">
           <span class="bw-pillar__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
           </span>
-          <h3>Pflege, die mitwachsen kann</h3>
-          <p>Sollte Pflegebedarf entstehen, bleibt Juventa nah: ambulante Pflege ist an die Brückenmühle angebunden – mit vertrauten Gesichtern.</p>
+          <h3 data-lw-field="anders.heading_4" data-lw-type="richtext">Pflege, die mitwachsen kann</h3>
+          <p data-lw-field="anders.copy_4" data-lw-type="textarea">Sollte Pflegebedarf entstehen, bleibt Juventa nah: ambulante Pflege ist an die Brückenmühle angebunden – mit vertrauten Gesichtern.</p>
         </article>
       </div>
     </div>
   </section>
 
   <!-- ============ APARTMENTS & AUSSTATTUNG ============ -->
-  <section class="apartments section" id="apartments" aria-labelledby="apart-title">
+  <section class="apartments section" id="apartments" aria-labelledby="apart-title" data-lw-section="apartments">
     <div class="container apartments__layout">
       <div class="apartments__intro reveal">
-        <p class="eyebrow">Apartments &amp; Ausstattung</p>
-        <h2 id="apart-title">Räume mit Charakter –<br />fertig zum Ankommen</h2>
+        <p class="eyebrow" data-lw-field="apartments.eyebrow" data-lw-type="text">Apartments &amp; Ausstattung</p>
+        <h2 id="apart-title" data-lw-field="apartments.heading" data-lw-type="richtext">Räume mit Charakter –<br />fertig zum Ankommen</h2>
         <a class="apartments__scroll" href="#apartmentsSlider" aria-label="Zu den Apartment-Bildern scrollen">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
         </a>
       </div>
 
       <ul class="apartments__features reveal">
-        <li>
+        <li data-lw-field="apartments.item" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M4 12h16"/><path d="M12 4v16"/><circle cx="12" cy="12" r="9"/></svg>
           </span>
-          <h3>Barrierearme Bäder</h3>
-          <p>Bodengleiche Duschen und klare Wege – damit der Morgen ohne Hürden beginnt.</p>
+          <h3 data-lw-field="apartments.heading_2" data-lw-type="richtext">Barrierearme Bäder</h3>
+          <p data-lw-field="apartments.copy" data-lw-type="textarea">Bodengleiche Duschen und klare Wege – damit der Morgen ohne Hürden beginnt.</p>
         </li>
-        <li>
+        <li data-lw-field="apartments.item_2" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
           </span>
-          <h3>Eigene Küche</h3>
-          <p>Hochwertig ausgestattet, damit Kochen und Genießen ganz selbstverständlich bleiben.</p>
+          <h3 data-lw-field="apartments.heading_3" data-lw-type="richtext">Eigene Küche</h3>
+          <p data-lw-field="apartments.copy_2" data-lw-type="textarea">Hochwertig ausgestattet, damit Kochen und Genießen ganz selbstverständlich bleiben.</p>
         </li>
-        <li>
+        <li data-lw-field="apartments.item_3" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M12 2v4M6 6l3 3M18 6l-3 3"/><path d="M4 14h16"/><path d="M8 18h8"/></svg>
           </span>
-          <h3>Fußbodenheizung</h3>
-          <p>Gleichmäßige Wärme in jedem Raum – ohne sichtbare Heizkörper an den Wänden.</p>
+          <h3 data-lw-field="apartments.heading_4" data-lw-type="richtext">Fußbodenheizung</h3>
+          <p data-lw-field="apartments.copy_3" data-lw-type="textarea">Gleichmäßige Wärme in jedem Raum – ohne sichtbare Heizkörper an den Wänden.</p>
         </li>
-        <li>
+        <li data-lw-field="apartments.item_4" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
           </span>
-          <h3>Möblierung nach Wunsch</h3>
-          <p>Voll ausgestattet einziehen oder Lieblingsstücke mitbringen: Beides ist willkommen.</p>
+          <h3 data-lw-field="apartments.heading_5" data-lw-type="richtext">Möblierung nach Wunsch</h3>
+          <p data-lw-field="apartments.copy_4" data-lw-type="textarea">Voll ausgestattet einziehen oder Lieblingsstücke mitbringen: Beides ist willkommen.</p>
         </li>
-        <li>
+        <li data-lw-field="apartments.item_5" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg>
           </span>
-          <h3>Historischer Charme</h3>
-          <p>Rundbögen und die Atmosphäre der Brückenmühle – modern gedacht, nicht museal.</p>
+          <h3 data-lw-field="apartments.heading_6" data-lw-type="richtext">Historischer Charme</h3>
+          <p data-lw-field="apartments.copy_5" data-lw-type="textarea">Rundbögen und die Atmosphäre der Brückenmühle – modern gedacht, nicht museal.</p>
         </li>
-        <li>
+        <li data-lw-field="apartments.item_6" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
           </span>
-          <h3>Licht &amp; Weite</h3>
-          <p>Helle Grundrisse mit ein bis zwei Zimmern – übersichtlich, warm und individuell.</p>
+          <h3 data-lw-field="apartments.heading_7" data-lw-type="richtext">Licht &amp; Weite</h3>
+          <p data-lw-field="apartments.copy_6" data-lw-type="textarea">Helle Grundrisse mit ein bis zwei Zimmern – übersichtlich, warm und individuell.</p>
         </li>
       </ul>
     </div>
 
-    <div class="apartments__slider reveal" id="apartmentsSlider">
+    <div class="apartments__slider reveal" id="apartmentsSlider" data-lw-repeater="apartments.slides">
       <div class="apartments__slider-media" aria-live="polite">
-        <figure class="apartments__slider-slide is-active">
-          <img src="assets/images/zimmer-1.webp" alt="Heller Wohnbereich eines Apartments in der Brückenmühle" width="1024" height="683" loading="lazy" />
+        <figure class="apartments__slider-slide is-active" data-lw-item-key="slide-1">
+          <img src="assets/images/zimmer-1.webp" alt="Heller Wohnbereich eines Apartments in der Brückenmühle" width="1024" height="683" loading="lazy" data-lw-field="apartments.image" data-lw-type="image" />
           <span class="apartments__slider-num" aria-hidden="true">01</span>
         </figure>
-        <figure class="apartments__slider-slide">
-          <img src="assets/images/kueche-2.webp" alt="Hochwertige Küche in einem Apartment der Brückenmühle" width="1024" height="683" loading="lazy" />
+        <figure class="apartments__slider-slide" data-lw-item-key="slide-2">
+          <img src="assets/images/kueche-2.webp" alt="Hochwertige Küche in einem Apartment der Brückenmühle" width="1024" height="683" loading="lazy" data-lw-field="apartments.image" data-lw-type="image" />
           <span class="apartments__slider-num" aria-hidden="true">02</span>
         </figure>
-        <figure class="apartments__slider-slide">
-          <img src="assets/images/apartment.webp" alt="Apartment mit Wohnatmosphäre und Hotel-Komfort" width="1024" height="683" loading="lazy" />
+        <figure class="apartments__slider-slide" data-lw-item-key="slide-3">
+          <img src="assets/images/apartment.webp" alt="Apartment mit Wohnatmosphäre und Hotel-Komfort" width="1024" height="683" loading="lazy" data-lw-field="apartments.image" data-lw-type="image" />
           <span class="apartments__slider-num" aria-hidden="true">03</span>
         </figure>
-        <figure class="apartments__slider-slide">
-          <img src="assets/images/cafe-2.webp" alt="Gemeinschaftsbereich in der Brückenmühle" width="1024" height="683" loading="lazy" />
+        <figure class="apartments__slider-slide" data-lw-item-key="slide-4">
+          <img src="assets/images/cafe-2.webp" alt="Gemeinschaftsbereich in der Brückenmühle" width="1024" height="683" loading="lazy" data-lw-field="apartments.image" data-lw-type="image" />
           <span class="apartments__slider-num" aria-hidden="true">04</span>
         </figure>
         <a href="kontakt.html" class="apartments__slider-hover">
@@ -488,9 +488,9 @@
       <div class="container apartments__slider-foot">
         <div class="apartments__slider-bar">
           <div class="apartments__slider-copy">
-            <p class="eyebrow">Neun Einheiten</p>
-            <h3 class="apartments__slider-title">Klein genug für Nähe, groß genug für Privatsphäre</h3>
-            <p class="apartments__slider-text">
+            <p class="eyebrow" data-lw-field="apartments.eyebrow_2" data-lw-type="text">Neun Einheiten</p>
+            <h3 class="apartments__slider-title" data-lw-field="apartments.heading_8" data-lw-type="richtext">Klein genug für Nähe, groß genug für Privatsphäre</h3>
+            <p class="apartments__slider-text" data-lw-field="apartments.copy_7" data-lw-type="textarea">
               Jedes Apartment ist ein eigenes Zuhause: mit Küche, Bad und Raum zum Atmen.
               Die Gemeinschaft im Haus bleibt eine Einladung – kein Zwang.
             </p>
@@ -509,12 +509,12 @@
   </section>
 
   <!-- ============ GRUNDRISSE ============ -->
-  <section class="section section--cream" id="grundrisse" aria-labelledby="grundrisse-title">
+  <section class="section section--cream" id="grundrisse" aria-labelledby="grundrisse-title" data-lw-section="grundrisse">
     <div class="container">
       <header class="section-head reveal">
-        <p class="eyebrow">Grundrisse</p>
-        <h2 id="grundrisse-title">Welche Wohnform passt zu Ihnen?</h2>
-        <p class="section-head__sub">
+        <p class="eyebrow" data-lw-field="grundrisse.eyebrow" data-lw-type="text">Grundrisse</p>
+        <h2 id="grundrisse-title" data-lw-field="grundrisse.heading" data-lw-type="richtext">Welche Wohnform passt zu Ihnen?</h2>
+        <p class="section-head__sub" data-lw-field="grundrisse.copy" data-lw-type="textarea">
           Für Ein- und Zweizimmer-Apartments finden Sie Beispielbilder und schematische Grundrisse.
           Verbindliche Pläne und Maße besprechen wir gerne persönlich mit Ihnen.
         </p>
@@ -526,17 +526,17 @@
           <div class="bw-type__gallery" data-gallery>
             <div class="bw-type__stage" aria-live="polite">
               <figure class="bw-type__slide is-active">
-                <img src="assets/images/zimmer-1.webp" alt="Einzimmer-Apartment: heller Wohn-Schlafbereich" width="1024" height="683" loading="lazy" />
+                <img src="assets/images/zimmer-1.webp" alt="Einzimmer-Apartment: heller Wohn-Schlafbereich" width="1024" height="683" loading="lazy" data-lw-field="grundrisse.image" data-lw-type="image" />
               </figure>
               <figure class="bw-type__slide">
-                <img src="assets/images/kueche-2.webp" alt="Einzimmer-Apartment: eigene Küche" width="1024" height="683" loading="lazy" />
+                <img src="assets/images/kueche-2.webp" alt="Einzimmer-Apartment: eigene Küche" width="1024" height="683" loading="lazy" data-lw-field="grundrisse.image_2" data-lw-type="image" />
               </figure>
               <figure class="bw-type__slide">
-                <img src="assets/images/apartment.webp" alt="Einzimmer-Apartment: Wohnatmosphäre mit Hotel-Komfort" width="1024" height="683" loading="lazy" />
+                <img src="assets/images/apartment.webp" alt="Einzimmer-Apartment: Wohnatmosphäre mit Hotel-Komfort" width="1024" height="683" loading="lazy" data-lw-field="grundrisse.image_3" data-lw-type="image" />
               </figure>
             </div>
             <div class="bw-type__gallery-bar">
-              <p class="bw-type__counter"><span data-gallery-current>1</span> / <span data-gallery-total>3</span></p>
+              <p class="bw-type__counter" data-lw-field="grundrisse.copy_2" data-lw-type="textarea"><span data-gallery-current>1</span> / <span data-gallery-total>3</span></p>
               <div class="bw-type__nav">
                 <button type="button" class="apartments__slider-btn" data-gallery-prev aria-label="Vorheriges Beispielbild Typ A">
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
@@ -549,13 +549,13 @@
           </div>
 
           <div class="bw-type__content">
-            <p class="bw-floorplan__kicker">Typ A</p>
-            <h3 id="type-a-title">Einzimmer-Apartment</h3>
-            <p>Kompakt, hell und barrierearm – ideal, wenn Sie wenig Fläche brauchen und trotzdem Küche sowie Bad für sich haben möchten.</p>
+            <p class="bw-floorplan__kicker" data-lw-field="grundrisse.copy_3" data-lw-type="textarea">Typ A</p>
+            <h3 id="type-a-title" data-lw-field="grundrisse.heading_2" data-lw-type="richtext">Einzimmer-Apartment</h3>
+            <p data-lw-field="grundrisse.copy_4" data-lw-type="textarea">Kompakt, hell und barrierearm – ideal, wenn Sie wenig Fläche brauchen und trotzdem Küche sowie Bad für sich haben möchten.</p>
             <ul>
-              <li>Wohn-Schlafbereich</li>
-              <li>Eigene Küche</li>
-              <li>Barrierearmes Bad</li>
+              <li data-lw-field="grundrisse.item" data-lw-type="richtext">Wohn-Schlafbereich</li>
+              <li data-lw-field="grundrisse.item_2" data-lw-type="richtext">Eigene Küche</li>
+              <li data-lw-field="grundrisse.item_3" data-lw-type="richtext">Barrierearmes Bad</li>
             </ul>
             <div class="bw-type__actions">
               <button
@@ -565,10 +565,11 @@
                 data-src="assets/images/grundriss-1z.svg"
                 data-plan-title="Grundriss Typ A · Einzimmer-Apartment"
               >
-                Grundriss ansehen
+                <img src="assets/images/grundriss-1z.svg" alt="" width="800" height="600" hidden data-lw-decorative="true" data-lw-field="grundrisse.image_4" data-lw-type="image">
+                <span data-lw-field="grundrisse.cta" data-lw-type="text">Grundriss ansehen</span>
                 <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
               </button>
-              <a class="btn btn--outline" href="kontakt.html">Besichtigung anfragen</a>
+              <a class="btn btn--outline" href="kontakt.html"><span data-lw-field="grundrisse.visit" data-lw-type="text">Besichtigung anfragen</span></a>
             </div>
           </div>
         </article>
@@ -576,13 +577,13 @@
         <!-- Typ B -->
         <article class="bw-type reveal" aria-labelledby="type-b-title">
           <div class="bw-type__content">
-            <p class="bw-floorplan__kicker">Typ B</p>
-            <h3 id="type-b-title">Zweizimmer-Apartment</h3>
-            <p>Mehr Raum zum Trennen von Wohnen und Schlafen – zum Beispiel für Paare, Besuch oder ein ruhiges Rückzugsangebot.</p>
+            <p class="bw-floorplan__kicker" data-lw-field="grundrisse.copy_5" data-lw-type="textarea">Typ B</p>
+            <h3 id="type-b-title" data-lw-field="grundrisse.heading_3" data-lw-type="richtext">Zweizimmer-Apartment</h3>
+            <p data-lw-field="grundrisse.copy_6" data-lw-type="textarea">Mehr Raum zum Trennen von Wohnen und Schlafen – zum Beispiel für Paare, Besuch oder ein ruhiges Rückzugsangebot.</p>
             <ul>
-              <li>Separater Wohn- und Schlafbereich</li>
-              <li>Eigene Küche</li>
-              <li>Barrierearmes Bad</li>
+              <li data-lw-field="grundrisse.item_4" data-lw-type="richtext">Separater Wohn- und Schlafbereich</li>
+              <li data-lw-field="grundrisse.item_5" data-lw-type="richtext">Eigene Küche</li>
+              <li data-lw-field="grundrisse.item_6" data-lw-type="richtext">Barrierearmes Bad</li>
             </ul>
             <div class="bw-type__actions">
               <button
@@ -592,27 +593,28 @@
                 data-src="assets/images/grundriss-2z.svg"
                 data-plan-title="Grundriss Typ B · Zweizimmer-Apartment"
               >
-                Grundriss ansehen
+                <img src="assets/images/grundriss-2z.svg" alt="" width="800" height="600" hidden data-lw-decorative="true" data-lw-field="grundrisse.image_2_2" data-lw-type="image">
+                <span data-lw-field="grundrisse.cta_2" data-lw-type="text">Grundriss ansehen</span>
                 <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
               </button>
-              <a class="btn btn--outline" href="kontakt.html">Besichtigung anfragen</a>
+              <a class="btn btn--outline" href="kontakt.html"><span data-lw-field="grundrisse.visit_2" data-lw-type="text">Besichtigung anfragen</span></a>
             </div>
           </div>
 
           <div class="bw-type__gallery" data-gallery>
             <div class="bw-type__stage" aria-live="polite">
               <figure class="bw-type__slide is-active">
-                <img src="assets/images/hero2.webp" alt="Zweizimmer-Apartment: großzügiger Wohnbereich" width="1920" height="1080" loading="lazy" />
+                <img src="assets/images/hero2.webp" alt="Zweizimmer-Apartment: großzügiger Wohnbereich" width="1920" height="1080" loading="lazy" data-lw-field="grundrisse.image_4_2" data-lw-type="image" />
               </figure>
               <figure class="bw-type__slide">
-                <img src="assets/images/hero1.webp" alt="Zweizimmer-Apartment: helle Raumatmosphäre" width="1920" height="1080" loading="lazy" />
+                <img src="assets/images/hero1.webp" alt="Zweizimmer-Apartment: helle Raumatmosphäre" width="1920" height="1080" loading="lazy" data-lw-field="grundrisse.image_5" data-lw-type="image" />
               </figure>
               <figure class="bw-type__slide">
-                <img src="assets/images/cafe-2.webp" alt="Zweizimmer-Apartment: Wohnqualität und Aufenthaltsqualität" width="1024" height="683" loading="lazy" />
+                <img src="assets/images/cafe-2.webp" alt="Zweizimmer-Apartment: Wohnqualität und Aufenthaltsqualität" width="1024" height="683" loading="lazy" data-lw-field="grundrisse.image_6" data-lw-type="image" />
               </figure>
             </div>
             <div class="bw-type__gallery-bar">
-              <p class="bw-type__counter"><span data-gallery-current>1</span> / <span data-gallery-total>3</span></p>
+              <p class="bw-type__counter" data-lw-field="grundrisse.copy_7" data-lw-type="textarea"><span data-gallery-current>1</span> / <span data-gallery-total>3</span></p>
               <div class="bw-type__nav">
                 <button type="button" class="apartments__slider-btn" data-gallery-prev aria-label="Vorheriges Beispielbild Typ B">
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
@@ -629,18 +631,18 @@
   </section>
 
   <!-- ============ PREISÜBERSICHT ============ -->
-  <section class="section" id="preise" aria-labelledby="preise-title">
+  <section class="section" id="preise" aria-labelledby="preise-title" data-lw-section="preise">
     <div class="container">
       <div class="bw-rates reveal">
         <div class="bw-rates__intro">
-          <p class="eyebrow">Preisübersicht</p>
-          <h2 id="preise-title">Beispielpreise – immer als Gesamtbetrag</h2>
-          <p>
+          <p class="eyebrow" data-lw-field="preise.eyebrow" data-lw-type="text">Preisübersicht</p>
+          <h2 id="preise-title" data-lw-field="preise.heading" data-lw-type="richtext">Beispielpreise – immer als Gesamtbetrag</h2>
+          <p data-lw-field="preise.copy" data-lw-type="textarea">
             Die Betreuung vor Ort (650&nbsp;€) ist bereits eingerechnet.
             Nebenkosten kommen je nach Apartment hinzu.
           </p>
           <a class="btn btn--primary" href="kontakt.html">
-            Verbindlichen Preis anfragen
+            <span data-lw-field="preise.cta" data-lw-type="text">Verbindlichen Preis anfragen</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
         </div>
@@ -676,122 +678,122 @@
 
       <div class="bw-rates-table-wrap" id="zimmerpreise">
         <div class="bw-rates-table-head">
-          <h3>Preise aller Apartments</h3>
-          <p>Alle 9 Zimmer im Überblick. Nebenkosten kommen je nach Apartment hinzu.</p>
+          <h3 data-lw-field="preise.heading_2" data-lw-type="richtext">Preise aller Apartments</h3>
+          <p data-lw-field="preise.copy_2" data-lw-type="textarea">Alle 9 Zimmer im Überblick. Nebenkosten kommen je nach Apartment hinzu.</p>
         </div>
         <table class="bw-rates-table">
           <thead>
             <tr>
-              <th scope="col">Apt.</th>
-              <th scope="col">Typ</th>
-              <th scope="col">Blick</th>
-              <th scope="col">Größe</th>
-              <th scope="col">Nebenkosten</th>
-              <th scope="col">Gesamt inkl. Betreuung vor Ort</th>
+              <th scope="col" data-lw-field="preise.cell" data-lw-type="text">Apt.</th>
+              <th scope="col" data-lw-field="preise.cell_2" data-lw-type="text">Typ</th>
+              <th scope="col" data-lw-field="preise.cell_3" data-lw-type="text">Blick</th>
+              <th scope="col" data-lw-field="preise.cell_4" data-lw-type="text">Größe</th>
+              <th scope="col" data-lw-field="preise.cell_5" data-lw-type="text">Nebenkosten</th>
+              <th scope="col" data-lw-field="preise.cell_6" data-lw-type="text">Gesamt inkl. Betreuung vor Ort</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>1</td>
-              <td>1 Zi</td>
-              <td>Stadt</td>
-              <td>31&nbsp;m²</td>
-              <td>145&nbsp;€</td>
-              <td>1.626&nbsp;€</td>
+              <td data-lw-field="preise.cell_7" data-lw-type="text">1</td>
+              <td data-lw-field="preise.cell_8" data-lw-type="text">1 Zi</td>
+              <td data-lw-field="preise.cell_9" data-lw-type="text">Stadt</td>
+              <td data-lw-field="preise.cell_10" data-lw-type="text">31&nbsp;m²</td>
+              <td data-lw-field="preise.cell_11" data-lw-type="text">145&nbsp;€</td>
+              <td data-lw-field="preise.cell_12" data-lw-type="text">1.626&nbsp;€</td>
             </tr>
             <tr>
-              <td>2</td>
-              <td>2 Zi</td>
-              <td>Murg</td>
-              <td>50&nbsp;m²</td>
-              <td>234&nbsp;€</td>
-              <td>2.487&nbsp;€</td>
+              <td data-lw-field="preise.cell_13" data-lw-type="text">2</td>
+              <td data-lw-field="preise.cell_14" data-lw-type="text">2 Zi</td>
+              <td data-lw-field="preise.cell_15" data-lw-type="text">Murg</td>
+              <td data-lw-field="preise.cell_16" data-lw-type="text">50&nbsp;m²</td>
+              <td data-lw-field="preise.cell_17" data-lw-type="text">234&nbsp;€</td>
+              <td data-lw-field="preise.cell_18" data-lw-type="text">2.487&nbsp;€</td>
             </tr>
             <tr>
-              <td>3</td>
-              <td>1 Zi</td>
-              <td>Murg</td>
-              <td>32&nbsp;m²</td>
-              <td>150&nbsp;€</td>
-              <td>1.742&nbsp;€</td>
+              <td data-lw-field="preise.cell_19" data-lw-type="text">3</td>
+              <td data-lw-field="preise.cell_20" data-lw-type="text">1 Zi</td>
+              <td data-lw-field="preise.cell_21" data-lw-type="text">Murg</td>
+              <td data-lw-field="preise.cell_22" data-lw-type="text">32&nbsp;m²</td>
+              <td data-lw-field="preise.cell_23" data-lw-type="text">150&nbsp;€</td>
+              <td data-lw-field="preise.cell_24" data-lw-type="text">1.742&nbsp;€</td>
             </tr>
             <tr>
-              <td>4</td>
-              <td>1 Zi</td>
-              <td>Murg</td>
-              <td>33&nbsp;m²</td>
-              <td>154&nbsp;€</td>
-              <td>1.776&nbsp;€</td>
+              <td data-lw-field="preise.cell_25" data-lw-type="text">4</td>
+              <td data-lw-field="preise.cell_26" data-lw-type="text">1 Zi</td>
+              <td data-lw-field="preise.cell_27" data-lw-type="text">Murg</td>
+              <td data-lw-field="preise.cell_28" data-lw-type="text">33&nbsp;m²</td>
+              <td data-lw-field="preise.cell_29" data-lw-type="text">154&nbsp;€</td>
+              <td data-lw-field="preise.cell_30" data-lw-type="text">1.776&nbsp;€</td>
             </tr>
             <tr>
-              <td>5</td>
-              <td>2 Zi</td>
-              <td>Murg</td>
-              <td>45&nbsp;m²</td>
-              <td>210&nbsp;€</td>
-              <td>2.185&nbsp;€</td>
+              <td data-lw-field="preise.cell_31" data-lw-type="text">5</td>
+              <td data-lw-field="preise.cell_32" data-lw-type="text">2 Zi</td>
+              <td data-lw-field="preise.cell_33" data-lw-type="text">Murg</td>
+              <td data-lw-field="preise.cell_34" data-lw-type="text">45&nbsp;m²</td>
+              <td data-lw-field="preise.cell_35" data-lw-type="text">210&nbsp;€</td>
+              <td data-lw-field="preise.cell_36" data-lw-type="text">2.185&nbsp;€</td>
             </tr>
             <tr>
-              <td>6</td>
-              <td>2 Zi</td>
-              <td>Murg</td>
-              <td>52&nbsp;m²</td>
-              <td>243&nbsp;€</td>
-              <td>2.834&nbsp;€</td>
+              <td data-lw-field="preise.cell_37" data-lw-type="text">6</td>
+              <td data-lw-field="preise.cell_38" data-lw-type="text">2 Zi</td>
+              <td data-lw-field="preise.cell_39" data-lw-type="text">Murg</td>
+              <td data-lw-field="preise.cell_40" data-lw-type="text">52&nbsp;m²</td>
+              <td data-lw-field="preise.cell_41" data-lw-type="text">243&nbsp;€</td>
+              <td data-lw-field="preise.cell_42" data-lw-type="text">2.834&nbsp;€</td>
             </tr>
             <tr>
-              <td>7</td>
-              <td>2 Zi</td>
-              <td>Stadt</td>
-              <td>35&nbsp;m²</td>
-              <td>164&nbsp;€</td>
-              <td>1.752&nbsp;€</td>
+              <td data-lw-field="preise.cell_43" data-lw-type="text">7</td>
+              <td data-lw-field="preise.cell_44" data-lw-type="text">2 Zi</td>
+              <td data-lw-field="preise.cell_45" data-lw-type="text">Stadt</td>
+              <td data-lw-field="preise.cell_46" data-lw-type="text">35&nbsp;m²</td>
+              <td data-lw-field="preise.cell_47" data-lw-type="text">164&nbsp;€</td>
+              <td data-lw-field="preise.cell_48" data-lw-type="text">1.752&nbsp;€</td>
             </tr>
             <tr>
-              <td>8</td>
-              <td>2 Zi</td>
-              <td>Stadt</td>
-              <td>33&nbsp;m²</td>
-              <td>154&nbsp;€</td>
-              <td>1.689&nbsp;€</td>
+              <td data-lw-field="preise.cell_49" data-lw-type="text">8</td>
+              <td data-lw-field="preise.cell_50" data-lw-type="text">2 Zi</td>
+              <td data-lw-field="preise.cell_51" data-lw-type="text">Stadt</td>
+              <td data-lw-field="preise.cell_52" data-lw-type="text">33&nbsp;m²</td>
+              <td data-lw-field="preise.cell_53" data-lw-type="text">154&nbsp;€</td>
+              <td data-lw-field="preise.cell_54" data-lw-type="text">1.689&nbsp;€</td>
             </tr>
             <tr>
-              <td>9</td>
-              <td>1 Zi</td>
-              <td>Stadt</td>
-              <td>34&nbsp;m²</td>
-              <td>159&nbsp;€</td>
-              <td>1.721&nbsp;€</td>
+              <td data-lw-field="preise.cell_55" data-lw-type="text">9</td>
+              <td data-lw-field="preise.cell_56" data-lw-type="text">1 Zi</td>
+              <td data-lw-field="preise.cell_57" data-lw-type="text">Stadt</td>
+              <td data-lw-field="preise.cell_58" data-lw-type="text">34&nbsp;m²</td>
+              <td data-lw-field="preise.cell_59" data-lw-type="text">159&nbsp;€</td>
+              <td data-lw-field="preise.cell_60" data-lw-type="text">1.721&nbsp;€</td>
             </tr>
           </tbody>
         </table>
       </div>
 
       <div class="bw-rates-include reveal">
-        <h3>Im Beispiel-Gesamtpreis enthalten</h3>
+        <h3 data-lw-field="preise.heading_3" data-lw-type="richtext">Im Beispiel-Gesamtpreis enthalten</h3>
         <ul>
-          <li>
+          <li data-lw-field="preise.item" data-lw-type="richtext">
             <span class="bw-rates-include__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
             </span>
             <strong>Apartment</strong>
             <span>Nutzung nach Typ und Lage</span>
           </li>
-          <li>
+          <li data-lw-field="preise.item_2" data-lw-type="richtext">
             <span class="bw-rates-include__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </span>
             <strong>Betreuung vor Ort</strong>
             <span>650&nbsp;€ / Monat, eingerechnet</span>
           </li>
-          <li>
+          <li data-lw-field="preise.item_3" data-lw-type="richtext">
             <span class="bw-rates-include__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.5-7 8-7s8 3 8 7"/></svg>
             </span>
             <strong>Ansprechpartner</strong>
             <span>feste Bezugspersonen im Haus</span>
           </li>
-          <li>
+          <li data-lw-field="preise.item_4" data-lw-type="richtext">
             <span class="bw-rates-include__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
             </span>
@@ -803,44 +805,44 @@
 
       <div class="bw-rates-table-wrap reveal">
         <div class="bw-rates-table-head">
-          <h3>Optional dazu</h3>
-          <p>Nur bei Bedarf – getrennt vom Gesamtpreis fürs Wohnen.</p>
+          <h3 data-lw-field="preise.heading_4" data-lw-type="richtext">Optional dazu</h3>
+          <p data-lw-field="preise.copy_3" data-lw-type="textarea">Nur bei Bedarf – getrennt vom Gesamtpreis fürs Wohnen.</p>
         </div>
         <table class="bw-rates-table">
           <thead>
             <tr>
-              <th scope="col">Leistung</th>
-              <th scope="col">Preis / Monat</th>
+              <th scope="col" data-lw-field="preise.cell_61" data-lw-type="text">Leistung</th>
+              <th scope="col" data-lw-field="preise.cell_62" data-lw-type="text">Preis / Monat</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Begleitungspauschale</td>
-              <td>350&nbsp;€</td>
+              <td data-lw-field="preise.cell_63" data-lw-type="text">Begleitungspauschale</td>
+              <td data-lw-field="preise.cell_64" data-lw-type="text">350&nbsp;€</td>
             </tr>
             <tr>
-              <td>Individuelle Betreuung</td>
-              <td>606&nbsp;€</td>
+              <td data-lw-field="preise.cell_65" data-lw-type="text">Individuelle Betreuung</td>
+              <td data-lw-field="preise.cell_66" data-lw-type="text">606&nbsp;€</td>
             </tr>
             <tr>
-              <td>Hauswirtschaftliche Leistungen</td>
-              <td>649&nbsp;€</td>
+              <td data-lw-field="preise.cell_67" data-lw-type="text">Hauswirtschaftliche Leistungen</td>
+              <td data-lw-field="preise.cell_68" data-lw-type="text">649&nbsp;€</td>
             </tr>
             <tr>
-              <td>Verpflegungspaket</td>
-              <td>412&nbsp;€</td>
+              <td data-lw-field="preise.cell_69" data-lw-type="text">Verpflegungspaket</td>
+              <td data-lw-field="preise.cell_70" data-lw-type="text">412&nbsp;€</td>
             </tr>
             <tr>
-              <td>Sicherheit &amp; Technik (z.&nbsp;B. LivyCare)</td>
-              <td>auf Anfrage</td>
+              <td data-lw-field="preise.cell_71" data-lw-type="text">Sicherheit &amp; Technik (z.&nbsp;B. LivyCare)</td>
+              <td data-lw-field="preise.cell_72" data-lw-type="text">auf Anfrage</td>
             </tr>
             <tr>
-              <td>Ambulante Pflege über Juventa</td>
-              <td>nach Pflegegrad</td>
+              <td data-lw-field="preise.cell_73" data-lw-type="text">Ambulante Pflege über Juventa</td>
+              <td data-lw-field="preise.cell_74" data-lw-type="text">nach Pflegegrad</td>
             </tr>
           </tbody>
         </table>
-        <p class="bw-rates-footnote">
+        <p class="bw-rates-footnote" data-lw-field="preise.copy_4" data-lw-type="textarea">
           Alle Beträge monatlich. Der Gesamtpreis inkl. Betreuung vor Ort enthält den Zimmerpreis und 650&nbsp;€ Betreuung vor Ort.
           Nebenkosten kommen je nach Apartment hinzu. Den verbindlichen Betrag erhalten Sie im Beratungsgespräch.
           <a href="betreuung-service.html">Mehr zu Betreuung &amp; Service</a>
@@ -850,31 +852,31 @@
   </section>
 
   <!-- ============ BRÜCKE ZUM HAUS ============ -->
-  <section class="cafe section section--white" aria-labelledby="bridge-title">
+  <section class="cafe section section--white" aria-labelledby="bridge-title" data-lw-section="bridge">
     <div class="container cafe__grid">
       <div class="cafe__text reveal">
-        <p class="eyebrow">Leben im Haus</p>
-        <h2 id="bridge-title">Café, Gemeinschaft und Service gehören dazu</h2>
-        <p class="lead">
+        <p class="eyebrow" data-lw-field="bridge.eyebrow" data-lw-type="text">Leben im Haus</p>
+        <h2 id="bridge-title" data-lw-field="bridge.heading" data-lw-type="richtext">Café, Gemeinschaft und Service gehören dazu</h2>
+        <p class="lead" data-lw-field="bridge.copy" data-lw-type="textarea">
           Wohnen endet nicht an der Apartmenttür. Im Haus treffen Sie Nachbarinnen und Nachbarn,
           Angehörige und das Team – im Café, bei Aktivitäten oder im Alltag mit der Betreuung vor Ort.
         </p>
         <ul class="cafe__list">
-          <li>Café als Treffpunkt mit Hotel-Charakter</li>
-          <li>Gemeinschaft ohne Verpflichtung</li>
-          <li>Service, der im Hintergrund mitläuft</li>
+          <li data-lw-field="bridge.item" data-lw-type="richtext">Café als Treffpunkt mit Hotel-Charakter</li>
+          <li data-lw-field="bridge.item_2" data-lw-type="richtext">Gemeinschaft ohne Verpflichtung</li>
+          <li data-lw-field="bridge.item_3" data-lw-type="richtext">Service, der im Hintergrund mitläuft</li>
         </ul>
         <div class="story__actions">
           <a class="btn btn--primary" href="index.html#cafe">
-            Café &amp; Gemeinschaft
+            <span data-lw-field="bridge.cta" data-lw-type="text">Café &amp; Gemeinschaft</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
-          <a class="btn btn--outline" href="betreuung-service.html">Betreuung &amp; Service</a>
+          <a class="btn btn--outline" href="betreuung-service.html"><span data-lw-field="bridge.cta_2" data-lw-type="text">Betreuung &amp; Service</span></a>
         </div>
       </div>
       <div class="cafe__media reveal">
         <div class="cafe__media-frame">
-          <img src="assets/images/hero3.webp" alt="Café und Gemeinschaft in der Brückenmühle" loading="lazy" width="1920" height="1080" />
+          <img src="assets/images/hero3.webp" alt="Café und Gemeinschaft in der Brückenmühle" loading="lazy" width="1920" height="1080" data-lw-field="bridge.image" data-lw-type="image" />
           <span class="cafe__badge">Brückenmühle</span>
         </div>
       </div>
@@ -882,106 +884,106 @@
   </section>
 
   <!-- ============ FAQ ============ -->
-  <section class="faq section section--cream" id="faq" aria-labelledby="faq-title">
+  <section class="faq section section--cream" id="faq" aria-labelledby="faq-title" data-lw-section="faq">
     <div class="container">
       <header class="section-head reveal">
-        <span class="section-label">FAQ</span>
-        <h2 id="faq-title">Häufig gestellte Fragen</h2>
-        <p class="section-head__sub">Antworten rund um Apartments, Alltag und Preise in der Brückenmühle – verständlich und ohne Fachchinesisch.</p>
+        <span class="section-label" data-lw-field="faq.eyebrow" data-lw-type="text">FAQ</span>
+        <h2 id="faq-title" data-lw-field="faq.heading" data-lw-type="richtext">Häufig gestellte Fragen</h2>
+        <p class="section-head__sub" data-lw-field="faq.copy" data-lw-type="textarea">Antworten rund um Apartments, Alltag und Preise in der Brückenmühle – verständlich und ohne Fachchinesisch.</p>
       </header>
 
       <div class="faq__wrap">
         <div class="faq__media reveal">
           <div class="faq__img">
-            <img src="assets/images/apartment.webp" alt="Apartment und Alltag im Betreuten Wohnen Brückenmühle" width="1024" height="683" loading="lazy" />
+            <img src="assets/images/apartment.webp" alt="Apartment und Alltag im Betreuten Wohnen Brückenmühle" width="1024" height="683" loading="lazy" data-lw-field="faq.image" data-lw-type="image" />
           </div>
           <div class="faq__badge">
             <span class="faq__badge-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
             </span>
-            <span>Wir nehmen uns Zeit – für Ihre Fragen und Ihre Entscheidung.</span>
+            <span data-lw-field="faq.badge" data-lw-type="text">Wir nehmen uns Zeit – für Ihre Fragen und Ihre Entscheidung.</span>
           </div>
         </div>
 
         <div class="faq__content">
-          <div class="faq__list reveal">
-            <article class="faq__item">
+          <div class="faq__list reveal" data-lw-repeater="faq.items">
+            <article class="faq__item" data-lw-item-key="item-1">
               <h3 class="faq__question">
                 <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="bw-faq-1" id="bw-faq-trigger-1">
-                  <span>Was ist betreutes Wohnen in der Brückenmühle?</span>
+                  <span data-lw-field="faq.question" data-lw-type="text">Was ist betreutes Wohnen in der Brückenmühle?</span>
                   <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
                 </button>
               </h3>
               <div class="faq__panel" id="bw-faq-1" role="region" aria-labelledby="bw-faq-trigger-1" hidden>
-                <p>Sie wohnen in Ihrem eigenen, barrierearmen Apartment – selbstbestimmt und mit dem Komfort eines Hotels. Im Haus stehen Ihnen Betreuung, Service, Café und Gemeinschaft zur Verfügung. Ambulante Pflege durch Juventa kann direkt angebunden werden.</p>
+                <p data-lw-field="faq.copy" data-lw-type="textarea">Sie wohnen in Ihrem eigenen, barrierearmen Apartment – selbstbestimmt und mit dem Komfort eines Hotels. Im Haus stehen Ihnen Betreuung, Service, Café und Gemeinschaft zur Verfügung. Ambulante Pflege durch Juventa kann direkt angebunden werden.</p>
               </div>
             </article>
 
-            <article class="faq__item">
+            <article class="faq__item" data-lw-item-key="item-2">
               <h3 class="faq__question">
                 <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="bw-faq-2" id="bw-faq-trigger-2">
-                  <span>Wie unterscheidet sich das von einem Pflegeheim?</span>
+                  <span data-lw-field="faq.question" data-lw-type="text">Wie unterscheidet sich das von einem Pflegeheim?</span>
                   <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
                 </button>
               </h3>
               <div class="faq__panel" id="bw-faq-2" role="region" aria-labelledby="bw-faq-trigger-2" hidden>
-                <p>Sie haben Ihre eigenen vier Wände, entscheiden selbst über Alltag und Tagesablauf und nutzen Leistungen nach Bedarf. Es gibt keine Pflicht zur Teilnahme – Betreuung und Service sind da, wenn Sie sie brauchen, nicht umgekehrt.</p>
+                <p data-lw-field="faq.copy" data-lw-type="textarea">Sie haben Ihre eigenen vier Wände, entscheiden selbst über Alltag und Tagesablauf und nutzen Leistungen nach Bedarf. Es gibt keine Pflicht zur Teilnahme – Betreuung und Service sind da, wenn Sie sie brauchen, nicht umgekehrt.</p>
               </div>
             </article>
 
-            <article class="faq__item">
+            <article class="faq__item" data-lw-item-key="item-3">
               <h3 class="faq__question">
                 <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="bw-faq-3" id="bw-faq-trigger-3">
-                  <span>Kann ich mein Apartment individuell gestalten?</span>
+                  <span data-lw-field="faq.question" data-lw-type="text">Kann ich mein Apartment individuell gestalten?</span>
                   <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
                 </button>
               </h3>
               <div class="faq__panel" id="bw-faq-3" role="region" aria-labelledby="bw-faq-trigger-3" hidden>
-                <p>Ja. Sie können voll möbliert einziehen oder Ihre eigenen Möbel und liebsten Stücke mitbringen. Die Apartments sind modern, barrierearm und mit hochwertiger Ausstattung – der historische Charakter der Brückenmühle bleibt spürbar.</p>
+                <p data-lw-field="faq.copy" data-lw-type="textarea">Ja. Sie können voll möbliert einziehen oder Ihre eigenen Möbel und liebsten Stücke mitbringen. Die Apartments sind modern, barrierearm und mit hochwertiger Ausstattung – der historische Charakter der Brückenmühle bleibt spürbar.</p>
               </div>
             </article>
 
-            <article class="faq__item">
+            <article class="faq__item" data-lw-item-key="item-4">
               <h3 class="faq__question">
                 <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="bw-faq-4" id="bw-faq-trigger-4">
-                  <span>Wie ist die Pflege organisiert?</span>
+                  <span data-lw-field="faq.question" data-lw-type="text">Wie ist die Pflege organisiert?</span>
                   <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
                 </button>
               </h3>
               <div class="faq__panel" id="bw-faq-4" role="region" aria-labelledby="bw-faq-trigger-4" hidden>
-                <p>Die ambulante Pflege von Juventa ist direkt an die Brückenmühle angebunden – mit vertrauten Gesichtern aus der Region. Pflegeleistungen kommen zu Ihnen ins Apartment, ohne dass Sie den gewohnten Rahmen verlassen müssen.</p>
+                <p data-lw-field="faq.copy" data-lw-type="textarea">Die ambulante Pflege von Juventa ist direkt an die Brückenmühle angebunden – mit vertrauten Gesichtern aus der Region. Pflegeleistungen kommen zu Ihnen ins Apartment, ohne dass Sie den gewohnten Rahmen verlassen müssen.</p>
               </div>
             </article>
 
-            <article class="faq__item">
+            <article class="faq__item" data-lw-item-key="item-5">
               <h3 class="faq__question">
                 <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="bw-faq-5" id="bw-faq-trigger-5">
-                  <span>Sind die Preise inklusive Betreuung vor Ort?</span>
+                  <span data-lw-field="faq.question" data-lw-type="text">Sind die Preise inklusive Betreuung vor Ort?</span>
                   <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
                 </button>
               </h3>
               <div class="faq__panel" id="bw-faq-5" role="region" aria-labelledby="bw-faq-trigger-5" hidden>
-                <p>Ja. Die Betreuung vor Ort ist verpflichtend und bereits in den Gesamtpreisen für das Betreute Wohnen enthalten. So sehen Sie von Anfang an den realistischen Gesamtbetrag – ohne spätere Überraschungen. Aktuelle Preise nennen wir Ihnen gerne im persönlichen Beratungsgespräch.</p>
+                <p data-lw-field="faq.copy" data-lw-type="textarea">Ja. Die Betreuung vor Ort ist verpflichtend und bereits in den Gesamtpreisen für das Betreute Wohnen enthalten. So sehen Sie von Anfang an den realistischen Gesamtbetrag – ohne spätere Überraschungen. Aktuelle Preise nennen wir Ihnen gerne im persönlichen Beratungsgespräch.</p>
               </div>
             </article>
 
-            <article class="faq__item">
+            <article class="faq__item" data-lw-item-key="item-6">
               <h3 class="faq__question">
                 <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="bw-faq-6" id="bw-faq-trigger-6">
-                  <span>Kann ich die Brückenmühle vorher besichtigen?</span>
+                  <span data-lw-field="faq.question" data-lw-type="text">Kann ich die Brückenmühle vorher besichtigen?</span>
                   <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
                 </button>
               </h3>
               <div class="faq__panel" id="bw-faq-6" role="region" aria-labelledby="bw-faq-trigger-6" hidden>
-                <p>Selbstverständlich. Wir zeigen Ihnen Apartments, Haus und Alltag gerne persönlich. Rufen Sie uns an oder schreiben Sie eine kurze Nachricht – wir vereinbaren einen Termin ohne Druck.</p>
+                <p data-lw-field="faq.copy" data-lw-type="textarea">Selbstverständlich. Wir zeigen Ihnen Apartments, Haus und Alltag gerne persönlich. Rufen Sie uns an oder schreiben Sie eine kurze Nachricht – wir vereinbaren einen Termin ohne Druck.</p>
               </div>
             </article>
           </div>
 
           <div class="faq__cta reveal">
-            <p>Noch Fragen zum Betreuten Wohnen?</p>
+            <p data-lw-field="faq.copy_2" data-lw-type="textarea">Noch Fragen zum Betreuten Wohnen?</p>
             <a href="kontakt.html" class="btn btn--primary btn--lg">
-              Persönlich sprechen
+              <span data-lw-field="faq.cta" data-lw-type="text">Persönlich sprechen</span>
               <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
           </div>
@@ -991,47 +993,47 @@
   </section>
 
   <!-- ============ KONTAKT ============ -->
-  <section class="contact section" id="kontakt" aria-labelledby="contact-title">
+  <section class="contact section" id="kontakt" aria-labelledby="contact-title" data-lw-section="kontakt">
     <div class="container">
       <div class="contact__wrap reveal">
         <div class="contact__panel">
-          <span class="section-label">Kontakt</span>
-          <h2 id="contact-title">Lassen Sie uns Ihr Apartment gemeinsam <span class="headline-accent">kennenlernen.</span></h2>
-          <p>
+          <span class="section-label" data-lw-field="kontakt.eyebrow" data-lw-type="text">Kontakt</span>
+          <h2 id="contact-title" data-lw-field="kontakt.heading" data-lw-type="richtext">Lassen Sie uns Ihr Apartment gemeinsam <span class="headline-accent">kennenlernen.</span></h2>
+          <p data-lw-field="kontakt.copy" data-lw-type="textarea">
             Ob erste Orientierung, Besichtigung oder konkretes Preisgespräch:
             Wir nehmen uns Zeit – unverbindlich und auf Augenhöhe.
           </p>
-          <div class="contact__items">
-            <div class="contact__item">
+          <div class="contact__items" data-lw-repeater="contact.items">
+            <div class="contact__item" data-lw-item-key="item-1">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
               <div><strong>Mobil</strong><a href="tel:+491785254075">+49 178 5254075</a></div>
             </div>
-            <div class="contact__item">
+            <div class="contact__item" data-lw-item-key="item-2">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
               <div><strong>Festnetz</strong><a href="tel:+4972219959934">+49 7221 9959934</a></div>
             </div>
-            <div class="contact__item">
+            <div class="contact__item" data-lw-item-key="item-3">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></span>
               <div><strong>E-Mail</strong><a href="mailto:info@juventa-pflege.de">info@juventa-pflege.de</a></div>
             </div>
-            <div class="contact__item">
+            <div class="contact__item" data-lw-item-key="item-4">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
               <div><strong>Standort</strong><span>Brückenmühle · Gernsbach</span></div>
             </div>
           </div>
           <div class="contact__actions">
             <a href="tel:+491785254075" class="btn btn--primary btn--lg">
-              Rückruf / Anrufen
+              <span data-lw-field="kontakt.cta" data-lw-type="text">Rückruf / Anrufen</span>
               <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
             <a href="mailto:info@juventa-pflege.de?subject=Betreutes%20Wohnen%20Br%C3%BCckenm%C3%BChle%20%E2%80%93%20Beratung" class="btn btn--outline-light btn--lg">
-              Beratung anfragen
+              <span data-lw-field="kontakt.cta_2" data-lw-type="text">Beratung anfragen</span>
               <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
           </div>
         </div>
         <div class="contact__visual">
-          <img src="assets/images/img-kontakt.webp" alt="Persönliche Beratung zu Betreutem Wohnen bei Juventa" width="1024" height="683" loading="lazy" />
+          <img src="assets/images/img-kontakt.webp" alt="Persönliche Beratung zu Betreutem Wohnen bei Juventa" width="1024" height="683" loading="lazy" data-lw-field="kontakt.image" data-lw-type="image" />
           <span class="contact__visual-overlay" aria-hidden="true"></span>
         </div>
       </div>
@@ -1119,10 +1121,10 @@
       <div class="a11y__group">
         <span class="a11y__label" id="a11yFontLabel">Schriftgröße</span>
         <div class="a11y__font-btns" role="group" aria-labelledby="a11yFontLabel">
-          <button class="a11y__font-btn" type="button" data-a11y-font="sm" aria-pressed="false" aria-label="Kleinere Schrift">A−</button>
-          <button class="a11y__font-btn is-active" type="button" data-a11y-font="normal" aria-pressed="true" aria-label="Normale Schrift">A</button>
-          <button class="a11y__font-btn" type="button" data-a11y-font="lg" aria-pressed="false" aria-label="Größere Schrift">A+</button>
-          <button class="a11y__font-btn" type="button" data-a11y-font="xl" aria-pressed="false" aria-label="Sehr große Schrift">A++</button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="sm" aria-pressed="false" aria-label="Kleinere Schrift"><span>A−</span></button>
+          <button class="a11y__font-btn is-active" type="button" data-a11y-font="normal" aria-pressed="true" aria-label="Normale Schrift"><span>A</span></button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="lg" aria-pressed="false" aria-label="Größere Schrift"><span>A+</span></button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="xl" aria-pressed="false" aria-label="Sehr große Schrift"><span>A++</span></button>
         </div>
       </div>
       <div class="a11y__group">

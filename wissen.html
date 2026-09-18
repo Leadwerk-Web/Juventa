@@ -155,17 +155,17 @@
 
 <!-- ============ HERO ============ -->
 <div class="hero-shell" id="start">
-  <section class="hero" data-lw-section="hero" data-hero aria-label="Wissen und Orientierung">
+  <section class="hero" data-hero aria-label="Wissen und Orientierung">
 
-    <div class="hero__media" id="heroSlider" aria-hidden="true">
-      <div class="hero__slide is-active">
-        <img src="assets/images/img-kontakt.webp" alt="" width="1920" height="1080" fetchpriority="high" data-lw-decorative="true" />
+    <div class="hero__media" id="heroSlider" aria-hidden="true" data-lw-section="hero-media" data-lw-repeater="hero.slides">
+      <div class="hero__slide is-active" data-lw-item-key="slide-1">
+        <img src="assets/images/img-kontakt.webp" alt="" width="1920" height="1080" fetchpriority="high" data-lw-decorative="true" data-lw-field="hero-media.image" data-lw-type="image" />
       </div>
-      <div class="hero__slide">
-        <img src="assets/images/hero2.webp" alt="" width="1920" height="1080" loading="lazy" data-lw-decorative="true" />
+      <div class="hero__slide" data-lw-item-key="slide-2">
+        <img src="assets/images/hero2.webp" alt="" width="1920" height="1080" loading="lazy" data-lw-decorative="true" data-lw-field="hero-media.image" data-lw-type="image" />
       </div>
-      <div class="hero__slide">
-        <img src="assets/images/team.webp" alt="" width="1920" height="1080" loading="lazy" data-lw-decorative="true" />
+      <div class="hero__slide" data-lw-item-key="slide-3">
+        <img src="assets/images/team.webp" alt="" width="1920" height="1080" loading="lazy" data-lw-decorative="true" data-lw-field="hero-media.image" data-lw-type="image" />
       </div>
     </div>
     <div class="hero__overlay" aria-hidden="true"></div>
@@ -230,7 +230,7 @@
               <a href="wissen.html" class="nav__link" aria-current="page">Wissen</a>
               <a href="kontakt.html" class="nav__link">Kontakt</a>
               <a href="kontakt.html" class="btn btn--primary nav__cta">
-                Beratung anfragen
+                <span>Beratung anfragen</span>
                 <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
               </a>
             </div>
@@ -281,25 +281,25 @@
             <li><a href="kontakt.html" class="nav__link">Kontakt</a></li>
           </ul>
           <a href="kontakt.html" class="btn btn--primary nav__cta nav__cta--drawer">
-            Beratung anfragen
+            <span>Beratung anfragen</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
         </nav>
       </div>
     </header>
 
-    <div class="container hero__body">
+    <div class="container hero__body" data-lw-section="hero">
       <div class="hero__content reveal">
-        <span class="hero__eyebrow">Hilfe- &amp; Wissenscenter</span>
+        <span class="hero__eyebrow" data-lw-field="hero.eyebrow" data-lw-type="text">Hilfe- &amp; Wissenscenter</span>
         <h1 class="hero__title" data-lw-field="hero.title" data-lw-type="richtext">Fragen rund um Pflege &amp; betreutes Wohnen</h1>
-        <p class="hero__sub">
+        <p class="hero__sub" data-lw-field="hero.copy" data-lw-type="textarea">
           Pflege bringt oft viele Fragen mit sich – für Betroffene und Angehörige.
           Hier finden Sie Orientierung, kurze Erklärungen und klare Antworten von Juventa
           in Baden-Baden und Gernsbach.
         </p>
 
         <form class="faq-search reveal" role="search" action="wissen.html" method="get">
-          <label class="faq-search__label" for="faqSearch">Wonach suchen Sie?</label>
+          <label class="faq-search__label" for="faqSearch" data-lw-field="hero.label" data-lw-type="text">Wonach suchen Sie?</label>
           <div class="faq-search__field">
             <span class="faq-search__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3-3"/></svg>
@@ -312,43 +312,43 @@
 
   </section>
 
-  <div class="hero__cards">
+  <div class="hero__cards" data-lw-section="offers">
     <div class="container">
-      <nav class="hero__cards-inner hero__cards-inner--penta reveal" aria-label="Themenbereiche">
-        <a class="hero__card" href="#thema-ambulant">
+      <nav class="hero__cards-inner hero__cards-inner--penta reveal" aria-label="Themenbereiche" data-lw-repeater="offers.cards">
+        <a class="hero__card" href="#thema-ambulant" data-lw-item-key="card-1">
           <span class="hero__card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
           </span>
-          <h2>Ambulante Pflege</h2>
-          <p>Zu Hause betreut – mit vertrauten Gesichtern.</p>
+          <h2 data-lw-field="offers.heading" data-lw-type="richtext">Ambulante Pflege</h2>
+          <p data-lw-field="offers.copy" data-lw-type="textarea">Zu Hause betreut – mit vertrauten Gesichtern.</p>
         </a>
-        <a class="hero__card" href="#pflegegrade-kosten">
+        <a class="hero__card" href="#pflegegrade-kosten" data-lw-item-key="card-2">
           <span class="hero__card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           </span>
-          <h2>Pflegegrad &amp; Kosten</h2>
-          <p>Orientierung durch den Finanzierungsdschungel.</p>
+          <h2 data-lw-field="offers.heading" data-lw-type="richtext">Pflegegrad &amp; Kosten</h2>
+          <p data-lw-field="offers.copy" data-lw-type="textarea">Orientierung durch den Finanzierungsdschungel.</p>
         </a>
-        <a class="hero__card" href="#thema-wg">
+        <a class="hero__card" href="#thema-wg" data-lw-item-key="card-3">
           <span class="hero__card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </span>
-          <h2>Betreutes Wohnen</h2>
-          <p>Brückenmühle: selbstbestimmt mit Sicherheit.</p>
+          <h2 data-lw-field="offers.heading" data-lw-type="richtext">Betreutes Wohnen</h2>
+          <p data-lw-field="offers.copy" data-lw-type="textarea">Brückenmühle: selbstbestimmt mit Sicherheit.</p>
         </a>
-        <a class="hero__card" href="#fuer-angehoerige">
+        <a class="hero__card" href="#fuer-angehoerige" data-lw-item-key="card-4">
           <span class="hero__card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
           </span>
-          <h2>Angehörige</h2>
-          <p>Entlastung und klare nächste Schritte.</p>
+          <h2 data-lw-field="offers.heading" data-lw-type="richtext">Angehörige</h2>
+          <p data-lw-field="offers.copy" data-lw-type="textarea">Entlastung und klare nächste Schritte.</p>
         </a>
-        <a class="hero__card" href="#gut-zu-wissen">
+        <a class="hero__card" href="#gut-zu-wissen" data-lw-item-key="card-5">
           <span class="hero__card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
           </span>
-          <h2>Leistungen &amp; Alltag</h2>
-          <p>Was Familien am häufigsten bewegt.</p>
+          <h2 data-lw-field="offers.heading" data-lw-type="richtext">Leistungen &amp; Alltag</h2>
+          <p data-lw-field="offers.copy" data-lw-type="textarea">Was Familien am häufigsten bewegt.</p>
         </a>
       </nav>
     </div>
@@ -358,12 +358,12 @@
 <main id="hauptinhalt">
 
   <!-- ============ PROZESS ============ -->
-  <section class="section" id="wenn-pflege-kommt" aria-labelledby="prozess-title">
+  <section class="section" id="wenn-pflege-kommt" aria-labelledby="prozess-title" data-lw-section="wenn-pflege-kommt">
     <div class="container">
       <header class="section-head reveal">
-        <span class="section-label">Orientierung</span>
-        <h2 id="prozess-title">Wenn plötzlich Pflege benötigt wird</h2>
-        <p class="section-head__sub">
+        <span class="section-label" data-lw-field="wenn-pflege-kommt.eyebrow" data-lw-type="text">Orientierung</span>
+        <h2 id="prozess-title" data-lw-field="wenn-pflege-kommt.heading" data-lw-type="richtext">Wenn plötzlich Pflege benötigt wird</h2>
+        <p class="section-head__sub" data-lw-field="wenn-pflege-kommt.copy" data-lw-type="textarea">
           Viele Angehörige stehen plötzlich vor Fragen: Welche Pflege ist richtig? Was ist
           organisatorisch möglich? Juventa nimmt sich Zeit, hört zu und erklärt verständlich,
           welche Möglichkeiten es gibt.
@@ -371,50 +371,50 @@
       </header>
 
       <ol class="pb-path reveal">
-        <li class="pb-path__step">
+        <li class="pb-path__step" data-lw-field="wenn-pflege-kommt.item" data-lw-type="richtext">
           <div class="pb-path__top">
             <span class="pb-path__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>
             </span>
           </div>
-          <h3>Situation einschätzen</h3>
-          <p>Welche Unterstützung wird aktuell benötigt – zu Hause, vorübergehend oder längerfristig?</p>
+          <h3 data-lw-field="wenn-pflege-kommt.heading_2" data-lw-type="richtext">Situation einschätzen</h3>
+          <p data-lw-field="wenn-pflege-kommt.copy_2" data-lw-type="textarea">Welche Unterstützung wird aktuell benötigt – zu Hause, vorübergehend oder längerfristig?</p>
         </li>
-        <li class="pb-path__step">
+        <li class="pb-path__step" data-lw-field="wenn-pflege-kommt.item_2" data-lw-type="richtext">
           <div class="pb-path__top">
             <span class="pb-path__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
             </span>
           </div>
-          <h3>Möglichkeiten klären</h3>
-          <p>Pflegegrad, Leistungen und mögliche Unterstützung prüfen – verständlich und ohne Druck.</p>
+          <h3 data-lw-field="wenn-pflege-kommt.heading_3" data-lw-type="richtext">Möglichkeiten klären</h3>
+          <p data-lw-field="wenn-pflege-kommt.copy_3" data-lw-type="textarea">Pflegegrad, Leistungen und mögliche Unterstützung prüfen – verständlich und ohne Druck.</p>
         </li>
-        <li class="pb-path__step">
+        <li class="pb-path__step" data-lw-field="wenn-pflege-kommt.item_3" data-lw-type="richtext">
           <div class="pb-path__top">
             <span class="pb-path__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
             </span>
           </div>
-          <h3>Persönlich sprechen</h3>
-          <p>Gemeinsam klären, welche Versorgung sinnvoll ist – für Sie und Ihre Angehörigen.</p>
+          <h3 data-lw-field="wenn-pflege-kommt.heading_4" data-lw-type="richtext">Persönlich sprechen</h3>
+          <p data-lw-field="wenn-pflege-kommt.copy_4" data-lw-type="textarea">Gemeinsam klären, welche Versorgung sinnvoll ist – für Sie und Ihre Angehörigen.</p>
         </li>
-        <li class="pb-path__step">
+        <li class="pb-path__step" data-lw-field="wenn-pflege-kommt.item_4" data-lw-type="richtext">
           <div class="pb-path__top">
             <span class="pb-path__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             </span>
           </div>
-          <h3>Pflege organisieren</h3>
-          <p>Leistungen und Termine individuell abstimmen – mit festen Bezugspersonen.</p>
+          <h3 data-lw-field="wenn-pflege-kommt.heading_5" data-lw-type="richtext">Pflege organisieren</h3>
+          <p data-lw-field="wenn-pflege-kommt.copy_5" data-lw-type="textarea">Leistungen und Termine individuell abstimmen – mit festen Bezugspersonen.</p>
         </li>
       </ol>
 
       <div class="story__actions reveal" style="justify-content:center;margin-top:2.5rem;">
-        <p class="section-head__sub" style="margin:0 0 1rem;text-align:center;max-width:36rem;">
+        <p class="section-head__sub" style="margin:0 0 1rem;text-align:center;max-width:36rem;" data-lw-field="wenn-pflege-kommt.copy_6" data-lw-type="textarea">
           Jetzt Kontakt aufnehmen – für eine verlässliche und persönliche Pflegeberatung
         </p>
         <a href="kontakt.html" class="btn btn--primary btn--lg">
-          Pflegeberatung anfragen
+          <span data-lw-field="wenn-pflege-kommt.cta" data-lw-type="text">Pflegeberatung anfragen</span>
           <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </a>
       </div>
@@ -422,18 +422,18 @@
   </section>
 
   <!-- ============ AMBULANTE PFLEGE ============ -->
-  <section class="story section section--cream" id="thema-ambulant" aria-labelledby="ambulant-title">
+  <section class="story section section--cream" id="thema-ambulant" aria-labelledby="ambulant-title" data-lw-section="thema-ambulant">
     <div class="container story__grid">
       <div class="story__collage story__collage--single reveal">
         <div class="story__collage-img story__collage-img--tall">
-          <img src="assets/images/mobile-pflege.webp" alt="Mobile Pflege und Betreuung zu Hause durch das Team von Juventa" loading="lazy" width="1920" height="1080" />
+          <img src="assets/images/mobile-pflege.webp" alt="Mobile Pflege und Betreuung zu Hause durch das Team von Juventa" loading="lazy" width="1920" height="1080" data-lw-field="thema-ambulant.image" data-lw-type="image" />
         </div>
       </div>
       <div class="story__text reveal">
-        <span class="section-label">Ambulante Pflege</span>
-        <h2 id="ambulant-title">Mobile Pflege und Betreuung</h2>
-        <p class="story__lead">Hilfe, Pflege und Betreuung bei Ihnen zu Hause – so individuell, wie Ihr Alltag es braucht.</p>
-        <p>
+        <span class="section-label" data-lw-field="thema-ambulant.eyebrow" data-lw-type="text">Ambulante Pflege</span>
+        <h2 id="ambulant-title" data-lw-field="thema-ambulant.heading" data-lw-type="richtext">Mobile Pflege und Betreuung</h2>
+        <p class="story__lead" data-lw-field="thema-ambulant.copy" data-lw-type="textarea">Hilfe, Pflege und Betreuung bei Ihnen zu Hause – so individuell, wie Ihr Alltag es braucht.</p>
+        <p data-lw-field="thema-ambulant.copy_2" data-lw-type="textarea">
           Das Leben verläuft oft nicht ohne Hürden. Ob durch Krankheit, einen Unfall oder den
           Alterungsprozess: Manches fällt irgendwann nicht mehr so leicht. Wir unterstützen Sie
           bei der Bewältigung des Alltags – mit Fachlichkeit, Zeit und echter Nähe in Baden-Baden,
@@ -441,7 +441,7 @@
         </p>
         <div class="story__actions">
           <a href="pflege-beratung.html" class="btn btn--primary">
-            Zur Unterseite Pflege &amp; Beratung
+            <span data-lw-field="thema-ambulant.cta" data-lw-type="text">Zur Unterseite Pflege &amp; Beratung</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
         </div>
@@ -450,65 +450,65 @@
 
     <div class="container">
       <div class="faq-inline reveal">
-        <h3 class="faq-inline__title">Fragen zur ambulanten Pflege</h3>
-        <div class="faq__list">
-          <article class="faq__item" id="faq-a-kosten" data-cat="ambulant kosten">
+        <h3 class="faq-inline__title" data-lw-field="thema-ambulant.heading_2" data-lw-type="richtext">Fragen zur ambulanten Pflege</h3>
+        <div class="faq__list" data-lw-repeater="faq.items">
+          <article class="faq__item" id="faq-a-kosten" data-cat="ambulant kosten" data-lw-item-key="item-1">
             <h3 class="faq__question">
               <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="a-p-faq-a-kosten" id="a-faq-a-kosten">
-                <span>Was kostet ambulante Pflege und wer übernimmt die Kosten?</span>
+                <span data-lw-field="thema-ambulant.question" data-lw-type="text">Was kostet ambulante Pflege und wer übernimmt die Kosten?</span>
                 <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
               </button>
             </h3>
             <div class="faq__panel" id="a-p-faq-a-kosten" role="region" aria-labelledby="a-faq-a-kosten" hidden>
-              <p>Die Kosten hängen vom Pflegegrad und den benötigten Leistungen ab. Die Pflegekasse übernimmt einen Teil der Pflegesachleistungen und des Pflegegeldes. Wir beraten Sie transparent, welche Leistungen für Sie in Frage kommen und welche Kosten auf Sie zukommen können.</p>
+              <p data-lw-field="thema-ambulant.copy" data-lw-type="textarea">Die Kosten hängen vom Pflegegrad und den benötigten Leistungen ab. Die Pflegekasse übernimmt einen Teil der Pflegesachleistungen und des Pflegegeldes. Wir beraten Sie transparent, welche Leistungen für Sie in Frage kommen und welche Kosten auf Sie zukommen können.</p>
             </div>
           </article>
 
-          <article class="faq__item" id="faq-a-pg" data-cat="ambulant kosten">
+          <article class="faq__item" id="faq-a-pg" data-cat="ambulant kosten" data-lw-item-key="item-2">
             <h3 class="faq__question">
               <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="a-p-faq-a-pg" id="a-faq-a-pg">
-                <span>Wie beantrage ich einen Pflegegrad?</span>
+                <span data-lw-field="thema-ambulant.question" data-lw-type="text">Wie beantrage ich einen Pflegegrad?</span>
                 <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
               </button>
             </h3>
             <div class="faq__panel" id="a-p-faq-a-pg" role="region" aria-labelledby="a-faq-a-pg" hidden>
-              <p>Sie wenden sich an Ihre Pflegekasse und stellen einen Antrag auf Pflegegrad. Ein MDK-Gutachter bewertet den Pflegebedarf. Wir unterstützen Sie bei der Vorbereitung und erklären verständlich, welche Unterlagen sinnvoll sind.</p>
+              <p data-lw-field="thema-ambulant.copy" data-lw-type="textarea">Sie wenden sich an Ihre Pflegekasse und stellen einen Antrag auf Pflegegrad. Ein MDK-Gutachter bewertet den Pflegebedarf. Wir unterstützen Sie bei der Vorbereitung und erklären verständlich, welche Unterlagen sinnvoll sind.</p>
             </div>
           </article>
 
-          <article class="faq__item" id="faq-a-bezug" data-cat="ambulant team">
+          <article class="faq__item" id="faq-a-bezug" data-cat="ambulant team" data-lw-item-key="item-3">
             <h3 class="faq__question">
               <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="a-p-faq-a-bezug" id="a-faq-a-bezug">
-                <span>Kommen bei Juventa immer dieselben Pflegekräfte?</span>
+                <span data-lw-field="thema-ambulant.question" data-lw-type="text">Kommen bei Juventa immer dieselben Pflegekräfte?</span>
                 <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
               </button>
             </h3>
             <div class="faq__panel" id="a-p-faq-a-bezug" role="region" aria-labelledby="a-faq-a-bezug" hidden>
-              <p>Ja. Vertrauen entsteht durch Kontinuität. Deshalb setzen wir auf feste Bezugspersonen, die Sie kennenlernen und die Ihren Alltag sowie Ihre Wünsche kennen.</p>
+              <p data-lw-field="thema-ambulant.copy" data-lw-type="textarea">Ja. Vertrauen entsteht durch Kontinuität. Deshalb setzen wir auf feste Bezugspersonen, die Sie kennenlernen und die Ihren Alltag sowie Ihre Wünsche kennen.</p>
             </div>
           </article>
 
-          <article class="faq__item" id="faq-a-diff" data-cat="ambulant angehoerige">
+          <article class="faq__item" id="faq-a-diff" data-cat="ambulant angehoerige" data-lw-item-key="item-4">
             <h3 class="faq__question">
               <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="a-p-faq-a-diff" id="a-faq-a-diff">
-                <span>Was ist der Unterschied zwischen Kurzzeit- und Verhinderungspflege?</span>
+                <span data-lw-field="thema-ambulant.question" data-lw-type="text">Was ist der Unterschied zwischen Kurzzeit- und Verhinderungspflege?</span>
                 <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
               </button>
             </h3>
             <div class="faq__panel" id="a-p-faq-a-diff" role="region" aria-labelledby="a-faq-a-diff" hidden>
-              <p>Kurzzeitpflege entlastet nach einem Krankenhausaufenthalt oder in Übergangssituationen. Verhinderungspflege springt ein, wenn Angehörige vorübergehend nicht pflegen können – zum Beispiel im Urlaub oder bei Krankheit. Beides lässt sich flexibel zu Hause organisieren; bei Bedarf auch im Umfeld unseres Betreuten Wohnens.</p>
+              <p data-lw-field="thema-ambulant.copy" data-lw-type="textarea">Kurzzeitpflege entlastet nach einem Krankenhausaufenthalt oder in Übergangssituationen. Verhinderungspflege springt ein, wenn Angehörige vorübergehend nicht pflegen können – zum Beispiel im Urlaub oder bei Krankheit. Beides lässt sich flexibel zu Hause organisieren; bei Bedarf auch im Umfeld unseres Betreuten Wohnens.</p>
             </div>
           </article>
 
-          <article class="faq__item" id="faq-a-24h" data-cat="ambulant">
+          <article class="faq__item" id="faq-a-24h" data-cat="ambulant" data-lw-item-key="item-5">
             <h3 class="faq__question">
               <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="a-p-faq-a-24h" id="a-faq-a-24h">
-                <span>Was brauche ich für die 24h-Pflege zu Hause?</span>
+                <span data-lw-field="thema-ambulant.question" data-lw-type="text">Was brauche ich für die 24h-Pflege zu Hause?</span>
                 <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
               </button>
             </h3>
             <div class="faq__panel" id="a-p-faq-a-24h" role="region" aria-labelledby="a-faq-a-24h" hidden>
-              <p>Wichtig ist vor allem ein separater Schlafplatz für die Betreuungskraft. Alles Weitere – Auswahl, Planung und Abstimmung mit dem ambulanten Pflegedienst – organisieren wir gemeinsam mit Ihnen.</p>
+              <p data-lw-field="thema-ambulant.copy" data-lw-type="textarea">Wichtig ist vor allem ein separater Schlafplatz für die Betreuungskraft. Alles Weitere – Auswahl, Planung und Abstimmung mit dem ambulanten Pflegedienst – organisieren wir gemeinsam mit Ihnen.</p>
             </div>
           </article>
         </div>
@@ -517,29 +517,29 @@
   </section>
 
   <!-- ============ ENTSCHEIDUNG ============ -->
-  <section class="faq-decide section section--cream" id="welche-unterstuetzung" aria-labelledby="decide-title">
+  <section class="faq-decide section section--cream" id="welche-unterstuetzung" aria-labelledby="decide-title" data-lw-section="welche-unterstuetzung">
     <div class="container">
       <header class="section-head reveal">
-        <span class="section-label">Passende Unterstützung</span>
-        <h2 id="decide-title">Welche Unterstützung könnte zu Ihrer Situation passen?</h2>
+        <span class="section-label" data-lw-field="welche-unterstuetzung.eyebrow" data-lw-type="text">Passende Unterstützung</span>
+        <h2 id="decide-title" data-lw-field="welche-unterstuetzung.heading" data-lw-type="richtext">Welche Unterstützung könnte zu Ihrer Situation passen?</h2>
       </header>
       <div class="faq-decide__grid reveal">
         <a class="faq-decide__card" href="pflege-beratung.html">
           <span class="faq-decide__label">Ambulante Pflege</span>
-          <h3>Ich brauche Unterstützung zu Hause.</h3>
-          <p>Mobile Pflege, Hauswirtschaft und 24h-Betreuung in vertrauter Umgebung.</p>
+          <h3 data-lw-field="welche-unterstuetzung.heading_2" data-lw-type="richtext">Ich brauche Unterstützung zu Hause.</h3>
+          <p data-lw-field="welche-unterstuetzung.copy" data-lw-type="textarea">Mobile Pflege, Hauswirtschaft und 24h-Betreuung in vertrauter Umgebung.</p>
           <span class="faq-decide__link">Mehr erfahren</span>
         </a>
         <a class="faq-decide__card faq-decide__card--mid" href="#fuer-angehoerige">
           <span class="faq-decide__label">Für Angehörige</span>
-          <h3>Meine Eltern kommen allein nicht mehr gut zurecht.</h3>
-          <p>Orientierung, Entlastung und Beratung – ohne Druck und ohne Fachchinesisch.</p>
+          <h3 data-lw-field="welche-unterstuetzung.heading_3" data-lw-type="richtext">Meine Eltern kommen allein nicht mehr gut zurecht.</h3>
+          <p data-lw-field="welche-unterstuetzung.copy_2" data-lw-type="textarea">Orientierung, Entlastung und Beratung – ohne Druck und ohne Fachchinesisch.</p>
           <span class="faq-decide__link">Zur Orientierung</span>
         </a>
         <a class="faq-decide__card faq-decide__card--alt" href="betreutes-wohnen.html">
           <span class="faq-decide__label">Betreutes Wohnen</span>
-          <h3>Ich möchte selbstständig wohnen und trotzdem Sicherheit haben.</h3>
-          <p>Eigene Apartments in der Brückenmühle, Service im Haus und Pflege aus einer Hand.</p>
+          <h3 data-lw-field="welche-unterstuetzung.heading_4" data-lw-type="richtext">Ich möchte selbstständig wohnen und trotzdem Sicherheit haben.</h3>
+          <p data-lw-field="welche-unterstuetzung.copy_3" data-lw-type="textarea">Eigene Apartments in der Brückenmühle, Service im Haus und Pflege aus einer Hand.</p>
           <span class="faq-decide__link">Zur Brückenmühle</span>
         </a>
       </div>
@@ -547,12 +547,12 @@
   </section>
 
   <!-- ============ PFLEGEGRAD & KOSTEN ============ -->
-  <section class="section" id="pflegegrade-kosten" aria-labelledby="kosten-title">
+  <section class="section" id="pflegegrade-kosten" aria-labelledby="kosten-title" data-lw-section="pflegegrade-kosten">
     <div class="container">
       <header class="section-head reveal">
-        <span class="section-label">Finanzierung</span>
-        <h2 id="kosten-title">Pflegegrad &amp; Kosten</h2>
-        <p class="section-head__sub">
+        <span class="section-label" data-lw-field="pflegegrade-kosten.eyebrow" data-lw-type="text">Finanzierung</span>
+        <h2 id="kosten-title" data-lw-field="pflegegrade-kosten.heading" data-lw-type="richtext">Pflegegrad &amp; Kosten</h2>
+        <p class="section-head__sub" data-lw-field="pflegegrade-kosten.copy" data-lw-type="textarea">
           Finanzierung muss kein Rätsel bleiben. Zuerst der Überblick – danach die Antworten.
         </p>
       </header>
@@ -560,94 +560,94 @@
       <div class="faq-info reveal">
         <div class="faq-info__item">
           <strong>Pflegegrad 1–5</strong>
-          <p>Was bedeutet ein Pflegegrad? Er beschreibt den Unterstützungsbedarf und öffnet den Zugang zu Leistungen der Pflegekasse.</p>
+          <p data-lw-field="pflegegrade-kosten.copy_2" data-lw-type="textarea">Was bedeutet ein Pflegegrad? Er beschreibt den Unterstützungsbedarf und öffnet den Zugang zu Leistungen der Pflegekasse.</p>
         </div>
         <div class="faq-info__item">
           <strong>Pflegekasse</strong>
-          <p>Welche Leistungen können übernommen werden? Pflegesachleistungen, Pflegegeld und Verhinderungspflege – je nach Situation.</p>
+          <p data-lw-field="pflegegrade-kosten.copy_3" data-lw-type="textarea">Welche Leistungen können übernommen werden? Pflegesachleistungen, Pflegegeld und Verhinderungspflege – je nach Situation.</p>
         </div>
         <div class="faq-info__item">
           <strong>Eigenanteil</strong>
-          <p>Welche Kosten können zusätzlich entstehen? Das hängt vom Bedarf und Pflegegrad ab – wir erklären es transparent.</p>
+          <p data-lw-field="pflegegrade-kosten.copy_4" data-lw-type="textarea">Welche Kosten können zusätzlich entstehen? Das hängt vom Bedarf und Pflegegrad ab – wir erklären es transparent.</p>
         </div>
         <div class="faq-info__item">
           <strong>Beratung</strong>
-          <p>Wo erhalten Betroffene Unterstützung? Bei Juventa – vom Antrag bis zur Organisation der Versorgung in Baden-Baden und Gernsbach.</p>
+          <p data-lw-field="pflegegrade-kosten.copy_5" data-lw-type="textarea">Wo erhalten Betroffene Unterstützung? Bei Juventa – vom Antrag bis zur Organisation der Versorgung in Baden-Baden und Gernsbach.</p>
         </div>
       </div>
 
       <div class="faq-inline reveal">
-        <h3 class="faq-inline__title">Fragen zu Pflegegrad &amp; Kosten</h3>
-        <div class="faq__list">
-          <article class="faq__item" id="faq-k-need" data-cat="kosten ambulant">
+        <h3 class="faq-inline__title" data-lw-field="pflegegrade-kosten.heading_2" data-lw-type="richtext">Fragen zu Pflegegrad &amp; Kosten</h3>
+        <div class="faq__list" data-lw-repeater="faq.items">
+          <article class="faq__item" id="faq-k-need" data-cat="kosten ambulant" data-lw-item-key="item-1">
             <h3 class="faq__question">
               <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="k-p-faq-k-need" id="k-faq-k-need">
-                <span>Brauche ich einen Pflegegrad für ambulante Pflege?</span>
+                <span data-lw-field="pflegegrade-kosten.question" data-lw-type="text">Brauche ich einen Pflegegrad für ambulante Pflege?</span>
                 <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
               </button>
             </h3>
             <div class="faq__panel" id="k-p-faq-k-need" role="region" aria-labelledby="k-faq-k-need" hidden>
-              <p>Für Leistungen der Pflegeversicherung in der Regel ja. Ohne Pflegegrad können gewünschte Leistungen privat vereinbart werden. Wir prüfen gemeinsam, was in Ihrer Situation möglich und sinnvoll ist – und helfen beim Antrag, falls noch keiner vorliegt.</p>
+              <p data-lw-field="pflegegrade-kosten.copy" data-lw-type="textarea">Für Leistungen der Pflegeversicherung in der Regel ja. Ohne Pflegegrad können gewünschte Leistungen privat vereinbart werden. Wir prüfen gemeinsam, was in Ihrer Situation möglich und sinnvoll ist – und helfen beim Antrag, falls noch keiner vorliegt.</p>
             </div>
           </article>
 
-          <article class="faq__item" id="faq-k-hilfe" data-cat="kosten angehoerige">
+          <article class="faq__item" id="faq-k-hilfe" data-cat="kosten angehoerige" data-lw-item-key="item-2">
             <h3 class="faq__question">
               <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="k-p-faq-k-hilfe" id="k-faq-k-hilfe">
-                <span>Wer hilft mir beim Pflegegrad oder bei Anträgen?</span>
+                <span data-lw-field="pflegegrade-kosten.question" data-lw-type="text">Wer hilft mir beim Pflegegrad oder bei Anträgen?</span>
                 <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
               </button>
             </h3>
             <div class="faq__panel" id="k-p-faq-k-hilfe" role="region" aria-labelledby="k-faq-k-hilfe" hidden>
-              <p>Wir. Wir unterstützen aktiv bei Anträgen zur Pflegeversicherung, Sozialhilfe, gesetzlicher Betreuung und im Austausch mit den Krankenkassen. Sie sind nicht allein.</p>
+              <p data-lw-field="pflegegrade-kosten.copy" data-lw-type="textarea">Wir. Wir unterstützen aktiv bei Anträgen zur Pflegeversicherung, Sozialhilfe, gesetzlicher Betreuung und im Austausch mit den Krankenkassen. Sie sind nicht allein.</p>
             </div>
           </article>
 
-          <article class="faq__item" id="faq-k-wg" data-cat="kosten wg">
+          <article class="faq__item" id="faq-k-wg" data-cat="kosten wg" data-lw-item-key="item-3">
             <h3 class="faq__question">
               <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="k-p-faq-k-wg" id="k-faq-k-wg">
-                <span>Was kostet ein Apartment im Betreuten Wohnen?</span>
+                <span data-lw-field="pflegegrade-kosten.question" data-lw-type="text">Was kostet ein Apartment im Betreuten Wohnen?</span>
                 <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
               </button>
             </h3>
             <div class="faq__panel" id="k-p-faq-k-wg" role="region" aria-labelledby="k-faq-k-wg" hidden>
-              <p>Die Kosten setzen sich aus Wohnen, Betreuung vor Ort und optionalen Leistungen zusammen. Pflegeleistungen richten sich nach Pflegegrad und Bedarf. Wir erstellen mit Ihnen eine transparente Übersicht und klären, welche Anteile die Pflegekasse oder Sozialhilfeträger übernehmen können. Details finden Sie auch auf der Seite Betreutes Wohnen.</p>
+              <p data-lw-field="pflegegrade-kosten.copy" data-lw-type="textarea">Die Kosten setzen sich aus Wohnen, Betreuung vor Ort und optionalen Leistungen zusammen. Pflegeleistungen richten sich nach Pflegegrad und Bedarf. Wir erstellen mit Ihnen eine transparente Übersicht und klären, welche Anteile die Pflegekasse oder Sozialhilfeträger übernehmen können. Details finden Sie auch auf der Seite Betreutes Wohnen.</p>
             </div>
           </article>
 
-          <article class="faq__item" id="faq-k-erst" data-cat="kosten team">
+          <article class="faq__item" id="faq-k-erst" data-cat="kosten team" data-lw-item-key="item-4">
             <h3 class="faq__question">
               <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="k-p-faq-k-erst" id="k-faq-k-erst">
-                <span>Werden Beratung und Erstgespräch berechnet?</span>
+                <span data-lw-field="pflegegrade-kosten.question" data-lw-type="text">Werden Beratung und Erstgespräch berechnet?</span>
                 <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
               </button>
             </h3>
             <div class="faq__panel" id="k-p-faq-k-erst" role="region" aria-labelledby="k-faq-k-erst" hidden>
-              <p>Das erste Orientierungsgespräch ist für Sie unverbindlich. Wir hören zu, erklären Optionen und geben eine ehrliche Einschätzung – ohne Druck und ohne versteckte Kosten.</p>
+              <p data-lw-field="pflegegrade-kosten.copy" data-lw-type="textarea">Das erste Orientierungsgespräch ist für Sie unverbindlich. Wir hören zu, erklären Optionen und geben eine ehrliche Einschätzung – ohne Druck und ohne versteckte Kosten.</p>
             </div>
           </article>
 
-          <article class="faq__item" id="faq-k-pg" data-cat="kosten">
+          <article class="faq__item" id="faq-k-pg" data-cat="kosten" data-lw-item-key="item-5">
             <h3 class="faq__question">
               <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="k-p-faq-k-pg" id="k-faq-k-pg">
-                <span>Wie beantrage ich einen Pflegegrad?</span>
+                <span data-lw-field="pflegegrade-kosten.question" data-lw-type="text">Wie beantrage ich einen Pflegegrad?</span>
                 <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
               </button>
             </h3>
             <div class="faq__panel" id="k-p-faq-k-pg" role="region" aria-labelledby="k-faq-k-pg" hidden>
-              <p>Sie wenden sich an Ihre Pflegekasse und stellen einen Antrag auf Pflegegrad. Ein MDK-Gutachter bewertet den Pflegebedarf. Wir unterstützen Sie bei der Vorbereitung und erklären verständlich, welche Unterlagen sinnvoll sind.</p>
+              <p data-lw-field="pflegegrade-kosten.copy" data-lw-type="textarea">Sie wenden sich an Ihre Pflegekasse und stellen einen Antrag auf Pflegegrad. Ein MDK-Gutachter bewertet den Pflegebedarf. Wir unterstützen Sie bei der Vorbereitung und erklären verständlich, welche Unterlagen sinnvoll sind.</p>
             </div>
           </article>
 
-          <article class="faq__item" id="faq-k-kosten" data-cat="kosten ambulant">
+          <article class="faq__item" id="faq-k-kosten" data-cat="kosten ambulant" data-lw-item-key="item-6">
             <h3 class="faq__question">
               <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="k-p-faq-k-kosten" id="k-faq-k-kosten">
-                <span>Was kostet ambulante Pflege und wer übernimmt die Kosten?</span>
+                <span data-lw-field="pflegegrade-kosten.question" data-lw-type="text">Was kostet ambulante Pflege und wer übernimmt die Kosten?</span>
                 <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
               </button>
             </h3>
             <div class="faq__panel" id="k-p-faq-k-kosten" role="region" aria-labelledby="k-faq-k-kosten" hidden>
-              <p>Die Kosten hängen vom Pflegegrad und den benötigten Leistungen ab. Die Pflegekasse übernimmt einen Teil der Pflegesachleistungen und des Pflegegeldes. Wir beraten Sie transparent, welche Leistungen für Sie in Frage kommen und welche Kosten auf Sie zukommen können.</p>
+              <p data-lw-field="pflegegrade-kosten.copy" data-lw-type="textarea">Die Kosten hängen vom Pflegegrad und den benötigten Leistungen ab. Die Pflegekasse übernimmt einen Teil der Pflegesachleistungen und des Pflegegeldes. Wir beraten Sie transparent, welche Leistungen für Sie in Frage kommen und welche Kosten auf Sie zukommen können.</p>
             </div>
           </article>
         </div>
@@ -656,31 +656,31 @@
   </section>
 
   <!-- ============ BETREUTES WOHNEN ============ -->
-  <section class="story section section--cream" id="thema-wg" aria-labelledby="wg-title">
+  <section class="story section section--cream" id="thema-wg" aria-labelledby="wg-title" data-lw-section="thema-wg">
     <div class="container story__grid story__grid--flip">
       <div class="story__collage story__collage--single reveal">
         <div class="story__collage-img story__collage-img--tall">
-          <img src="assets/images/apartment.webp" alt="Eigenes Apartment im Betreuten Wohnen Brückenmühle Gernsbach" loading="lazy" width="1920" height="1080" />
+          <img src="assets/images/apartment.webp" alt="Eigenes Apartment im Betreuten Wohnen Brückenmühle Gernsbach" loading="lazy" width="1920" height="1080" data-lw-field="thema-wg.image" data-lw-type="image" />
         </div>
       </div>
       <div class="story__text reveal">
-        <span class="section-label">Betreutes Wohnen</span>
-        <h2 id="wg-title">Selbstständig leben. Unterstützung wissen.</h2>
-        <p class="story__lead">In der Brückenmühle Gernsbach wohnen Sie in Ihrem eigenen Apartment – mit Service, Café und angebundener Pflege.</p>
-        <p>
+        <span class="section-label" data-lw-field="thema-wg.eyebrow" data-lw-type="text">Betreutes Wohnen</span>
+        <h2 id="wg-title" data-lw-field="thema-wg.heading" data-lw-type="richtext">Selbstständig leben. Unterstützung wissen.</h2>
+        <p class="story__lead" data-lw-field="thema-wg.copy" data-lw-type="textarea">In der Brückenmühle Gernsbach wohnen Sie in Ihrem eigenen Apartment – mit Service, Café und angebundener Pflege.</p>
+        <p data-lw-field="thema-wg.copy_2" data-lw-type="textarea">
           Statt anonymer Heimstrukturen erwartet Sie ein Alltag mit Selbstbestimmung,
           Geborgenheit und echtem Miteinander. Ob gemeinsames Café, Alltagsbegleitung oder
           professionelle Pflege: Hier verbinden sich Freiheit und Fürsorge.
           Eine Pflege-WG in Baden-Baden ist als Phase&nbsp;2 geplant.
         </p>
         <ul class="bw-checklist">
-          <li>Eigene Apartments statt Stationsflur</li>
-          <li>Sicherheit und Präsenz im Haus</li>
-          <li>Ambulante Fachpflege bei Bedarf</li>
+          <li data-lw-field="thema-wg.item" data-lw-type="richtext">Eigene Apartments statt Stationsflur</li>
+          <li data-lw-field="thema-wg.item_2" data-lw-type="richtext">Sicherheit und Präsenz im Haus</li>
+          <li data-lw-field="thema-wg.item_3" data-lw-type="richtext">Ambulante Fachpflege bei Bedarf</li>
         </ul>
         <div class="story__actions">
           <a href="betreutes-wohnen.html" class="btn btn--primary">
-            Zum Betreuten Wohnen
+            <span data-lw-field="thema-wg.cta" data-lw-type="text">Zum Betreuten Wohnen</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
         </div>
@@ -689,77 +689,77 @@
 
     <div class="container">
       <div class="faq-inline reveal">
-        <h3 class="faq-inline__title">Fragen zum Betreuten Wohnen</h3>
-        <div class="faq__list">
-          <article class="faq__item" id="faq-w-wer" data-cat="wg">
+        <h3 class="faq-inline__title" data-lw-field="thema-wg.heading_2" data-lw-type="richtext">Fragen zum Betreuten Wohnen</h3>
+        <div class="faq__list" data-lw-repeater="faq.items">
+          <article class="faq__item" id="faq-w-wer" data-cat="wg" data-lw-item-key="item-1">
             <h3 class="faq__question">
               <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="w-p-faq-w-wer" id="w-faq-w-wer">
-                <span>Wer kann in die Brückenmühle einziehen?</span>
+                <span data-lw-field="thema-wg.question" data-lw-type="text">Wer kann in die Brückenmühle einziehen?</span>
                 <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
               </button>
             </h3>
             <div class="faq__panel" id="w-p-faq-w-wer" role="region" aria-labelledby="w-faq-w-wer" hidden>
-              <p>Menschen, die selbstbestimmt in einem eigenen Apartment leben möchten und gleichzeitig Service, Gemeinschaft und bei Bedarf Pflegeanschluss schätzen. Ob mit oder ohne Pflegegrad: Wir klären im Gespräch, was zu Ihrer Situation passt.</p>
+              <p data-lw-field="thema-wg.copy" data-lw-type="textarea">Menschen, die selbstbestimmt in einem eigenen Apartment leben möchten und gleichzeitig Service, Gemeinschaft und bei Bedarf Pflegeanschluss schätzen. Ob mit oder ohne Pflegegrad: Wir klären im Gespräch, was zu Ihrer Situation passt.</p>
             </div>
           </article>
 
-          <article class="faq__item" id="faq-w-wachsend" data-cat="wg angehoerige">
+          <article class="faq__item" id="faq-w-wachsend" data-cat="wg angehoerige" data-lw-item-key="item-2">
             <h3 class="faq__question">
               <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="w-p-faq-w-wachsend" id="w-faq-w-wachsend">
-                <span>Muss ich mich bei wachsendem Pflegebedarf neu umschauen?</span>
+                <span data-lw-field="thema-wg.question" data-lw-type="text">Muss ich mich bei wachsendem Pflegebedarf neu umschauen?</span>
                 <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
               </button>
             </h3>
             <div class="faq__panel" id="w-p-faq-w-wachsend" role="region" aria-labelledby="w-faq-w-wachsend" hidden>
-              <p>In der Regel nein. Ambulante Pflege von Juventa ist an die Brückenmühle angebunden – Sie behalten vertraute Ansprechpartner. Steigt der Bedarf weiter, denken wir gemeinsam weiter: bis hin zur geplanten Pflege-WG in Baden-Baden (Phase&nbsp;2).</p>
+              <p data-lw-field="thema-wg.copy" data-lw-type="textarea">In der Regel nein. Ambulante Pflege von Juventa ist an die Brückenmühle angebunden – Sie behalten vertraute Ansprechpartner. Steigt der Bedarf weiter, denken wir gemeinsam weiter: bis hin zur geplanten Pflege-WG in Baden-Baden (Phase&nbsp;2).</p>
             </div>
           </article>
 
-          <article class="faq__item" id="faq-w-hilfe" data-cat="wg kosten angehoerige">
+          <article class="faq__item" id="faq-w-hilfe" data-cat="wg kosten angehoerige" data-lw-item-key="item-3">
             <h3 class="faq__question">
               <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="w-p-faq-w-hilfe" id="w-faq-w-hilfe">
-                <span>Wer hilft mir beim Pflegegrad oder bei Anträgen?</span>
+                <span data-lw-field="thema-wg.question" data-lw-type="text">Wer hilft mir beim Pflegegrad oder bei Anträgen?</span>
                 <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
               </button>
             </h3>
             <div class="faq__panel" id="w-p-faq-w-hilfe" role="region" aria-labelledby="w-faq-w-hilfe" hidden>
-              <p>Wir. Wir unterstützen aktiv bei Anträgen zur Pflegeversicherung, Sozialhilfe, gesetzlicher Betreuung und im Austausch mit den Krankenkassen. Sie sind nicht allein.</p>
+              <p data-lw-field="thema-wg.copy" data-lw-type="textarea">Wir. Wir unterstützen aktiv bei Anträgen zur Pflegeversicherung, Sozialhilfe, gesetzlicher Betreuung und im Austausch mit den Krankenkassen. Sie sind nicht allein.</p>
             </div>
           </article>
 
-          <article class="faq__item" id="faq-w-besuche" data-cat="wg angehoerige">
+          <article class="faq__item" id="faq-w-besuche" data-cat="wg angehoerige" data-lw-item-key="item-4">
             <h3 class="faq__question">
               <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="w-p-faq-w-besuche" id="w-faq-w-besuche">
-                <span>Gibt es feste Besuchszeiten?</span>
+                <span data-lw-field="thema-wg.question" data-lw-type="text">Gibt es feste Besuchszeiten?</span>
                 <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
               </button>
             </h3>
             <div class="faq__panel" id="w-p-faq-w-besuche" role="region" aria-labelledby="w-faq-w-besuche" hidden>
-              <p>Ihr Apartment ist Ihr Zuhause. Besuche sind willkommen – im Sinne Ihrer Tagesstruktur und der Hausgemeinschaft. Gerne beraten wir Sie individuell dazu.</p>
+              <p data-lw-field="thema-wg.copy" data-lw-type="textarea">Ihr Apartment ist Ihr Zuhause. Besuche sind willkommen – im Sinne Ihrer Tagesstruktur und der Hausgemeinschaft. Gerne beraten wir Sie individuell dazu.</p>
             </div>
           </article>
 
-          <article class="faq__item" id="faq-w-schau" data-cat="wg">
+          <article class="faq__item" id="faq-w-schau" data-cat="wg" data-lw-item-key="item-5">
             <h3 class="faq__question">
               <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="w-p-faq-w-schau" id="w-faq-w-schau">
-                <span>Kann ich mir die Brückenmühle anschauen?</span>
+                <span data-lw-field="thema-wg.question" data-lw-type="text">Kann ich mir die Brückenmühle anschauen?</span>
                 <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
               </button>
             </h3>
             <div class="faq__panel" id="w-p-faq-w-schau" role="region" aria-labelledby="w-faq-w-schau" hidden>
-              <p>Ja – sehr gern. Wir laden Sie ein, Apartments, Haus und Alltag vor Ort kennenzulernen. Rufen Sie uns an oder schreiben Sie eine kurze Nachricht.</p>
+              <p data-lw-field="thema-wg.copy" data-lw-type="textarea">Ja – sehr gern. Wir laden Sie ein, Apartments, Haus und Alltag vor Ort kennenzulernen. Rufen Sie uns an oder schreiben Sie eine kurze Nachricht.</p>
             </div>
           </article>
 
-          <article class="faq__item" id="faq-w-heim" data-cat="wg">
+          <article class="faq__item" id="faq-w-heim" data-cat="wg" data-lw-item-key="item-6">
             <h3 class="faq__question">
               <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="w-p-faq-w-heim" id="w-faq-w-heim">
-                <span>Was ist der Unterschied zum Pflegeheim?</span>
+                <span data-lw-field="thema-wg.question" data-lw-type="text">Was ist der Unterschied zum Pflegeheim?</span>
                 <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
               </button>
             </h3>
             <div class="faq__panel" id="w-p-faq-w-heim" role="region" aria-labelledby="w-faq-w-heim" hidden>
-              <p>Mehr Mitbestimmung, eigene vier Wände und weniger Anonymität – bei Sicherheit und professioneller Versorgung. Im Betreuten Wohnen bleibt Ihr Alltag Ihr eigener; Pflege kommt bei Bedarf zu Ihnen ins Apartment.</p>
+              <p data-lw-field="thema-wg.copy" data-lw-type="textarea">Mehr Mitbestimmung, eigene vier Wände und weniger Anonymität – bei Sicherheit und professioneller Versorgung. Im Betreuten Wohnen bleibt Ihr Alltag Ihr eigener; Pflege kommt bei Bedarf zu Ihnen ins Apartment.</p>
             </div>
           </article>
         </div>
@@ -768,21 +768,21 @@
   </section>
 
   <!-- ============ ANGEHÖRIGE ============ -->
-  <section class="story section" id="fuer-angehoerige" aria-labelledby="angehoerige-title">
+  <section class="story section" id="fuer-angehoerige" aria-labelledby="angehoerige-title" data-lw-section="fuer-angehoerige">
     <div class="container story__grid">
       <div class="story__collage story__collage--single reveal">
         <div class="story__collage-img story__collage-img--tall">
-          <img src="assets/images/24h-pflege.webp" alt="Entlastung und Beratung für Angehörige bei Juventa" loading="lazy" width="1920" height="1080" />
+          <img src="assets/images/24h-pflege.webp" alt="Entlastung und Beratung für Angehörige bei Juventa" loading="lazy" width="1920" height="1080" data-lw-field="fuer-angehoerige.image" data-lw-type="image" />
         </div>
       </div>
       <div class="story__text reveal">
-        <span class="section-label">Für Angehörige</span>
-        <h2 id="angehoerige-title">Wenn es um die eigenen Eltern geht</h2>
-        <p class="story__lead">
+        <span class="section-label" data-lw-field="fuer-angehoerige.eyebrow" data-lw-type="text">Für Angehörige</span>
+        <h2 id="angehoerige-title" data-lw-field="fuer-angehoerige.heading" data-lw-type="richtext">Wenn es um die eigenen Eltern geht</h2>
+        <p class="story__lead" data-lw-field="fuer-angehoerige.copy" data-lw-type="textarea">
           Viele Angehörige stehen plötzlich vor Fragen: Welche Pflege ist richtig? Was ist
           organisatorisch möglich?
         </p>
-        <p>
+        <p data-lw-field="fuer-angehoerige.copy_2" data-lw-type="textarea">
           Juventa nimmt sich Zeit, hört zu und erklärt verständlich, welche Möglichkeiten es gibt –
           von der Entlastung im Alltag bis zur Verhinderungspflege.
         </p>
@@ -791,65 +791,65 @@
 
     <div class="container">
       <div class="faq-inline reveal">
-        <h3 class="faq-inline__title">Fragen von Angehörigen</h3>
-        <div class="faq__list">
-          <article class="faq__item" id="faq-g-kurz" data-cat="angehoerige ambulant">
+        <h3 class="faq-inline__title" data-lw-field="fuer-angehoerige.heading_2" data-lw-type="richtext">Fragen von Angehörigen</h3>
+        <div class="faq__list" data-lw-repeater="faq.items">
+          <article class="faq__item" id="faq-g-kurz" data-cat="angehoerige ambulant" data-lw-item-key="item-1">
             <h3 class="faq__question">
               <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="g-p-faq-g-kurz" id="g-faq-g-kurz">
-                <span>Bieten Sie Kurzzeit- und Verhinderungspflege an?</span>
+                <span data-lw-field="fuer-angehoerige.question" data-lw-type="text">Bieten Sie Kurzzeit- und Verhinderungspflege an?</span>
                 <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
               </button>
             </h3>
             <div class="faq__panel" id="g-p-faq-g-kurz" role="region" aria-labelledby="g-faq-g-kurz" hidden>
-              <p>Ja. Kurzzeitpflege entlastet nach einem Krankenhausaufenthalt oder in Übergangssituationen. Verhinderungspflege springt ein, wenn Angehörige vorübergehend nicht pflegen können – zum Beispiel im Urlaub oder bei Krankheit.</p>
+              <p data-lw-field="fuer-angehoerige.copy" data-lw-type="textarea">Ja. Kurzzeitpflege entlastet nach einem Krankenhausaufenthalt oder in Übergangssituationen. Verhinderungspflege springt ein, wenn Angehörige vorübergehend nicht pflegen können – zum Beispiel im Urlaub oder bei Krankheit.</p>
             </div>
           </article>
 
-          <article class="faq__item" id="faq-g-hilfe" data-cat="angehoerige kosten">
+          <article class="faq__item" id="faq-g-hilfe" data-cat="angehoerige kosten" data-lw-item-key="item-2">
             <h3 class="faq__question">
               <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="g-p-faq-g-hilfe" id="g-faq-g-hilfe">
-                <span>Wer hilft mir beim Pflegegrad oder bei Anträgen?</span>
+                <span data-lw-field="fuer-angehoerige.question" data-lw-type="text">Wer hilft mir beim Pflegegrad oder bei Anträgen?</span>
                 <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
               </button>
             </h3>
             <div class="faq__panel" id="g-p-faq-g-hilfe" role="region" aria-labelledby="g-faq-g-hilfe" hidden>
-              <p>Wir. Wir unterstützen aktiv bei Anträgen zur Pflegeversicherung, Sozialhilfe, gesetzlicher Betreuung und im Austausch mit den Krankenkassen. Sie sind nicht allein.</p>
+              <p data-lw-field="fuer-angehoerige.copy" data-lw-type="textarea">Wir. Wir unterstützen aktiv bei Anträgen zur Pflegeversicherung, Sozialhilfe, gesetzlicher Betreuung und im Austausch mit den Krankenkassen. Sie sind nicht allein.</p>
             </div>
           </article>
 
-          <article class="faq__item" id="faq-g-wachsend" data-cat="angehoerige wg">
+          <article class="faq__item" id="faq-g-wachsend" data-cat="angehoerige wg" data-lw-item-key="item-3">
             <h3 class="faq__question">
               <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="g-p-faq-g-wachsend" id="g-faq-g-wachsend">
-                <span>Muss ich mich bei wachsendem Pflegebedarf neu umschauen?</span>
+                <span data-lw-field="fuer-angehoerige.question" data-lw-type="text">Muss ich mich bei wachsendem Pflegebedarf neu umschauen?</span>
                 <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
               </button>
             </h3>
             <div class="faq__panel" id="g-p-faq-g-wachsend" role="region" aria-labelledby="g-faq-g-wachsend" hidden>
-              <p>In der Regel nein. Ambulante Pflege, Betreutes Wohnen und – perspektivisch – die geplante Pflege-WG in Baden-Baden greifen ineinander. Sie behalten vertraute Ansprechpartner und oft auch dieselben Pflegekräfte.</p>
+              <p data-lw-field="fuer-angehoerige.copy" data-lw-type="textarea">In der Regel nein. Ambulante Pflege, Betreutes Wohnen und – perspektivisch – die geplante Pflege-WG in Baden-Baden greifen ineinander. Sie behalten vertraute Ansprechpartner und oft auch dieselben Pflegekräfte.</p>
             </div>
           </article>
 
-          <article class="faq__item" id="faq-g-ansprech" data-cat="angehoerige team">
+          <article class="faq__item" id="faq-g-ansprech" data-cat="angehoerige team" data-lw-item-key="item-4">
             <h3 class="faq__question">
               <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="g-p-faq-g-ansprech" id="g-faq-g-ansprech">
-                <span>Habe ich feste Ansprechpartner?</span>
+                <span data-lw-field="fuer-angehoerige.question" data-lw-type="text">Habe ich feste Ansprechpartner?</span>
                 <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
               </button>
             </h3>
             <div class="faq__panel" id="g-p-faq-g-ansprech" role="region" aria-labelledby="g-faq-g-ansprech" hidden>
-              <p>Ja. Wir setzen auf feste Bezugspersonen in der Pflege und klare Ansprechpartner im Team – von der Beratung bis zur Organisation im Alltag.</p>
+              <p data-lw-field="fuer-angehoerige.copy" data-lw-type="textarea">Ja. Wir setzen auf feste Bezugspersonen in der Pflege und klare Ansprechpartner im Team – von der Beratung bis zur Organisation im Alltag.</p>
             </div>
           </article>
 
-          <article class="faq__item" id="faq-g-bezug" data-cat="angehoerige ambulant">
+          <article class="faq__item" id="faq-g-bezug" data-cat="angehoerige ambulant" data-lw-item-key="item-5">
             <h3 class="faq__question">
               <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="g-p-faq-g-bezug" id="g-faq-g-bezug">
-                <span>Kommen bei Juventa immer dieselben Pflegekräfte?</span>
+                <span data-lw-field="fuer-angehoerige.question" data-lw-type="text">Kommen bei Juventa immer dieselben Pflegekräfte?</span>
                 <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
               </button>
             </h3>
             <div class="faq__panel" id="g-p-faq-g-bezug" role="region" aria-labelledby="g-faq-g-bezug" hidden>
-              <p>Ja. Vertrauen entsteht durch Kontinuität. Deshalb setzen wir auf feste Bezugspersonen, die Sie kennenlernen und die Ihren Alltag sowie Ihre Wünsche kennen.</p>
+              <p data-lw-field="fuer-angehoerige.copy" data-lw-type="textarea">Ja. Vertrauen entsteht durch Kontinuität. Deshalb setzen wir auf feste Bezugspersonen, die Sie kennenlernen und die Ihren Alltag sowie Ihre Wünsche kennen.</p>
             </div>
           </article>
         </div>
@@ -858,59 +858,59 @@
   </section>
 
   <!-- ============ GUT ZU WISSEN ============ -->
-  <section class="faq-hub section section--cream" id="gut-zu-wissen" aria-labelledby="gut-title">
+  <section class="faq-hub section section--cream" id="gut-zu-wissen" aria-labelledby="gut-title" data-lw-section="gut-zu-wissen">
     <div class="container">
       <header class="section-head reveal">
-        <span class="section-label">Gut zu wissen</span>
-        <h2 id="gut-title">Wissen, das orientiert</h2>
-        <p class="section-head__sub">Regelmäßig neue Beiträge rund um Pflege, Finanzierung, Pflegegrad und Betreutes Wohnen.</p>
+        <span class="section-label" data-lw-field="gut-zu-wissen.eyebrow" data-lw-type="text">Gut zu wissen</span>
+        <h2 id="gut-title" data-lw-field="gut-zu-wissen.heading" data-lw-type="richtext">Wissen, das orientiert</h2>
+        <p class="section-head__sub" data-lw-field="gut-zu-wissen.copy" data-lw-type="textarea">Regelmäßig neue Beiträge rund um Pflege, Finanzierung, Pflegegrad und Betreutes Wohnen.</p>
       </header>
-      <div class="news__grid">
-        <article class="news__card reveal">
+      <div class="news__grid" data-lw-repeater="news.cards">
+        <article class="news__card reveal" data-lw-item-key="card-1">
           <a class="news__card-link" href="beitrag-pflegegrad.html">
             <div class="news__media">
-              <img src="assets/images/mobile-pflege.webp" alt="" width="800" height="520" loading="lazy" data-lw-decorative="true" />
+              <img src="assets/images/mobile-pflege.webp" alt="" width="800" height="520" loading="lazy" data-lw-decorative="true" data-lw-field="gut-zu-wissen.image" data-lw-type="image" />
             </div>
             <div class="news__body">
               <div class="news__meta">
-                <span class="news__tag">Pflegegrad</span>
-                <time datetime="2026-03-12">12. März 2026</time>
+                <span class="news__tag" data-lw-field="gut-zu-wissen.tag" data-lw-type="text">Pflegegrad</span>
+                <time datetime="2026-03-12" data-lw-field="gut-zu-wissen.date" data-lw-type="text">12. März 2026</time>
               </div>
-              <h3>Den Pflegegrad verstehen</h3>
-              <p>Was bedeuten die Pflegegrade – und welche Leistungen stehen Ihnen konkret zu? Ein Überblick für Angehörige und Betroffene.</p>
-              <span class="news__more">Beitrag lesen</span>
+              <h3 data-lw-field="gut-zu-wissen.heading" data-lw-type="richtext">Den Pflegegrad verstehen</h3>
+              <p data-lw-field="gut-zu-wissen.copy" data-lw-type="textarea">Was bedeuten die Pflegegrade – und welche Leistungen stehen Ihnen konkret zu? Ein Überblick für Angehörige und Betroffene.</p>
+              <span class="news__more" data-lw-field="gut-zu-wissen.more" data-lw-type="text">Beitrag lesen</span>
             </div>
           </a>
         </article>
-        <article class="news__card reveal">
+        <article class="news__card reveal" data-lw-item-key="card-2">
           <a class="news__card-link" href="beitrag-kosten.html">
             <div class="news__media">
-              <img src="assets/images/verhinderungspflege.webp" alt="" width="800" height="520" loading="lazy" data-lw-decorative="true" />
+              <img src="assets/images/verhinderungspflege.webp" alt="" width="800" height="520" loading="lazy" data-lw-decorative="true" data-lw-field="gut-zu-wissen.image" data-lw-type="image" />
             </div>
             <div class="news__body">
               <div class="news__meta">
-                <span class="news__tag">Finanzierung</span>
-                <time datetime="2026-02-26">26. Februar 2026</time>
+                <span class="news__tag" data-lw-field="gut-zu-wissen.tag" data-lw-type="text">Finanzierung</span>
+                <time datetime="2026-02-26" data-lw-field="gut-zu-wissen.date" data-lw-type="text">26. Februar 2026</time>
               </div>
-              <h3>Kosten klar im Blick</h3>
-              <p>Wie Pflegeversicherung, Entlastungsleistungen und Eigenanteil zusammenspielen – verständlich erklärt.</p>
-              <span class="news__more">Beitrag lesen</span>
+              <h3 data-lw-field="gut-zu-wissen.heading" data-lw-type="richtext">Kosten klar im Blick</h3>
+              <p data-lw-field="gut-zu-wissen.copy" data-lw-type="textarea">Wie Pflegeversicherung, Entlastungsleistungen und Eigenanteil zusammenspielen – verständlich erklärt.</p>
+              <span class="news__more" data-lw-field="gut-zu-wissen.more" data-lw-type="text">Beitrag lesen</span>
             </div>
           </a>
         </article>
-        <article class="news__card reveal">
+        <article class="news__card reveal" data-lw-item-key="card-3">
           <a class="news__card-link" href="beitrag-angehoerige.html">
             <div class="news__media">
-              <img src="assets/images/img-kontakt.webp" alt="" width="800" height="520" loading="lazy" data-lw-decorative="true" />
+              <img src="assets/images/img-kontakt.webp" alt="" width="800" height="520" loading="lazy" data-lw-decorative="true" data-lw-field="gut-zu-wissen.image" data-lw-type="image" />
             </div>
             <div class="news__body">
               <div class="news__meta">
-                <span class="news__tag">Alltag</span>
-                <time datetime="2026-02-10">10. Februar 2026</time>
+                <span class="news__tag" data-lw-field="gut-zu-wissen.tag" data-lw-type="text">Alltag</span>
+                <time datetime="2026-02-10" data-lw-field="gut-zu-wissen.date" data-lw-type="text">10. Februar 2026</time>
               </div>
-              <h3>Tipps für Angehörige</h3>
-              <p>Praktische Impulse für den Pflegealltag – nahbar, konkret und ohne Fachchinesisch.</p>
-              <span class="news__more">Beitrag lesen</span>
+              <h3 data-lw-field="gut-zu-wissen.heading" data-lw-type="richtext">Tipps für Angehörige</h3>
+              <p data-lw-field="gut-zu-wissen.copy" data-lw-type="textarea">Praktische Impulse für den Pflegealltag – nahbar, konkret und ohne Fachchinesisch.</p>
+              <span class="news__more" data-lw-field="gut-zu-wissen.more" data-lw-type="text">Beitrag lesen</span>
             </div>
           </a>
         </article>
@@ -919,12 +919,12 @@
   </section>
 
   <!-- ============ VERZEICHNIS ============ -->
-  <section class="faq section" id="faq-verzeichnis" aria-labelledby="verzeichnis-title">
+  <section class="faq section" id="faq-verzeichnis" aria-labelledby="verzeichnis-title" data-lw-section="faq-verzeichnis">
     <div class="container">
       <header class="section-head reveal">
-        <span class="section-label">Verzeichnis</span>
-        <h2 id="verzeichnis-title">Alle Fragen &amp; Antworten</h2>
-        <p class="section-head__sub">
+        <span class="section-label" data-lw-field="faq-verzeichnis.eyebrow" data-lw-type="text">Verzeichnis</span>
+        <h2 id="verzeichnis-title" data-lw-field="faq-verzeichnis.heading" data-lw-type="richtext">Alle Fragen &amp; Antworten</h2>
+        <p class="section-head__sub" data-lw-field="faq-verzeichnis.copy" data-lw-type="textarea">
           Alle bisherigen FAQs an einem Ort – filterbar nach Thema oder über die Suche oben.
         </p>
       </header>
@@ -938,346 +938,346 @@
           <button type="button" class="faq-filters__btn" data-faq-filter="angehoerige" aria-pressed="false">Angehörige</button>
           <button type="button" class="faq-filters__btn" data-faq-filter="team" aria-pressed="false">Juventa</button>
         </div>
-        <p class="faq-toolbar__count" id="faqResultCount" aria-live="polite"></p>
+        <p class="faq-toolbar__count" id="faqResultCount" aria-live="polite" data-lw-field="faq-verzeichnis.copy_2" data-lw-type="textarea"></p>
       </div>
 
-      <div class="faq__list faq__list--directory reveal" id="faqDirectoryList">
+      <div class="faq__list faq__list--directory reveal" id="faqDirectoryList" data-lw-repeater="faq.items">
 
-        <article class="faq__item" id="dir-kosten" data-cat="ambulant kosten">
+        <article class="faq__item" id="dir-kosten" data-cat="ambulant kosten" data-lw-item-key="item-1">
           <h3 class="faq__question">
             <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="d-p-dir-kosten" id="d-dir-kosten">
-              <span>Was kostet ambulante Pflege und wer übernimmt die Kosten?</span>
+              <span data-lw-field="faq-verzeichnis.question" data-lw-type="text">Was kostet ambulante Pflege und wer übernimmt die Kosten?</span>
               <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
             </button>
           </h3>
           <div class="faq__panel" id="d-p-dir-kosten" role="region" aria-labelledby="d-dir-kosten" hidden>
-            <p>Die Kosten hängen vom Pflegegrad und den benötigten Leistungen ab. Die Pflegekasse übernimmt einen Teil der Pflegesachleistungen und des Pflegegeldes. Wir beraten Sie transparent, welche Leistungen für Sie in Frage kommen und welche Kosten auf Sie zukommen können.</p>
+            <p data-lw-field="faq-verzeichnis.copy" data-lw-type="textarea">Die Kosten hängen vom Pflegegrad und den benötigten Leistungen ab. Die Pflegekasse übernimmt einen Teil der Pflegesachleistungen und des Pflegegeldes. Wir beraten Sie transparent, welche Leistungen für Sie in Frage kommen und welche Kosten auf Sie zukommen können.</p>
           </div>
         </article>
 
-        <article class="faq__item" id="dir-pg" data-cat="kosten">
+        <article class="faq__item" id="dir-pg" data-cat="kosten" data-lw-item-key="item-2">
           <h3 class="faq__question">
             <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="d-p-dir-pg" id="d-dir-pg">
-              <span>Wie beantrage ich einen Pflegegrad?</span>
+              <span data-lw-field="faq-verzeichnis.question" data-lw-type="text">Wie beantrage ich einen Pflegegrad?</span>
               <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
             </button>
           </h3>
           <div class="faq__panel" id="d-p-dir-pg" role="region" aria-labelledby="d-dir-pg" hidden>
-            <p>Sie wenden sich an Ihre Pflegekasse und stellen einen Antrag auf Pflegegrad. Ein MDK-Gutachter bewertet den Pflegebedarf. Wir unterstützen Sie bei der Vorbereitung und erklären verständlich, welche Unterlagen sinnvoll sind.</p>
+            <p data-lw-field="faq-verzeichnis.copy" data-lw-type="textarea">Sie wenden sich an Ihre Pflegekasse und stellen einen Antrag auf Pflegegrad. Ein MDK-Gutachter bewertet den Pflegebedarf. Wir unterstützen Sie bei der Vorbereitung und erklären verständlich, welche Unterlagen sinnvoll sind.</p>
           </div>
         </article>
 
-        <article class="faq__item" id="dir-need" data-cat="kosten ambulant">
+        <article class="faq__item" id="dir-need" data-cat="kosten ambulant" data-lw-item-key="item-3">
           <h3 class="faq__question">
             <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="d-p-dir-need" id="d-dir-need">
-              <span>Brauche ich einen Pflegegrad für ambulante Pflege?</span>
+              <span data-lw-field="faq-verzeichnis.question" data-lw-type="text">Brauche ich einen Pflegegrad für ambulante Pflege?</span>
               <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
             </button>
           </h3>
           <div class="faq__panel" id="d-p-dir-need" role="region" aria-labelledby="d-dir-need" hidden>
-            <p>Für Leistungen der Pflegeversicherung in der Regel ja. Ohne Pflegegrad können gewünschte Leistungen privat vereinbart werden. Wir prüfen gemeinsam, was in Ihrer Situation möglich und sinnvoll ist – und helfen beim Antrag, falls noch keiner vorliegt.</p>
+            <p data-lw-field="faq-verzeichnis.copy" data-lw-type="textarea">Für Leistungen der Pflegeversicherung in der Regel ja. Ohne Pflegegrad können gewünschte Leistungen privat vereinbart werden. Wir prüfen gemeinsam, was in Ihrer Situation möglich und sinnvoll ist – und helfen beim Antrag, falls noch keiner vorliegt.</p>
           </div>
         </article>
 
-        <article class="faq__item" id="dir-hilfe" data-cat="kosten angehoerige wg">
+        <article class="faq__item" id="dir-hilfe" data-cat="kosten angehoerige wg" data-lw-item-key="item-4">
           <h3 class="faq__question">
             <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="d-p-dir-hilfe" id="d-dir-hilfe">
-              <span>Wer hilft mir beim Pflegegrad oder bei Anträgen?</span>
+              <span data-lw-field="faq-verzeichnis.question" data-lw-type="text">Wer hilft mir beim Pflegegrad oder bei Anträgen?</span>
               <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
             </button>
           </h3>
           <div class="faq__panel" id="d-p-dir-hilfe" role="region" aria-labelledby="d-dir-hilfe" hidden>
-            <p>Wir. Wir unterstützen aktiv bei Anträgen zur Pflegeversicherung, Sozialhilfe, gesetzlicher Betreuung und im Austausch mit den Krankenkassen. Sie sind nicht allein.</p>
+            <p data-lw-field="faq-verzeichnis.copy" data-lw-type="textarea">Wir. Wir unterstützen aktiv bei Anträgen zur Pflegeversicherung, Sozialhilfe, gesetzlicher Betreuung und im Austausch mit den Krankenkassen. Sie sind nicht allein.</p>
           </div>
         </article>
 
-        <article class="faq__item" id="dir-erst" data-cat="kosten team">
+        <article class="faq__item" id="dir-erst" data-cat="kosten team" data-lw-item-key="item-5">
           <h3 class="faq__question">
             <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="d-p-dir-erst" id="d-dir-erst">
-              <span>Werden Beratung und Erstgespräch berechnet?</span>
+              <span data-lw-field="faq-verzeichnis.question" data-lw-type="text">Werden Beratung und Erstgespräch berechnet?</span>
               <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
             </button>
           </h3>
           <div class="faq__panel" id="d-p-dir-erst" role="region" aria-labelledby="d-dir-erst" hidden>
-            <p>Das erste Orientierungsgespräch ist für Sie unverbindlich. Wir hören zu, erklären Optionen und geben eine ehrliche Einschätzung – ohne Druck und ohne versteckte Kosten.</p>
+            <p data-lw-field="faq-verzeichnis.copy" data-lw-type="textarea">Das erste Orientierungsgespräch ist für Sie unverbindlich. Wir hören zu, erklären Optionen und geben eine ehrliche Einschätzung – ohne Druck und ohne versteckte Kosten.</p>
           </div>
         </article>
 
-        <article class="faq__item" id="dir-bezug" data-cat="ambulant team angehoerige">
+        <article class="faq__item" id="dir-bezug" data-cat="ambulant team angehoerige" data-lw-item-key="item-6">
           <h3 class="faq__question">
             <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="d-p-dir-bezug" id="d-dir-bezug">
-              <span>Kommen bei Juventa immer dieselben Pflegekräfte?</span>
+              <span data-lw-field="faq-verzeichnis.question" data-lw-type="text">Kommen bei Juventa immer dieselben Pflegekräfte?</span>
               <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
             </button>
           </h3>
           <div class="faq__panel" id="d-p-dir-bezug" role="region" aria-labelledby="d-dir-bezug" hidden>
-            <p>Ja. Vertrauen entsteht durch Kontinuität. Deshalb setzen wir auf feste Bezugspersonen, die Sie kennenlernen und die Ihren Alltag sowie Ihre Wünsche kennen.</p>
+            <p data-lw-field="faq-verzeichnis.copy" data-lw-type="textarea">Ja. Vertrauen entsteht durch Kontinuität. Deshalb setzen wir auf feste Bezugspersonen, die Sie kennenlernen und die Ihren Alltag sowie Ihre Wünsche kennen.</p>
           </div>
         </article>
 
-        <article class="faq__item" id="dir-diff" data-cat="ambulant angehoerige">
+        <article class="faq__item" id="dir-diff" data-cat="ambulant angehoerige" data-lw-item-key="item-7">
           <h3 class="faq__question">
             <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="d-p-dir-diff" id="d-dir-diff">
-              <span>Was ist der Unterschied zwischen Kurzzeit- und Verhinderungspflege?</span>
+              <span data-lw-field="faq-verzeichnis.question" data-lw-type="text">Was ist der Unterschied zwischen Kurzzeit- und Verhinderungspflege?</span>
               <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
             </button>
           </h3>
           <div class="faq__panel" id="d-p-dir-diff" role="region" aria-labelledby="d-dir-diff" hidden>
-            <p>Kurzzeitpflege entlastet nach einem Krankenhausaufenthalt oder in Übergangssituationen. Verhinderungspflege springt ein, wenn Angehörige vorübergehend nicht pflegen können – zum Beispiel im Urlaub oder bei Krankheit. Beides lässt sich flexibel zu Hause organisieren; bei Bedarf auch im Umfeld unseres Betreuten Wohnens.</p>
+            <p data-lw-field="faq-verzeichnis.copy" data-lw-type="textarea">Kurzzeitpflege entlastet nach einem Krankenhausaufenthalt oder in Übergangssituationen. Verhinderungspflege springt ein, wenn Angehörige vorübergehend nicht pflegen können – zum Beispiel im Urlaub oder bei Krankheit. Beides lässt sich flexibel zu Hause organisieren; bei Bedarf auch im Umfeld unseres Betreuten Wohnens.</p>
           </div>
         </article>
 
-        <article class="faq__item" id="dir-kurz" data-cat="ambulant angehoerige">
+        <article class="faq__item" id="dir-kurz" data-cat="ambulant angehoerige" data-lw-item-key="item-8">
           <h3 class="faq__question">
             <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="d-p-dir-kurz" id="d-dir-kurz">
-              <span>Bieten Sie Kurzzeit- und Verhinderungspflege an?</span>
+              <span data-lw-field="faq-verzeichnis.question" data-lw-type="text">Bieten Sie Kurzzeit- und Verhinderungspflege an?</span>
               <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
             </button>
           </h3>
           <div class="faq__panel" id="d-p-dir-kurz" role="region" aria-labelledby="d-dir-kurz" hidden>
-            <p>Ja. Kurzzeitpflege entlastet nach einem Krankenhausaufenthalt oder in Übergangssituationen. Verhinderungspflege springt ein, wenn Angehörige vorübergehend nicht pflegen können – zum Beispiel im Urlaub oder bei Krankheit.</p>
+            <p data-lw-field="faq-verzeichnis.copy" data-lw-type="textarea">Ja. Kurzzeitpflege entlastet nach einem Krankenhausaufenthalt oder in Übergangssituationen. Verhinderungspflege springt ein, wenn Angehörige vorübergehend nicht pflegen können – zum Beispiel im Urlaub oder bei Krankheit.</p>
           </div>
         </article>
 
-        <article class="faq__item" id="dir-24h" data-cat="ambulant">
+        <article class="faq__item" id="dir-24h" data-cat="ambulant" data-lw-item-key="item-9">
           <h3 class="faq__question">
             <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="d-p-dir-24h" id="d-dir-24h">
-              <span>Was brauche ich für die 24h-Pflege zu Hause?</span>
+              <span data-lw-field="faq-verzeichnis.question" data-lw-type="text">Was brauche ich für die 24h-Pflege zu Hause?</span>
               <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
             </button>
           </h3>
           <div class="faq__panel" id="d-p-dir-24h" role="region" aria-labelledby="d-dir-24h" hidden>
-            <p>Wichtig ist vor allem ein separater Schlafplatz für die Betreuungskraft. Alles Weitere – Auswahl, Planung und Abstimmung mit dem ambulanten Pflegedienst – organisieren wir gemeinsam mit Ihnen.</p>
+            <p data-lw-field="faq-verzeichnis.copy" data-lw-type="textarea">Wichtig ist vor allem ein separater Schlafplatz für die Betreuungskraft. Alles Weitere – Auswahl, Planung und Abstimmung mit dem ambulanten Pflegedienst – organisieren wir gemeinsam mit Ihnen.</p>
           </div>
         </article>
 
-        <article class="faq__item" id="dir-wgdef" data-cat="wg">
+        <article class="faq__item" id="dir-wgdef" data-cat="wg" data-lw-item-key="item-10">
           <h3 class="faq__question">
             <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="d-p-dir-wgdef" id="d-dir-wgdef">
-              <span>Was ist Betreutes Wohnen in der Brückenmühle?</span>
+              <span data-lw-field="faq-verzeichnis.question" data-lw-type="text">Was ist Betreutes Wohnen in der Brückenmühle?</span>
               <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
             </button>
           </h3>
           <div class="faq__panel" id="d-p-dir-wgdef" role="region" aria-labelledby="d-dir-wgdef" hidden>
-            <p>Sie wohnen in Ihrem eigenen Apartment in der Brückenmühle Gernsbach – selbstbestimmt, mit Service, Café und Gemeinschaft im Haus. Ambulante Pflege durch Juventa kann direkt angebunden werden. Eine Pflege-WG in Baden-Baden ist als nächste Phase geplant.</p>
+            <p data-lw-field="faq-verzeichnis.copy" data-lw-type="textarea">Sie wohnen in Ihrem eigenen Apartment in der Brückenmühle Gernsbach – selbstbestimmt, mit Service, Café und Gemeinschaft im Haus. Ambulante Pflege durch Juventa kann direkt angebunden werden. Eine Pflege-WG in Baden-Baden ist als nächste Phase geplant.</p>
           </div>
         </article>
 
-        <article class="faq__item" id="dir-wer" data-cat="wg">
+        <article class="faq__item" id="dir-wer" data-cat="wg" data-lw-item-key="item-11">
           <h3 class="faq__question">
             <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="d-p-dir-wer" id="d-dir-wer">
-              <span>Wer kann in die Brückenmühle einziehen?</span>
+              <span data-lw-field="faq-verzeichnis.question" data-lw-type="text">Wer kann in die Brückenmühle einziehen?</span>
               <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
             </button>
           </h3>
           <div class="faq__panel" id="d-p-dir-wer" role="region" aria-labelledby="d-dir-wer" hidden>
-            <p>Menschen, die selbstbestimmt in einem eigenen Apartment leben möchten und gleichzeitig Service, Gemeinschaft und bei Bedarf Pflegeanschluss schätzen. Ob mit oder ohne Pflegegrad: Wir klären im Gespräch, was zu Ihrer Situation passt.</p>
+            <p data-lw-field="faq-verzeichnis.copy" data-lw-type="textarea">Menschen, die selbstbestimmt in einem eigenen Apartment leben möchten und gleichzeitig Service, Gemeinschaft und bei Bedarf Pflegeanschluss schätzen. Ob mit oder ohne Pflegegrad: Wir klären im Gespräch, was zu Ihrer Situation passt.</p>
           </div>
         </article>
 
-        <article class="faq__item" id="dir-wgkosten" data-cat="kosten wg">
+        <article class="faq__item" id="dir-wgkosten" data-cat="kosten wg" data-lw-item-key="item-12">
           <h3 class="faq__question">
             <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="d-p-dir-wgkosten" id="d-dir-wgkosten">
-              <span>Was kostet ein Apartment im Betreuten Wohnen?</span>
+              <span data-lw-field="faq-verzeichnis.question" data-lw-type="text">Was kostet ein Apartment im Betreuten Wohnen?</span>
               <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
             </button>
           </h3>
           <div class="faq__panel" id="d-p-dir-wgkosten" role="region" aria-labelledby="d-dir-wgkosten" hidden>
-            <p>Die Kosten setzen sich aus Wohnen, Betreuung vor Ort und optionalen Leistungen zusammen. Pflegeleistungen richten sich nach Pflegegrad und Bedarf. Wir erstellen mit Ihnen eine transparente Übersicht und klären, welche Anteile die Pflegekasse oder Sozialhilfeträger übernehmen können.</p>
+            <p data-lw-field="faq-verzeichnis.copy" data-lw-type="textarea">Die Kosten setzen sich aus Wohnen, Betreuung vor Ort und optionalen Leistungen zusammen. Pflegeleistungen richten sich nach Pflegegrad und Bedarf. Wir erstellen mit Ihnen eine transparente Übersicht und klären, welche Anteile die Pflegekasse oder Sozialhilfeträger übernehmen können.</p>
           </div>
         </article>
 
-        <article class="faq__item" id="dir-wachsend" data-cat="wg angehoerige">
+        <article class="faq__item" id="dir-wachsend" data-cat="wg angehoerige" data-lw-item-key="item-13">
           <h3 class="faq__question">
             <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="d-p-dir-wachsend" id="d-dir-wachsend">
-              <span>Muss ich mich bei wachsendem Pflegebedarf neu umschauen?</span>
+              <span data-lw-field="faq-verzeichnis.question" data-lw-type="text">Muss ich mich bei wachsendem Pflegebedarf neu umschauen?</span>
               <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
             </button>
           </h3>
           <div class="faq__panel" id="d-p-dir-wachsend" role="region" aria-labelledby="d-dir-wachsend" hidden>
-            <p>In der Regel nein. Ambulante Pflege von Juventa ist an die Brückenmühle angebunden. Steigt der Bedarf weiter, denken wir gemeinsam weiter – bis hin zur geplanten Pflege-WG in Baden-Baden (Phase&nbsp;2).</p>
+            <p data-lw-field="faq-verzeichnis.copy" data-lw-type="textarea">In der Regel nein. Ambulante Pflege von Juventa ist an die Brückenmühle angebunden. Steigt der Bedarf weiter, denken wir gemeinsam weiter – bis hin zur geplanten Pflege-WG in Baden-Baden (Phase&nbsp;2).</p>
           </div>
         </article>
 
-        <article class="faq__item" id="dir-besuche" data-cat="wg angehoerige">
+        <article class="faq__item" id="dir-besuche" data-cat="wg angehoerige" data-lw-item-key="item-14">
           <h3 class="faq__question">
             <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="d-p-dir-besuche" id="d-dir-besuche">
-              <span>Gibt es feste Besuchszeiten?</span>
+              <span data-lw-field="faq-verzeichnis.question" data-lw-type="text">Gibt es feste Besuchszeiten?</span>
               <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
             </button>
           </h3>
           <div class="faq__panel" id="d-p-dir-besuche" role="region" aria-labelledby="d-dir-besuche" hidden>
-            <p>Ihr Apartment ist Ihr Zuhause. Besuche sind willkommen – im Sinne Ihrer Tagesstruktur und der Hausgemeinschaft. Gerne beraten wir Sie individuell dazu.</p>
+            <p data-lw-field="faq-verzeichnis.copy" data-lw-type="textarea">Ihr Apartment ist Ihr Zuhause. Besuche sind willkommen – im Sinne Ihrer Tagesstruktur und der Hausgemeinschaft. Gerne beraten wir Sie individuell dazu.</p>
           </div>
         </article>
 
-        <article class="faq__item" id="dir-schau" data-cat="wg">
+        <article class="faq__item" id="dir-schau" data-cat="wg" data-lw-item-key="item-15">
           <h3 class="faq__question">
             <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="d-p-dir-schau" id="d-dir-schau">
-              <span>Kann ich mir die Brückenmühle anschauen?</span>
+              <span data-lw-field="faq-verzeichnis.question" data-lw-type="text">Kann ich mir die Brückenmühle anschauen?</span>
               <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
             </button>
           </h3>
           <div class="faq__panel" id="d-p-dir-schau" role="region" aria-labelledby="d-dir-schau" hidden>
-            <p>Ja – sehr gern. Wir laden Sie ein, Apartments, Haus und Alltag vor Ort kennenzulernen. Rufen Sie uns an oder schreiben Sie eine kurze Nachricht.</p>
+            <p data-lw-field="faq-verzeichnis.copy" data-lw-type="textarea">Ja – sehr gern. Wir laden Sie ein, Apartments, Haus und Alltag vor Ort kennenzulernen. Rufen Sie uns an oder schreiben Sie eine kurze Nachricht.</p>
           </div>
         </article>
 
-        <article class="faq__item" id="dir-heim" data-cat="wg">
+        <article class="faq__item" id="dir-heim" data-cat="wg" data-lw-item-key="item-16">
           <h3 class="faq__question">
             <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="d-p-dir-heim" id="d-dir-heim">
-              <span>Was ist der Unterschied zum Pflegeheim?</span>
+              <span data-lw-field="faq-verzeichnis.question" data-lw-type="text">Was ist der Unterschied zum Pflegeheim?</span>
               <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
             </button>
           </h3>
           <div class="faq__panel" id="d-p-dir-heim" role="region" aria-labelledby="d-dir-heim" hidden>
-            <p>Mehr Mitbestimmung, eigene vier Wände und weniger Anonymität – bei Sicherheit und professioneller Versorgung. Im Betreuten Wohnen bleibt Ihr Alltag Ihr eigener; Pflege kommt bei Bedarf zu Ihnen.</p>
+            <p data-lw-field="faq-verzeichnis.copy" data-lw-type="textarea">Mehr Mitbestimmung, eigene vier Wände und weniger Anonymität – bei Sicherheit und professioneller Versorgung. Im Betreuten Wohnen bleibt Ihr Alltag Ihr eigener; Pflege kommt bei Bedarf zu Ihnen.</p>
           </div>
         </article>
 
-        <article class="faq__item" id="dir-gruender" data-cat="team">
+        <article class="faq__item" id="dir-gruender" data-cat="team" data-lw-item-key="item-17">
           <h3 class="faq__question">
             <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="d-p-dir-gruender" id="d-dir-gruender">
-              <span>Wer steht hinter Juventa?</span>
+              <span data-lw-field="faq-verzeichnis.question" data-lw-type="text">Wer steht hinter Juventa?</span>
               <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
             </button>
           </h3>
           <div class="faq__panel" id="d-p-dir-gruender" role="region" aria-labelledby="d-dir-gruender" hidden>
-            <p>Hinter Juventa stehen Fee Schmid und Fabian Lepold – mit Erfahrung in Pflege, Betreuung und Wohnkonzepten. Gemeinsam mit dem Team in Baden-Baden und Gernsbach verbinden wir Fachlichkeit mit Nähe.</p>
+            <p data-lw-field="faq-verzeichnis.copy" data-lw-type="textarea">Hinter Juventa stehen Fee Schmid und Fabian Lepold – mit Erfahrung in Pflege, Betreuung und Wohnkonzepten. Gemeinsam mit dem Team in Baden-Baden und Gernsbach verbinden wir Fachlichkeit mit Nähe.</p>
           </div>
         </article>
 
-        <article class="faq__item" id="dir-ansprech" data-cat="team angehoerige">
+        <article class="faq__item" id="dir-ansprech" data-cat="team angehoerige" data-lw-item-key="item-18">
           <h3 class="faq__question">
             <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="d-p-dir-ansprech" id="d-dir-ansprech">
-              <span>Habe ich feste Ansprechpartner?</span>
+              <span data-lw-field="faq-verzeichnis.question" data-lw-type="text">Habe ich feste Ansprechpartner?</span>
               <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
             </button>
           </h3>
           <div class="faq__panel" id="d-p-dir-ansprech" role="region" aria-labelledby="d-dir-ansprech" hidden>
-            <p>Ja. Wir setzen auf feste Bezugspersonen in der Pflege und klare Ansprechpartner im Team – von der Beratung bis zur Organisation im Alltag.</p>
+            <p data-lw-field="faq-verzeichnis.copy" data-lw-type="textarea">Ja. Wir setzen auf feste Bezugspersonen in der Pflege und klare Ansprechpartner im Team – von der Beratung bis zur Organisation im Alltag.</p>
           </div>
         </article>
 
-        <article class="faq__item" id="dir-erreichen" data-cat="team">
+        <article class="faq__item" id="dir-erreichen" data-cat="team" data-lw-item-key="item-19">
           <h3 class="faq__question">
             <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="d-p-dir-erreichen" id="d-dir-erreichen">
-              <span>Wie erreiche ich das Team?</span>
+              <span data-lw-field="faq-verzeichnis.question" data-lw-type="text">Wie erreiche ich das Team?</span>
               <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
             </button>
           </h3>
           <div class="faq__panel" id="d-p-dir-erreichen" role="region" aria-labelledby="d-dir-erreichen" hidden>
-            <p>Telefonisch unter <a href="tel:+491785254075">+49 178 5254075</a>, per E-Mail an <a href="mailto:info@juventa-pflege.de">info@juventa-pflege.de</a> oder vor Ort nach Termin am Sonnenplatz&nbsp;2 in Baden-Baden bzw. in der Brückenmühle Gernsbach. Montag bis Freitag von 08:00 bis 17:00&nbsp;Uhr.</p>
+            <p data-lw-field="faq-verzeichnis.copy" data-lw-type="textarea">Telefonisch unter <a href="tel:+491785254075">+49 178 5254075</a>, per E-Mail an <a href="mailto:info@juventa-pflege.de">info@juventa-pflege.de</a> oder vor Ort nach Termin am Sonnenplatz&nbsp;2 in Baden-Baden bzw. in der Brückenmühle Gernsbach. Montag bis Freitag von 08:00 bis 17:00&nbsp;Uhr.</p>
           </div>
         </article>
 
-        <article class="faq__item" id="dir-arbeiten" data-cat="team">
+        <article class="faq__item" id="dir-arbeiten" data-cat="team" data-lw-item-key="item-20">
           <h3 class="faq__question">
             <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="d-p-dir-arbeiten" id="d-dir-arbeiten">
-              <span>Warum lohnt sich Arbeiten bei Juventa?</span>
+              <span data-lw-field="faq-verzeichnis.question" data-lw-type="text">Warum lohnt sich Arbeiten bei Juventa?</span>
               <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
             </button>
           </h3>
           <div class="faq__panel" id="d-p-dir-arbeiten" role="region" aria-labelledby="d-dir-arbeiten" hidden>
-            <p>Weil gute Pflege nur dort entsteht, wo Menschen wertgeschätzt werden. Bei Juventa zählen feste Bezugspersonen, planbare Strukturen, faire Bezahlung und echte Zeit für Menschen – nicht der übervolle Tourenplan. Mehr dazu auf unserer Seite <a href="stellenanzeigen.html">Stellenanzeigen</a>.</p>
+            <p data-lw-field="faq-verzeichnis.copy" data-lw-type="textarea">Weil gute Pflege nur dort entsteht, wo Menschen wertgeschätzt werden. Bei Juventa zählen feste Bezugspersonen, planbare Strukturen, faire Bezahlung und echte Zeit für Menschen – nicht der übervolle Tourenplan. Mehr dazu auf unserer Seite <a href="stellenanzeigen.html">Stellenanzeigen</a>.</p>
           </div>
         </article>
 
-        <article class="faq__item" id="dir-ausbildung" data-cat="team">
+        <article class="faq__item" id="dir-ausbildung" data-cat="team" data-lw-item-key="item-21">
           <h3 class="faq__question">
             <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="d-p-dir-ausbildung" id="d-dir-ausbildung">
-              <span>Brauche ich eine Ausbildung in der Pflege?</span>
+              <span data-lw-field="faq-verzeichnis.question" data-lw-type="text">Brauche ich eine Ausbildung in der Pflege?</span>
               <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
             </button>
           </h3>
           <div class="faq__panel" id="d-p-dir-ausbildung" role="region" aria-labelledby="d-dir-ausbildung" hidden>
-            <p>Für die Stelle als Pflegefachkraft ja. Als Präsenzkraft oder in der Hauswirtschaft ist Quereinstieg ausdrücklich willkommen – entscheidend sind Herz, Zuverlässigkeit und Freude am Umgang mit Menschen. Offene Stellen finden Sie unter <a href="stellenanzeigen.html">Stellenanzeigen</a>.</p>
+            <p data-lw-field="faq-verzeichnis.copy" data-lw-type="textarea">Für die Stelle als Pflegefachkraft ja. Als Präsenzkraft oder in der Hauswirtschaft ist Quereinstieg ausdrücklich willkommen – entscheidend sind Herz, Zuverlässigkeit und Freude am Umgang mit Menschen. Offene Stellen finden Sie unter <a href="stellenanzeigen.html">Stellenanzeigen</a>.</p>
           </div>
         </article>
 
-        <article class="faq__item" id="dir-zeiten" data-cat="team">
+        <article class="faq__item" id="dir-zeiten" data-cat="team" data-lw-item-key="item-22">
           <h3 class="faq__question">
             <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="d-p-dir-zeiten" id="d-dir-zeiten">
-              <span>Welche Arbeitszeiten sind möglich?</span>
+              <span data-lw-field="faq-verzeichnis.question" data-lw-type="text">Welche Arbeitszeiten sind möglich?</span>
               <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
             </button>
           </h3>
           <div class="faq__panel" id="d-p-dir-zeiten" role="region" aria-labelledby="d-dir-zeiten" hidden>
-            <p>Vollzeit, Teilzeit und Minijob. Wir wissen, wie wichtig planbare Dienste sind – besonders in der Pflege. Deshalb legen wir Wert auf gute Organisation und Rücksicht auf persönliche Bedürfnisse.</p>
+            <p data-lw-field="faq-verzeichnis.copy" data-lw-type="textarea">Vollzeit, Teilzeit und Minijob. Wir wissen, wie wichtig planbare Dienste sind – besonders in der Pflege. Deshalb legen wir Wert auf gute Organisation und Rücksicht auf persönliche Bedürfnisse.</p>
           </div>
         </article>
 
-        <article class="faq__item" id="dir-alter" data-cat="team">
+        <article class="faq__item" id="dir-alter" data-cat="team" data-lw-item-key="item-23">
           <h3 class="faq__question">
             <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="d-p-dir-alter" id="d-dir-alter">
-              <span>Gibt es eine Altersgrenze?</span>
+              <span data-lw-field="faq-verzeichnis.question" data-lw-type="text">Gibt es eine Altersgrenze?</span>
               <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
             </button>
           </h3>
           <div class="faq__panel" id="d-p-dir-alter" role="region" aria-labelledby="d-dir-alter" hidden>
-            <p>Nein. Wir finden für alle den richtigen Einsatz. Erfahrung und Haltung zählen mehr als das Geburtsjahr.</p>
+            <p data-lw-field="faq-verzeichnis.copy" data-lw-type="textarea">Nein. Wir finden für alle den richtigen Einsatz. Erfahrung und Haltung zählen mehr als das Geburtsjahr.</p>
           </div>
         </article>
 
-        <article class="faq__item" id="dir-bewerbung" data-cat="team">
+        <article class="faq__item" id="dir-bewerbung" data-cat="team" data-lw-item-key="item-24">
           <h3 class="faq__question">
             <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="d-p-dir-bewerbung" id="d-dir-bewerbung">
-              <span>Wie bewerbe ich mich?</span>
+              <span data-lw-field="faq-verzeichnis.question" data-lw-type="text">Wie bewerbe ich mich?</span>
               <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
             </button>
           </h3>
           <div class="faq__panel" id="d-p-dir-bewerbung" role="region" aria-labelledby="d-dir-bewerbung" hidden>
-            <p>Am einfachsten per E-Mail an <a href="mailto:info@juventa-pflege.de">info@juventa-pflege.de</a> oder telefonisch unter <a href="tel:+491785254075">+49 178 5254075</a>. Eine Initiativbewerbung ist jederzeit willkommen. Alle offenen Stellen: <a href="stellenanzeigen.html">Stellenanzeigen</a>.</p>
+            <p data-lw-field="faq-verzeichnis.copy" data-lw-type="textarea">Am einfachsten per E-Mail an <a href="mailto:info@juventa-pflege.de">info@juventa-pflege.de</a> oder telefonisch unter <a href="tel:+491785254075">+49 178 5254075</a>. Eine Initiativbewerbung ist jederzeit willkommen. Alle offenen Stellen: <a href="stellenanzeigen.html">Stellenanzeigen</a>.</p>
           </div>
         </article>
 
       </div>
-      <p class="faq-empty" id="faqEmpty" hidden>Keine Frage passt zu Ihrer Suche. Versuchen Sie ein anderes Stichwort oder schreiben Sie uns.</p>
+      <p class="faq-empty" id="faqEmpty" hidden data-lw-field="faq-verzeichnis.copy_3" data-lw-type="textarea">Keine Frage passt zu Ihrer Suche. Versuchen Sie ein anderes Stichwort oder schreiben Sie uns.</p>
     </div>
   </section>
 
   <!-- ============ KONTAKT ============ -->
-  <section class="contact section" id="kontakt" aria-labelledby="contact-title">
+  <section class="contact section" id="kontakt" aria-labelledby="contact-title" data-lw-section="kontakt">
     <div class="container">
       <div class="contact__wrap reveal">
         <div class="contact__panel">
-          <span class="section-label">Persönliche Beratung</span>
-          <h2 id="contact-title">Ihre Frage war nicht dabei?</h2>
-          <p>
+          <span class="section-label" data-lw-field="kontakt.eyebrow" data-lw-type="text">Persönliche Beratung</span>
+          <h2 id="contact-title" data-lw-field="kontakt.heading" data-lw-type="richtext">Ihre Frage war nicht dabei?</h2>
+          <p data-lw-field="kontakt.copy" data-lw-type="textarea">
             Manche Fragen lassen sich persönlich schneller und besser klären. Juventa unterstützt
             Interessierte und Angehörige dabei, die passende Lösung für ihre individuelle Situation zu finden.
           </p>
-          <div class="contact__items">
-            <div class="contact__item">
+          <div class="contact__items" data-lw-repeater="contact.items">
+            <div class="contact__item" data-lw-item-key="item-1">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
               <div><strong>Mobil</strong><a href="tel:+491785254075">+49 178 5254075</a></div>
             </div>
-            <div class="contact__item">
+            <div class="contact__item" data-lw-item-key="item-2">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
               <div><strong>Festnetz</strong><a href="tel:+4972219959934">+49 7221 9959934</a></div>
             </div>
-            <div class="contact__item">
+            <div class="contact__item" data-lw-item-key="item-3">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></span>
               <div><strong>E-Mail</strong><a href="mailto:info@juventa-pflege.de">info@juventa-pflege.de</a></div>
             </div>
-            <div class="contact__item">
+            <div class="contact__item" data-lw-item-key="item-4">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
               <div><strong>Standorte</strong><span>Sonnenplatz 2, Baden-Baden · Brückenmühle Gernsbach</span></div>
             </div>
           </div>
           <div class="contact__actions">
             <a href="tel:+491785254075" class="btn btn--primary btn--lg">
-              Persönlich beraten lassen
+              <span data-lw-field="kontakt.cta" data-lw-type="text">Persönlich beraten lassen</span>
               <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
             <a href="mailto:info@juventa-pflege.de?subject=Beratung%20%E2%80%93%20Juventa" class="btn btn--outline-light btn--lg">
-              Kontakt aufnehmen
+              <span data-lw-field="kontakt.cta_2" data-lw-type="text">Kontakt aufnehmen</span>
               <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
           </div>
         </div>
         <div class="contact__visual">
-          <img src="assets/images/zimmer-1.webp" alt="Persönliche Beratung bei Juventa in Baden-Baden und Gernsbach" width="1920" height="1080" loading="lazy" />
+          <img src="assets/images/zimmer-1.webp" alt="Persönliche Beratung bei Juventa in Baden-Baden und Gernsbach" width="1920" height="1080" loading="lazy" data-lw-field="kontakt.image" data-lw-type="image" />
           <span class="contact__visual-overlay" aria-hidden="true"></span>
         </div>
       </div>
@@ -1351,10 +1351,10 @@
       <div class="a11y__group">
         <span class="a11y__label" id="a11yFontLabel">Schriftgröße</span>
         <div class="a11y__font-btns" role="group" aria-labelledby="a11yFontLabel">
-          <button class="a11y__font-btn" type="button" data-a11y-font="sm" aria-pressed="false" aria-label="Kleinere Schrift">A−</button>
-          <button class="a11y__font-btn is-active" type="button" data-a11y-font="normal" aria-pressed="true" aria-label="Normale Schrift">A</button>
-          <button class="a11y__font-btn" type="button" data-a11y-font="lg" aria-pressed="false" aria-label="Größere Schrift">A+</button>
-          <button class="a11y__font-btn" type="button" data-a11y-font="xl" aria-pressed="false" aria-label="Sehr große Schrift">A++</button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="sm" aria-pressed="false" aria-label="Kleinere Schrift"><span>A−</span></button>
+          <button class="a11y__font-btn is-active" type="button" data-a11y-font="normal" aria-pressed="true" aria-label="Normale Schrift"><span>A</span></button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="lg" aria-pressed="false" aria-label="Größere Schrift"><span>A+</span></button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="xl" aria-pressed="false" aria-label="Sehr große Schrift"><span>A++</span></button>
         </div>
       </div>
       <div class="a11y__group">

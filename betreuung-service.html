@@ -120,17 +120,17 @@
 
 <!-- ============ HERO ============ -->
 <div class="hero-shell" id="start">
-  <section class="hero" data-lw-section="hero" data-hero aria-label="Betreuung und Service bei Juventa">
+  <section class="hero" data-hero aria-label="Betreuung und Service bei Juventa">
 
-    <div class="hero__media" id="heroSlider" aria-hidden="true">
-      <div class="hero__slide is-active">
-        <img src="assets/images/hero2.webp" alt="" width="1920" height="1080" fetchpriority="high" data-lw-decorative="true" />
+    <div class="hero__media" id="heroSlider" aria-hidden="true" data-lw-section="hero-media" data-lw-repeater="hero.slides">
+      <div class="hero__slide is-active" data-lw-item-key="slide-1">
+        <img src="assets/images/hero2.webp" alt="" width="1920" height="1080" fetchpriority="high" data-lw-decorative="true" data-lw-field="hero-media.image" data-lw-type="image" />
       </div>
-      <div class="hero__slide">
-        <img src="assets/images/hero3.webp" alt="" width="1920" height="1080" loading="lazy" data-lw-decorative="true" />
+      <div class="hero__slide" data-lw-item-key="slide-2">
+        <img src="assets/images/hero3.webp" alt="" width="1920" height="1080" loading="lazy" data-lw-decorative="true" data-lw-field="hero-media.image" data-lw-type="image" />
       </div>
-      <div class="hero__slide">
-        <img src="assets/images/leistungen-wave.webp" alt="" width="1920" height="1080" loading="lazy" data-lw-decorative="true" />
+      <div class="hero__slide" data-lw-item-key="slide-3">
+        <img src="assets/images/leistungen-wave.webp" alt="" width="1920" height="1080" loading="lazy" data-lw-decorative="true" data-lw-field="hero-media.image" data-lw-type="image" />
       </div>
     </div>
     <div class="hero__overlay" aria-hidden="true"></div>
@@ -196,7 +196,7 @@
               <a href="wissen.html" class="nav__link">Wissen</a>
               <a href="kontakt.html" class="nav__link">Kontakt</a>
               <a href="kontakt.html" class="btn btn--primary nav__cta">
-                Beratung anfragen
+                <span>Beratung anfragen</span>
                 <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
               </a>
             </div>
@@ -248,24 +248,24 @@
             <li><a href="kontakt.html" class="nav__link">Kontakt</a></li>
           </ul>
           <a href="kontakt.html" class="btn btn--primary nav__cta nav__cta--drawer">
-            Beratung anfragen
+            <span>Beratung anfragen</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
         </nav>
       </div>
     </header>
 
-    <div class="container hero__body">
+    <div class="container hero__body" data-lw-section="hero">
       <div class="hero__content reveal">
-        <span class="hero__eyebrow">Brückenmühle · Betreuung &amp; Service</span>
+        <span class="hero__eyebrow" data-lw-field="hero.eyebrow" data-lw-type="text">Brückenmühle · Betreuung &amp; Service</span>
         <h1 class="hero__title" data-lw-field="hero.title" data-lw-type="richtext">Genau so viel Unterstützung, wie Ihr Alltag <span class="headline-accent headline-accent--light">braucht</span>.</h1>
-        <p class="hero__sub">
+        <p class="hero__sub" data-lw-field="hero.copy" data-lw-type="textarea">
           Menschlichkeit ist bei uns keine Extra-Leistung. Sie ist die Haltung dahinter.
           In der Brückenmühle läuft der Service mit, ohne den Tag zu bestimmen.
         </p>
         <div class="hero__actions">
           <a href="kontakt.html" class="btn btn--primary btn--lg">
-            Leistungen besprechen
+            <span data-lw-field="hero.cta" data-lw-type="text">Leistungen besprechen</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
           <a href="tel:+491785254075" class="hero__play" aria-label="Rufen Sie uns an unter +49 178 5254075">
@@ -283,43 +283,43 @@
 
   </section>
 
-  <div class="hero__cards">
+  <div class="hero__cards" data-lw-section="offers">
     <div class="container">
-      <nav class="hero__cards-inner hero__cards-inner--penta reveal" aria-label="Abschnitte dieser Seite">
-        <a href="#betreuung-vor-ort" class="hero__card">
+      <nav class="hero__cards-inner hero__cards-inner--penta reveal" aria-label="Abschnitte dieser Seite" data-lw-repeater="offers.cards">
+        <a href="#betreuung-vor-ort" class="hero__card" data-lw-item-key="card-1">
           <span class="hero__card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </span>
-          <h2>Betreuung vor Ort</h2>
-          <p>Immer jemand vor Ort, der Sie kennt.</p>
+          <h2 data-lw-field="offers.heading" data-lw-type="richtext">Betreuung vor Ort</h2>
+          <p data-lw-field="offers.copy" data-lw-type="textarea">Immer jemand vor Ort, der Sie kennt.</p>
         </a>
-        <a href="#wahlleistungen" class="hero__card">
+        <a href="#wahlleistungen" class="hero__card" data-lw-item-key="card-2">
           <span class="hero__card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M4 21v-7"/><path d="M4 10V3"/><path d="M12 21v-9"/><path d="M12 8V3"/><path d="M20 21v-5"/><path d="M20 12V3"/><path d="M2 14h6"/><path d="M10 8h6"/><path d="M18 16h4"/></svg>
           </span>
-          <h2>Wahlleistungen</h2>
-          <p>Alltag, Begleitung und Betreuung – flexibel zubuchbar.</p>
+          <h2 data-lw-field="offers.heading" data-lw-type="richtext">Wahlleistungen</h2>
+          <p data-lw-field="offers.copy" data-lw-type="textarea">Alltag, Begleitung und Betreuung – flexibel zubuchbar.</p>
         </a>
-        <a href="#zusatzleistungen" class="hero__card">
+        <a href="#zusatzleistungen" class="hero__card" data-lw-item-key="card-3">
           <span class="hero__card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
           </span>
-          <h2>Pflege &amp; Betreuung</h2>
-          <p>Module für Grund-, Behandlungs- und individuelle Pflege.</p>
+          <h2 data-lw-field="offers.heading" data-lw-type="richtext">Pflege &amp; Betreuung</h2>
+          <p data-lw-field="offers.copy" data-lw-type="textarea">Module für Grund-, Behandlungs- und individuelle Pflege.</p>
         </a>
-        <a href="#sicherheit" class="hero__card">
+        <a href="#sicherheit" class="hero__card" data-lw-item-key="card-4">
           <span class="hero__card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
           </span>
-          <h2>Sicherheit &amp; Technik</h2>
-          <p>Ihr Schutzengel im Hintergrund.</p>
+          <h2 data-lw-field="offers.heading" data-lw-type="richtext">Sicherheit &amp; Technik</h2>
+          <p data-lw-field="offers.copy" data-lw-type="textarea">Ihr Schutzengel im Hintergrund.</p>
         </a>
-        <a href="#preise" class="hero__card">
+        <a href="#preise" class="hero__card" data-lw-item-key="card-5">
           <span class="hero__card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           </span>
-          <h2>Preisübersicht</h2>
-          <p>Klar getrennt nach Basis, Wahlleistungen und Pflege.</p>
+          <h2 data-lw-field="offers.heading" data-lw-type="richtext">Preisübersicht</h2>
+          <p data-lw-field="offers.copy" data-lw-type="textarea">Klar getrennt nach Basis, Wahlleistungen und Pflege.</p>
         </a>
       </nav>
     </div>
@@ -329,124 +329,124 @@
 <main id="hauptinhalt">
 
   <!-- ============ INTRO ============ -->
-  <section class="story section" aria-labelledby="intro-title">
+  <section class="story section" aria-labelledby="intro-title" data-lw-section="intro">
     <div class="container story__grid">
       <div class="story__collage reveal">
         <div class="story__collage-img story__collage-img--tall">
-          <img src="assets/images/hero2.webp" alt="Persönliche Betreuung und Alltag in der Brückenmühle" loading="lazy" width="1920" height="1080" />
+          <img src="assets/images/hero2.webp" alt="Persönliche Betreuung und Alltag in der Brückenmühle" loading="lazy" width="1920" height="1080" data-lw-field="intro.image" data-lw-type="image" />
         </div>
         <div class="story__collage-stack">
           <div class="story__collage-img story__collage-img--top">
-            <img src="assets/images/team.webp" alt="Feste Ansprechpartner im Juventa-Team" loading="lazy" width="1024" height="683" />
+            <img src="assets/images/team.webp" alt="Feste Ansprechpartner im Juventa-Team" loading="lazy" width="1024" height="683" data-lw-field="intro.image_2" data-lw-type="image" />
           </div>
           <div class="story__collage-img story__collage-img--bottom">
-            <img src="assets/images/hero3.webp" alt="Gemeinschaft und Service im Haus" loading="lazy" width="1920" height="1080" />
+            <img src="assets/images/hero3.webp" alt="Gemeinschaft und Service im Haus" loading="lazy" width="1920" height="1080" data-lw-field="intro.image_3" data-lw-type="image" />
           </div>
         </div>
       </div>
 
       <div class="story__text reveal">
-        <span class="section-label">Unsere Haltung</span>
-        <h2 id="intro-title">Service darf sich nicht wie ein System anfühlen. Sondern wie Hilfe, die wirklich passt.</h2>
-        <p class="story__lead">
+        <span class="section-label" data-lw-field="intro.eyebrow" data-lw-type="text">Unsere Haltung</span>
+        <h2 id="intro-title" data-lw-field="intro.heading" data-lw-type="richtext">Service darf sich nicht wie ein System anfühlen. Sondern wie Hilfe, die wirklich passt.</h2>
+        <p class="story__lead" data-lw-field="intro.copy" data-lw-type="textarea">
           Gute Betreuung entsteht nicht auf dem Papier. Sie entsteht im Gespräch, im Alltag und im Vertrauen zueinander.
         </p>
-        <p>
+        <p data-lw-field="intro.copy_2" data-lw-type="textarea">
           Manchmal braucht es nur ein bekanntes Gesicht im Haus. Manchmal Haushaltshilfe, ein warmes Essen oder jemanden für den Weg zum Arzt.
           Juventa hört zu und setzt daraus ein Maß, das zu Ihrem Leben passt. Nicht umgekehrt.
         </p>
         <ul class="bw-checklist">
-          <li>Feste Ansprechpartner, die Sie kennen</li>
-          <li>Leistungen nach Bedarf statt Standardpaket</li>
-          <li>Transparente Preise, ohne spätere Überraschungen</li>
+          <li data-lw-field="intro.item" data-lw-type="richtext">Feste Ansprechpartner, die Sie kennen</li>
+          <li data-lw-field="intro.item_2" data-lw-type="richtext">Leistungen nach Bedarf statt Standardpaket</li>
+          <li data-lw-field="intro.item_3" data-lw-type="richtext">Transparente Preise, ohne spätere Überraschungen</li>
         </ul>
         <div class="story__actions">
           <a class="btn btn--primary" href="#betreuung-vor-ort">
-            Zur Betreuung vor Ort
+            <span data-lw-field="intro.cta" data-lw-type="text">Zur Betreuung vor Ort</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
-          <a class="btn btn--outline" href="#preise">Zur Preisübersicht</a>
+          <a class="btn btn--outline" href="#preise"><span data-lw-field="intro.cta_2" data-lw-type="text">Zur Preisübersicht</span></a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============ LEITGEDANKEN ============ -->
-  <section class="section section--cream" aria-labelledby="haltung-title">
+  <section class="section section--cream" aria-labelledby="haltung-title" data-lw-section="haltung">
     <div class="container">
       <header class="section-head reveal">
-        <p class="eyebrow">Drei Leitgedanken</p>
-        <h2 id="haltung-title">Was Betreuung bei Juventa ausmacht</h2>
-        <p class="section-head__sub">Kein Versprechen von Perfektion. Sondern Verlässlichkeit im Haus, Freiheit in den eigenen vier Wänden.</p>
+        <p class="eyebrow" data-lw-field="haltung.eyebrow" data-lw-type="text">Drei Leitgedanken</p>
+        <h2 id="haltung-title" data-lw-field="haltung.heading" data-lw-type="richtext">Was Betreuung bei Juventa ausmacht</h2>
+        <p class="section-head__sub" data-lw-field="haltung.copy" data-lw-type="textarea">Kein Versprechen von Perfektion. Sondern Verlässlichkeit im Haus, Freiheit in den eigenen vier Wänden.</p>
       </header>
       <div class="bw-pillars reveal">
         <article class="bw-pillar">
           <span class="bw-pillar__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </span>
-          <h3>Gesichter, die bleiben</h3>
-          <p>Vertrauen entsteht durch Kontinuität. Deshalb setzen wir auf feste Bezugspersonen, die Ihren Rhythmus und Ihre Wünsche kennen.</p>
+          <h3 data-lw-field="haltung.heading_2" data-lw-type="richtext">Gesichter, die bleiben</h3>
+          <p data-lw-field="haltung.copy_2" data-lw-type="textarea">Vertrauen entsteht durch Kontinuität. Deshalb setzen wir auf feste Bezugspersonen, die Ihren Rhythmus und Ihre Wünsche kennen.</p>
         </article>
         <article class="bw-pillar">
           <span class="bw-pillar__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M4 21v-7"/><path d="M4 10V3"/><path d="M12 21v-9"/><path d="M12 8V3"/><path d="M20 21v-5"/><path d="M20 12V3"/><path d="M2 14h6"/><path d="M10 8h6"/><path d="M18 16h4"/></svg>
           </span>
-          <h3>Flexibel, wenn sich etwas ändert</h3>
-          <p>Heute wenig Hilfe, morgen mehr: Wahlleistungen und Pflege-Module lassen sich anpassen. Ohne dass Sie umziehen oder neu anfangen müssen.</p>
+          <h3 data-lw-field="haltung.heading_3" data-lw-type="richtext">Flexibel, wenn sich etwas ändert</h3>
+          <p data-lw-field="haltung.copy_3" data-lw-type="textarea">Heute wenig Hilfe, morgen mehr: Wahlleistungen und Pflege-Module lassen sich anpassen. Ohne dass Sie umziehen oder neu anfangen müssen.</p>
         </article>
         <article class="bw-pillar">
           <span class="bw-pillar__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
           </span>
-          <h3>Nähe ohne Bevormundung</h3>
-          <p>Service ist da, wenn Sie ihn brauchen. Nicht umgekehrt. Der Alltag gehört Ihnen, die Unterstützung bleibt im Hintergrund.</p>
+          <h3 data-lw-field="haltung.heading_4" data-lw-type="richtext">Nähe ohne Bevormundung</h3>
+          <p data-lw-field="haltung.copy_4" data-lw-type="textarea">Service ist da, wenn Sie ihn brauchen. Nicht umgekehrt. Der Alltag gehört Ihnen, die Unterstützung bleibt im Hintergrund.</p>
         </article>
       </div>
     </div>
   </section>
 
   <!-- ============ DREI EBENEN ============ -->
-  <section class="section" aria-labelledby="ebenen-title">
+  <section class="section" aria-labelledby="ebenen-title" data-lw-section="ebenen">
     <div class="container">
       <header class="section-head reveal">
-        <p class="eyebrow">So ist der Service aufgebaut</p>
-        <h2 id="ebenen-title">Drei Ebenen. Ein klares Bild.</h2>
-        <p class="section-head__sub">
+        <p class="eyebrow" data-lw-field="ebenen.eyebrow" data-lw-type="text">So ist der Service aufgebaut</p>
+        <h2 id="ebenen-title" data-lw-field="ebenen.heading" data-lw-type="richtext">Drei Ebenen. Ein klares Bild.</h2>
+        <p class="section-head__sub" data-lw-field="ebenen.copy" data-lw-type="textarea">
           Zuerst die Basis, die immer da ist. Dann das, was Sie wählen. Und Pflege-Module, die mitwachsen können.
         </p>
       </header>
 
       <div class="bs-layers reveal">
         <a class="bs-layer bs-layer--core" href="#betreuung-vor-ort">
-          <p class="bs-layer__kicker">Ebene 01 · Immer dabei</p>
-          <h3>Betreuung vor Ort</h3>
-          <p>Immer jemand vor Ort, der Sie kennt. Die ruhige Grundlage im Haus.</p>
+          <p class="bs-layer__kicker" data-lw-field="ebenen.copy_2" data-lw-type="textarea">Ebene 01 · Immer dabei</p>
+          <h3 data-lw-field="ebenen.heading_2" data-lw-type="richtext">Betreuung vor Ort</h3>
+          <p data-lw-field="ebenen.copy_3" data-lw-type="textarea">Immer jemand vor Ort, der Sie kennt. Die ruhige Grundlage im Haus.</p>
           <ul>
-            <li>Wohnen mit Ansprechpartnern</li>
-            <li>Regelmäßige Besuche</li>
-            <li>Notfallkontakt</li>
+            <li data-lw-field="ebenen.item" data-lw-type="richtext">Wohnen mit Ansprechpartnern</li>
+            <li data-lw-field="ebenen.item_2" data-lw-type="richtext">Regelmäßige Besuche</li>
+            <li data-lw-field="ebenen.item_3" data-lw-type="richtext">Notfallkontakt</li>
           </ul>
           <span class="bs-layer__hint">Die Basis im Haus</span>
         </a>
         <a class="bs-layer" href="#wahlleistungen">
-          <p class="bs-layer__kicker">Ebene 02 · Nach Wunsch</p>
-          <h3>Wahlleistungen</h3>
-          <p>Zubuchbare Alltagsangebote: so viel Komfort und Nähe, wie Sie möchten.</p>
+          <p class="bs-layer__kicker" data-lw-field="ebenen.copy_4" data-lw-type="textarea">Ebene 02 · Nach Wunsch</p>
+          <h3 data-lw-field="ebenen.heading_3" data-lw-type="richtext">Wahlleistungen</h3>
+          <p data-lw-field="ebenen.copy_5" data-lw-type="textarea">Zubuchbare Alltagsangebote: so viel Komfort und Nähe, wie Sie möchten.</p>
           <ul>
-            <li>Hauswirtschaft &amp; Verpflegung</li>
-            <li>Begleit- und Betreuungsservice</li>
-            <li>Möblierungspaket</li>
+            <li data-lw-field="ebenen.item_4" data-lw-type="richtext">Hauswirtschaft &amp; Verpflegung</li>
+            <li data-lw-field="ebenen.item_5" data-lw-type="richtext">Begleit- und Betreuungsservice</li>
+            <li data-lw-field="ebenen.item_6" data-lw-type="richtext">Möblierungspaket</li>
           </ul>
           <span class="bs-layer__hint">Flexibel buchbar</span>
         </a>
         <a class="bs-layer" href="#zusatzleistungen">
-          <p class="bs-layer__kicker">Ebene 03 · Wenn Pflege dazukommt</p>
-          <h3>Ambulante Pflege</h3>
-          <p>Module analog zur ambulanten Pflege: Umfang an Ihre Situation anpassbar.</p>
+          <p class="bs-layer__kicker" data-lw-field="ebenen.copy_6" data-lw-type="textarea">Ebene 03 · Wenn Pflege dazukommt</p>
+          <h3 data-lw-field="ebenen.heading_4" data-lw-type="richtext">Ambulante Pflege</h3>
+          <p data-lw-field="ebenen.copy_7" data-lw-type="textarea">Module analog zur ambulanten Pflege: Umfang an Ihre Situation anpassbar.</p>
           <ul>
-            <li>Grundpflege</li>
-            <li>Behandlungspflege</li>
-            <li>Individuelle Pflege</li>
+            <li data-lw-field="ebenen.item_7" data-lw-type="richtext">Grundpflege</li>
+            <li data-lw-field="ebenen.item_8" data-lw-type="richtext">Behandlungspflege</li>
+            <li data-lw-field="ebenen.item_9" data-lw-type="richtext">Individuelle Pflege</li>
           </ul>
           <span class="bs-layer__hint">Zubuchbare Module</span>
         </a>
@@ -455,116 +455,116 @@
   </section>
 
   <!-- ============ GRUNDSERVICE ============ -->
-  <section class="story section section--cream" id="betreuung-vor-ort" aria-labelledby="betreuung-vor-ort-title">
+  <section class="story section section--cream" id="betreuung-vor-ort" aria-labelledby="betreuung-vor-ort-title" data-lw-section="betreuung-vor-ort">
     <div class="container story__grid">
       <div class="story__text reveal">
-        <span class="section-label">Betreuung vor Ort</span>
-        <h2 id="betreuung-vor-ort-title">Immer jemand vor Ort, der Sie kennt</h2>
-        <p class="story__lead">
+        <span class="section-label" data-lw-field="betreuung-vor-ort.eyebrow" data-lw-type="text">Betreuung vor Ort</span>
+        <h2 id="betreuung-vor-ort-title" data-lw-field="betreuung-vor-ort.heading" data-lw-type="richtext">Immer jemand vor Ort, der Sie kennt</h2>
+        <p class="story__lead" data-lw-field="betreuung-vor-ort.copy" data-lw-type="textarea">
           Mit der Betreuung vor Ort haben Sie immer jemanden vor Ort, der Sie kennt.
           Wie eine Decke, die wir umlegen: wohnlich, vertraut, und Kleinigkeiten sind direkt erledigt.
         </p>
-        <p>
+        <p data-lw-field="betreuung-vor-ort.copy_2" data-lw-type="textarea">
           Feste Gesichter, Orientierung im Alltag, eine verlässliche Erreichbarkeit: Das ist die Basis der Betreuung.
           Sie sollen sich zu Hause fühlen und wissen, wer ansprechbar ist. Den Betrag sehen Sie im Gespräch, klar getrennt von Wahlleistungen und Pflege-Modulen.
         </p>
         <ul class="bw-checklist">
-          <li>Wohnen mit festen Ansprechpartnern</li>
-          <li>Regelmäßige Besuche und Orientierung im Alltag</li>
-          <li>Notfallkontakt und verlässliche Erreichbarkeit</li>
-          <li>Kleinigkeiten, die direkt mit erledigt werden können</li>
+          <li data-lw-field="betreuung-vor-ort.item" data-lw-type="richtext">Wohnen mit festen Ansprechpartnern</li>
+          <li data-lw-field="betreuung-vor-ort.item_2" data-lw-type="richtext">Regelmäßige Besuche und Orientierung im Alltag</li>
+          <li data-lw-field="betreuung-vor-ort.item_3" data-lw-type="richtext">Notfallkontakt und verlässliche Erreichbarkeit</li>
+          <li data-lw-field="betreuung-vor-ort.item_4" data-lw-type="richtext">Kleinigkeiten, die direkt mit erledigt werden können</li>
         </ul>
         <div class="story__actions">
           <a class="btn btn--primary" href="kontakt.html">
-            Betreuung vor Ort erklären lassen
+            <span data-lw-field="betreuung-vor-ort.cta" data-lw-type="text">Betreuung vor Ort erklären lassen</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
-          <a class="btn btn--outline" href="#preise">Zur Preisübersicht</a>
+          <a class="btn btn--outline" href="#preise"><span data-lw-field="betreuung-vor-ort.cta_2" data-lw-type="text">Zur Preisübersicht</span></a>
         </div>
       </div>
       <div class="story__collage story__collage--single reveal">
         <div class="story__collage-img story__collage-img--tall">
-          <img src="assets/images/team.webp" alt="Team von Juventa als feste Ansprechpartner im Haus" loading="lazy" width="1024" height="683" />
+          <img src="assets/images/team.webp" alt="Team von Juventa als feste Ansprechpartner im Haus" loading="lazy" width="1024" height="683" data-lw-field="betreuung-vor-ort.image" data-lw-type="image" />
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============ WAHLLEISTUNGEN ============ -->
-  <section class="apartments section" id="wahlleistungen" aria-labelledby="wahl-title">
+  <section class="apartments section" id="wahlleistungen" aria-labelledby="wahl-title" data-lw-section="wahlleistungen">
     <div class="container apartments__layout">
       <div class="apartments__intro reveal">
-        <p class="eyebrow">Wahlleistungen</p>
-        <h2 id="wahl-title">Was den Alltag leichter macht, buchen Sie bewusst dazu</h2>
-        <p>
+        <p class="eyebrow" data-lw-field="wahlleistungen.eyebrow" data-lw-type="text">Wahlleistungen</p>
+        <h2 id="wahl-title" data-lw-field="wahlleistungen.heading" data-lw-type="richtext">Was den Alltag leichter macht, buchen Sie bewusst dazu</h2>
+        <p data-lw-field="wahlleistungen.copy" data-lw-type="textarea">
           Der Umfang passt sich Ihrer aktuellen Situation an. Mehr in einer Phase, weniger in der nächsten.
         </p>
       </div>
 
       <ul class="apartments__features reveal">
-        <li>
+        <li data-lw-field="wahlleistungen.item" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
           </span>
-          <h3>Hauswirtschaftliche Versorgung</h3>
-          <p>Von der Reinigung der Räumlichkeiten bis zur Übernahme des Einkaufs. Wäsche und Alltagshandgriffe inklusive.</p>
+          <h3 data-lw-field="wahlleistungen.heading_2" data-lw-type="richtext">Hauswirtschaftliche Versorgung</h3>
+          <p data-lw-field="wahlleistungen.copy_2" data-lw-type="textarea">Von der Reinigung der Räumlichkeiten bis zur Übernahme des Einkaufs. Wäsche und Alltagshandgriffe inklusive.</p>
         </li>
-        <li>
+        <li data-lw-field="wahlleistungen.item_2" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><path d="M6 1v3M10 1v3M14 1v3"/></svg>
           </span>
-          <h3>Verpflegungsservice</h3>
-          <p>Tägliche Mahlzeiten direkt im oder aus dem hauseigenen Café. Genuss ohne Einkaufsdruck.</p>
+          <h3 data-lw-field="wahlleistungen.heading_3" data-lw-type="richtext">Verpflegungsservice</h3>
+          <p data-lw-field="wahlleistungen.copy_3" data-lw-type="textarea">Tägliche Mahlzeiten direkt im oder aus dem hauseigenen Café. Genuss ohne Einkaufsdruck.</p>
         </li>
-        <li>
+        <li data-lw-field="wahlleistungen.item_3" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </span>
-          <h3>Begleitservice</h3>
-          <p>Beratung und Übernahme bürokratischer Angelegenheiten. Auf Wunsch auch Begleitung zu Arzt- und Behördenterminen.</p>
+          <h3 data-lw-field="wahlleistungen.heading_4" data-lw-type="richtext">Begleitservice</h3>
+          <p data-lw-field="wahlleistungen.copy_4" data-lw-type="textarea">Beratung und Übernahme bürokratischer Angelegenheiten. Auf Wunsch auch Begleitung zu Arzt- und Behördenterminen.</p>
         </li>
-        <li>
+        <li data-lw-field="wahlleistungen.item_4" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
           </span>
-          <h3>Individuelle Betreuungsleistungen</h3>
-          <p>Gezielte 1:1-Alltagsbetreuung, abgestimmt auf Ihre Bedürfnisse. Genau so viel Nähe, wie Sie gerade brauchen.</p>
+          <h3 data-lw-field="wahlleistungen.heading_5" data-lw-type="richtext">Individuelle Betreuungsleistungen</h3>
+          <p data-lw-field="wahlleistungen.copy_5" data-lw-type="textarea">Gezielte 1:1-Alltagsbetreuung, abgestimmt auf Ihre Bedürfnisse. Genau so viel Nähe, wie Sie gerade brauchen.</p>
         </li>
-        <li>
+        <li data-lw-field="wahlleistungen.item_5" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M3 7v11a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7"/><path d="M5 7V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v2"/><path d="M9 12h6"/></svg>
           </span>
-          <h3>Möblierungspaket</h3>
-          <p>Auf Wunsch stellen wir gerne die gesamte Zimmerausstattung. Ankommen ohne Umzugsstress.</p>
+          <h3 data-lw-field="wahlleistungen.heading_6" data-lw-type="richtext">Möblierungspaket</h3>
+          <p data-lw-field="wahlleistungen.copy_6" data-lw-type="textarea">Auf Wunsch stellen wir gerne die gesamte Zimmerausstattung. Ankommen ohne Umzugsstress.</p>
         </li>
-        <li>
+        <li data-lw-field="wahlleistungen.item_6" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
           </span>
-          <h3>Vorreservierte Plätze</h3>
-          <p>Ein fester Platz im Café, wenn Gemeinschaft zum Ritual werden soll. Ohne Verpflichtung, mit Wiedererkennung.</p>
+          <h3 data-lw-field="wahlleistungen.heading_7" data-lw-type="richtext">Vorreservierte Plätze</h3>
+          <p data-lw-field="wahlleistungen.copy_7" data-lw-type="textarea">Ein fester Platz im Café, wenn Gemeinschaft zum Ritual werden soll. Ohne Verpflichtung, mit Wiedererkennung.</p>
         </li>
       </ul>
     </div>
 
     <div class="container pb-relief reveal">
       <div class="pb-relief__media">
-        <img src="assets/images/lachs.webp" alt="Frische Speisen aus dem Café der Brückenmühle" width="1920" height="1080" loading="lazy" />
+        <img src="assets/images/lachs.webp" alt="Frische Speisen aus dem Café der Brückenmühle" width="1920" height="1080" loading="lazy" data-lw-field="wahlleistungen.image" data-lw-type="image" />
       </div>
       <div class="pb-relief__text">
-        <p class="eyebrow">Café &amp; Verpflegung</p>
-        <h3>Essen ist mehr als Versorgung. Es ist ein Grund, zusammenzukommen.</h3>
-        <p>
+        <p class="eyebrow" data-lw-field="wahlleistungen.eyebrow_2" data-lw-type="text">Café &amp; Verpflegung</p>
+        <h3 data-lw-field="wahlleistungen.heading_8" data-lw-type="richtext">Essen ist mehr als Versorgung. Es ist ein Grund, zusammenzukommen.</h3>
+        <p data-lw-field="wahlleistungen.copy_8" data-lw-type="textarea">
           Das Café ist das Herzstück des Hauses. Wer möchte, nutzt den Verpflegungsservice mit täglichen Mahlzeiten
           im oder aus dem Café oder reserviert einen Platz.
         </p>
         <ul class="bw-checklist">
-          <li>Tägliche Mahlzeiten aus dem hauseigenen Café</li>
-          <li>Verpflegungsservice nach Wunsch zubuchbar</li>
-          <li>Vorreservierte Plätze, wenn Gemeinschaft zum Ritual wird</li>
+          <li data-lw-field="wahlleistungen.item_7" data-lw-type="richtext">Tägliche Mahlzeiten aus dem hauseigenen Café</li>
+          <li data-lw-field="wahlleistungen.item_8" data-lw-type="richtext">Verpflegungsservice nach Wunsch zubuchbar</li>
+          <li data-lw-field="wahlleistungen.item_9" data-lw-type="richtext">Vorreservierte Plätze, wenn Gemeinschaft zum Ritual wird</li>
         </ul>
         <a class="btn btn--primary" href="index.html#cafe">
-          Café &amp; Gemeinschaft
+          <span data-lw-field="wahlleistungen.cta" data-lw-type="text">Café &amp; Gemeinschaft</span>
           <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </a>
       </div>
@@ -572,32 +572,32 @@
   </section>
 
   <!-- ============ AMBULANTE PFLEGE & BETREUUNG (Wahlleistungen-Module) ============ -->
-  <section class="cafe section section--cream" id="zusatzleistungen" aria-labelledby="zusatz-title">
+  <section class="cafe section section--cream" id="zusatzleistungen" aria-labelledby="zusatz-title" data-lw-section="zusatzleistungen">
     <div class="container cafe__grid">
       <div class="cafe__text reveal">
-        <p class="eyebrow">Wahlleistungen · Pflege &amp; Betreuung</p>
-        <h2 id="zusatz-title">Ambulante Pflege und individuelles Betreuungspaket</h2>
-        <p class="lead">
+        <p class="eyebrow" data-lw-field="zusatzleistungen.eyebrow" data-lw-type="text">Wahlleistungen · Pflege &amp; Betreuung</p>
+        <h2 id="zusatz-title" data-lw-field="zusatzleistungen.heading" data-lw-type="richtext">Ambulante Pflege und individuelles Betreuungspaket</h2>
+        <p class="lead" data-lw-field="zusatzleistungen.copy" data-lw-type="textarea">
           Wenn Pflegebedarf dazukommt, bleiben Sie im gewohnten Rahmen.
           Leistungen sind modular aufgebaut – analog zur ambulanten Pflege – und lassen sich an Ihre aktuelle Situation anpassen.
         </p>
         <ul class="cafe__list">
-          <li>Grundpflege als zubuchbares Modul</li>
-          <li>Behandlungspflege nach ärztlicher Verordnung</li>
-          <li>Individuelle Pflege, abgestimmt auf Ihren Alltag</li>
-          <li>Individuelles Betreuungspaket, z.&nbsp;B. Arztbegleitung</li>
+          <li data-lw-field="zusatzleistungen.item" data-lw-type="richtext">Grundpflege als zubuchbares Modul</li>
+          <li data-lw-field="zusatzleistungen.item_2" data-lw-type="richtext">Behandlungspflege nach ärztlicher Verordnung</li>
+          <li data-lw-field="zusatzleistungen.item_3" data-lw-type="richtext">Individuelle Pflege, abgestimmt auf Ihren Alltag</li>
+          <li data-lw-field="zusatzleistungen.item_4" data-lw-type="richtext">Individuelles Betreuungspaket, z.&nbsp;B. Arztbegleitung</li>
         </ul>
         <div class="story__actions">
           <a class="btn btn--primary" href="kontakt.html">
-            Pflegebedarf klären
+            <span data-lw-field="zusatzleistungen.cta" data-lw-type="text">Pflegebedarf klären</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
-          <a class="btn btn--outline" href="pflege-beratung.html">Zur ambulanten Pflege</a>
+          <a class="btn btn--outline" href="pflege-beratung.html"><span data-lw-field="zusatzleistungen.cta_2" data-lw-type="text">Zur ambulanten Pflege</span></a>
         </div>
       </div>
       <div class="cafe__media reveal">
         <div class="cafe__media-frame">
-          <img src="assets/images/mobile-pflege.webp" alt="Ambulante Pflege und individuelle Betreuung bei Juventa" loading="lazy" width="1920" height="1080" />
+          <img src="assets/images/mobile-pflege.webp" alt="Ambulante Pflege und individuelle Betreuung bei Juventa" loading="lazy" width="1920" height="1080" data-lw-field="zusatzleistungen.image" data-lw-type="image" />
           <span class="cafe__badge">Modular &amp; flexibel</span>
         </div>
       </div>
@@ -605,123 +605,123 @@
 
     <div class="container">
       <ul class="apartments__features apartments__features--spaced apartments__features--tri reveal">
-        <li>
+        <li data-lw-field="zusatzleistungen.item_5" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </span>
-          <h3>Grundpflege</h3>
-          <p>Unterstützung bei Körperpflege, Mobilität und Alltag. So viel wie nötig, so selbstbestimmt wie möglich.</p>
+          <h3 data-lw-field="zusatzleistungen.heading_2" data-lw-type="richtext">Grundpflege</h3>
+          <p data-lw-field="zusatzleistungen.copy_2" data-lw-type="textarea">Unterstützung bei Körperpflege, Mobilität und Alltag. So viel wie nötig, so selbstbestimmt wie möglich.</p>
         </li>
-        <li>
+        <li data-lw-field="zusatzleistungen.item_6" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
           </span>
-          <h3>Behandlungspflege</h3>
-          <p>Medizinische Leistungen nach Verordnung: vertrautes Team, das ins Apartment kommt.</p>
+          <h3 data-lw-field="zusatzleistungen.heading_3" data-lw-type="richtext">Behandlungspflege</h3>
+          <p data-lw-field="zusatzleistungen.copy_3" data-lw-type="textarea">Medizinische Leistungen nach Verordnung: vertrautes Team, das ins Apartment kommt.</p>
         </li>
-        <li>
+        <li data-lw-field="zusatzleistungen.item_7" data-lw-type="richtext">
           <span class="apartments__feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </span>
-          <h3>Individuelle Pflege</h3>
-          <p>Ein Betreuungspaket, das mitwächst: Arztbegleitung, Extra-Stunden und das, was Ihre Situation gerade braucht.</p>
+          <h3 data-lw-field="zusatzleistungen.heading_4" data-lw-type="richtext">Individuelle Pflege</h3>
+          <p data-lw-field="zusatzleistungen.copy_4" data-lw-type="textarea">Ein Betreuungspaket, das mitwächst: Arztbegleitung, Extra-Stunden und das, was Ihre Situation gerade braucht.</p>
         </li>
       </ul>
     </div>
   </section>
 
   <!-- ============ SICHERHEIT & TECHNIK ============ -->
-  <section class="story section" id="sicherheit" aria-labelledby="sicherheit-title">
+  <section class="story section" id="sicherheit" aria-labelledby="sicherheit-title" data-lw-section="sicherheit">
     <div class="container story__grid story__grid--flip">
       <div class="story__text reveal">
-        <span class="section-label">Sicherheit &amp; Technik</span>
-        <h2 id="sicherheit-title">Sicherheit und Technik – Ihr Schutzengel im Hintergrund</h2>
-        <p class="story__lead">
+        <span class="section-label" data-lw-field="sicherheit.eyebrow" data-lw-type="text">Sicherheit &amp; Technik</span>
+        <h2 id="sicherheit-title" data-lw-field="sicherheit.heading" data-lw-type="richtext">Sicherheit und Technik – Ihr Schutzengel im Hintergrund</h2>
+        <p class="story__lead" data-lw-field="sicherheit.copy" data-lw-type="textarea">
           Sicherheit soll ein Gefühl sein, kein Gerät, das den Raum bestimmt.
           Sicherheit ist unbewusst zu jeder Zeit gegeben.
         </p>
-        <p>
+        <p data-lw-field="sicherheit.copy_2" data-lw-type="textarea">
           Der 24-Stunden-Notrufdienst ist die klare Linie im Hintergrund. LivyCare ergänzt das um Sturzprävention
           und lässt sich später ausbauen, wenn mehr Unterstützung sinnvoll wird. Sie entscheiden, wie weit Technik gehen darf.
         </p>
         <ul class="bw-checklist">
-          <li>24-Stunden-Notrufdienst im Haus</li>
-          <li>LivyCare zur Sturzprävention</li>
-          <li>Technische Unterstützung, die sich erweitern lässt</li>
-          <li>Ideal, um LivyCare später auszubauen</li>
+          <li data-lw-field="sicherheit.item" data-lw-type="richtext">24-Stunden-Notrufdienst im Haus</li>
+          <li data-lw-field="sicherheit.item_2" data-lw-type="richtext">LivyCare zur Sturzprävention</li>
+          <li data-lw-field="sicherheit.item_3" data-lw-type="richtext">Technische Unterstützung, die sich erweitern lässt</li>
+          <li data-lw-field="sicherheit.item_4" data-lw-type="richtext">Ideal, um LivyCare später auszubauen</li>
         </ul>
         <div class="story__actions">
           <a class="btn btn--primary" href="kontakt.html">
-            Sicherheitstechnik erklären lassen
+            <span data-lw-field="sicherheit.cta" data-lw-type="text">Sicherheitstechnik erklären lassen</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
         </div>
       </div>
       <div class="story__collage story__collage--single reveal">
         <div class="story__collage-img story__collage-img--tall">
-          <img src="assets/images/leistungen-wave.webp" alt="Sicherheit und moderne Betreuungstechnik bei Juventa" loading="lazy" width="1920" height="1080" />
+          <img src="assets/images/leistungen-wave.webp" alt="Sicherheit und moderne Betreuungstechnik bei Juventa" loading="lazy" width="1920" height="1080" data-lw-field="sicherheit.image" data-lw-type="image" />
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============ SO FINDEN WIR IHR MASS ============ -->
-  <section class="section section--cream" aria-labelledby="mass-title">
+  <section class="section section--cream" aria-labelledby="mass-title" data-lw-section="mass">
     <div class="container">
       <header class="section-head reveal">
-        <p class="eyebrow">So gehen wir vor</p>
-        <h2 id="mass-title">Sie müssen diese Entscheidung nicht allein treffen</h2>
-        <p class="section-head__sub">
+        <p class="eyebrow" data-lw-field="mass.eyebrow" data-lw-type="text">So gehen wir vor</p>
+        <h2 id="mass-title" data-lw-field="mass.heading" data-lw-type="richtext">Sie müssen diese Entscheidung nicht allein treffen</h2>
+        <p class="section-head__sub" data-lw-field="mass.copy" data-lw-type="textarea">
           Es ist in Ordnung, nicht immer zu wissen, was man braucht. Auch Gedanken an die Zukunft gehören dazu.
           Wir hören zu, entscheiden gemeinsam und halten den Service flexibel, wenn sich etwas ändert.
         </p>
       </header>
 
       <ol class="pb-path pb-path--tri reveal">
-        <li class="pb-path__step">
+        <li class="pb-path__step" data-lw-field="mass.item" data-lw-type="richtext">
           <div class="pb-path__top">
             <span class="pb-path__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
             </span>
           </div>
-          <h3>Alltag schildern</h3>
-          <p>Erzählen Sie, wie der Tag heute aussieht und wo es hakt. Ohne Timer, ohne Fachchinesisch, ohne Verkaufsdruck.</p>
+          <h3 data-lw-field="mass.heading_2" data-lw-type="richtext">Alltag schildern</h3>
+          <p data-lw-field="mass.copy_2" data-lw-type="textarea">Erzählen Sie, wie der Tag heute aussieht und wo es hakt. Ohne Timer, ohne Fachchinesisch, ohne Verkaufsdruck.</p>
         </li>
-        <li class="pb-path__step">
+        <li class="pb-path__step" data-lw-field="mass.item_2" data-lw-type="richtext">
           <div class="pb-path__top">
             <span class="pb-path__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M4 21v-7"/><path d="M4 10V3"/><path d="M12 21v-9"/><path d="M12 8V3"/><path d="M20 21v-5"/><path d="M20 12V3"/><path d="M2 14h6"/><path d="M10 8h6"/><path d="M18 16h4"/></svg>
             </span>
           </div>
-          <h3>Gemeinsam das Maß finden</h3>
-          <p>Wir trennen klar: Was steckt in der Betreuung vor Ort, was ist Wahlleistung, was Pflege-Modul. Sie sehen den Mix, bevor etwas gebucht wird.</p>
+          <h3 data-lw-field="mass.heading_3" data-lw-type="richtext">Gemeinsam das Maß finden</h3>
+          <p data-lw-field="mass.copy_3" data-lw-type="textarea">Wir trennen klar: Was steckt in der Betreuung vor Ort, was ist Wahlleistung, was Pflege-Modul. Sie sehen den Mix, bevor etwas gebucht wird.</p>
         </li>
-        <li class="pb-path__step">
+        <li class="pb-path__step" data-lw-field="mass.item_3" data-lw-type="richtext">
           <div class="pb-path__top">
             <span class="pb-path__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
             </span>
           </div>
-          <h3>Nachjustieren, wenn sich etwas ändert</h3>
-          <p>Bedarf ist selten statisch. Wir bleiben im Gespräch und passen Leistungen an, sobald der Alltag es verlangt.</p>
+          <h3 data-lw-field="mass.heading_4" data-lw-type="richtext">Nachjustieren, wenn sich etwas ändert</h3>
+          <p data-lw-field="mass.copy_4" data-lw-type="textarea">Bedarf ist selten statisch. Wir bleiben im Gespräch und passen Leistungen an, sobald der Alltag es verlangt.</p>
         </li>
       </ol>
     </div>
   </section>
 
   <!-- ============ PREISÜBERSICHT ============ -->
-  <section class="section" id="preise" aria-labelledby="preise-title">
+  <section class="section" id="preise" aria-labelledby="preise-title" data-lw-section="preise">
     <div class="container">
       <div class="bw-rates reveal">
         <div class="bw-rates__intro">
-          <p class="eyebrow">Preisübersicht</p>
-          <h2 id="preise-title">Was Betreuung kostet, steht hier</h2>
-          <p>
+          <p class="eyebrow" data-lw-field="preise.eyebrow" data-lw-type="text">Preisübersicht</p>
+          <h2 id="preise-title" data-lw-field="preise.heading" data-lw-type="richtext">Was Betreuung kostet, steht hier</h2>
+          <p data-lw-field="preise.copy" data-lw-type="textarea">
             Betreuung vor Ort, Wahlleistungen, ambulante Pflege-Module, Sicherheit und Technik.
             Apartmentpreise finden Sie unter Betreutes Wohnen.
           </p>
           <a class="btn btn--primary" href="kontakt.html">
-            Persönliche Kostenklärung
+            <span data-lw-field="preise.cta" data-lw-type="text">Persönliche Kostenklärung</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
         </div>
@@ -766,30 +766,30 @@
       </div>
 
       <div class="bw-rates-include reveal">
-        <h3>Diese Betreuungsleistungen klären wir im Gespräch</h3>
+        <h3 data-lw-field="preise.heading_2" data-lw-type="richtext">Diese Betreuungsleistungen klären wir im Gespräch</h3>
         <ul>
-          <li>
+          <li data-lw-field="preise.item" data-lw-type="richtext">
             <span class="bw-rates-include__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </span>
             <strong>Betreuung vor Ort</strong>
             <span>650&nbsp;€ / Monat, immer jemand vor Ort</span>
           </li>
-          <li>
+          <li data-lw-field="preise.item_2" data-lw-type="richtext">
             <span class="bw-rates-include__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>
             </span>
             <strong>Wahlleistungen</strong>
             <span>Haushalt, Speisen, Begleit- und Betreuungsservice</span>
           </li>
-          <li>
+          <li data-lw-field="preise.item_3" data-lw-type="richtext">
             <span class="bw-rates-include__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
             </span>
             <strong>Ambulante Pflege</strong>
             <span>Grund-, Behandlungs- und individuelle Pflege</span>
           </li>
-          <li>
+          <li data-lw-field="preise.item_4" data-lw-type="richtext">
             <span class="bw-rates-include__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
             </span>
@@ -801,56 +801,56 @@
 
       <div class="bw-rates-table-wrap reveal">
         <div class="bw-rates-table-head">
-          <h3>Leistungen und Preise auf einen Blick</h3>
-          <p>Genau die Betreuung dieser Seite. Verbindlich wird es erst im Beratungsgespräch.</p>
+          <h3 data-lw-field="preise.heading_3" data-lw-type="richtext">Leistungen und Preise auf einen Blick</h3>
+          <p data-lw-field="preise.copy_2" data-lw-type="textarea">Genau die Betreuung dieser Seite. Verbindlich wird es erst im Beratungsgespräch.</p>
         </div>
         <table class="bw-rates-table">
           <thead>
             <tr>
-              <th scope="col">Leistung</th>
-              <th scope="col">Preis / Monat</th>
+              <th scope="col" data-lw-field="preise.cell" data-lw-type="text">Leistung</th>
+              <th scope="col" data-lw-field="preise.cell_2" data-lw-type="text">Preis / Monat</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Betreuung vor Ort</td>
-              <td>650&nbsp;€</td>
+              <td data-lw-field="preise.cell_3" data-lw-type="text">Betreuung vor Ort</td>
+              <td data-lw-field="preise.cell_4" data-lw-type="text">650&nbsp;€</td>
             </tr>
             <tr>
-              <td>Begleitungspauschale</td>
-              <td>350&nbsp;€</td>
+              <td data-lw-field="preise.cell_5" data-lw-type="text">Begleitungspauschale</td>
+              <td data-lw-field="preise.cell_6" data-lw-type="text">350&nbsp;€</td>
             </tr>
             <tr>
-              <td>Individuelle Betreuung</td>
-              <td>606&nbsp;€</td>
+              <td data-lw-field="preise.cell_7" data-lw-type="text">Individuelle Betreuung</td>
+              <td data-lw-field="preise.cell_8" data-lw-type="text">606&nbsp;€</td>
             </tr>
             <tr>
-              <td>Hauswirtschaftliche Leistungen</td>
-              <td>649&nbsp;€</td>
+              <td data-lw-field="preise.cell_9" data-lw-type="text">Hauswirtschaftliche Leistungen</td>
+              <td data-lw-field="preise.cell_10" data-lw-type="text">649&nbsp;€</td>
             </tr>
             <tr>
-              <td>Verpflegungspaket</td>
-              <td>412&nbsp;€</td>
+              <td data-lw-field="preise.cell_11" data-lw-type="text">Verpflegungspaket</td>
+              <td data-lw-field="preise.cell_12" data-lw-type="text">412&nbsp;€</td>
             </tr>
             <tr>
-              <td>Ambulante Pflege-Module</td>
-              <td>nach Pflegegrad und Bedarf</td>
+              <td data-lw-field="preise.cell_13" data-lw-type="text">Ambulante Pflege-Module</td>
+              <td data-lw-field="preise.cell_14" data-lw-type="text">nach Pflegegrad und Bedarf</td>
             </tr>
             <tr>
-              <td>24-Stunden-Notruf</td>
-              <td>auf Anfrage</td>
+              <td data-lw-field="preise.cell_15" data-lw-type="text">24-Stunden-Notruf</td>
+              <td data-lw-field="preise.cell_16" data-lw-type="text">auf Anfrage</td>
             </tr>
             <tr>
-              <td>LivyCare-Sturzprävention</td>
-              <td>auf Anfrage, später erweiterbar</td>
+              <td data-lw-field="preise.cell_17" data-lw-type="text">LivyCare-Sturzprävention</td>
+              <td data-lw-field="preise.cell_18" data-lw-type="text">auf Anfrage, später erweiterbar</td>
             </tr>
             <tr>
-              <td>Erstberatung</td>
-              <td>unverbindlich und kostenfrei</td>
+              <td data-lw-field="preise.cell_19" data-lw-type="text">Erstberatung</td>
+              <td data-lw-field="preise.cell_20" data-lw-type="text">unverbindlich und kostenfrei</td>
             </tr>
           </tbody>
         </table>
-        <p class="bw-rates-footnote">
+        <p class="bw-rates-footnote" data-lw-field="preise.copy_3" data-lw-type="textarea">
           Alle Beträge monatlich. Service und Hauspflege, die mitwachsen kann.
           Den verbindlichen Überblick zu Ihrem Mix erhalten Sie im persönlichen Gespräch.
         </p>
@@ -859,126 +859,126 @@
   </section>
 
   <!-- ============ BRÜCKE ============ -->
-  <section class="cafe section section--cream" aria-labelledby="bridge-title">
+  <section class="cafe section section--cream" aria-labelledby="bridge-title" data-lw-section="bridge">
     <div class="container cafe__grid cafe__grid--media-start">
       <div class="cafe__media reveal">
         <div class="cafe__media-frame">
-          <img src="assets/images/apartment.webp" alt="Betreutes Wohnen in der Brückenmühle Gernsbach" loading="lazy" width="1920" height="1080" />
+          <img src="assets/images/apartment.webp" alt="Betreutes Wohnen in der Brückenmühle Gernsbach" loading="lazy" width="1920" height="1080" data-lw-field="bridge.image" data-lw-type="image" />
           <span class="cafe__badge">Brückenmühle</span>
         </div>
       </div>
       <div class="cafe__text reveal">
-        <p class="eyebrow">Wohnen und Pflege im Zusammenspiel</p>
-        <h2 id="bridge-title">Service im Haus. Pflege, die mitwachsen kann.</h2>
-        <p class="lead">
+        <p class="eyebrow" data-lw-field="bridge.eyebrow" data-lw-type="text">Wohnen und Pflege im Zusammenspiel</p>
+        <h2 id="bridge-title" data-lw-field="bridge.heading" data-lw-type="richtext">Service im Haus. Pflege, die mitwachsen kann.</h2>
+        <p class="lead" data-lw-field="bridge.copy" data-lw-type="textarea">
           Betreuung und Service gehören zum Alltag in der Brückenmühle.
           Sollte Pflegebedarf entstehen, bleibt Juventa nah: ambulante Pflege ist direkt angebunden.
         </p>
         <ul class="cafe__list">
-          <li>Eigene Apartments mit Hotel-Komfort</li>
-          <li>Betreuung vor Ort, Café und Gemeinschaft im Haus</li>
-          <li>Juventa-Pflege, wenn der Bedarf wächst</li>
+          <li data-lw-field="bridge.item" data-lw-type="richtext">Eigene Apartments mit Hotel-Komfort</li>
+          <li data-lw-field="bridge.item_2" data-lw-type="richtext">Betreuung vor Ort, Café und Gemeinschaft im Haus</li>
+          <li data-lw-field="bridge.item_3" data-lw-type="richtext">Juventa-Pflege, wenn der Bedarf wächst</li>
         </ul>
         <div class="story__actions">
           <a class="btn btn--primary" href="betreutes-wohnen.html">
-            Zum Betreuten Wohnen
+            <span data-lw-field="bridge.cta" data-lw-type="text">Zum Betreuten Wohnen</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
-          <a class="btn btn--outline" href="pflege-beratung.html">Pflege &amp; Beratung</a>
+          <a class="btn btn--outline" href="pflege-beratung.html"><span data-lw-field="bridge.cta_2" data-lw-type="text">Pflege &amp; Beratung</span></a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============ FAQ ============ -->
-  <section class="faq section section--cream" id="faq" aria-labelledby="faq-title">
+  <section class="faq section section--cream" id="faq" aria-labelledby="faq-title" data-lw-section="faq">
     <div class="container">
       <header class="section-head reveal">
-        <span class="section-label">FAQ</span>
-        <h2 id="faq-title">Fragen zu Betreuung und Service</h2>
-        <p class="section-head__sub">Kurz beantwortet – zu Betreuung vor Ort, Wahlleistungen, Sicherheit und Kosten im Haus.</p>
+        <span class="section-label" data-lw-field="faq.eyebrow" data-lw-type="text">FAQ</span>
+        <h2 id="faq-title" data-lw-field="faq.heading" data-lw-type="richtext">Fragen zu Betreuung und Service</h2>
+        <p class="section-head__sub" data-lw-field="faq.copy" data-lw-type="textarea">Kurz beantwortet – zu Betreuung vor Ort, Wahlleistungen, Sicherheit und Kosten im Haus.</p>
       </header>
 
       <div class="faq__wrap">
         <div class="faq__media reveal">
           <div class="faq__img">
-            <img src="assets/images/hero2.webp" alt="Betreuung und Service in der Brückenmühle" width="1024" height="683" loading="lazy" />
+            <img src="assets/images/hero2.webp" alt="Betreuung und Service in der Brückenmühle" width="1024" height="683" loading="lazy" data-lw-field="faq.image" data-lw-type="image" />
           </div>
           <div class="faq__badge">
             <span class="faq__badge-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
             </span>
-            <span>Service und Hauspflege, die mitwachsen kann.</span>
+            <span data-lw-field="faq.badge" data-lw-type="text">Service und Hauspflege, die mitwachsen kann.</span>
           </div>
         </div>
 
         <div class="faq__content">
-          <div class="faq__list reveal">
-            <article class="faq__item">
+          <div class="faq__list reveal" data-lw-repeater="faq.items">
+            <article class="faq__item" data-lw-item-key="item-1">
               <h3 class="faq__question">
                 <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="bs-faq-1" id="bs-faq-trigger-1">
-                  <span>Was umfasst die Betreuung vor Ort?</span>
+                  <span data-lw-field="faq.question" data-lw-type="text">Was umfasst die Betreuung vor Ort?</span>
                   <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
                 </button>
               </h3>
               <div class="faq__panel" id="bs-faq-1" role="region" aria-labelledby="bs-faq-trigger-1" hidden>
-                <p>Mit der Betreuung vor Ort haben Sie immer jemanden vor Ort, der Sie kennt: feste Ansprechpartner, Alltagsbegleitung und eine verlässliche Erreichbarkeit. Den Betrag klären wir im persönlichen Gespräch.</p>
+                <p data-lw-field="faq.copy" data-lw-type="textarea">Mit der Betreuung vor Ort haben Sie immer jemanden vor Ort, der Sie kennt: feste Ansprechpartner, Alltagsbegleitung und eine verlässliche Erreichbarkeit. Den Betrag klären wir im persönlichen Gespräch.</p>
               </div>
             </article>
 
-            <article class="faq__item">
+            <article class="faq__item" data-lw-item-key="item-2">
               <h3 class="faq__question">
                 <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="bs-faq-2" id="bs-faq-trigger-2">
-                  <span>Was ist der Unterschied zwischen Wahlleistungen und ambulanter Pflege?</span>
+                  <span data-lw-field="faq.question" data-lw-type="text">Was ist der Unterschied zwischen Wahlleistungen und ambulanter Pflege?</span>
                   <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
                 </button>
               </h3>
               <div class="faq__panel" id="bs-faq-2" role="region" aria-labelledby="bs-faq-trigger-2" hidden>
-                <p>Wahlleistungen sind zubuchbare Alltagsangebote wie Hauswirtschaft, Speisenpaket, Begleitservice oder individuelle Betreuung. Ambulante Pflegeleistungen kommen dazu, wenn Pflegebedarf entsteht: als Module für Grundpflege, Behandlungspflege und individuelle Pflege, anpassbar an Ihre Situation.</p>
+                <p data-lw-field="faq.copy" data-lw-type="textarea">Wahlleistungen sind zubuchbare Alltagsangebote wie Hauswirtschaft, Speisenpaket, Begleitservice oder individuelle Betreuung. Ambulante Pflegeleistungen kommen dazu, wenn Pflegebedarf entsteht: als Module für Grundpflege, Behandlungspflege und individuelle Pflege, anpassbar an Ihre Situation.</p>
               </div>
             </article>
 
-            <article class="faq__item">
+            <article class="faq__item" data-lw-item-key="item-3">
               <h3 class="faq__question">
                 <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="bs-faq-3" id="bs-faq-trigger-3">
-                  <span>Kann ich Leistungen später dazubuchen?</span>
+                  <span data-lw-field="faq.question" data-lw-type="text">Kann ich Leistungen später dazubuchen?</span>
                   <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
                 </button>
               </h3>
               <div class="faq__panel" id="bs-faq-3" role="region" aria-labelledby="bs-faq-trigger-3" hidden>
-                <p>Ja. Die Betreuung vor Ort bleibt die Basis. Wahlleistungen und Pflege-Module lassen sich anpassen, wenn sich der Alltag verändert. Wir sprechen das regelmäßig mit Ihnen ab.</p>
+                <p data-lw-field="faq.copy" data-lw-type="textarea">Ja. Die Betreuung vor Ort bleibt die Basis. Wahlleistungen und Pflege-Module lassen sich anpassen, wenn sich der Alltag verändert. Wir sprechen das regelmäßig mit Ihnen ab.</p>
               </div>
             </article>
 
-            <article class="faq__item">
+            <article class="faq__item" data-lw-item-key="item-4">
               <h3 class="faq__question">
                 <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="bs-faq-4" id="bs-faq-trigger-4">
-                  <span>Was bedeutet Sicherheit und Technik im Haus?</span>
+                  <span data-lw-field="faq.question" data-lw-type="text">Was bedeutet Sicherheit und Technik im Haus?</span>
                   <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
                 </button>
               </h3>
               <div class="faq__panel" id="bs-faq-4" role="region" aria-labelledby="bs-faq-trigger-4" hidden>
-                <p>Sicherheit und Technik sind Ihr Schutzengel im Hintergrund. Im Haus steht ein 24-Stunden-Notrufdienst bereit. Ergänzend kann LivyCare zur Sturzprävention eingesetzt und später ausgebaut werden. Sicherheit ist unbewusst zu jeder Zeit gegeben.</p>
+                <p data-lw-field="faq.copy" data-lw-type="textarea">Sicherheit und Technik sind Ihr Schutzengel im Hintergrund. Im Haus steht ein 24-Stunden-Notrufdienst bereit. Ergänzend kann LivyCare zur Sturzprävention eingesetzt und später ausgebaut werden. Sicherheit ist unbewusst zu jeder Zeit gegeben.</p>
               </div>
             </article>
 
-            <article class="faq__item">
+            <article class="faq__item" data-lw-item-key="item-5">
               <h3 class="faq__question">
                 <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="bs-faq-5" id="bs-faq-trigger-5">
-                  <span>Wie setzen sich die Kosten für Betreuung zusammen?</span>
+                  <span data-lw-field="faq.question" data-lw-type="text">Wie setzen sich die Kosten für Betreuung zusammen?</span>
                   <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
                 </button>
               </h3>
               <div class="faq__panel" id="bs-faq-5" role="region" aria-labelledby="bs-faq-trigger-5" hidden>
-                <p>Die Betreuung vor Ort ist die Basis. Wahlleistungen, ambulante Pflege-Module und Sicherheitstechnik kommen nur dazu, wenn Sie sie buchen. Alle Beträge nennen wir transparent im Beratungsgespräch.</p>
+                <p data-lw-field="faq.copy" data-lw-type="textarea">Die Betreuung vor Ort ist die Basis. Wahlleistungen, ambulante Pflege-Module und Sicherheitstechnik kommen nur dazu, wenn Sie sie buchen. Alle Beträge nennen wir transparent im Beratungsgespräch.</p>
               </div>
             </article>
           </div>
 
           <div class="faq__cta reveal">
-            <p>Noch Fragen zum Service?</p>
+            <p data-lw-field="faq.copy_2" data-lw-type="textarea">Noch Fragen zum Service?</p>
             <a href="kontakt.html" class="btn btn--primary btn--lg">
-              Persönlich sprechen
+              <span data-lw-field="faq.cta" data-lw-type="text">Persönlich sprechen</span>
               <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
           </div>
@@ -988,47 +988,47 @@
   </section>
 
   <!-- ============ KONTAKT ============ -->
-  <section class="contact section" id="kontakt" aria-labelledby="contact-title">
+  <section class="contact section" id="kontakt" aria-labelledby="contact-title" data-lw-section="kontakt">
     <div class="container">
       <div class="contact__wrap reveal">
         <div class="contact__panel">
-          <span class="section-label">Kontakt</span>
-          <h2 id="contact-title">Lassen Sie uns gemeinsam herausfinden, <span class="headline-accent">welches Maß passt.</span></h2>
-          <p>
+          <span class="section-label" data-lw-field="kontakt.eyebrow" data-lw-type="text">Kontakt</span>
+          <h2 id="contact-title" data-lw-field="kontakt.heading" data-lw-type="richtext">Lassen Sie uns gemeinsam herausfinden, <span class="headline-accent">welches Maß passt.</span></h2>
+          <p data-lw-field="kontakt.copy" data-lw-type="textarea">
             Ob Betreuung vor Ort, Wahlleistungen, Pflegebedarf oder Sicherheitstechnik:
             Wir nehmen uns Zeit. Verständlich, persönlich und ohne Druck.
           </p>
-          <div class="contact__items">
-            <div class="contact__item">
+          <div class="contact__items" data-lw-repeater="contact.items">
+            <div class="contact__item" data-lw-item-key="item-1">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
               <div><strong>Mobil</strong><a href="tel:+491785254075">+49 178 5254075</a></div>
             </div>
-            <div class="contact__item">
+            <div class="contact__item" data-lw-item-key="item-2">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
               <div><strong>Festnetz</strong><a href="tel:+4972219959934">+49 7221 9959934</a></div>
             </div>
-            <div class="contact__item">
+            <div class="contact__item" data-lw-item-key="item-3">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></span>
               <div><strong>E-Mail</strong><a href="mailto:info@juventa-pflege.de">info@juventa-pflege.de</a></div>
             </div>
-            <div class="contact__item">
+            <div class="contact__item" data-lw-item-key="item-4">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
               <div><strong>Standort</strong><span>Brückenmühle · Gernsbach</span></div>
             </div>
           </div>
           <div class="contact__actions">
             <a href="tel:+491785254075" class="btn btn--primary btn--lg">
-              Rückruf / Anrufen
+              <span data-lw-field="kontakt.cta" data-lw-type="text">Rückruf / Anrufen</span>
               <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
             <a href="mailto:info@juventa-pflege.de?subject=Betreuung%20%26%20Service%20%E2%80%93%20Juventa" class="btn btn--outline-light btn--lg">
-              Beratung anfragen
+              <span data-lw-field="kontakt.cta_2" data-lw-type="text">Beratung anfragen</span>
               <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
           </div>
         </div>
         <div class="contact__visual">
-          <img src="assets/images/img-kontakt.webp" alt="Persönliche Beratung zu Betreuung und Service bei Juventa" width="1024" height="683" loading="lazy" />
+          <img src="assets/images/img-kontakt.webp" alt="Persönliche Beratung zu Betreuung und Service bei Juventa" width="1024" height="683" loading="lazy" data-lw-field="kontakt.image" data-lw-type="image" />
           <span class="contact__visual-overlay" aria-hidden="true"></span>
         </div>
       </div>
@@ -1104,10 +1104,10 @@
       <div class="a11y__group">
         <span class="a11y__label" id="a11yFontLabel">Schriftgröße</span>
         <div class="a11y__font-btns" role="group" aria-labelledby="a11yFontLabel">
-          <button class="a11y__font-btn" type="button" data-a11y-font="sm" aria-pressed="false" aria-label="Kleinere Schrift">A−</button>
-          <button class="a11y__font-btn is-active" type="button" data-a11y-font="normal" aria-pressed="true" aria-label="Normale Schrift">A</button>
-          <button class="a11y__font-btn" type="button" data-a11y-font="lg" aria-pressed="false" aria-label="Größere Schrift">A+</button>
-          <button class="a11y__font-btn" type="button" data-a11y-font="xl" aria-pressed="false" aria-label="Sehr große Schrift">A++</button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="sm" aria-pressed="false" aria-label="Kleinere Schrift"><span>A−</span></button>
+          <button class="a11y__font-btn is-active" type="button" data-a11y-font="normal" aria-pressed="true" aria-label="Normale Schrift"><span>A</span></button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="lg" aria-pressed="false" aria-label="Größere Schrift"><span>A+</span></button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="xl" aria-pressed="false" aria-label="Sehr große Schrift"><span>A++</span></button>
         </div>
       </div>
       <div class="a11y__group">

@@ -192,10 +192,28 @@
     }
   }
 
+  function liveMediaUrl(trigger, attr) {
+    const video = trigger && trigger.querySelector ? trigger.querySelector("video") : null;
+    if (video) {
+      const nested = video.querySelector("source");
+      const url =
+        (nested && (nested.currentSrc || nested.getAttribute("src"))) ||
+        video.currentSrc ||
+        video.getAttribute("src");
+      if (url) return url;
+    }
+    const img = trigger && trigger.querySelector ? trigger.querySelector("img") : null;
+    if (img) {
+      const url = img.currentSrc || img.getAttribute("src");
+      if (url) return url;
+    }
+    return (trigger && trigger.getAttribute(attr)) || "";
+  }
+
   document.querySelectorAll("[data-plan-open]").forEach((btn) => {
     btn.addEventListener("click", () => {
       openPlanLightbox(
-        btn.getAttribute("data-src"),
+        liveMediaUrl(btn, "data-src"),
         btn.getAttribute("data-plan-title"),
         btn
       );
@@ -248,7 +266,18 @@
   const spyLinks = Array.from(document.querySelectorAll(".nav__track > .nav__link, .nav__item > .nav__link, .nav__list--drawer > li > .nav__link"));
   const sections = [...new Set(
     spyLinks
-      .map((a) => document.querySelector(a.getAttribute("href")))
+      .map((a) => {
+        const href = a.getAttribute("href") || "";
+        const hashIndex = href.indexOf("#");
+        if (hashIndex === -1) return null;
+        const hash = href.slice(hashIndex);
+        if (hash === "#") return null;
+        try {
+          return document.querySelector(hash);
+        } catch (error) {
+          return null;
+        }
+      })
       .filter(Boolean)
   )];
   if (sections.length && "IntersectionObserver" in window) {
@@ -462,7 +491,7 @@
 
   videoTriggers.forEach((trigger) => {
     trigger.addEventListener("click", () => {
-      openVideoLightbox(trigger.getAttribute("data-src"), trigger);
+      openVideoLightbox(liveMediaUrl(trigger, "data-src"), trigger);
     });
   });
 

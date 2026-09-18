@@ -83,7 +83,7 @@
           <a href="wissen.html" class="nav__link">Wissen</a>
           <a href="kontakt.html" class="nav__link">Kontakt</a>
           <a href="kontakt.html" class="btn btn--primary nav__cta">
-            Beratung anfragen
+            <span>Beratung anfragen</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
         </div>
@@ -133,7 +133,7 @@
         <li><a href="kontakt.html" class="nav__link">Kontakt</a></li>
       </ul>
       <a href="kontakt.html" class="btn btn--primary nav__cta nav__cta--drawer">
-        Beratung anfragen
+        <span>Beratung anfragen</span>
         <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </a>
     </nav>
@@ -147,7 +147,7 @@
         <p class="eyebrow" data-lw-field="contact.eyebrow" data-lw-type="text">Kontakt</p>
         <h1 data-lw-field="hero.title" data-lw-type="richtext">Lassen Sie uns gemeinsam die passende Unterstützung finden.</h1>
         <p class="lead" data-lw-field="contact.copy" data-lw-type="textarea">Ob ambulante Pflege, Betreutes Wohnen, Pflegegrad oder Finanzierung: Schreiben Sie uns. Montag bis Freitag zwischen 08:00 und 15:00 Uhr sind wir persönlich erreichbar.</p>
-        <p><a data-lw-global="contact.phone" data-lw-type="text" href="tel:+491785254075">+49 178 5254075</a><br />
+        <p data-lw-field="contact.copy_2" data-lw-type="textarea"><a data-lw-global="contact.phone" data-lw-type="text" href="tel:+491785254075">+49 178 5254075</a><br />
         <a data-lw-global="contact.email" data-lw-type="email" href="mailto:info@juventa-pflege.de">info@juventa-pflege.de</a><br />
         <span data-lw-global="contact.address" data-lw-type="textarea">Sonnenplatz 2, 76530 Baden-Baden</span></p>
       </div>
@@ -161,11 +161,11 @@
         <p data-lw-field="form.copy" data-lw-type="textarea">Schildern Sie uns kurz Ihr Anliegen. Wir prüfen Ihre Nachricht und melden uns persönlich mit dem nächsten Schritt.</p>
       </div>
       <form id="kontakt-form" class="form" data-lw-wpforms="contact" action="danke.html" method="post">
-        <label>Name<input type="text" name="name" autocomplete="name" required></label>
-        <label>E-Mail<input type="email" name="email" autocomplete="email" required></label>
-        <label>Nachricht<textarea name="message" rows="6" required></textarea></label>
-        <label class="form-consent"><input type="checkbox" name="consent" value="accepted" required><span>Ich habe die <a href="datenschutz.html" target="_blank" rel="noopener noreferrer">Datenschutzerklärung</a> gelesen.</span></label>
-        <button class="btn btn--primary" type="submit">Nachricht senden</button>
+        <label data-lw-field="contact_form.label" data-lw-type="text">Name<input type="text" name="name" autocomplete="name" required></label>
+        <label data-lw-field="contact_form.label_2" data-lw-type="text">E-Mail<input type="email" name="email" autocomplete="email" required></label>
+        <label data-lw-field="contact_form.label_3" data-lw-type="text">Nachricht<textarea name="message" rows="6" required></textarea></label>
+        <label class="form-consent" data-lw-field="contact_form.label_4" data-lw-type="text"><input type="checkbox" name="consent" value="accepted" required><span>Ich habe die <a href="datenschutz.html" target="_blank" rel="noopener noreferrer">Datenschutzerklärung</a> gelesen.</span></label>
+        <button class="btn btn--primary" type="submit"><span data-lw-field="contact_form.cta" data-lw-type="text">Nachricht senden</span></button>
       </form>
     </div>
   </section>
@@ -232,10 +232,10 @@
       <div class="a11y__group">
         <span class="a11y__label" id="a11yFontLabel">Schriftgröße</span>
         <div class="a11y__font-btns" role="group" aria-labelledby="a11yFontLabel">
-          <button class="a11y__font-btn" type="button" data-a11y-font="sm" aria-pressed="false" aria-label="Kleinere Schrift">A−</button>
-          <button class="a11y__font-btn is-active" type="button" data-a11y-font="normal" aria-pressed="true" aria-label="Normale Schrift">A</button>
-          <button class="a11y__font-btn" type="button" data-a11y-font="lg" aria-pressed="false" aria-label="Größere Schrift">A+</button>
-          <button class="a11y__font-btn" type="button" data-a11y-font="xl" aria-pressed="false" aria-label="Sehr große Schrift">A++</button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="sm" aria-pressed="false" aria-label="Kleinere Schrift"><span>A−</span></button>
+          <button class="a11y__font-btn is-active" type="button" data-a11y-font="normal" aria-pressed="true" aria-label="Normale Schrift"><span>A</span></button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="lg" aria-pressed="false" aria-label="Größere Schrift"><span>A+</span></button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="xl" aria-pressed="false" aria-label="Sehr große Schrift"><span>A++</span></button>
         </div>
       </div>
       <div class="a11y__group">

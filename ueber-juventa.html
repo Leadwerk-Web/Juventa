@@ -121,17 +121,17 @@
 
 <!-- ============ HERO ============ -->
 <div class="hero-shell" id="start">
-  <section class="hero" data-lw-section="hero" data-hero aria-label="Über Juventa">
+  <section class="hero" data-hero aria-label="Über Juventa">
 
-    <div class="hero__media" id="heroSlider" aria-hidden="true">
-      <div class="hero__slide is-active">
-        <img src="assets/images/team.webp" alt="" width="1920" height="1080" fetchpriority="high" data-lw-decorative="true" />
+    <div class="hero__media" id="heroSlider" aria-hidden="true" data-lw-section="hero-media" data-lw-repeater="hero.slides">
+      <div class="hero__slide is-active" data-lw-item-key="slide-1">
+        <img src="assets/images/team.webp" alt="" width="1920" height="1080" fetchpriority="high" data-lw-decorative="true" data-lw-field="hero-media.image" data-lw-type="image" />
       </div>
-      <div class="hero__slide">
-        <img src="assets/images/hero1.webp" alt="" width="1920" height="1080" loading="lazy" data-lw-decorative="true" />
+      <div class="hero__slide" data-lw-item-key="slide-2">
+        <img src="assets/images/hero1.webp" alt="" width="1920" height="1080" loading="lazy" data-lw-decorative="true" data-lw-field="hero-media.image" data-lw-type="image" />
       </div>
-      <div class="hero__slide">
-        <img src="assets/images/img-kontakt.webp" alt="" width="1920" height="1080" loading="lazy" data-lw-decorative="true" />
+      <div class="hero__slide" data-lw-item-key="slide-3">
+        <img src="assets/images/img-kontakt.webp" alt="" width="1920" height="1080" loading="lazy" data-lw-decorative="true" data-lw-field="hero-media.image" data-lw-type="image" />
       </div>
     </div>
     <div class="hero__overlay" aria-hidden="true"></div>
@@ -196,7 +196,7 @@
               <a href="wissen.html" class="nav__link">Wissen</a>
               <a href="kontakt.html" class="nav__link">Kontakt</a>
               <a href="kontakt.html" class="btn btn--primary nav__cta">
-                Beratung anfragen
+                <span>Beratung anfragen</span>
                 <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
               </a>
             </div>
@@ -247,24 +247,24 @@
             <li><a href="kontakt.html" class="nav__link">Kontakt</a></li>
           </ul>
           <a href="kontakt.html" class="btn btn--primary nav__cta nav__cta--drawer">
-            Beratung anfragen
+            <span>Beratung anfragen</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
         </nav>
       </div>
     </header>
 
-    <div class="container hero__body">
+    <div class="container hero__body" data-lw-section="hero">
       <div class="hero__content reveal">
-        <span class="hero__eyebrow">Über Juventa</span>
+        <span class="hero__eyebrow" data-lw-field="hero.eyebrow" data-lw-type="text">Über Juventa</span>
         <h1 class="hero__title" data-lw-field="hero.title" data-lw-type="richtext">Aus Überzeugung entstanden.<br />Mit <span class="headline-accent headline-accent--light">Nähe</span> geführt.</h1>
-        <p class="hero__sub">
+        <p class="hero__sub" data-lw-field="hero.copy" data-lw-type="textarea">
           Hinter Juventa stehen Menschen aus der Region – mit Erfahrung in Pflege, Betreuung und Wohnkonzepten.
           Wir verbinden Fachlichkeit mit Haltung: Selbstbestimmung, Sicherheit und ein Alltag, der sich wie Leben anfühlt.
         </p>
         <div class="hero__actions">
           <a href="#team" class="btn btn--primary btn--lg">
-            Team kennenlernen
+            <span data-lw-field="hero.cta" data-lw-type="text">Team kennenlernen</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
           <a href="tel:+491785254075" class="hero__play" aria-label="Rufen Sie uns an unter +49 178 5254075">
@@ -282,36 +282,36 @@
 
   </section>
 
-  <div class="hero__cards">
+  <div class="hero__cards" data-lw-section="offers">
     <div class="container">
-      <nav class="hero__cards-inner reveal" aria-label="Abschnitte dieser Seite">
-        <a href="#team" class="hero__card">
+      <nav class="hero__cards-inner reveal" aria-label="Abschnitte dieser Seite" data-lw-repeater="offers.cards">
+        <a href="#team" class="hero__card" data-lw-item-key="card-1">
           <span class="hero__card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </span>
-          <h2>Team &amp; Ansprechpartner</h2>
-          <p>Gesichter, die bleiben – und zuhören.</p>
+          <h2 data-lw-field="offers.heading" data-lw-type="richtext">Team &amp; Ansprechpartner</h2>
+          <p data-lw-field="offers.copy" data-lw-type="textarea">Gesichter, die bleiben – und zuhören.</p>
         </a>
-        <a href="#standort" class="hero__card">
+        <a href="#standort" class="hero__card" data-lw-item-key="card-2">
           <span class="hero__card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
           </span>
-          <h2>Standorte</h2>
-          <p>Baden-Baden und Gernsbach – nah an den Menschen.</p>
+          <h2 data-lw-field="offers.heading" data-lw-type="richtext">Standorte</h2>
+          <p data-lw-field="offers.copy" data-lw-type="textarea">Baden-Baden und Gernsbach – nah an den Menschen.</p>
         </a>
-        <a href="#philosophie" class="hero__card">
+        <a href="#philosophie" class="hero__card" data-lw-item-key="card-3">
           <span class="hero__card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </span>
-          <h2>Philosophie &amp; Werte</h2>
-          <p>Haltung, die man im Alltag spürt.</p>
+          <h2 data-lw-field="offers.heading" data-lw-type="richtext">Philosophie &amp; Werte</h2>
+          <p data-lw-field="offers.copy" data-lw-type="textarea">Haltung, die man im Alltag spürt.</p>
         </a>
-        <a href="stellenanzeigen.html" class="hero__card">
+        <a href="stellenanzeigen.html" class="hero__card" data-lw-item-key="card-4">
           <span class="hero__card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
           </span>
-          <h2>Stellenanzeigen</h2>
-          <p>Gute Pflege braucht Menschen mit Herz.</p>
+          <h2 data-lw-field="offers.heading" data-lw-type="richtext">Stellenanzeigen</h2>
+          <p data-lw-field="offers.copy" data-lw-type="textarea">Gute Pflege braucht Menschen mit Herz.</p>
         </a>
       </nav>
     </div>
@@ -321,57 +321,57 @@
 <main id="hauptinhalt">
 
   <!-- ============ TEAM ============ -->
-  <section class="story section" id="team" aria-labelledby="team-title">
+  <section class="story section" id="team" aria-labelledby="team-title" data-lw-section="team">
     <div class="container story__grid">
       <div class="story__collage reveal">
         <div class="story__collage-img story__collage-img--tall">
-          <img src="assets/images/team.webp" alt="Das Team von Juventa rund um Fee Schmid und Fabian Lepold" loading="lazy" width="1920" height="1080" />
+          <img src="assets/images/team.webp" alt="Das Team von Juventa rund um Fee Schmid und Fabian Lepold" loading="lazy" width="1920" height="1080" data-lw-field="team.image" data-lw-type="image" />
         </div>
         <div class="story__collage-stack">
           <div class="story__collage-img story__collage-img--top story__collage-img--face">
-            <img src="assets/images/fee.webp" alt="Fee Schmid, Pflege und Beratung bei Juventa" loading="lazy" width="240" height="240" />
+            <img src="assets/images/fee.webp" alt="Fee Schmid, Pflege und Beratung bei Juventa" loading="lazy" width="240" height="240" data-lw-field="team.image_2" data-lw-type="image" />
           </div>
           <div class="story__collage-img story__collage-img--bottom story__collage-img--face">
-            <img src="assets/images/fabian.webp" alt="Fabian Lepold, Konzept und Entwicklung bei Juventa" loading="lazy" width="240" height="240" />
+            <img src="assets/images/fabian.webp" alt="Fabian Lepold, Konzept und Entwicklung bei Juventa" loading="lazy" width="240" height="240" data-lw-field="team.image_3" data-lw-type="image" />
           </div>
         </div>
       </div>
 
       <div class="story__text reveal">
-        <span class="section-label">Team &amp; Ansprechpartner</span>
-        <h2 id="team-title">Menschen, die bleiben&nbsp;–<br />statt Nummern im Tourenplan.</h2>
-        <p class="story__lead">
+        <span class="section-label" data-lw-field="team.eyebrow" data-lw-type="text">Team &amp; Ansprechpartner</span>
+        <h2 id="team-title" data-lw-field="team.heading" data-lw-type="richtext">Menschen, die bleiben&nbsp;–<br />statt Nummern im Tourenplan.</h2>
+        <p class="story__lead" data-lw-field="team.copy" data-lw-type="textarea">
           Juventa ist aus Erfahrung entstanden und wird aus Überzeugung geführt.
           Hinter dem Namen stehen Fee Schmid und Fabian Lepold – fest in der Region verwurzelt und mit klarer Haltung: Pflege auf Augenhöhe.
         </p>
-        <p>
+        <p data-lw-field="team.copy_2" data-lw-type="textarea">
           Mehr als ein Jahrzehnt Erfahrung in ambulanter Pflege, in ambulant betreuten Wohngemeinschaften,
           im Betreuten Wohnen und in der Palliativpflege fließt in jeden Tag.
           Dieses Wissen bringen wir nach Baden-Baden, Gernsbach und in die Region –
           ohne anonyme Strukturen, ohne überfüllte Tourenpläne, mit Zeit für medizinische und soziale Begleitung.
         </p>
         <ul class="bw-checklist">
-          <li>Individuelle Planung statt Standardlösung</li>
-          <li>Persönliche Ansprechpartner, die Sie kennen</li>
-          <li>Pflege, Betreuung und Wohnen aus einer Hand</li>
+          <li data-lw-field="team.item" data-lw-type="richtext">Individuelle Planung statt Standardlösung</li>
+          <li data-lw-field="team.item_2" data-lw-type="richtext">Persönliche Ansprechpartner, die Sie kennen</li>
+          <li data-lw-field="team.item_3" data-lw-type="richtext">Pflege, Betreuung und Wohnen aus einer Hand</li>
         </ul>
         <div class="story__actions">
           <a class="btn btn--primary" href="#philosophie">
-            Unsere Haltung
+            <span data-lw-field="team.cta" data-lw-type="text">Unsere Haltung</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
-          <a class="btn btn--outline" href="kontakt.html">Kontakt aufnehmen</a>
+          <a class="btn btn--outline" href="kontakt.html"><span data-lw-field="team.cta_2" data-lw-type="text">Kontakt aufnehmen</span></a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section section--cream" aria-labelledby="ansprechpartner-title">
+  <section class="section section--cream" aria-labelledby="ansprechpartner-title" data-lw-section="ansprechpartner">
     <div class="container">
       <header class="section-head reveal">
-        <p class="eyebrow">Leitung</p>
-        <h2 id="ansprechpartner-title">Zwei Gesichter.<br />Eine klare Haltung.</h2>
-        <p class="section-head__sub">
+        <p class="eyebrow" data-lw-field="ansprechpartner.eyebrow" data-lw-type="text">Leitung</p>
+        <h2 id="ansprechpartner-title" data-lw-field="ansprechpartner.heading" data-lw-type="richtext">Zwei Gesichter.<br />Eine klare Haltung.</h2>
+        <p class="section-head__sub" data-lw-field="ansprechpartner.copy" data-lw-type="textarea">
           Fee Schmid und Fabian Lepold führen Juventa gemeinsam: mit Erfahrung aus dem Pflegealltag
           und dem Blick für Orte, an denen Menschen gut leben können – nahbar und erreichbar.
         </p>
@@ -381,22 +381,22 @@
           <div class="uj-team__body">
             <div class="uj-team__head">
               <div class="uj-team__photo">
-                <img src="assets/images/fee.webp" alt="Fee Schmid" width="240" height="240" loading="lazy" />
+                <img src="assets/images/fee.webp" alt="Fee Schmid" width="240" height="240" loading="lazy" data-lw-field="ansprechpartner.image" data-lw-type="image" />
               </div>
               <div class="uj-team__intro">
-                <p class="uj-team__role">Geschäftsführung · Pflege &amp; Beratung</p>
-                <h3>Fee Schmid</h3>
-                <p class="uj-team__lead">Zuhören. Einordnen. Entlasten.</p>
+                <p class="uj-team__role" data-lw-field="ansprechpartner.copy_2" data-lw-type="textarea">Geschäftsführung · Pflege &amp; Beratung</p>
+                <h3 data-lw-field="ansprechpartner.heading_2" data-lw-type="richtext">Fee Schmid</h3>
+                <p class="uj-team__lead" data-lw-field="ansprechpartner.copy_3" data-lw-type="textarea">Zuhören. Einordnen. Entlasten.</p>
               </div>
             </div>
-            <p>
+            <p data-lw-field="ansprechpartner.copy_4" data-lw-type="textarea">
               Fee bringt die Perspektive aus dem Pflegealltag mit. Sie begleitet Angehörige durch Pflegegrad,
               Finanzierung und die Frage, welche Unterstützung jetzt wirklich passt – verständlich und ohne Druck.
             </p>
             <ul class="uj-team__focus">
-              <li>Beratung für Angehörige</li>
-              <li>Pflegegrad &amp; Finanzierung</li>
-              <li>Ambulante Pflege im Alltag</li>
+              <li data-lw-field="ansprechpartner.item" data-lw-type="richtext">Beratung für Angehörige</li>
+              <li data-lw-field="ansprechpartner.item_2" data-lw-type="richtext">Pflegegrad &amp; Finanzierung</li>
+              <li data-lw-field="ansprechpartner.item_3" data-lw-type="richtext">Ambulante Pflege im Alltag</li>
             </ul>
             <a class="link-arrow" href="kontakt.html">
               Mit Fee sprechen
@@ -408,22 +408,22 @@
           <div class="uj-team__body">
             <div class="uj-team__head">
               <div class="uj-team__photo">
-                <img src="assets/images/fabian.webp" alt="Fabian Lepold" width="240" height="240" loading="lazy" />
+                <img src="assets/images/fabian.webp" alt="Fabian Lepold" width="240" height="240" loading="lazy" data-lw-field="ansprechpartner.image_2" data-lw-type="image" />
               </div>
               <div class="uj-team__intro">
-                <p class="uj-team__role">Geschäftsführung · Konzept &amp; Entwicklung</p>
-                <h3>Fabian Lepold</h3>
-                <p class="uj-team__lead">Orte denken. Nähe ermöglichen.</p>
+                <p class="uj-team__role" data-lw-field="ansprechpartner.copy_5" data-lw-type="textarea">Geschäftsführung · Konzept &amp; Entwicklung</p>
+                <h3 data-lw-field="ansprechpartner.heading_3" data-lw-type="richtext">Fabian Lepold</h3>
+                <p class="uj-team__lead" data-lw-field="ansprechpartner.copy_6" data-lw-type="textarea">Orte denken. Nähe ermöglichen.</p>
               </div>
             </div>
-            <p>
+            <p data-lw-field="ansprechpartner.copy_7" data-lw-type="textarea">
               Fabian verbindet Wohnen, Alltag und Pflege: von der Brückenmühle in Gernsbach bis zu Angeboten,
               die mitwachsen können. Sein Fokus sind Strukturen, die Nähe schaffen – statt Nähe zu ersetzen.
             </p>
             <ul class="uj-team__focus">
-              <li>Betreutes Wohnen Brückenmühle</li>
-              <li>Konzepte, die mitwachsen</li>
-              <li>Alltag &amp; Versorgung im Einklang</li>
+              <li data-lw-field="ansprechpartner.item_4" data-lw-type="richtext">Betreutes Wohnen Brückenmühle</li>
+              <li data-lw-field="ansprechpartner.item_5" data-lw-type="richtext">Konzepte, die mitwachsen</li>
+              <li data-lw-field="ansprechpartner.item_6" data-lw-type="richtext">Alltag &amp; Versorgung im Einklang</li>
             </ul>
             <a class="link-arrow" href="kontakt.html">
               Mit Fabian sprechen
@@ -435,68 +435,68 @@
     </div>
   </section>
 
-  <section class="section" aria-labelledby="mitarbeiter-title">
+  <section class="section" aria-labelledby="mitarbeiter-title" data-lw-section="mitarbeiter">
     <div class="container">
       <header class="section-head reveal">
-        <p class="eyebrow">Das Team</p>
-        <h2 id="mitarbeiter-title">Gesichter, die man kennt.<br />Menschen, die für Sie da sind.</h2>
-        <p class="section-head__sub">
+        <p class="eyebrow" data-lw-field="mitarbeiter.eyebrow" data-lw-type="text">Das Team</p>
+        <h2 id="mitarbeiter-title" data-lw-field="mitarbeiter.heading" data-lw-type="richtext">Gesichter, die man kennt.<br />Menschen, die für Sie da sind.</h2>
+        <p class="section-head__sub" data-lw-field="mitarbeiter.copy" data-lw-type="textarea">
           Hinter jeder Tour und jedem Besuch stehen Kolleginnen und Kollegen mit Fachwissen und mit Herz –
           nahbar, verlässlich und für Sie erreichbar, wenn Sie jemanden brauchen.
         </p>
       </header>
       <ul class="uj-staff reveal">
-        <li class="uj-staff__item">
-          <img src="assets/images/avatars/anna-keller.svg" alt="" width="240" height="240" loading="lazy" data-lw-decorative="true" />
+        <li class="uj-staff__item" data-lw-field="mitarbeiter.item" data-lw-type="richtext">
+          <img src="assets/images/avatars/anna-keller.svg" alt="" width="240" height="240" loading="lazy" data-lw-decorative="true" data-lw-field="mitarbeiter.image" data-lw-type="image" />
           <div class="uj-staff__meta">
             <span class="uj-staff__name">Anna Keller</span>
             <span class="uj-staff__title">Pflegefachkraft</span>
           </div>
         </li>
-        <li class="uj-staff__item">
-          <img src="assets/images/avatars/markus-weber.svg" alt="" width="240" height="240" loading="lazy" data-lw-decorative="true" />
+        <li class="uj-staff__item" data-lw-field="mitarbeiter.item_2" data-lw-type="richtext">
+          <img src="assets/images/avatars/markus-weber.svg" alt="" width="240" height="240" loading="lazy" data-lw-decorative="true" data-lw-field="mitarbeiter.image_2" data-lw-type="image" />
           <div class="uj-staff__meta">
             <span class="uj-staff__name">Markus Weber</span>
             <span class="uj-staff__title">Ambulante Pflege</span>
           </div>
         </li>
-        <li class="uj-staff__item">
-          <img src="assets/images/avatars/lena-hoffmann.svg" alt="" width="240" height="240" loading="lazy" data-lw-decorative="true" />
+        <li class="uj-staff__item" data-lw-field="mitarbeiter.item_3" data-lw-type="richtext">
+          <img src="assets/images/avatars/lena-hoffmann.svg" alt="" width="240" height="240" loading="lazy" data-lw-decorative="true" data-lw-field="mitarbeiter.image_3" data-lw-type="image" />
           <div class="uj-staff__meta">
             <span class="uj-staff__name">Lena Hoffmann</span>
             <span class="uj-staff__title">Betreuung &amp; Alltag</span>
           </div>
         </li>
-        <li class="uj-staff__item">
-          <img src="assets/images/avatars/thomas-braun.svg" alt="" width="240" height="240" loading="lazy" data-lw-decorative="true" />
+        <li class="uj-staff__item" data-lw-field="mitarbeiter.item_4" data-lw-type="richtext">
+          <img src="assets/images/avatars/thomas-braun.svg" alt="" width="240" height="240" loading="lazy" data-lw-decorative="true" data-lw-field="mitarbeiter.image_4" data-lw-type="image" />
           <div class="uj-staff__meta">
             <span class="uj-staff__name">Thomas Braun</span>
             <span class="uj-staff__title">Pflegefachkraft</span>
           </div>
         </li>
-        <li class="uj-staff__item">
-          <img src="assets/images/avatars/julia-richter.svg" alt="" width="240" height="240" loading="lazy" data-lw-decorative="true" />
+        <li class="uj-staff__item" data-lw-field="mitarbeiter.item_5" data-lw-type="richtext">
+          <img src="assets/images/avatars/julia-richter.svg" alt="" width="240" height="240" loading="lazy" data-lw-decorative="true" data-lw-field="mitarbeiter.image_5" data-lw-type="image" />
           <div class="uj-staff__meta">
             <span class="uj-staff__name">Julia Richter</span>
             <span class="uj-staff__title">Einsatzplanung</span>
           </div>
         </li>
-        <li class="uj-staff__item">
-          <img src="assets/images/avatars/stefan-mayer.svg" alt="" width="240" height="240" loading="lazy" data-lw-decorative="true" />
+        <li class="uj-staff__item" data-lw-field="mitarbeiter.item_6" data-lw-type="richtext">
+          <img src="assets/images/avatars/stefan-mayer.svg" alt="" width="240" height="240" loading="lazy" data-lw-decorative="true" data-lw-field="mitarbeiter.image_6" data-lw-type="image" />
           <div class="uj-staff__meta">
             <span class="uj-staff__name">Stefan Mayer</span>
             <span class="uj-staff__title">Ambulante Pflege</span>
           </div>
         </li>
-        <li class="uj-staff__item">
-          <img src="assets/images/avatars/nina-schaefer.svg" alt="" width="240" height="240" loading="lazy" data-lw-decorative="true" />
+        <li class="uj-staff__item" data-lw-field="mitarbeiter.item_7" data-lw-type="richtext">
+          <img src="assets/images/avatars/nina-schaefer.svg" alt="" width="240" height="240" loading="lazy" data-lw-decorative="true" data-lw-field="mitarbeiter.image_7" data-lw-type="image" />
           <div class="uj-staff__meta">
             <span class="uj-staff__name">Nina Schäfer</span>
             <span class="uj-staff__title">Betreuung Brückenmühle</span>
           </div>
         </li>
-        <li class="uj-staff__item">
-          <img src="assets/images/avatars/david-koenig.svg" alt="" width="240" height="240" loading="lazy" data-lw-decorative="true" />
+        <li class="uj-staff__item" data-lw-field="mitarbeiter.item_8" data-lw-type="richtext">
+          <img src="assets/images/avatars/david-koenig.svg" alt="" width="240" height="240" loading="lazy" data-lw-decorative="true" data-lw-field="mitarbeiter.image_8" data-lw-type="image" />
           <div class="uj-staff__meta">
             <span class="uj-staff__name">David König</span>
             <span class="uj-staff__title">Hauswirtschaft &amp; Service</span>
@@ -507,29 +507,29 @@
   </section>
 
   <!-- ============ STANDORTE ============ -->
-  <section class="location section section--cream" id="standort" aria-labelledby="loc-title">
+  <section class="location section section--cream" id="standort" aria-labelledby="loc-title" data-lw-section="standort">
     <div class="location__panel">
       <div class="location__bg">
-        <video class="location__video" autoplay muted loop playsinline poster="assets/images/cafe-2.webp" aria-hidden="true">
+        <video class="location__video" autoplay muted loop playsinline poster="assets/images/cafe-2.webp" aria-hidden="true" src="assets/video/gernsbach.mp4" data-lw-field="standort.video" data-lw-type="video">
           <source src="assets/video/gernsbach.mp4" type="video/mp4" />
         </video>
         <div class="location__bg-scrim"></div>
       </div>
       <div class="container location__inner">
         <div class="location__text reveal">
-          <p class="eyebrow eyebrow--light">Standorte</p>
-          <h2 id="loc-title">Baden-Baden &amp; Gernsbach&nbsp;–<br />nah an den Menschen</h2>
-          <p class="lead">
+          <p class="eyebrow eyebrow--light" data-lw-field="standort.eyebrow" data-lw-type="text">Standorte</p>
+          <h2 id="loc-title" data-lw-field="standort.heading" data-lw-type="richtext">Baden-Baden &amp; Gernsbach&nbsp;–<br />nah an den Menschen</h2>
+          <p class="lead" data-lw-field="standort.copy" data-lw-type="textarea">
             Ambulante Pflege dort, wo Alltag stattfindet. Betreutes Wohnen dort, wo Stadt und Natur zusammentreffen.
             Zwei Orte, eine Haltung: nah, erreichbar und fest in der Region verwurzelt.
           </p>
           <ul class="location__list">
-            <li><strong>Baden-Baden:</strong> Schwerpunkt ambulante Pflege · Büro Sonnenplatz 2</li>
-            <li><strong>Gernsbach:</strong> Betreutes Wohnen Brückenmühle · Altstadt &amp; Murgtal</li>
-            <li>Einzugsgebiet: Baden-Baden und Umgebung</li>
+            <li data-lw-field="standort.item" data-lw-type="richtext"><strong>Baden-Baden:</strong> Schwerpunkt ambulante Pflege · Büro Sonnenplatz 2</li>
+            <li data-lw-field="standort.item_2" data-lw-type="richtext"><strong>Gernsbach:</strong> Betreutes Wohnen Brückenmühle · Altstadt &amp; Murgtal</li>
+            <li data-lw-field="standort.item_3" data-lw-type="richtext">Einzugsgebiet: Baden-Baden und Umgebung</li>
           </ul>
           <a class="btn btn--primary" href="#einzugsgebiet">
-            Zur Einzugsgebietskarte
+            <span data-lw-field="standort.cta" data-lw-type="text">Zur Einzugsgebietskarte</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
         </div>
@@ -537,12 +537,12 @@
     </div>
   </section>
 
-  <section class="section section--cream" id="einzugsgebiet" aria-labelledby="map-title">
+  <section class="section section--cream" id="einzugsgebiet" aria-labelledby="map-title" data-lw-section="einzugsgebiet">
     <div class="container">
       <header class="section-head reveal">
-        <p class="eyebrow">Einzugsgebiet</p>
-        <h2 id="map-title">Nah dran – in Baden-Baden<br />und der Region</h2>
-        <p class="section-head__sub">
+        <p class="eyebrow" data-lw-field="einzugsgebiet.eyebrow" data-lw-type="text">Einzugsgebiet</p>
+        <h2 id="map-title" data-lw-field="einzugsgebiet.heading" data-lw-type="richtext">Nah dran – in Baden-Baden<br />und der Region</h2>
+        <p class="section-head__sub" data-lw-field="einzugsgebiet.copy" data-lw-type="textarea">
           Ambulante Pflege vom Sonnenplatz in Baden-Baden aus, Betreutes Wohnen in der Brückenmühle Gernsbach – und ein Einzugsgebiet, das den gesamten Landkreis Rastatt mitdenkt.
         </p>
       </header>
@@ -564,19 +564,19 @@
             </svg>
           </div>
           <ul class="uj-map-legend" aria-label="Kartenlegende">
-            <li>
+            <li data-lw-field="einzugsgebiet.item" data-lw-type="richtext">
               <button type="button" class="uj-map-legend__item is-active" data-loc="baden-baden">
                 <span class="uj-map-legend__swatch uj-map-legend__swatch--baden" aria-hidden="true"></span>
                 <span>Baden-Baden</span>
               </button>
             </li>
-            <li>
+            <li data-lw-field="einzugsgebiet.item_2" data-lw-type="richtext">
               <button type="button" class="uj-map-legend__item" data-loc="rastatt">
                 <span class="uj-map-legend__swatch uj-map-legend__swatch--rastatt" aria-hidden="true"></span>
                 <span>Landkreis Rastatt</span>
               </button>
             </li>
-            <li>
+            <li data-lw-field="einzugsgebiet.item_3" data-lw-type="richtext">
               <button type="button" class="uj-map-legend__item" data-loc="gernsbach">
                 <span class="uj-map-legend__swatch uj-map-legend__swatch--gernsbach" aria-hidden="true"></span>
                 <span>Gernsbach</span>
@@ -588,12 +588,12 @@
         <div class="uj-places uj-places--stack" aria-live="polite">
           <article class="uj-place" id="place-baden-baden" data-loc="baden-baden">
             <div class="uj-place__body">
-              <p class="eyebrow">Baden-Baden</p>
-              <h3>Ambulante Pflege als Kerngeschäft</h3>
-              <p class="uj-place__teaser">
+              <p class="eyebrow" data-lw-field="einzugsgebiet.eyebrow_2" data-lw-type="text">Baden-Baden</p>
+              <h3 data-lw-field="einzugsgebiet.heading_2" data-lw-type="richtext">Ambulante Pflege als Kerngeschäft</h3>
+              <p class="uj-place__teaser" data-lw-field="einzugsgebiet.copy_2" data-lw-type="textarea">
                 Vom Sonnenplatz aus begleiten wir Menschen und Angehörige im Alltag – mit festen Bezugspersonen und klarer Orientierung.
               </p>
-              <p class="uj-place__address">
+              <p class="uj-place__address" data-lw-field="einzugsgebiet.copy_3" data-lw-type="textarea">
                 <span class="uj-place__pin" aria-hidden="true">
                   <svg viewBox="0 0 24 24"><path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
                 </span>
@@ -604,22 +604,22 @@
               <div class="uj-place__expand-inner">
                 <div class="uj-place__detail">
                   <ul class="bw-checklist">
-                    <li>Schwerpunkt ambulante Pflege</li>
-                    <li>Pflegegrad &amp; Finanzierung verständlich erklärt</li>
+                    <li data-lw-field="einzugsgebiet.item_4" data-lw-type="richtext">Schwerpunkt ambulante Pflege</li>
+                    <li data-lw-field="einzugsgebiet.item_5" data-lw-type="richtext">Pflegegrad &amp; Finanzierung verständlich erklärt</li>
                   </ul>
-                  <a class="btn btn--outline" href="pflege-beratung.html">Zur Pflege &amp; Beratung</a>
+                  <a class="btn btn--outline" href="pflege-beratung.html"><span data-lw-field="einzugsgebiet.cta" data-lw-type="text">Zur Pflege &amp; Beratung</span></a>
                 </div>
               </div>
             </div>
           </article>
           <article class="uj-place" id="place-gernsbach" data-loc="gernsbach">
             <div class="uj-place__body">
-              <p class="eyebrow">Gernsbach</p>
-              <h3>Betreutes Wohnen in der Brückenmühle</h3>
-              <p class="uj-place__teaser">
+              <p class="eyebrow" data-lw-field="einzugsgebiet.eyebrow_3" data-lw-type="text">Gernsbach</p>
+              <h3 data-lw-field="einzugsgebiet.heading_3" data-lw-type="richtext">Betreutes Wohnen in der Brückenmühle</h3>
+              <p class="uj-place__teaser" data-lw-field="einzugsgebiet.copy_4" data-lw-type="textarea">
                 Eigene Apartments, Café und Gemeinschaft mitten in Gernsbach – und ambulante Pflege nah, wenn Bedarf entsteht.
               </p>
-              <p class="uj-place__address">
+              <p class="uj-place__address" data-lw-field="einzugsgebiet.copy_5" data-lw-type="textarea">
                 <span class="uj-place__pin" aria-hidden="true">
                   <svg viewBox="0 0 24 24"><path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
                 </span>
@@ -630,10 +630,10 @@
               <div class="uj-place__expand-inner">
                 <div class="uj-place__detail">
                   <ul class="bw-checklist">
-                    <li>Altstadt &amp; Murgtal in der Nähe</li>
-                    <li>Pflegeanschluss, der mitwachsen kann</li>
+                    <li data-lw-field="einzugsgebiet.item_6" data-lw-type="richtext">Altstadt &amp; Murgtal in der Nähe</li>
+                    <li data-lw-field="einzugsgebiet.item_7" data-lw-type="richtext">Pflegeanschluss, der mitwachsen kann</li>
                   </ul>
-                  <a class="btn btn--outline" href="betreutes-wohnen.html">Zum Betreuten Wohnen</a>
+                  <a class="btn btn--outline" href="betreutes-wohnen.html"><span data-lw-field="einzugsgebiet.cta_2" data-lw-type="text">Zum Betreuten Wohnen</span></a>
                 </div>
               </div>
             </div>
@@ -644,16 +644,16 @@
   </section>
 
   <!-- ============ PHILOSOPHIE ============ -->
-  <section class="story section" id="philosophie" aria-labelledby="philosophie-title">
+  <section class="story section" id="philosophie" aria-labelledby="philosophie-title" data-lw-section="philosophie">
     <div class="container story__grid story__grid--flip">
       <div class="story__text reveal">
-        <span class="section-label">Philosophie &amp; Werte</span>
-        <h2 id="philosophie-title">Der Mensch zählt&nbsp;–<br />nicht die Nummer im Plan.</h2>
-        <p class="story__lead">
+        <span class="section-label" data-lw-field="philosophie.eyebrow" data-lw-type="text">Philosophie &amp; Werte</span>
+        <h2 id="philosophie-title" data-lw-field="philosophie.heading" data-lw-type="richtext">Der Mensch zählt&nbsp;–<br />nicht die Nummer im Plan.</h2>
+        <p class="story__lead" data-lw-field="philosophie.copy" data-lw-type="textarea">
           Gute Pflege verbindet das Beste aus Nähe und Fachlichkeit:
           Zeit für den Menschen, klare Absprachen und Lösungen, die zum Alltag passen.
         </p>
-        <p>
+        <p data-lw-field="philosophie.copy_2" data-lw-type="textarea">
           Wir wollen keine anonyme Versorgung und keine Einheitslösung.
           Stattdessen: individuelle Planung, feste Gesichter und die Bereitschaft,
           Angehörige mitzunehmen – durch den Pflegegrad- und Finanzierungsdschungel hindurch.
@@ -661,225 +661,225 @@
         </p>
         <div class="story__actions">
           <a class="btn btn--primary" href="pflege-beratung.html">
-            Zur ambulanten Pflege
+            <span data-lw-field="philosophie.cta" data-lw-type="text">Zur ambulanten Pflege</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
-          <a class="btn btn--outline" href="stellenanzeigen.html">Zum Team werden</a>
+          <a class="btn btn--outline" href="stellenanzeigen.html"><span data-lw-field="philosophie.cta_2" data-lw-type="text">Zum Team werden</span></a>
         </div>
       </div>
       <div class="story__collage story__collage--single reveal">
         <div class="story__collage-img story__collage-img--tall">
-          <img src="assets/images/leistungen-wave.webp" alt="Individuelle Pflege und Beratung bei Juventa" loading="lazy" width="1920" height="1080" />
+          <img src="assets/images/leistungen-wave.webp" alt="Individuelle Pflege und Beratung bei Juventa" loading="lazy" width="1920" height="1080" data-lw-field="philosophie.image" data-lw-type="image" />
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section section--cream" aria-labelledby="werte-title">
+  <section class="section section--cream" aria-labelledby="werte-title" data-lw-section="werte">
     <div class="container">
       <header class="section-head reveal">
-        <p class="eyebrow">Was uns trägt</p>
-        <h2 id="werte-title">Sechs Werte, die man<br />im Alltag spüren soll</h2>
-        <p class="section-head__sub">Kein Versprechen von Perfektion. Sondern eine klare Richtung – für Pflegebedürftige, Angehörige und das Team.</p>
+        <p class="eyebrow" data-lw-field="werte.eyebrow" data-lw-type="text">Was uns trägt</p>
+        <h2 id="werte-title" data-lw-field="werte.heading" data-lw-type="richtext">Sechs Werte, die man<br />im Alltag spüren soll</h2>
+        <p class="section-head__sub" data-lw-field="werte.copy" data-lw-type="textarea">Kein Versprechen von Perfektion. Sondern eine klare Richtung – für Pflegebedürftige, Angehörige und das Team.</p>
       </header>
       <div class="bw-pillars uj-values reveal">
         <article class="bw-pillar">
           <span class="bw-pillar__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
           </span>
-          <h3>Individuelle Planung</h3>
-          <p>Jeder Plan entsteht gemeinsam mit Ihnen – passend zu Ihrem Alltag, nicht zum Schema.</p>
+          <h3 data-lw-field="werte.heading_2" data-lw-type="richtext">Individuelle Planung</h3>
+          <p data-lw-field="werte.copy_2" data-lw-type="textarea">Jeder Plan entsteht gemeinsam mit Ihnen – passend zu Ihrem Alltag, nicht zum Schema.</p>
         </article>
         <article class="bw-pillar">
           <span class="bw-pillar__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
           </span>
-          <h3>Menschlichkeit zuerst</h3>
-          <p>Würde, Zeit und ein offenes Ohr gehören zur Pflege dazu. Der Mensch zählt, nicht die Nummer.</p>
+          <h3 data-lw-field="werte.heading_3" data-lw-type="richtext">Menschlichkeit zuerst</h3>
+          <p data-lw-field="werte.copy_3" data-lw-type="textarea">Würde, Zeit und ein offenes Ohr gehören zur Pflege dazu. Der Mensch zählt, nicht die Nummer.</p>
         </article>
         <article class="bw-pillar">
           <span class="bw-pillar__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           </span>
-          <h3>Erfahrung mit Herz</h3>
-          <p>Fachlich stark und nahbar: Kompetenz, die Sicherheit gibt – und Zuwendung, die bleibt.</p>
+          <h3 data-lw-field="werte.heading_4" data-lw-type="richtext">Erfahrung mit Herz</h3>
+          <p data-lw-field="werte.copy_4" data-lw-type="textarea">Fachlich stark und nahbar: Kompetenz, die Sicherheit gibt – und Zuwendung, die bleibt.</p>
         </article>
         <article class="bw-pillar">
           <span class="bw-pillar__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           </span>
-          <h3>Feste Ansprechpartner</h3>
-          <p>Vertrauen entsteht durch Kontinuität. Deshalb setzen wir auf Gesichter, die Sie kennenlernen.</p>
+          <h3 data-lw-field="werte.heading_5" data-lw-type="richtext">Feste Ansprechpartner</h3>
+          <p data-lw-field="werte.copy_5" data-lw-type="textarea">Vertrauen entsteht durch Kontinuität. Deshalb setzen wir auf Gesichter, die Sie kennenlernen.</p>
         </article>
         <article class="bw-pillar">
           <span class="bw-pillar__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </span>
-          <h3>Partner für Angehörige</h3>
-          <p>Wir entlasten, beraten und begleiten die ganze Familie – durch Anträge, Entscheidungen und den Alltag.</p>
+          <h3 data-lw-field="werte.heading_6" data-lw-type="richtext">Partner für Angehörige</h3>
+          <p data-lw-field="werte.copy_6" data-lw-type="textarea">Wir entlasten, beraten und begleiten die ganze Familie – durch Anträge, Entscheidungen und den Alltag.</p>
         </article>
         <article class="bw-pillar">
           <span class="bw-pillar__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/></svg>
           </span>
-          <h3>Lösungen aus einer Hand</h3>
-          <p>Ambulante Pflege, Betreuung, Betreutes Wohnen: unkompliziert kombinierbar, wenn der Bedarf wächst.</p>
+          <h3 data-lw-field="werte.heading_7" data-lw-type="richtext">Lösungen aus einer Hand</h3>
+          <p data-lw-field="werte.copy_7" data-lw-type="textarea">Ambulante Pflege, Betreuung, Betreutes Wohnen: unkompliziert kombinierbar, wenn der Bedarf wächst.</p>
         </article>
       </div>
     </div>
   </section>
 
   <!-- ============ STELLEN ============ -->
-  <section class="story section" id="stellen" aria-labelledby="stellen-title">
+  <section class="story section" id="stellen" aria-labelledby="stellen-title" data-lw-section="stellen">
     <div class="container story__grid">
       <div class="story__collage story__collage--single reveal">
         <div class="story__collage-img story__collage-img--tall">
-          <img src="assets/images/img-kontakt.webp" alt="Persönliches Miteinander im Team von Juventa" loading="lazy" width="1024" height="683" />
+          <img src="assets/images/img-kontakt.webp" alt="Persönliches Miteinander im Team von Juventa" loading="lazy" width="1024" height="683" data-lw-field="stellen.image" data-lw-type="image" />
         </div>
       </div>
 
       <div class="story__text reveal">
-        <span class="section-label">Stellenangebote</span>
-        <h2 id="stellen-title">Gute Pflege braucht Menschen<br />mit Herz.</h2>
-        <p class="story__lead">
+        <span class="section-label" data-lw-field="stellen.eyebrow" data-lw-type="text">Stellenangebote</span>
+        <h2 id="stellen-title" data-lw-field="stellen.heading" data-lw-type="richtext">Gute Pflege braucht Menschen<br />mit Herz.</h2>
+        <p class="story__lead" data-lw-field="stellen.copy" data-lw-type="textarea">
           Bei Juventa zählt nicht nur Erfahrung – sondern Menschlichkeit, Teamgeist und Freude am Umgang mit Menschen.
         </p>
-        <p>
+        <p data-lw-field="stellen.copy_2" data-lw-type="textarea">
           Ob Fachkraft, Präsenzkraft oder Quereinsteiger: Wir suchen Kolleginnen und Kollegen,
           die Nähe ernst nehmen und Verantwortung teilen wollen.
           In Baden-Baden und Gernsbach bauen wir etwas auf, das bleibt – und das nur mit guten Menschen gelingt.
         </p>
         <ul class="bw-checklist">
-          <li>Flexible Arbeitszeiten</li>
-          <li>Wertschätzendes Miteinander</li>
-          <li>Quereinstieg möglich</li>
-          <li>Faire Bezahlung</li>
-          <li>Entwicklung mit dem Unternehmen</li>
+          <li data-lw-field="stellen.item" data-lw-type="richtext">Flexible Arbeitszeiten</li>
+          <li data-lw-field="stellen.item_2" data-lw-type="richtext">Wertschätzendes Miteinander</li>
+          <li data-lw-field="stellen.item_3" data-lw-type="richtext">Quereinstieg möglich</li>
+          <li data-lw-field="stellen.item_4" data-lw-type="richtext">Faire Bezahlung</li>
+          <li data-lw-field="stellen.item_5" data-lw-type="richtext">Entwicklung mit dem Unternehmen</li>
         </ul>
         <div class="story__actions">
           <a class="btn btn--primary" href="stellenanzeigen.html">
-            Alle Stellenanzeigen
+            <span data-lw-field="stellen.cta" data-lw-type="text">Alle Stellenanzeigen</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
-          <a class="btn btn--outline" href="mailto:info@juventa-pflege.de?subject=Bewerbung%20%E2%80%93%20Juventa">Initiativ bewerben</a>
+          <a class="btn btn--outline" href="mailto:info@juventa-pflege.de?subject=Bewerbung%20%E2%80%93%20Juventa"><span data-lw-field="stellen.cta_2" data-lw-type="text">Initiativ bewerben</span></a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section section--cream" aria-labelledby="stellen-hinweis-title">
+  <section class="section section--cream" aria-labelledby="stellen-hinweis-title" data-lw-section="stellen-hinweis">
     <div class="container uj-jobs reveal">
       <header class="section-head">
-        <p class="eyebrow">Aktuell</p>
-        <h2 id="stellen-hinweis-title">Offene Stellen – und Initiativbewerbungen</h2>
-        <p class="section-head__sub">
+        <p class="eyebrow" data-lw-field="stellen-hinweis.eyebrow" data-lw-type="text">Aktuell</p>
+        <h2 id="stellen-hinweis-title" data-lw-field="stellen-hinweis.heading" data-lw-type="richtext">Offene Stellen – und Initiativbewerbungen</h2>
+        <p class="section-head__sub" data-lw-field="stellen-hinweis.copy" data-lw-type="textarea">
           Pflegefachkraft, Präsenzkraft und Initiativbewerbung: Details und Bewerbung finden Sie auf unserer Karriereseite.
         </p>
       </header>
       <div class="uj-jobs__panel">
         <div class="uj-jobs__item">
-          <h3>Offene Stellen</h3>
-          <p>Aktuelle Ausschreibungen, Rahmenbedingungen und der Weg zur Bewerbung – alles an einem Ort.</p>
-          <a class="btn btn--outline" href="stellenanzeigen.html">Zur Karriereseite</a>
+          <h3 data-lw-field="stellen-hinweis.heading_2" data-lw-type="richtext">Offene Stellen</h3>
+          <p data-lw-field="stellen-hinweis.copy_2" data-lw-type="textarea">Aktuelle Ausschreibungen, Rahmenbedingungen und der Weg zur Bewerbung – alles an einem Ort.</p>
+          <a class="btn btn--outline" href="stellenanzeigen.html"><span data-lw-field="stellen-hinweis.cta" data-lw-type="text">Zur Karriereseite</span></a>
         </div>
         <div class="uj-jobs__item">
-          <h3>Gespräch ohne Bewerbung</h3>
-          <p>Erst kennenlernen? Rufen Sie an. Wir erzählen offen, wie der Alltag bei Juventa aussieht – und was uns wichtig ist.</p>
-          <a class="btn btn--outline" href="tel:+491785254075">+49 178 5254075</a>
+          <h3 data-lw-field="stellen-hinweis.heading_3" data-lw-type="richtext">Gespräch ohne Bewerbung</h3>
+          <p data-lw-field="stellen-hinweis.copy_3" data-lw-type="textarea">Erst kennenlernen? Rufen Sie an. Wir erzählen offen, wie der Alltag bei Juventa aussieht – und was uns wichtig ist.</p>
+          <a class="btn btn--outline" href="tel:+491785254075"><span data-lw-field="stellen-hinweis.cta_2" data-lw-type="text">+49 178 5254075</span></a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============ FAQ ============ -->
-  <section class="faq section" id="faq" aria-labelledby="faq-title">
+  <section class="faq section" id="faq" aria-labelledby="faq-title" data-lw-section="faq">
     <div class="container">
       <header class="section-head reveal">
-        <span class="section-label">FAQ</span>
-        <h2 id="faq-title">Fragen zu Juventa</h2>
-        <p class="section-head__sub">Kurz beantwortet – zu Team, Standorten, Haltung und dem Einstieg ins Gespräch.</p>
+        <span class="section-label" data-lw-field="faq.eyebrow" data-lw-type="text">FAQ</span>
+        <h2 id="faq-title" data-lw-field="faq.heading" data-lw-type="richtext">Fragen zu Juventa</h2>
+        <p class="section-head__sub" data-lw-field="faq.copy" data-lw-type="textarea">Kurz beantwortet – zu Team, Standorten, Haltung und dem Einstieg ins Gespräch.</p>
       </header>
 
       <div class="faq__wrap">
         <div class="faq__media reveal">
           <div class="faq__img">
-            <img src="assets/images/team.webp" alt="Team und Ansprechpartner bei Juventa" width="1024" height="683" loading="lazy" />
+            <img src="assets/images/team.webp" alt="Team und Ansprechpartner bei Juventa" width="1024" height="683" loading="lazy" data-lw-field="faq.image" data-lw-type="image" />
           </div>
           <div class="faq__badge">
             <span class="faq__badge-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
             </span>
-            <span>Nähe, Kompetenz und Selbstbestimmung – das ist Juventa.</span>
+            <span data-lw-field="faq.badge" data-lw-type="text">Nähe, Kompetenz und Selbstbestimmung – das ist Juventa.</span>
           </div>
         </div>
 
         <div class="faq__content">
-          <div class="faq__list reveal">
-            <article class="faq__item">
+          <div class="faq__list reveal" data-lw-repeater="faq.items">
+            <article class="faq__item" data-lw-item-key="item-1">
               <h3 class="faq__question">
                 <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="uj-faq-1" id="uj-faq-trigger-1">
-                  <span>Wer steckt hinter Juventa?</span>
+                  <span data-lw-field="faq.question" data-lw-type="text">Wer steckt hinter Juventa?</span>
                   <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
                 </button>
               </h3>
               <div class="faq__panel" id="uj-faq-1" role="region" aria-labelledby="uj-faq-trigger-1" hidden>
-                <p>Hinter Juventa stehen Fee Schmid und Fabian Lepold – mit Erfahrung in Pflege, Betreuung und Wohnkonzepten. Gemeinsam mit dem Team in Baden-Baden und Gernsbach verbinden wir Fachlichkeit mit Nähe.</p>
+                <p data-lw-field="faq.copy" data-lw-type="textarea">Hinter Juventa stehen Fee Schmid und Fabian Lepold – mit Erfahrung in Pflege, Betreuung und Wohnkonzepten. Gemeinsam mit dem Team in Baden-Baden und Gernsbach verbinden wir Fachlichkeit mit Nähe.</p>
               </div>
             </article>
 
-            <article class="faq__item">
+            <article class="faq__item" data-lw-item-key="item-2">
               <h3 class="faq__question">
                 <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="uj-faq-2" id="uj-faq-trigger-2">
-                  <span>Wo ist Juventa aktiv?</span>
+                  <span data-lw-field="faq.question" data-lw-type="text">Wo ist Juventa aktiv?</span>
                   <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
                 </button>
               </h3>
               <div class="faq__panel" id="uj-faq-2" role="region" aria-labelledby="uj-faq-trigger-2" hidden>
-                <p>Ambulante Pflege rund um Baden-Baden sowie Betreutes Wohnen in der Brückenmühle Gernsbach. Das Einzugsgebiet umfasst auch Murgtal und Rastatt – Details klären wir gerne im Gespräch.</p>
+                <p data-lw-field="faq.copy" data-lw-type="textarea">Ambulante Pflege rund um Baden-Baden sowie Betreutes Wohnen in der Brückenmühle Gernsbach. Das Einzugsgebiet umfasst auch Murgtal und Rastatt – Details klären wir gerne im Gespräch.</p>
               </div>
             </article>
 
-            <article class="faq__item">
+            <article class="faq__item" data-lw-item-key="item-3">
               <h3 class="faq__question">
                 <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="uj-faq-3" id="uj-faq-trigger-3">
-                  <span>Was unterscheidet Juventa von anderen Anbietern?</span>
+                  <span data-lw-field="faq.question" data-lw-type="text">Was unterscheidet Juventa von anderen Anbietern?</span>
                   <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
                 </button>
               </h3>
               <div class="faq__panel" id="uj-faq-3" role="region" aria-labelledby="uj-faq-trigger-3" hidden>
-                <p>Wir denken Pflege und Wohnen zusammen: feste Bezugspersonen, verständliche Beratung und ein Alltag, der sich nach Leben anfühlt – nicht nach System.</p>
+                <p data-lw-field="faq.copy" data-lw-type="textarea">Wir denken Pflege und Wohnen zusammen: feste Bezugspersonen, verständliche Beratung und ein Alltag, der sich nach Leben anfühlt – nicht nach System.</p>
               </div>
             </article>
 
-            <article class="faq__item">
+            <article class="faq__item" data-lw-item-key="item-4">
               <h3 class="faq__question">
                 <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="uj-faq-4" id="uj-faq-trigger-4">
-                  <span>Kann ich das Team persönlich kennenlernen?</span>
+                  <span data-lw-field="faq.question" data-lw-type="text">Kann ich das Team persönlich kennenlernen?</span>
                   <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
                 </button>
               </h3>
               <div class="faq__panel" id="uj-faq-4" role="region" aria-labelledby="uj-faq-trigger-4" hidden>
-                <p>Ja. Ob Beratung, Besichtigung oder Kennenlerngespräch: Wir nehmen uns Zeit und freuen uns auf den direkten Austausch.</p>
+                <p data-lw-field="faq.copy" data-lw-type="textarea">Ja. Ob Beratung, Besichtigung oder Kennenlerngespräch: Wir nehmen uns Zeit und freuen uns auf den direkten Austausch.</p>
               </div>
             </article>
 
-            <article class="faq__item">
+            <article class="faq__item" data-lw-item-key="item-5">
               <h3 class="faq__question">
                 <button class="faq__trigger" type="button" aria-expanded="false" aria-controls="uj-faq-5" id="uj-faq-trigger-5">
-                  <span>Gibt es offene Stellen bei Juventa?</span>
+                  <span data-lw-field="faq.question" data-lw-type="text">Gibt es offene Stellen bei Juventa?</span>
                   <span class="faq__toggle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
                 </button>
               </h3>
               <div class="faq__panel" id="uj-faq-5" role="region" aria-labelledby="uj-faq-trigger-5" hidden>
-                <p>Ja. Aktuelle Ausschreibungen und Initiativbewerbungen finden Sie auf unserer Seite Stellenanzeigen. Schreiben Sie uns gerne – auch ohne fertiges Stellenprofil.</p>
+                <p data-lw-field="faq.copy" data-lw-type="textarea">Ja. Aktuelle Ausschreibungen und Initiativbewerbungen finden Sie auf unserer Seite Stellenanzeigen. Schreiben Sie uns gerne – auch ohne fertiges Stellenprofil.</p>
               </div>
             </article>
           </div>
 
           <div class="faq__cta reveal">
-            <p>Noch Fragen zu Juventa?</p>
+            <p data-lw-field="faq.copy_2" data-lw-type="textarea">Noch Fragen zu Juventa?</p>
             <a href="kontakt.html" class="btn btn--primary btn--lg">
-              Persönlich sprechen
+              <span data-lw-field="faq.cta" data-lw-type="text">Persönlich sprechen</span>
               <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
           </div>
@@ -889,47 +889,47 @@
   </section>
 
   <!-- ============ KONTAKT ============ -->
-  <section class="contact section" id="kontakt" aria-labelledby="contact-title">
+  <section class="contact section" id="kontakt" aria-labelledby="contact-title" data-lw-section="kontakt">
     <div class="container">
       <div class="contact__wrap reveal">
         <div class="contact__panel">
-          <span class="section-label">Kontakt</span>
-          <h2 id="contact-title">Lassen Sie uns persönlich sprechen&nbsp;–<br /><span class="headline-accent">über Pflege, Wohnen oder Zusammenarbeit.</span></h2>
-          <p>
+          <span class="section-label" data-lw-field="kontakt.eyebrow" data-lw-type="text">Kontakt</span>
+          <h2 id="contact-title" data-lw-field="kontakt.heading" data-lw-type="richtext">Lassen Sie uns persönlich sprechen&nbsp;–<br /><span class="headline-accent">über Pflege, Wohnen oder Zusammenarbeit.</span></h2>
+          <p data-lw-field="kontakt.copy" data-lw-type="textarea">
             Ob Beratung für Angehörige, Besichtigung der Brückenmühle oder Interesse an einer Stelle:
             Wir nehmen uns Zeit – nahbar, klar und ohne Druck.
           </p>
-          <div class="contact__items">
-            <div class="contact__item">
+          <div class="contact__items" data-lw-repeater="contact.items">
+            <div class="contact__item" data-lw-item-key="item-1">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
               <div><strong>Mobil</strong><a href="tel:+491785254075">+49 178 5254075</a></div>
             </div>
-            <div class="contact__item">
+            <div class="contact__item" data-lw-item-key="item-2">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
               <div><strong>Festnetz</strong><a href="tel:+4972219959934">+49 7221 9959934</a></div>
             </div>
-            <div class="contact__item">
+            <div class="contact__item" data-lw-item-key="item-3">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></span>
               <div><strong>E-Mail</strong><a href="mailto:info@juventa-pflege.de">info@juventa-pflege.de</a></div>
             </div>
-            <div class="contact__item">
+            <div class="contact__item" data-lw-item-key="item-4">
               <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
               <div><strong>Standorte</strong><span>Sonnenplatz 2, Baden-Baden · Brückenmühle Gernsbach</span></div>
             </div>
           </div>
           <div class="contact__actions">
             <a href="tel:+491785254075" class="btn btn--primary btn--lg">
-              Rückruf / Anrufen
+              <span data-lw-field="kontakt.cta" data-lw-type="text">Rückruf / Anrufen</span>
               <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
             <a href="mailto:info@juventa-pflege.de?subject=%C3%9Cber%20Juventa%20%E2%80%93%20Anfrage" class="btn btn--outline-light btn--lg">
-              Nachricht senden
+              <span data-lw-field="kontakt.cta_2" data-lw-type="text">Nachricht senden</span>
               <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </a>
           </div>
         </div>
         <div class="contact__visual">
-          <img src="assets/images/img-kontakt.webp" alt="Persönliches Gespräch mit dem Team von Juventa" width="1024" height="683" loading="lazy" />
+          <img src="assets/images/img-kontakt.webp" alt="Persönliches Gespräch mit dem Team von Juventa" width="1024" height="683" loading="lazy" data-lw-field="kontakt.image" data-lw-type="image" />
           <span class="contact__visual-overlay" aria-hidden="true"></span>
         </div>
       </div>
@@ -1003,10 +1003,10 @@
       <div class="a11y__group">
         <span class="a11y__label" id="a11yFontLabel">Schriftgröße</span>
         <div class="a11y__font-btns" role="group" aria-labelledby="a11yFontLabel">
-          <button class="a11y__font-btn" type="button" data-a11y-font="sm" aria-pressed="false" aria-label="Kleinere Schrift">A−</button>
-          <button class="a11y__font-btn is-active" type="button" data-a11y-font="normal" aria-pressed="true" aria-label="Normale Schrift">A</button>
-          <button class="a11y__font-btn" type="button" data-a11y-font="lg" aria-pressed="false" aria-label="Größere Schrift">A+</button>
-          <button class="a11y__font-btn" type="button" data-a11y-font="xl" aria-pressed="false" aria-label="Sehr große Schrift">A++</button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="sm" aria-pressed="false" aria-label="Kleinere Schrift"><span>A−</span></button>
+          <button class="a11y__font-btn is-active" type="button" data-a11y-font="normal" aria-pressed="true" aria-label="Normale Schrift"><span>A</span></button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="lg" aria-pressed="false" aria-label="Größere Schrift"><span>A+</span></button>
+          <button class="a11y__font-btn" type="button" data-a11y-font="xl" aria-pressed="false" aria-label="Sehr große Schrift"><span>A++</span></button>
         </div>
       </div>
       <div class="a11y__group">
