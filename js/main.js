@@ -416,11 +416,26 @@
     if (preview) preview.pause();
     videoLightbox.hidden = false;
     document.body.style.overflow = "hidden";
-    videoLightboxPlayer.src = src;
-    videoLightboxPlayer.currentTime = 0;
-    const playPromise = videoLightboxPlayer.play();
-    if (playPromise && typeof playPromise.catch === "function") {
-      playPromise.catch(() => {});
+    videoLightboxPlayer.pause();
+    videoLightboxPlayer.removeAttribute("src");
+    while (videoLightboxPlayer.firstChild) {
+      videoLightboxPlayer.removeChild(videoLightboxPlayer.firstChild);
+    }
+    const source = document.createElement("source");
+    source.src = src;
+    source.type = "video/mp4";
+    videoLightboxPlayer.appendChild(source);
+    videoLightboxPlayer.load();
+    const playWhenReady = () => {
+      const playPromise = videoLightboxPlayer.play();
+      if (playPromise && typeof playPromise.catch === "function") {
+        playPromise.catch(() => {});
+      }
+    };
+    if (videoLightboxPlayer.readyState >= 3) {
+      playWhenReady();
+    } else {
+      videoLightboxPlayer.addEventListener("canplay", playWhenReady, { once: true });
     }
     const closeBtn = videoLightbox.querySelector(".video-lightbox__close");
     if (closeBtn) closeBtn.focus();
@@ -430,6 +445,9 @@
     if (!videoLightbox || !videoLightboxPlayer) return;
     videoLightboxPlayer.pause();
     videoLightboxPlayer.removeAttribute("src");
+    while (videoLightboxPlayer.firstChild) {
+      videoLightboxPlayer.removeChild(videoLightboxPlayer.firstChild);
+    }
     videoLightboxPlayer.load();
     videoLightbox.hidden = true;
     document.body.style.overflow = "";
