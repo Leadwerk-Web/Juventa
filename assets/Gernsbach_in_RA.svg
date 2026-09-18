@@ -76,14 +76,14 @@
 				5.057,654.644 6.491,652.259 7.446,652.734 8.876,655.601 9.356,658.47 10.309,658.47 11.739,659.423 12.219,659.898 
 				16.993,659.898 18.427,659.423 31.319,651.304 39.436,647.007 37.046,644.622 38.958,644.622 42.778,645.095 44.686,642.236 			
 				"/>
-			<polyline id="Rheinmünster_3_" fill="#BFBFBF" stroke="#FFFFFF" points="-50.808,743.448 -50.808,746.314 -49.374,750.13 
+			<polyline id="Rheinmuenster_3_" fill="#BFBFBF" stroke="#FFFFFF" points="-50.808,743.448 -50.808,746.314 -49.374,750.13 
 				-53.193,752.042 -53.671,751.087 -53.193,747.271 -51.763,743.448 -50.808,743.448 			"/>
-			<polygon id="Rheinmünster_2_" fill="#BFBFBF" stroke="#FFFFFF" points="8.868,655.603 13.163,655.128 16.028,655.128 
+			<polygon id="Rheinmuenster_2_" fill="#BFBFBF" stroke="#FFFFFF" points="8.868,655.603 13.163,655.128 16.028,655.128 
 				18.417,659.425 16.983,659.9 12.21,659.9 11.729,659.425 10.3,658.47 9.346,658.47 			"/>
-			<polygon id="Rheinmünster_1_" fill="#BFBFBF" stroke="#FFFFFF" points="-69.906,765.888 -67.993,760.156 -66.562,758.251 
+			<polygon id="Rheinmuenster_1_" fill="#BFBFBF" stroke="#FFFFFF" points="-69.906,765.888 -67.993,760.156 -66.562,758.251 
 				-63.22,760.156 -60.833,762.548 -63.22,763.98 -64.65,765.409 -64.65,766.365 -61.786,766.365 -59.874,770.661 -61.786,771.616 
 				-62.743,772.575 -70.861,774.96 -71.81,773.531 -71.81,772.091 			"/>
-			<path id="Rheinmünster" fill="#BFBFBF" stroke="#FFFFFF" d="M-55.583,723.4l-1.43,1.43l-3.82-4.781l1.428-2.857l-0.471-1.43
+			<path id="Rheinmuenster" fill="#BFBFBF" stroke="#FFFFFF" d="M-55.583,723.4l-1.43,1.43l-3.82-4.781l1.428-2.857l-0.471-1.43
 				l0.951-0.957l1.912,1.432l1.908-0.957l-1.43-1.912l-1.434,0.482l-1.434-0.482l0.957-1.43l-1.43-1.914h1.43l0.479-1.43
 				l-1.434-0.955l0.479-0.473l0.479-0.959v-2.385H-59.4l-2.385-0.48l0.479-0.957l-1.436-1.43h-2.385l-2.865,1.912l-1.434-1.438
 				h-0.955l-1.908-2.861l-2.389-2.391l-2.385-1.904l-2.865,0.955l-3.344,1.904l-3.818-5.725v-1.912l-0.953-0.957l-0.479,1.438
@@ -151,7 +151,7 @@
 				11.737,775.917 15.561,776.39 19.382,775.917 18.903,777.347 20.333,777.831 21.768,780.214 24.153,781.642 26.544,786.898 
 				27.022,788.81 29.407,790.72 30.364,790.72 31.321,792.152 34.661,795.019 36.093,794.062 38.481,796.447 36.569,798.831 
 				34.659,798.831 32.272,798.359 31.798,800.743 32.751,803.126 35.139,805.995 			"/>
-			<path id="Ötigheim" fill="#BFBFBF" stroke="#FFFFFF" d="M119.63,532.907l-1.43-2.869l-0.479-1.43l-3.342-1.43l-0.479-2.869
+			<path id="Oetigheim" fill="#BFBFBF" stroke="#FFFFFF" d="M119.63,532.907l-1.43-2.869l-0.479-1.43l-3.342-1.43l-0.479-2.869
 				l-0.479-2.867l0.957-1.904l-1.912-1.436l0.955-1.904l0.479-1.912l-2.391-1.914l-2.383-0.955l-3.342,1.436l-1.912,1.432
 				l-1.43,0.473l-1.912,1.912l-1.43-0.473l-0.479-4.779c0.107-3.645,0.828-7.539-0.957-10.98l-1.434-1.912l1.434-1.904l1.908-1.438
 				v-0.955l0.957-1.43l1.434-0.475l0.479-1.436l1.908-1.904h1.434l0.957-1.438h1.906l1.914,0.959l0.951-0.475l0.957,0.955
@@ -217,7 +217,7 @@
 				55.659,615.982 56.61,615.025 58.522,615.982 56.61,621.226 41.333,635.073 38.948,632.689 34.649,626.478 28.919,619.796 
 				28.919,617.411 27.012,617.411 25.579,615.501 26.055,615.025 25.579,612.632 24.145,612.157 22.716,608.818 19.376,604.046 
 				16.028,598.792 12.688,594.015 14.122,588.288 7.438,586.859 			"/>
-			<polyline id="Hügelsheim" fill="#BFBFBF" stroke="#FFFFFF" points="41.333,635.073 44.675,638.415 45.153,640.325 
+			<polyline id="Huegelsheim" fill="#BFBFBF" stroke="#FFFFFF" points="41.333,635.073 44.675,638.415 45.153,640.325 
 				44.675,642.238 42.768,645.099 38.948,644.622 37.038,644.622 39.427,647.009 31.309,651.306 18.419,659.425 16.028,655.128 
 				13.165,655.128 8.868,655.603 7.438,652.736 6.483,652.263 6.005,650.831 5.528,647.009 -3.066,638.896 -6.407,636.503 
 				-4.497,635.073 -6.886,632.212 -8.316,629.822 -7.841,628.865 -6.886,627.917 -8.316,626.96 -10.704,625.523 -10.226,624.095 
@@ -306,7 +306,7 @@
 				l1.434-2.383l1.908-1.439l0.477-1.43l-3.34-0.482l-2.379-0.477l-1.912-0.959l1.912-1.428l1.43-0.957l0.955-0.957l0.957-0.473
 				l1.908-3.824l0.955-0.955l3.82,1.914l2.863,0.953l1.912,0.475l1.436,0.482l1.908-0.482l1.912-1.428l1.432-2.387l1.434,0.959
 				l0.479-2.395l2.863-0.475h1.912l2.387-0.475l1.91-0.953l1.432-0.957l0.957-1.912L153.528,426.445"/>
-			<path id="Bühl__x28_Baden_x29_" fill="#BFBFBF" stroke="#FFFFFF" d="M-50.808,743.448l1.434-4.295l-0.479-1.914v-1.902
+			<path id="Buehl__x28_Baden_x29_" fill="#BFBFBF" stroke="#FFFFFF" d="M-50.808,743.448l1.434-4.295l-0.479-1.914v-1.902
 				l-0.955-2.869l-1.908,0.475l-0.479,1.914h-4.775l-0.479-3.816l1.912-1.912l2.385,1.912l0.479-0.957l-0.479-1.912l-0.477-0.957
 				l0.477-1.43l-1.434-0.955v-1.432h1.434l1.912,1.432l1.908-0.482l-0.477-3.814l1.912-0.957l0.955-2.867l7.16,0.482l0.48-0.957
 				h2.383l2.387-1.43l1.434,0.475l1.434-0.959l2.387-0.953l2.389-1.904h2.863v2.387l1.43-0.482l2.867-6.203l0.951-3.822l1.434,0.479
@@ -360,14 +360,14 @@
 				l-2.865,0.48l-1.434,1.43l-0.955,2.867l-1.908,0.475l-0.936,1.918l-1.912,2.385l-0.475,1.43l-0.957,0.957l-3.34,1.438
 				l-0.477,1.43l-0.957,0.475v1.436l-0.957,0.475l-1.908,0.482l-1.434,1.904v0.955l-1.908,1.912l-0.479,2.385l-0.477,1.43
 				l-0.957-1.43v-1.912l1.434-1.43l-0.477-0.957l-0.957-0.475l0.479-1.912l3.818-1.912l-1.434-3.814v-2.865H-50.808z"/>
-			<polyline id="Bühlertal_2_" fill="#BFBFBF" stroke="#FFFFFF" points="-14.525,750.611 -12.136,749.175 -11.185,747.745 
+			<polyline id="Buehlertal_2_" fill="#BFBFBF" stroke="#FFFFFF" points="-14.525,750.611 -12.136,749.175 -11.185,747.745 
 				-9.273,751.568 -9.751,757.292 -15.954,757.767 -17.388,752.04 -15.954,748.698 -16.435,744.876 -15.003,744.876 
 				-14.525,744.404 -13.091,745.359 -14.525,748.218 -15.482,749.657 -14.525,750.611 			"/>
-			<polygon id="Bühlertal_1_" fill="#BFBFBF" stroke="#FFFFFF" points="107.694,824.609 107.694,823.656 106.266,822.697 
+			<polygon id="Buehlertal_1_" fill="#BFBFBF" stroke="#FFFFFF" points="107.694,824.609 107.694,823.656 106.266,822.697 
 				107.216,820.784 107.694,818.402 107.694,816.49 108.171,814.585 109.606,812.675 112.469,813.15 112.946,819.357 
 				115.335,821.269 117.243,823.181 121.54,826.995 123.448,827.952 121.061,835.589 113.901,830.818 112.944,828.907 
 				111.989,827.468 109.604,825.083 			"/>
-			<path id="Bühlertal" fill="#BFBFBF" stroke="#FFFFFF" d="M110.561,783.552l-11.936-1.43l-5.73-2.867l-4.773,0.955l0.955,0.957
+			<path id="Buehlertal" fill="#BFBFBF" stroke="#FFFFFF" d="M110.561,783.552l-11.936-1.43l-5.73-2.867l-4.773,0.955l0.955,0.957
 				l1.436-0.48l2.863,1.438l2.383,0.957v1.43l1.912,2.385l-0.477,1.43h-1.436l-1.43-0.473l-0.955-0.957l-1.434-1.91l-1.432,0.955
 				h-1.914l-2.383-0.955h-1.914l-1.906,0.479l-0.479,0.959v1.43l0.479,1.43v0.957l1.906,1.912l4.775,1.91l0.479,0.957l5.252,1.902
 				l1.43-0.473l2.389-0.482l0.479,0.957l-1.912,0.482l-1.436,0.473l0.957,0.482l2.391,1.904l4.297,4.297l-11.461,5.732v8.594
@@ -2186,23 +2186,23 @@
 			<text transform="matrix(1 0 0 1 103.9055 426.2473)" display="inline" font-family="'DejaVuSans'" font-size="12">Au</text>
 			<text transform="matrix(1 0 0 1 133.0559 452.9133)" display="inline"><tspan x="0" y="0" font-family="'DejaVuSans'" font-size="12">Durmers-</tspan><tspan x="13.178" y="14.4" font-family="'DejaVuSans'" font-size="12">heim</tspan></text>
 			<text transform="matrix(1 0 0 1 117.239 488.5813)" display="inline"><tspan x="0" y="0" font-family="'DejaVuSans'" font-size="12">Bietig-</tspan><tspan x="0" y="14.4" font-family="'DejaVuSans'" font-size="12">     heim</tspan></text>
-			<text transform="matrix(1 0 0 1 103.2395 507.5813)" display="inline"><tspan x="0" y="0" font-family="'DejaVuSans'" font-size="12">Ötig-</tspan><tspan x="0" y="14.4" font-family="'DejaVuSans'" font-size="12">   heim</tspan></text>
+			<text transform="matrix(1 0 0 1 103.2395 507.5813)" display="inline"><tspan x="0" y="0" font-family="'DejaVuSans'" font-size="12">Oetig-</tspan><tspan x="0" y="14.4" font-family="'DejaVuSans'" font-size="12">   heim</tspan></text>
 			<text transform="matrix(1 0 0 1 26.5725 596.5813)" display="inline"><tspan x="0" y="0" font-family="'DejaVuSans'" font-size="12">Iffez-</tspan><tspan x="-0.006" y="14.4" font-family="'DejaVuSans'" font-size="12">heim</tspan></text>
 			<text transform="matrix(1 0 0 1 131.9055 595.5813)" display="inline"><tspan x="0" y="0" font-family="'DejaVuSans'" font-size="12">Kup-</tspan><tspan x="0" y="14.4" font-family="'DejaVuSans'" font-size="12"> pen-</tspan><tspan x="0" y="28.8" font-family="'DejaVuSans'" font-size="12">heim</tspan></text>
 			<text transform="matrix(1 0 0 1 141.239 534.9133)" display="inline"><tspan x="0" y="0" font-family="'DejaVuSans'" font-size="12">Muggen-</tspan><tspan x="0" y="14.4" font-family="'DejaVuSans'" font-size="12">sturm</tspan></text>
 			<text transform="matrix(1 0 0 1 182.573 610.9133)" display="inline" font-family="'DejaVuSans'" font-size="12">Gaggenau</text>
 			<text transform="matrix(1 0 0 1 141.0632 570.2463)" display="inline"><tspan x="0" y="0" font-family="'DejaVuSans'" font-size="12">Bisch-</tspan><tspan x="1.752" y="14.4" font-family="'DejaVuSans'" font-size="12">weier</tspan></text>
-			<text transform="matrix(1 0 0 1 -2.4275 618.2473)" display="inline"><tspan x="0" y="0" font-family="'DejaVuSans'" font-size="12">Hü-</tspan><tspan x="0" y="14.4" font-family="'DejaVuSans'" font-size="12"> gels-</tspan><tspan x="0" y="28.8" font-family="'DejaVuSans'" font-size="12">  heim</tspan></text>
-			<text transform="matrix(1 0 0 1 -61.3562 672.9143)" display="inline"><tspan x="0" y="0" font-family="'DejaVuSans'" font-size="12">Rhein-</tspan><tspan x="-11.578" y="14.4" font-family="'DejaVuSans'" font-size="12">münster</tspan></text>
+			<text transform="matrix(1 0 0 1 -2.4275 618.2473)" display="inline"><tspan x="0" y="0" font-family="'DejaVuSans'" font-size="12">Hue-</tspan><tspan x="0" y="14.4" font-family="'DejaVuSans'" font-size="12"> gels-</tspan><tspan x="0" y="28.8" font-family="'DejaVuSans'" font-size="12">  heim</tspan></text>
+			<text transform="matrix(1 0 0 1 -61.3562 672.9143)" display="inline"><tspan x="0" y="0" font-family="'DejaVuSans'" font-size="12">Rhein-</tspan><tspan x="-11.578" y="14.4" font-family="'DejaVuSans'" font-size="12">muenster</tspan></text>
 			<text transform="matrix(1 0 0 1 -95.0369 716.2473)" display="inline"><tspan x="0" y="0" font-family="'DejaVuSans'" font-size="12">Lich-</tspan><tspan x="-3.05" y="14.4" font-family="'DejaVuSans'" font-size="12">tenau</tspan></text>
 			<text transform="matrix(1 0 0 1 248.948 655.5803)" display="inline"><tspan x="0" y="0" font-family="'DejaVuSans'" font-size="12">Lof-</tspan><tspan x="-5.795" y="14.4" font-family="'DejaVuSans'" font-size="12">fenau</tspan></text>
 			<text transform="matrix(1 0 0 1 210.5725 699.5813)" display="inline"><tspan x="0" y="0" font-family="'DejaVuSans'" font-size="12">Gerns-</tspan><tspan x="0" y="28.8" font-family="'DejaVuSans'" font-size="12">            bach</tspan></text>
 			<text transform="matrix(1 0 0 1 189.1628 726.5813)" display="inline"><tspan x="0" y="0" font-family="'DejaVuSans'" font-size="12">Weisen-</tspan><tspan x="9.489" y="14.4" font-family="'DejaVuSans'" font-size="12">bach</tspan></text>
 			<text transform="matrix(1 0 0 1 167.906 823.5803)" display="inline" font-family="'DejaVuSans'" font-size="12">Forbach</text>
 			<text transform="matrix(1 0 0 1 29.239 672.2473)" display="inline"><tspan x="0" y="0" font-family="'DejaVuSans'" font-size="12">Sinz-</tspan><tspan x="0" y="14.4" font-family="'DejaVuSans'" font-size="12">   heim</tspan></text>
-			<text transform="matrix(1 0 0 1 8.5725 752.9133)" display="inline" font-family="'DejaVuSans'" font-size="12">Bühl</text>
+			<text transform="matrix(1 0 0 1 8.5725 752.9133)" display="inline" font-family="'DejaVuSans'" font-size="12">Buehl</text>
 			<text transform="matrix(1 0 0 1 -54.7605 775.5813)" display="inline"><tspan x="0" y="0" font-family="'DejaVuSans'" font-size="12">Otters-</tspan><tspan x="0" y="14.4" font-family="'DejaVuSans'" font-size="12">          weier</tspan></text>
-			<text transform="matrix(1 0 0 1 51.5276 773.5813)" display="inline"><tspan x="0" y="0" font-family="'DejaVuSans'" font-size="12">Bühler-</tspan><tspan x="14.016" y="14.4" font-family="'DejaVuSans'" font-size="12">tal</tspan></text>
+			<text transform="matrix(1 0 0 1 51.5276 773.5813)" display="inline"><tspan x="0" y="0" font-family="'DejaVuSans'" font-size="12">Buehler-</tspan><tspan x="14.016" y="14.4" font-family="'DejaVuSans'" font-size="12">tal</tspan></text>
 			<text transform="matrix(1 0 0 1 122.2395 712.9133)" display="inline"><tspan x="0" y="0" fill="#6F6F6F" font-family="'DejaVuSans'" font-size="12">Baden-</tspan><tspan x="0" y="14.4" fill="#6F6F6F" font-family="'DejaVuSans'" font-size="12">Baden</tspan></text>
 			
 				<text transform="matrix(1 0 0 1 -97.7605 589.5813)" display="inline" fill="#6F6F6F" font-family="'DejaVuSans'" font-size="12">Frankreich</text>

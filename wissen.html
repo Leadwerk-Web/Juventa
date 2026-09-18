@@ -5,45 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <title>Wissen | FAQ zu Pflege &amp; Betreutem Wohnen | Juventa</title>
+<meta name="leadwerk:focus-keyphrase" content="Pflegegrad und Kosten" />
 <meta name="description" content="Hilfe- und Wissenscenter von Juventa: Antworten zu ambulanter Pflege, Pflegegrad &amp; Kosten, Betreutem Wohnen in der Brückenmühle und Fragen von Angehörigen – verständlich und persönlich." />
 <meta name="theme-color" content="#FFFAF8" />
-<link rel="canonical" href="https://juventa-pflege.de/wissen/" />
-
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="de_DE" />
 <meta property="og:site_name" content="Juventa – so geht Pflege" />
 <meta property="og:title" content="Wissen | Orientierung zu Pflege &amp; Betreutem Wohnen" />
 <meta property="og:description" content="Fragen rund um Pflege und Betreutes Wohnen in Baden-Baden und Gernsbach – klar beantwortet, mit Orientierung für Angehörige und Pflegebedürftige." />
-<meta property="og:url" content="https://juventa-pflege.de/wissen/" />
-<meta property="og:image" content="assets/images/Kontakt.png" />
+<meta property="og:image" content="assets/og-default.webp" />
 <meta name="twitter:card" content="summary_large_image" />
 
-<link rel="icon" href="assets/images/logo.svg" type="image/svg+xml" />
-<link rel="apple-touch-icon" href="assets/images/logo.png" />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="assets/favicon.svg" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="fonts/fonts.css" />
 
-<link rel="stylesheet" href="css/styles.css?v=110" />
+<link rel="stylesheet" href="css/styles.css" />
 <noscript><style>.reveal{opacity:1!important;transform:none!important;}</style></noscript>
-<script>
-(function () {
-  try {
-    var s = JSON.parse(localStorage.getItem("juventa-a11y") || "{}");
-    var root = document.documentElement;
-    var scales = { sm: 0.875, lg: 1.125, xl: 1.25 };
-    if (s.font && s.font !== "normal" && scales[s.font]) {
-      root.setAttribute("data-a11y-font", s.font);
-      root.style.zoom = scales[s.font];
-    }
-    if (s.contrast) root.classList.add("a11y-contrast");
-    if (s.underline) root.classList.add("a11y-underline-links");
-    if (s.motion) root.classList.add("a11y-reduced-motion");
-    if (s.lineHeight) root.classList.add("a11y-line-height");
-  } catch (e) {}
-})();
-</script>
+<script src="js/a11y-boot.js"></script>
 
 <script type="application/ld+json">
 {
@@ -175,17 +155,17 @@
 
 <!-- ============ HERO ============ -->
 <div class="hero-shell" id="start">
-  <section class="hero" data-hero aria-label="Wissen und Orientierung">
+  <section class="hero" data-lw-section="hero" data-hero aria-label="Wissen und Orientierung">
 
     <div class="hero__media" id="heroSlider" aria-hidden="true">
       <div class="hero__slide is-active">
-        <img src="assets/images/Kontakt.png" alt="" width="1920" height="1080" fetchpriority="high" />
+        <img src="assets/images/img-kontakt.webp" alt="" width="1920" height="1080" fetchpriority="high" data-lw-decorative="true" />
       </div>
       <div class="hero__slide">
-        <img src="assets/images/Hero2.png" alt="" width="1920" height="1080" loading="lazy" />
+        <img src="assets/images/hero2.webp" alt="" width="1920" height="1080" loading="lazy" data-lw-decorative="true" />
       </div>
       <div class="hero__slide">
-        <img src="assets/images/team.png" alt="" width="1920" height="1080" loading="lazy" />
+        <img src="assets/images/team.webp" alt="" width="1920" height="1080" loading="lazy" data-lw-decorative="true" />
       </div>
     </div>
     <div class="hero__overlay" aria-hidden="true"></div>
@@ -198,6 +178,7 @@
         <button type="button" class="nav__toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav">
           <span></span><span></span><span></span>
         </button>
+        <div class="site-language-switcher" data-lw-language-switcher-slot hidden></div>
         <nav class="nav" id="nav" aria-label="Hauptnavigation">
           <button type="button" class="nav__close" id="navClose" aria-label="Menü schließen">&times;</button>
 
@@ -235,7 +216,7 @@
                 </ul>
               </div>
               <a class="header__logo header__logo--desktop" href="index.html" aria-label="Juventa Startseite">
-                <img src="assets/images/logo.svg" alt="" width="94" height="119" />
+                <img data-lw-global="brand.logo" data-lw-type="image" src="assets/images/logo.svg" alt="Juventa – so geht Pflege" width="94" height="119" />
               </a>
               <div class="nav__item nav__item--has-sub">
                 <a href="ueber-juventa.html" class="nav__link">Über Juventa</a>
@@ -247,8 +228,8 @@
               </div>
               <a href="stellenanzeigen.html" class="nav__link">Stellenanzeigen</a>
               <a href="wissen.html" class="nav__link" aria-current="page">Wissen</a>
-              <a href="#kontakt" class="nav__link">Kontakt</a>
-              <a href="#kontakt" class="btn btn--primary nav__cta">
+              <a href="kontakt.html" class="nav__link">Kontakt</a>
+              <a href="kontakt.html" class="btn btn--primary nav__cta">
                 Beratung anfragen
                 <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
               </a>
@@ -297,9 +278,9 @@
             </li>
             <li><a href="stellenanzeigen.html" class="nav__link">Stellenanzeigen</a></li>
             <li><a href="wissen.html" class="nav__link" aria-current="page">Wissen</a></li>
-            <li><a href="#kontakt" class="nav__link">Kontakt</a></li>
+            <li><a href="kontakt.html" class="nav__link">Kontakt</a></li>
           </ul>
-          <a href="#kontakt" class="btn btn--primary nav__cta nav__cta--drawer">
+          <a href="kontakt.html" class="btn btn--primary nav__cta nav__cta--drawer">
             Beratung anfragen
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
@@ -310,14 +291,14 @@
     <div class="container hero__body">
       <div class="hero__content reveal">
         <span class="hero__eyebrow">Hilfe- &amp; Wissenscenter</span>
-        <h1 class="hero__title">Fragen rund um Pflege &amp; betreutes Wohnen</h1>
+        <h1 class="hero__title" data-lw-field="hero.title" data-lw-type="richtext">Fragen rund um Pflege &amp; betreutes Wohnen</h1>
         <p class="hero__sub">
           Pflege bringt oft viele Fragen mit sich – für Betroffene und Angehörige.
           Hier finden Sie Orientierung, kurze Erklärungen und klare Antworten von Juventa
           in Baden-Baden und Gernsbach.
         </p>
 
-        <form class="faq-search reveal" role="search" action="#faq-verzeichnis" onsubmit="return false;">
+        <form class="faq-search reveal" role="search" action="wissen.html" method="get">
           <label class="faq-search__label" for="faqSearch">Wonach suchen Sie?</label>
           <div class="faq-search__field">
             <span class="faq-search__icon" aria-hidden="true">
@@ -432,7 +413,7 @@
         <p class="section-head__sub" style="margin:0 0 1rem;text-align:center;max-width:36rem;">
           Jetzt Kontakt aufnehmen – für eine verlässliche und persönliche Pflegeberatung
         </p>
-        <a href="#kontakt" class="btn btn--primary btn--lg">
+        <a href="kontakt.html" class="btn btn--primary btn--lg">
           Pflegeberatung anfragen
           <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </a>
@@ -445,7 +426,7 @@
     <div class="container story__grid">
       <div class="story__collage story__collage--single reveal">
         <div class="story__collage-img story__collage-img--tall">
-          <img src="assets/images/Mobile-Pflege.png" alt="Mobile Pflege und Betreuung zu Hause durch das Team von Juventa" loading="lazy" width="1920" height="1080" />
+          <img src="assets/images/mobile-pflege.webp" alt="Mobile Pflege und Betreuung zu Hause durch das Team von Juventa" loading="lazy" width="1920" height="1080" />
         </div>
       </div>
       <div class="story__text reveal">
@@ -679,7 +660,7 @@
     <div class="container story__grid story__grid--flip">
       <div class="story__collage story__collage--single reveal">
         <div class="story__collage-img story__collage-img--tall">
-          <img src="assets/images/Apartment.jpeg" alt="Eigenes Apartment im Betreuten Wohnen Brückenmühle Gernsbach" loading="lazy" width="1920" height="1080" />
+          <img src="assets/images/apartment.webp" alt="Eigenes Apartment im Betreuten Wohnen Brückenmühle Gernsbach" loading="lazy" width="1920" height="1080" />
         </div>
       </div>
       <div class="story__text reveal">
@@ -791,7 +772,7 @@
     <div class="container story__grid">
       <div class="story__collage story__collage--single reveal">
         <div class="story__collage-img story__collage-img--tall">
-          <img src="assets/images/24h-Pflege.png" alt="Entlastung und Beratung für Angehörige bei Juventa" loading="lazy" width="1920" height="1080" />
+          <img src="assets/images/24h-pflege.webp" alt="Entlastung und Beratung für Angehörige bei Juventa" loading="lazy" width="1920" height="1080" />
         </div>
       </div>
       <div class="story__text reveal">
@@ -888,7 +869,7 @@
         <article class="news__card reveal">
           <a class="news__card-link" href="beitrag-pflegegrad.html">
             <div class="news__media">
-              <img src="assets/images/Mobile-Pflege.png" alt="" width="800" height="520" loading="lazy" />
+              <img src="assets/images/mobile-pflege.webp" alt="" width="800" height="520" loading="lazy" data-lw-decorative="true" />
             </div>
             <div class="news__body">
               <div class="news__meta">
@@ -904,7 +885,7 @@
         <article class="news__card reveal">
           <a class="news__card-link" href="beitrag-kosten.html">
             <div class="news__media">
-              <img src="assets/images/Verhinderungspflege.png" alt="" width="800" height="520" loading="lazy" />
+              <img src="assets/images/verhinderungspflege.webp" alt="" width="800" height="520" loading="lazy" data-lw-decorative="true" />
             </div>
             <div class="news__body">
               <div class="news__meta">
@@ -920,7 +901,7 @@
         <article class="news__card reveal">
           <a class="news__card-link" href="beitrag-angehoerige.html">
             <div class="news__media">
-              <img src="assets/images/Kontakt.png" alt="" width="800" height="520" loading="lazy" />
+              <img src="assets/images/img-kontakt.webp" alt="" width="800" height="520" loading="lazy" data-lw-decorative="true" />
             </div>
             <div class="news__body">
               <div class="news__meta">
@@ -1296,7 +1277,7 @@
           </div>
         </div>
         <div class="contact__visual">
-          <img src="assets/images/zimmer-1.png" alt="Persönliche Beratung bei Juventa in Baden-Baden und Gernsbach" width="1920" height="1080" loading="lazy" />
+          <img src="assets/images/zimmer-1.webp" alt="Persönliche Beratung bei Juventa in Baden-Baden und Gernsbach" width="1920" height="1080" loading="lazy" />
           <span class="contact__visual-overlay" aria-hidden="true"></span>
         </div>
       </div>
@@ -1308,8 +1289,8 @@
 <footer class="site-footer">
   <div class="container site-footer__grid">
     <div class="site-footer__brand">
-      <img src="assets/images/logo-white.png" alt="Juventa" width="72" height="72" />
-      <p>Mit Juventa selbstbestimmt leben – professionell begleitet und umsorgt.</p>
+      <img src="assets/images/logo-white.webp" alt="Juventa" width="72" height="72" />
+      <p data-lw-global="footer.tagline" data-lw-type="text">Mit Juventa selbstbestimmt leben – professionell begleitet und umsorgt.</p>
     </div>
 
     <div class="site-footer__col">
@@ -1337,7 +1318,7 @@
         <li><a href="ueber-juventa.html">Über Juventa</a></li>
         <li><a href="stellenanzeigen.html">Stellenanzeigen</a></li>
         <li><a href="wissen.html">Wissen</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
       </ul>
     </div>
 
@@ -1346,13 +1327,13 @@
       <ul>
         <li><a href="impressum.html">Impressum</a></li>
         <li><a href="datenschutz.html">Datenschutz</a></li>
-        <li><a href="#kontakt">Downloads (auf Anfrage)</a></li>
+        <li><a href="kontakt.html">Downloads (auf Anfrage)</a></li>
       </ul>
     </div>
   </div>
   <div class="site-footer__bottom">
     <div class="container">
-      <p>© <span data-year>2026</span> Juventa GmbH · Ambulante Pflege Baden-Baden · Betreutes Wohnen Brückenmühle Gernsbach</p>
+      <p>© <span data-year>2026</span> <span data-lw-global="footer.company" data-lw-type="text">Juventa GmbH</span> · Ambulante Pflege Baden-Baden · Betreutes Wohnen Brückenmühle Gernsbach</p>
     </div>
   </div>
 </footer>

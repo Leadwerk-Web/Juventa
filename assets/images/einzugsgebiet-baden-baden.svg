@@ -39,7 +39,7 @@
   <!-- Town labels (non-interactive context) -->
   <g fill="#5c6d74" font-family="Manrope, Inter, Arial, sans-serif" font-size="15" font-weight="600">
     <text x="145" y="250">Rastatt</text>
-    <text x="95" y="430">Bühl</text>
+    <text x="95" y="430">Buehl</text>
     <text x="170" y="500">Sinzheim</text>
     <text x="430" y="300">Forbach</text>
     <text x="455" y="470">Weisenbach</text>

@@ -78,6 +78,13 @@
     });
   }
 
+  var searchForm = document.querySelector(".faq-search");
+  if (searchForm) {
+    searchForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+    });
+  }
+
   document.querySelectorAll("[data-faq-open]").forEach(function (el) {
     el.addEventListener("click", function (e) {
       var id = el.getAttribute("data-faq-open");

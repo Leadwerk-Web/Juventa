@@ -93,7 +93,7 @@
   color: #fff;
   background:
     linear-gradient(100deg, rgba(36, 72, 72, 0.88) 0%, rgba(36, 72, 72, 0.62) 45%, rgba(36, 72, 72, 0.35) 100%),
-    url("../assets/images/Hero1.png") center / cover no-repeat;
+    url("../assets/images/hero1.webp") center / cover no-repeat;
   overflow: hidden;
 }
 

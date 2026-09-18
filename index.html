@@ -5,45 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <title>Juventa – Ambulante Pflege &amp; Betreutes Wohnen | Baden-Baden &amp; Gernsbach</title>
+<meta name="leadwerk:focus-keyphrase" content="Betreutes Wohnen Gernsbach" />
 <meta name="description" content="Juventa – so geht Pflege: ambulante Pflege als Kerngeschäft in Baden-Baden und Umgebung sowie Betreutes Wohnen in der Brückenmühle Gernsbach. Persönliche Beratung zu Pflegegrad, Finanzierung und Betreuung." />
 <meta name="theme-color" content="#FFFAF8" />
-<link rel="canonical" href="https://juventa-pflege.de/" />
-
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="de_DE" />
 <meta property="og:site_name" content="Juventa – so geht Pflege" />
 <meta property="og:title" content="Juventa – Ambulante Pflege &amp; Betreutes Wohnen" />
 <meta property="og:description" content="Ambulante Pflege in Baden-Baden und Umgebung – plus Betreutes Wohnen in der Brückenmühle Gernsbach. Persönlich, kompetent und nah an den Menschen." />
-<meta property="og:url" content="https://juventa-pflege.de/" />
-<meta property="og:image" content="assets/images/cafe-2.png" />
+<meta property="og:image" content="assets/og-default.webp" />
 <meta name="twitter:card" content="summary_large_image" />
 
-<link rel="icon" href="assets/images/logo.svg" type="image/svg+xml" />
-<link rel="apple-touch-icon" href="assets/images/logo.png" />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="assets/favicon.svg" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="fonts/fonts.css" />
 
-<link rel="stylesheet" href="css/styles.css?v=110" />
+<link rel="stylesheet" href="css/styles.css" />
 <noscript><style>.reveal{opacity:1!important;transform:none!important;}</style></noscript>
-<script>
-(function () {
-  try {
-    var s = JSON.parse(localStorage.getItem("juventa-a11y") || "{}");
-    var root = document.documentElement;
-    var scales = { sm: 0.875, lg: 1.125, xl: 1.25 };
-    if (s.font && s.font !== "normal" && scales[s.font]) {
-      root.setAttribute("data-a11y-font", s.font);
-      root.style.zoom = scales[s.font];
-    }
-    if (s.contrast) root.classList.add("a11y-contrast");
-    if (s.underline) root.classList.add("a11y-underline-links");
-    if (s.motion) root.classList.add("a11y-reduced-motion");
-    if (s.lineHeight) root.classList.add("a11y-line-height");
-  } catch (e) {}
-})();
-</script>
+<script src="js/a11y-boot.js"></script>
 
 <script type="application/ld+json">
 {
@@ -53,8 +33,8 @@
   "alternateName": "Juventa – so geht Pflege",
   "description": "Ambulante Pflege in Baden-Baden und Umgebung sowie Betreutes Wohnen in der Brückenmühle Gernsbach – inkl. Beratung zu Pflegegrad und Finanzierung.",
   "url": "https://juventa-pflege.de/",
-  "logo": "assets/images/wortmarke.png",
-  "image": "assets/images/cafe-2.png",
+  "logo": "assets/images/wortmarke.webp",
+  "image": "assets/images/cafe-2.webp",
   "telephone": "+49 178 5254075",
   "email": "info@juventa-pflege.de",
   "areaServed": ["Baden-Baden", "Gernsbach", "Murgtal", "Rastatt", "Karlsruhe", "Schwarzwald"],
@@ -139,17 +119,17 @@
 
 <!-- ============ HERO (BSP-Stil) ============ -->
 <div class="hero-shell" id="start">
-  <section class="hero" data-hero aria-label="Willkommen bei Juventa – Ambulante Pflege und Betreutes Wohnen">
+  <section class="hero" data-lw-section="hero" data-hero aria-label="Willkommen bei Juventa – Ambulante Pflege und Betreutes Wohnen">
 
     <div class="hero__media" id="heroSlider" aria-hidden="true">
       <div class="hero__slide is-active">
-        <img src="assets/images/Hero1.png" alt="" width="1920" height="1080" fetchpriority="high" />
+        <img src="assets/images/hero1.webp" alt="" width="1920" height="1080" fetchpriority="high" data-lw-decorative="true" />
       </div>
       <div class="hero__slide">
-        <img src="assets/images/Hero2.png" alt="" width="1920" height="1080" loading="lazy" />
+        <img src="assets/images/hero2.webp" alt="" width="1920" height="1080" loading="lazy" data-lw-decorative="true" />
       </div>
       <div class="hero__slide">
-        <img src="assets/images/Hero3.png" alt="" width="1920" height="1080" loading="lazy" />
+        <img src="assets/images/hero3.webp" alt="" width="1920" height="1080" loading="lazy" data-lw-decorative="true" />
       </div>
     </div>
     <div class="hero__overlay" aria-hidden="true"></div>
@@ -162,6 +142,7 @@
         <button type="button" class="nav__toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav">
           <span></span><span></span><span></span>
         </button>
+        <div class="site-language-switcher" data-lw-language-switcher-slot hidden></div>
         <nav class="nav" id="nav" aria-label="Hauptnavigation">
           <button type="button" class="nav__close" id="navClose" aria-label="Menü schließen">&times;</button>
 
@@ -199,7 +180,7 @@
                 </ul>
               </div>
               <a class="header__logo header__logo--desktop" href="#start" aria-label="Juventa Startseite">
-                <img src="assets/images/logo.svg" alt="" width="94" height="119" />
+                <img data-lw-global="brand.logo" data-lw-type="image" src="assets/images/logo.svg" alt="Juventa – so geht Pflege" width="94" height="119" />
               </a>
                             <div class="nav__item nav__item--has-sub">
                 <a href="ueber-juventa.html" class="nav__link">Über Juventa</a>
@@ -211,8 +192,8 @@
               </div>
               <a href="stellenanzeigen.html" class="nav__link">Stellenanzeigen</a>
               <a href="wissen.html" class="nav__link">Wissen</a>
-              <a href="#kontakt" class="nav__link">Kontakt</a>
-              <a href="#kontakt" class="btn btn--primary nav__cta">
+              <a href="kontakt.html" class="nav__link">Kontakt</a>
+              <a href="kontakt.html" class="btn btn--primary nav__cta">
                 Beratung anfragen
                 <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
               </a>
@@ -261,9 +242,9 @@
             </li>
             <li><a href="stellenanzeigen.html" class="nav__link">Stellenanzeigen</a></li>
             <li><a href="wissen.html" class="nav__link">Wissen</a></li>
-            <li><a href="#kontakt" class="nav__link">Kontakt</a></li>
+            <li><a href="kontakt.html" class="nav__link">Kontakt</a></li>
           </ul>
-          <a href="#kontakt" class="btn btn--primary nav__cta nav__cta--drawer">
+          <a href="kontakt.html" class="btn btn--primary nav__cta nav__cta--drawer">
             Beratung anfragen
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
@@ -274,13 +255,13 @@
     <div class="container hero__body">
       <div class="hero__content reveal">
         <span class="hero__eyebrow">Juventa – so geht Pflege</span>
-        <h1 class="hero__title">Nähe, Kompetenz und Geborgenheit&nbsp;–<br />für ein Leben in <span class="headline-accent headline-accent--light">Selbstbestimmung</span>.</h1>
+        <h1 class="hero__title" data-lw-field="hero.title" data-lw-type="richtext">Nähe, Kompetenz und Geborgenheit&nbsp;–<br />für ein Leben in <span class="headline-accent headline-accent--light">Selbstbestimmung</span>.</h1>
         <p class="hero__sub">
           Ambulante Pflege in Baden-Baden und Umgebung – und Betreutes Wohnen in der Brückenmühle Gernsbach.
           Wir begleiten Menschen und Angehörige persönlich durch Alltag, Pflegegrad und Finanzierung.
         </p>
         <div class="hero__actions">
-          <a href="#kontakt" class="btn btn--primary btn--lg">
+          <a href="kontakt.html" class="btn btn--primary btn--lg">
             Beratung anfragen
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
@@ -328,14 +309,14 @@
     <div class="container story__grid">
       <div class="story__collage reveal">
         <div class="story__collage-img story__collage-img--tall">
-          <img src="assets/images/Hero1.png" alt="Juventa – ambulante Pflege und Betreutes Wohnen in der Region" loading="lazy" width="1920" height="1080" />
+          <img src="assets/images/hero1.webp" alt="Juventa – ambulante Pflege und Betreutes Wohnen in der Region" loading="lazy" width="1920" height="1080" />
         </div>
         <div class="story__collage-stack">
           <div class="story__collage-img story__collage-img--top">
-            <img src="assets/images/Hero2.png" alt="Persönliche Betreuung und modernes Wohnen bei Juventa" loading="lazy" width="1920" height="1080" />
+            <img src="assets/images/hero2.webp" alt="Persönliche Betreuung und modernes Wohnen bei Juventa" loading="lazy" width="1920" height="1080" />
           </div>
-          <button type="button" class="story__collage-img story__collage-img--bottom story__video-trigger" data-video-src="assets/video/gernsbach.mp4" aria-label="Imagefilm abspielen: Juventa">
-            <video class="story__video-preview" autoplay muted loop playsinline preload="metadata" poster="assets/images/Hero3.png" aria-hidden="true">
+          <button type="button" class="story__collage-img story__collage-img--bottom story__video-trigger" data-video-open data-src="assets/video/gernsbach.mp4" aria-label="Imagefilm abspielen: Juventa">
+            <video class="story__video-preview" autoplay muted loop playsinline preload="metadata" poster="assets/images/hero3.webp" aria-hidden="true">
               <source src="assets/video/gernsbach.mp4" type="video/mp4" />
             </video>
             <span class="story__video-play" aria-hidden="true">
@@ -373,7 +354,7 @@
       <div class="areas__accordion reveal" role="tablist" aria-label="Betreutes Wohnen in der Brückenmühle">
         <article class="areas-panel is-open">
           <button class="areas-panel__trigger" type="button" aria-expanded="true" aria-controls="areas-panel-1">
-            <img class="areas-panel__img" src="assets/images/Hero1.png" alt="" width="1024" height="683" loading="lazy" />
+            <img class="areas-panel__img" src="assets/images/hero1.webp" alt="" width="1024" height="683" loading="lazy" data-lw-decorative="true" />
             <span class="areas-panel__overlay" aria-hidden="true"></span>
             <span class="areas-panel__label">
               <span class="areas-panel__icon" aria-hidden="true">
@@ -395,7 +376,7 @@
 
         <article class="areas-panel">
           <button class="areas-panel__trigger" type="button" aria-expanded="false" aria-controls="areas-panel-2">
-            <img class="areas-panel__img" src="assets/images/Apartment.jpeg" alt="" width="1024" height="683" loading="lazy" />
+            <img class="areas-panel__img" src="assets/images/apartment.webp" alt="" width="1024" height="683" loading="lazy" data-lw-decorative="true" />
             <span class="areas-panel__overlay" aria-hidden="true"></span>
             <span class="areas-panel__label">
               <span class="areas-panel__icon" aria-hidden="true">
@@ -417,7 +398,7 @@
 
         <article class="areas-panel">
           <button class="areas-panel__trigger" type="button" aria-expanded="false" aria-controls="areas-panel-3">
-            <img class="areas-panel__img" src="assets/images/Hero3.png" alt="" width="1024" height="683" loading="lazy" />
+            <img class="areas-panel__img" src="assets/images/hero3.webp" alt="" width="1024" height="683" loading="lazy" data-lw-decorative="true" />
             <span class="areas-panel__overlay" aria-hidden="true"></span>
             <span class="areas-panel__label">
               <span class="areas-panel__icon" aria-hidden="true">
@@ -439,7 +420,7 @@
 
         <article class="areas-panel">
           <button class="areas-panel__trigger" type="button" aria-expanded="false" aria-controls="areas-panel-4">
-            <img class="areas-panel__img" src="assets/images/Leistungen-wave.png" alt="" width="1024" height="683" loading="lazy" />
+            <img class="areas-panel__img" src="assets/images/leistungen-wave.webp" alt="" width="1024" height="683" loading="lazy" data-lw-decorative="true" />
             <span class="areas-panel__overlay" aria-hidden="true"></span>
             <span class="areas-panel__label">
               <span class="areas-panel__icon" aria-hidden="true">
@@ -522,22 +503,22 @@
     <div class="apartments__slider reveal" id="apartmentsSlider">
       <div class="apartments__slider-media" aria-live="polite">
         <figure class="apartments__slider-slide is-active">
-          <img src="assets/images/zimmer-1.png" alt="Helles Apartment mit Wohnbereich in der Brückenmühle" width="1024" height="683" loading="lazy" />
+          <img src="assets/images/zimmer-1.webp" alt="Helles Apartment mit Wohnbereich in der Brückenmühle" width="1024" height="683" loading="lazy" />
           <span class="apartments__slider-num" aria-hidden="true">01</span>
         </figure>
         <figure class="apartments__slider-slide">
-          <img src="assets/images/kueche-1.png" alt="Hochwertige Küche in einem Apartment der Brückenmühle" width="1024" height="683" loading="lazy" />
+          <img src="assets/images/kueche-2.webp" alt="Hochwertige Küche in einem Apartment der Brückenmühle" width="1024" height="683" loading="lazy" />
           <span class="apartments__slider-num" aria-hidden="true">02</span>
         </figure>
         <figure class="apartments__slider-slide">
-          <img src="assets/images/kueche-2.png" alt="Moderne Küchenzeile mit hochwertiger Ausstattung" width="1024" height="683" loading="lazy" />
+          <img src="assets/images/kueche-2.webp" alt="Moderne Küchenzeile mit hochwertiger Ausstattung" width="1024" height="683" loading="lazy" />
           <span class="apartments__slider-num" aria-hidden="true">03</span>
         </figure>
         <figure class="apartments__slider-slide">
-          <img src="assets/images/cafe-2.png" alt="Gemütlicher Wohn- und Aufenthaltsbereich in der Brückenmühle" width="1024" height="683" loading="lazy" />
+          <img src="assets/images/cafe-2.webp" alt="Gemütlicher Wohn- und Aufenthaltsbereich in der Brückenmühle" width="1024" height="683" loading="lazy" />
           <span class="apartments__slider-num" aria-hidden="true">04</span>
         </figure>
-        <a href="#kontakt" class="apartments__slider-hover">
+        <a href="kontakt.html" class="apartments__slider-hover">
           <span class="apartments__slider-hover-label">
             Apartment ansehen
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -577,14 +558,14 @@
           <li>Exklusives Speisepaket &amp; vorreservierte Plätze</li>
           <li>Gemeinschaft ohne Druck, Treffpunkt im Haus</li>
         </ul>
-        <a class="btn btn--primary" href="#kontakt">
+        <a class="btn btn--primary" href="kontakt.html">
           Beratung zum Café anfragen
           <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </a>
       </div>
       <div class="cafe__media reveal">
         <div class="cafe__media-frame">
-          <img src="assets/images/Hero3.png" alt="Das hauseigene Café der Brückenmühle – Herzstück des Hauses" loading="lazy" width="1920" height="1080" />
+          <img src="assets/images/hero3.webp" alt="Das hauseigene Café der Brückenmühle – Herzstück des Hauses" loading="lazy" width="1920" height="1080" />
           <span class="cafe__badge">Café · Brückenmühle</span>
         </div>
       </div>
@@ -653,7 +634,7 @@
           <p class="eyebrow">Pflege-Wohngemeinschaft</p>
           <h2 id="coming-title">Pflege-WG Baden-Baden</h2>
           <p>Neben ambulanter Pflege und Betreutem Wohnen entsteht ein weiteres Angebot: eine Pflege-Wohngemeinschaft in Baden-Baden. Interessentinnen und Interessenten können sich bereits jetzt vormerken lassen.</p>
-          <a class="btn btn--light btn--lg coming__cta" href="#kontakt">Für die Pflege-WG vormerken<span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a class="btn btn--light btn--lg coming__cta" href="kontakt.html">Für die Pflege-WG vormerken<span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
         </div>
         <span class="coming__badge">in Planung</span>
       </div>
@@ -709,7 +690,7 @@
       </div>
       <div class="service__cta reveal">
         <a class="btn btn--primary" href="betreuung-service.html">Alle Leistungen ansehen<span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-        <a class="btn btn--outline" href="#kontakt">Rückruf vereinbaren</a>
+        <a class="btn btn--outline" href="kontakt.html">Rückruf vereinbaren</a>
       </div>
     </div>
   </section>
@@ -718,7 +699,7 @@
   <section class="location section" id="standort" aria-labelledby="loc-title">
     <div class="location__panel">
       <div class="location__bg">
-        <video class="location__video" autoplay muted loop playsinline poster="assets/images/cafe-2.png" aria-hidden="true">
+        <video class="location__video" autoplay muted loop playsinline poster="assets/images/cafe-2.webp" aria-hidden="true">
           <source src="assets/video/gernsbach.mp4" type="video/mp4" />
         </video>
         <div class="location__bg-scrim"></div>
@@ -733,7 +714,7 @@
             <li><strong>Gernsbach:</strong> Betreutes Wohnen Brückenmühle · Altstadt &amp; Murgtal</li>
             <li>Gute Erreichbarkeit im Raum Rastatt und darüber hinaus</li>
           </ul>
-          <a class="btn btn--primary" href="#kontakt">
+          <a class="btn btn--primary" href="kontakt.html">
             Standort &amp; Anfahrt besprechen
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
@@ -747,7 +728,7 @@
     <div class="container about__grid">
       <div class="about__collage about__collage--single reveal">
         <div class="about__collage-img about__collage-img--tall">
-          <img src="assets/images/team.png" alt="Das Team von Juventa rund um Fee Schmid und Fabian Lepold" loading="lazy" width="960" height="540" />
+          <img src="assets/images/team.webp" alt="Das Team von Juventa rund um Fee Schmid und Fabian Lepold" loading="lazy" width="960" height="540" />
         </div>
       </div>
 
@@ -759,14 +740,14 @@
         <div class="about__people">
           <article class="about__person">
             <div class="about__person-photo">
-              <img src="assets/images/Fee.jpg" alt="Fee Schmid" width="240" height="240" loading="lazy" />
+              <img src="assets/images/fee.webp" alt="Fee Schmid" width="240" height="240" loading="lazy" />
             </div>
             <strong>Fee Schmid</strong>
             <span>Pflege &amp; Beratung</span>
           </article>
           <article class="about__person">
             <div class="about__person-photo">
-              <img src="assets/images/Fabian.jpg" alt="Fabian Lepold" width="240" height="240" loading="lazy" />
+              <img src="assets/images/fabian.webp" alt="Fabian Lepold" width="240" height="240" loading="lazy" />
             </div>
             <strong>Fabian Lepold</strong>
             <span>Konzept &amp; Entwicklung</span>
@@ -789,7 +770,7 @@
         <article class="news__card reveal">
           <a class="news__card-link" href="beitrag-pflegegrad.html">
             <div class="news__media">
-              <img src="assets/images/Mobile-Pflege.png" alt="" width="800" height="520" loading="lazy" />
+              <img src="assets/images/mobile-pflege.webp" alt="" width="800" height="520" loading="lazy" data-lw-decorative="true" />
             </div>
             <div class="news__body">
               <div class="news__meta">
@@ -805,7 +786,7 @@
         <article class="news__card reveal">
           <a class="news__card-link" href="beitrag-kosten.html">
             <div class="news__media">
-              <img src="assets/images/Verhinderungspflege.png" alt="" width="800" height="520" loading="lazy" />
+              <img src="assets/images/verhinderungspflege.webp" alt="" width="800" height="520" loading="lazy" data-lw-decorative="true" />
             </div>
             <div class="news__body">
               <div class="news__meta">
@@ -821,7 +802,7 @@
         <article class="news__card reveal">
           <a class="news__card-link" href="beitrag-angehoerige.html">
             <div class="news__media">
-              <img src="assets/images/Kontakt.png" alt="" width="800" height="520" loading="lazy" />
+              <img src="assets/images/img-kontakt.webp" alt="" width="800" height="520" loading="lazy" data-lw-decorative="true" />
             </div>
             <div class="news__body">
               <div class="news__meta">
@@ -854,7 +835,7 @@
       <div class="faq__wrap">
         <div class="faq__media reveal">
           <div class="faq__img">
-            <img src="assets/images/zimmer-1.png" alt="Beratungsgespräch in der Brückenmühle Gernsbach" width="1024" height="683" loading="lazy" />
+            <img src="assets/images/zimmer-1.webp" alt="Beratungsgespräch in der Brückenmühle Gernsbach" width="1024" height="683" loading="lazy" />
           </div>
           <div class="faq__badge">
             <span class="faq__badge-icon" aria-hidden="true">
@@ -992,7 +973,7 @@
           </div>
         </div>
         <div class="contact__visual">
-          <img src="assets/images/Kontakt.png" alt="Persönliche Beratung bei Juventa – ambulante Pflege und Betreutes Wohnen" width="1024" height="683" loading="lazy" />
+          <img src="assets/images/img-kontakt.webp" alt="Persönliche Beratung bei Juventa – ambulante Pflege und Betreutes Wohnen" width="1024" height="683" loading="lazy" />
           <span class="contact__visual-overlay" aria-hidden="true"></span>
         </div>
       </div>
@@ -1006,8 +987,8 @@
 <footer class="site-footer">
   <div class="container site-footer__grid">
     <div class="site-footer__brand">
-      <img src="assets/images/logo-white.png" alt="Juventa" width="72" height="72" />
-      <p>Mit Juventa selbstbestimmt leben – professionell begleitet und umsorgt.</p>
+      <img src="assets/images/logo-white.webp" alt="Juventa" width="72" height="72" />
+      <p data-lw-global="footer.tagline" data-lw-type="text">Mit Juventa selbstbestimmt leben – professionell begleitet und umsorgt.</p>
     </div>
 
     <div class="site-footer__col">
@@ -1038,7 +1019,7 @@
         <li><a href="stellenanzeigen.html">Stellenanzeigen</a></li>
         <li><a href="#ratgeber">News &amp; Ratgeber</a></li>
         <li><a href="wissen.html">Wissen</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
       </ul>
     </div>
 
@@ -1047,13 +1028,13 @@
       <ul>
         <li><a href="impressum.html">Impressum</a></li>
         <li><a href="datenschutz.html">Datenschutz</a></li>
-        <li><a href="#kontakt">Downloads (auf Anfrage)</a></li>
+        <li><a href="kontakt.html">Downloads (auf Anfrage)</a></li>
       </ul>
     </div>
   </div>
   <div class="site-footer__bottom">
     <div class="container">
-      <p>© <span data-year>2026</span> Juventa GmbH · Ambulante Pflege Baden-Baden · Betreutes Wohnen Brückenmühle Gernsbach</p>
+      <p>© <span data-year>2026</span> <span data-lw-global="footer.company" data-lw-type="text">Juventa GmbH</span> · Ambulante Pflege Baden-Baden · Betreutes Wohnen Brückenmühle Gernsbach</p>
     </div>
   </div>
 </footer>

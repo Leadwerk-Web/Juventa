@@ -195,7 +195,7 @@
   document.querySelectorAll("[data-plan-open]").forEach((btn) => {
     btn.addEventListener("click", () => {
       openPlanLightbox(
-        btn.getAttribute("data-plan-src"),
+        btn.getAttribute("data-src"),
         btn.getAttribute("data-plan-title"),
         btn
       );
@@ -406,7 +406,7 @@
   /* ---------- Video-Lightbox (Willkommen) ---------- */
   const videoLightbox = document.getElementById("videoLightbox");
   const videoLightboxPlayer = document.getElementById("videoLightboxPlayer");
-  const videoTriggers = document.querySelectorAll("[data-video-src]");
+  const videoTriggers = document.querySelectorAll("[data-video-open]");
   let videoLastFocus = null;
 
   function openVideoLightbox(src, trigger) {
@@ -462,7 +462,7 @@
 
   videoTriggers.forEach((trigger) => {
     trigger.addEventListener("click", () => {
-      openVideoLightbox(trigger.getAttribute("data-video-src"), trigger);
+      openVideoLightbox(trigger.getAttribute("data-src"), trigger);
     });
   });
 
