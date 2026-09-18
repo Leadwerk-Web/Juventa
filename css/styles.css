@@ -3626,6 +3626,12 @@ html.a11y-contrast img {
   border: 1px solid var(--c-line);
   padding: clamp(1.35rem, 3vw, 1.75rem);
   box-shadow: var(--shadow-xs);
+  overflow-x: auto;
+  margin-bottom: clamp(1.25rem, 3vw, 1.75rem);
+}
+
+.bw-rates-table-wrap + .bw-rates-table-wrap {
+  margin-top: 0;
 }
 
 .bw-rates-table-head {
