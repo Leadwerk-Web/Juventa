@@ -3184,6 +3184,10 @@ html.a11y-contrast img {
   gap: 1.25rem;
 }
 
+.bw-pillars--quad {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .bw-pillar {
   position: relative;
   overflow: hidden;
@@ -4029,6 +4033,7 @@ html.a11y-contrast img {
 
 @media (max-width: 1100px) {
   .bw-pillars { grid-template-columns: 1fr; }
+  .bw-pillars--quad { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .bw-rates { grid-template-columns: 1fr; align-items: start; }
   .bw-rates-include ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .bw-type,
@@ -4056,6 +4061,7 @@ html.a11y-contrast img {
 
 @media (max-width: 720px) {
   .bw-type { padding: 1rem; }
+  .bw-pillars--quad { grid-template-columns: 1fr; }
   .bw-rate {
     grid-template-columns: 1fr;
     gap: 0.85rem;
