@@ -35,6 +35,19 @@
     el.textContent = new Date().getFullYear();
   });
 
+  /* ---------- Responsive Preis-Tabellen ---------- */
+  // Mobile tables are rendered as labelled cards by CSS. Keep the labels
+  // sourced from the real table headers so every variation stays accessible
+  // without duplicating copy in the HTML.
+  document.querySelectorAll(".bw-rates-table").forEach((table) => {
+    const headers = Array.from(table.querySelectorAll("thead th"), (cell) => cell.textContent.trim());
+    table.querySelectorAll("tbody tr").forEach((row) => {
+      Array.from(row.cells).forEach((cell, index) => {
+        if (headers[index]) cell.dataset.label = headers[index];
+      });
+    });
+  });
+
   /* ---------- Header (BSP-Stil) ---------- */
   const header = document.querySelector("[data-header]");
   const nav = document.getElementById("nav");
