@@ -6,6 +6,30 @@
 
   const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  /* ---------- Zurück nach oben ---------- */
+  const backToTop = document.createElement("button");
+  backToTop.type = "button";
+  backToTop.className = "back-to-top";
+  backToTop.setAttribute("aria-label", "Zurück nach oben");
+  backToTop.setAttribute("aria-hidden", "true");
+  backToTop.tabIndex = -1;
+  backToTop.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>';
+  document.body.appendChild(backToTop);
+
+  function updateBackToTop() {
+    const isVisible = window.scrollY > 500;
+    backToTop.classList.toggle("is-visible", isVisible);
+    backToTop.setAttribute("aria-hidden", String(!isVisible));
+    backToTop.tabIndex = isVisible ? 0 : -1;
+  }
+
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: prefersReduced ? "auto" : "smooth" });
+  });
+
+  updateBackToTop();
+  window.addEventListener("scroll", updateBackToTop, { passive: true });
+
   /* ---------- Aktuelles Jahr ---------- */
   document.querySelectorAll("[data-year]").forEach((el) => {
     el.textContent = new Date().getFullYear();

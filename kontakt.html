@@ -46,7 +46,7 @@
               <li><a href="betreutes-wohnen.html#preise">Preisübersicht</a></li>
             </ul>
           </div>
-          <a href="index.html#cafe" class="nav__link">Café &amp; Gemeinschaft</a>
+          <a href="https://cafee-brueckenmuehle.de/" class="nav__link" target="_blank" rel="noopener noreferrer">Café &amp; Gemeinschaft</a>
           <div class="nav__item nav__item--has-sub">
             <a href="pflege-beratung.html" class="nav__link">Pflege &amp; Beratung</a>
             <ul class="nav__sub" aria-label="Unterpunkte Pflege &amp; Beratung">
@@ -81,7 +81,7 @@
           </div>
           <a href="stellenanzeigen.html" class="nav__link">Stellenanzeigen</a>
           <a href="wissen.html" class="nav__link">Wissen</a>
-          <a href="kontakt.html" class="nav__link">Kontakt</a>
+          <a href="kontakt.html" class="nav__link" aria-current="page">Kontakt</a>
           <a href="kontakt.html" class="btn btn--primary nav__cta">
             <span>Beratung anfragen</span>
             <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
@@ -98,7 +98,7 @@
             <li><a href="betreutes-wohnen.html#preise">Preisübersicht</a></li>
           </ul>
         </li>
-        <li><a href="index.html#cafe" class="nav__link">Café &amp; Gemeinschaft</a></li>
+        <li><a href="https://cafee-brueckenmuehle.de/" class="nav__link" target="_blank" rel="noopener noreferrer">Café &amp; Gemeinschaft</a></li>
         <li class="nav__drawer-group">
           <a href="pflege-beratung.html" class="nav__link">Pflege &amp; Beratung</a>
           <ul class="nav__drawer-sub">
@@ -130,7 +130,7 @@
         </li>
         <li><a href="stellenanzeigen.html" class="nav__link">Stellenanzeigen</a></li>
         <li><a href="wissen.html" class="nav__link">Wissen</a></li>
-        <li><a href="kontakt.html" class="nav__link">Kontakt</a></li>
+        <li><a href="kontakt.html" class="nav__link" aria-current="page">Kontakt</a></li>
       </ul>
       <a href="kontakt.html" class="btn btn--primary nav__cta nav__cta--drawer">
         <span>Beratung anfragen</span>
@@ -140,33 +140,76 @@
   </div>
 </header>
 
-<main id="hauptinhalt">
-  <section class="section" data-lw-section="contact">
-    <div class="container">
-      <div class="doc-panel reveal">
-        <p class="eyebrow" data-lw-field="contact.eyebrow" data-lw-type="text">Kontakt</p>
-        <h1 data-lw-field="hero.title" data-lw-type="richtext">Lassen Sie uns gemeinsam die passende Unterstützung finden.</h1>
-        <p class="lead" data-lw-field="contact.copy" data-lw-type="textarea">Ob ambulante Pflege, Betreutes Wohnen, Pflegegrad oder Finanzierung: Schreiben Sie uns. Montag bis Freitag zwischen 08:00 und 15:00 Uhr sind wir persönlich erreichbar.</p>
-        <p data-lw-field="contact.copy_2" data-lw-type="textarea"><a data-lw-global="contact.phone" data-lw-type="text" href="tel:+491785254075">+49 178 5254075</a><br />
-        <a data-lw-global="contact.email" data-lw-type="email" href="mailto:info@juventa-pflege.de">info@juventa-pflege.de</a><br />
-        <span data-lw-global="contact.address" data-lw-type="textarea">Sonnenplatz 2, 76530 Baden-Baden</span></p>
+<div class="hero-shell contact-page-hero" id="start">
+  <section class="hero" data-hero aria-labelledby="contact-hero-title">
+    <div class="hero__media" aria-hidden="true" data-lw-section="hero-media">
+      <div class="hero__slide is-active">
+        <img src="assets/images/kontakt-begleitung-garten-r.webp" alt="" width="1980" height="1315" fetchpriority="high" data-lw-decorative="true" data-lw-field="hero-media.image" data-lw-type="image" />
+      </div>
+    </div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="container hero__body" data-lw-section="hero">
+      <div class="hero__content reveal">
+        <span class="hero__eyebrow" data-lw-field="hero.eyebrow" data-lw-type="text">Kontakt &amp; Beratung</span>
+        <h1 class="hero__title" id="contact-hero-title" data-lw-field="hero.title" data-lw-type="richtext">Wir sind persönlich<br />für Sie da.</h1>
+        <p class="hero__sub" data-lw-field="hero.copy" data-lw-type="textarea">Ein Gespräch schafft Klarheit. Gemeinsam finden wir heraus, welche Unterstützung zu Ihrer Situation passt.</p>
       </div>
     </div>
   </section>
-  <section class="section section--cream" data-lw-section="contact_form">
-    <div class="container form-layout">
-      <div>
-        <p class="eyebrow" data-lw-field="form.eyebrow" data-lw-type="text">Unverbindlich anfragen</p>
-        <h2 data-lw-field="form.title" data-lw-type="text">Wie können wir helfen?</h2>
-        <p data-lw-field="form.copy" data-lw-type="textarea">Schildern Sie uns kurz Ihr Anliegen. Wir prüfen Ihre Nachricht und melden uns persönlich mit dem nächsten Schritt.</p>
+</div>
+
+<main id="hauptinhalt">
+  <section class="contact section contact-page-intro" aria-labelledby="contact-title" data-lw-section="contact">
+    <div class="container">
+      <div class="contact__wrap reveal">
+        <div class="contact__panel">
+          <span class="section-label" data-lw-field="contact.eyebrow" data-lw-type="text">Kontakt</span>
+          <h2 id="contact-title" data-lw-field="contact.heading" data-lw-type="richtext">Lassen Sie uns gemeinsam herausfinden, <span class="headline-accent">welche Unterstützung passt.</span></h2>
+          <p data-lw-field="contact.copy" data-lw-type="textarea">Ob ambulante Pflege, Betreutes Wohnen, Pflegegrad oder Finanzierung: Wir nehmen uns Zeit für ein persönliches Gespräch – unverbindlich und auf Augenhöhe.</p>
+          <div class="contact__items" data-lw-repeater="contact.items">
+            <div class="contact__item" data-lw-item-key="item-1">
+              <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+              <div><strong>Mobil</strong><a data-lw-global="contact.phone" data-lw-type="text" href="tel:+491785254075">+49 178 5254075</a></div>
+            </div>
+            <div class="contact__item" data-lw-item-key="item-2">
+              <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+              <div><strong>Festnetz</strong><a href="tel:+4972219959934">+49 7221 9959934</a></div>
+            </div>
+            <div class="contact__item" data-lw-item-key="item-3">
+              <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></span>
+              <div><strong>E-Mail</strong><a data-lw-global="contact.email" data-lw-type="email" href="mailto:info@juventa-pflege.de">info@juventa-pflege.de</a></div>
+            </div>
+            <div class="contact__item" data-lw-item-key="item-4">
+              <span class="contact__item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+              <div><strong>Adresse</strong><span data-lw-global="contact.address" data-lw-type="textarea">Sonnenplatz 2, 76530 Baden-Baden</span></div>
+            </div>
+          </div>
+          <div class="contact__actions">
+            <a href="tel:+491785254075" class="btn btn--primary btn--lg">
+              <span data-lw-field="contact.cta" data-lw-type="text">Rückruf / Anrufen</span>
+              <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </a>
+            <a href="#kontaktformular" class="btn btn--outline-light btn--lg">
+              <span data-lw-field="contact.cta_2" data-lw-type="text">Nachricht schreiben</span>
+              <span class="btn__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </a>
+          </div>
+        </div>
+        <div class="contact__form-panel" id="kontaktformular" data-lw-section="contact_form">
+          <div class="contact__form-head">
+            <span class="section-label" data-lw-field="form.eyebrow" data-lw-type="text">Unverbindlich anfragen</span>
+            <h2 data-lw-field="form.title" data-lw-type="text">Wie können wir Ihnen helfen?</h2>
+            <p data-lw-field="form.copy" data-lw-type="textarea">Schildern Sie uns kurz Ihr Anliegen. Wir melden uns persönlich mit dem nächsten Schritt.</p>
+          </div>
+          <form id="kontakt-form" class="form form--contact-inline" data-lw-wpforms="contact" action="danke.html" method="post">
+            <label data-lw-field="contact_form.label" data-lw-type="text">Name<input type="text" name="name" autocomplete="name" required></label>
+            <label data-lw-field="contact_form.label_2" data-lw-type="text">E-Mail<input type="email" name="email" autocomplete="email" required></label>
+            <label data-lw-field="contact_form.label_3" data-lw-type="text">Nachricht<textarea name="message" rows="6" required></textarea></label>
+            <label class="form-consent" data-lw-field="contact_form.label_4" data-lw-type="text"><input type="checkbox" name="consent" value="accepted" required><span>Ich habe die <a href="datenschutz.html" target="_blank" rel="noopener noreferrer">Datenschutzerklärung</a> gelesen.</span></label>
+            <button class="btn btn--primary" type="submit"><span data-lw-field="contact_form.cta" data-lw-type="text">Nachricht senden</span></button>
+          </form>
+        </div>
       </div>
-      <form id="kontakt-form" class="form" data-lw-wpforms="contact" action="danke.html" method="post">
-        <label data-lw-field="contact_form.label" data-lw-type="text">Name<input type="text" name="name" autocomplete="name" required></label>
-        <label data-lw-field="contact_form.label_2" data-lw-type="text">E-Mail<input type="email" name="email" autocomplete="email" required></label>
-        <label data-lw-field="contact_form.label_3" data-lw-type="text">Nachricht<textarea name="message" rows="6" required></textarea></label>
-        <label class="form-consent" data-lw-field="contact_form.label_4" data-lw-type="text"><input type="checkbox" name="consent" value="accepted" required><span>Ich habe die <a href="datenschutz.html" target="_blank" rel="noopener noreferrer">Datenschutzerklärung</a> gelesen.</span></label>
-        <button class="btn btn--primary" type="submit"><span data-lw-field="contact_form.cta" data-lw-type="text">Nachricht senden</span></button>
-      </form>
     </div>
   </section>
 </main>
@@ -209,6 +252,7 @@
       <ul>
         <li><a href="impressum.html">Impressum</a></li>
         <li><a href="datenschutz.html">Datenschutz</a></li>
+        <li><a href="bildnachweise.html">Bildnachweise</a></li>
         <li><a href="kontakt.html">Downloads (auf Anfrage)</a></li>
       </ul>
     </div>

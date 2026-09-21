@@ -671,6 +671,8 @@ a { color: inherit; }
   transform: scale(1); transition: transform 7s ease;
 }
 .hero__slide.is-active img { transform: scale(1.06); }
+.hero__slide--mirrored img { transform: scaleX(-1); }
+.hero__slide--mirrored.is-active img { transform: scale(-1.06, 1.06); }
 
 .hero__overlay {
   position: absolute; inset: 0; z-index: 1; pointer-events: none;
@@ -933,6 +935,12 @@ a { color: inherit; }
 }
 .story__collage-img--face img {
   object-position: center top;
+}
+.story__collage-img--right img {
+  object-position: right center;
+}
+.story__collage-img--job-focus img {
+  object-position: 82% center;
 }
 .story__video-preview {
   pointer-events: none;
@@ -2169,6 +2177,7 @@ a { color: inherit; }
 .contact__panel .section-label { color: #fff; }
 .contact__panel .section-label::before { background: var(--accent-1); }
 
+.contact__panel h1,
 .contact__panel h2 {
   color: #fff;
   font-size: clamp(1.625rem, 3vw, 2.375rem);
@@ -2177,6 +2186,7 @@ a { color: inherit; }
   line-height: 1.22;
 }
 
+.contact__panel h1 .headline-accent,
 .contact__panel h2 .headline-accent {
   background: linear-gradient(135deg, var(--accent-2), var(--accent-1));
   -webkit-background-clip: text;
@@ -2350,7 +2360,7 @@ a { color: inherit; }
   border-radius: var(--r-md);
   background:
     linear-gradient(135deg, rgba(47, 91, 92, 0.92), rgba(66, 66, 65, 0.88)),
-    url("../assets/images/mobile-pflege.webp") center/cover;
+    url("../assets/images/pflege-rollstuhl-garten.webp") center/cover;
   color: #fff;
 }
 
@@ -2999,6 +3009,9 @@ html.a11y-reduced-motion .reveal {
 html.a11y-reduced-motion .hero__slide img {
   transform: none !important;
 }
+html.a11y-reduced-motion .hero__slide--mirrored img {
+  transform: scaleX(-1) !important;
+}
 
 html.a11y-contrast {
   --c-ink: #000;
@@ -3061,6 +3074,7 @@ html.a11y-contrast .hero__eyebrow,
 html.a11y-contrast .hero__card h3,
 html.a11y-contrast .hero__card p,
 html.a11y-contrast .contact__panel h2,
+html.a11y-contrast .contact__panel h1,
 html.a11y-contrast .contact__panel .section-label,
 html.a11y-contrast .contact__panel > p,
 html.a11y-contrast .contact__item a,
@@ -4914,6 +4928,7 @@ html.a11y-contrast img {
   * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; }
   .hero__slide img { transform: none !important; transition: none !important; }
+  .hero__slide--mirrored img { transform: scaleX(-1) !important; }
 }
 
 /* =========================================================
@@ -5466,6 +5481,72 @@ html.a11y-contrast .utility-art {
   border-color: var(--c-ink);
 }
 
+/* Kontaktseite */
+.contact-page-hero .hero {
+  min-height: clamp(22rem, 46vw, 32rem);
+}
+
+.page-doc .contact-page-hero .hero__body {
+  align-items: center;
+  padding: clamp(4rem, 7vw, 6rem) 0;
+}
+
+.contact-page-hero .hero__title {
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+}
+
+.page-doc .contact-page-hero + main {
+  padding-top: 0;
+}
+
+.contact-page-intro {
+  padding-top: clamp(3rem, 6vw, 5.5rem);
+}
+
+.contact-page-intro .contact__wrap {
+  min-height: clamp(38rem, 70vh, 46rem);
+}
+
+.contact-page-intro .contact__panel,
+.contact-page-intro .contact__form-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.contact__form-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: clamp(2.5rem, 5vw, 3.5rem) clamp(2rem, 4vw, 3rem);
+  background: var(--c-white);
+  scroll-margin-top: var(--header-h);
+}
+
+.contact__form-head h2 {
+  margin-bottom: 0.75rem;
+  font-size: clamp(1.75rem, 3vw, 2.35rem);
+}
+
+.contact__form-head p {
+  margin-bottom: 1.75rem;
+  color: var(--c-ink-soft);
+}
+
+.form--contact-inline,
+.contact__form-panel > .leadwerk-wpforms {
+  width: 100%;
+}
+
+.form--contact-inline .btn,
+.contact__form-panel > .leadwerk-wpforms .wpforms-submit {
+  justify-self: start;
+}
+
+html.a11y-contrast .contact__form-panel {
+  border-left: 2px solid var(--c-ink);
+}
+
 /* Kontaktformular / WPForms */
 .form-layout {
   display: grid;
@@ -5532,4 +5613,67 @@ html.a11y-contrast .utility-art {
 }
 @media (max-width: 820px) {
   .form-layout { grid-template-columns: 1fr; }
+  .contact-page-intro .contact__wrap { min-height: 0; }
+  .contact__form-panel { padding: 2.25rem 1.75rem; }
+}
+
+/* Zurück nach oben */
+.back-to-top {
+  position: fixed;
+  right: clamp(1rem, 2.5vw, 2rem);
+  bottom: clamp(1rem, 2.5vw, 2rem);
+  z-index: 180;
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 0 10px 28px var(--primary-glow);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(0.75rem);
+  transition: opacity 0.25s var(--ease), transform 0.25s var(--ease), visibility 0.25s;
+}
+
+.back-to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.back-to-top:focus-visible {
+  outline: 3px solid var(--accent-1);
+  outline-offset: 3px;
+}
+
+.back-to-top svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+html.a11y-contrast .back-to-top {
+  border: 2px solid #fff;
+  background: #000;
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .back-to-top { transition: none; }
 }
