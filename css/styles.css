@@ -6081,6 +6081,23 @@ html.a11y-contrast .back-to-top {
     right: max(var(--gutter), env(safe-area-inset-right));
   }
 
+  .nav {
+    box-sizing: border-box;
+    max-height: 100dvh;
+    padding-bottom: max(2rem, calc(env(safe-area-inset-bottom) + 1.5rem));
+    -webkit-overflow-scrolling: touch;
+    scroll-padding-bottom: 2rem;
+  }
+
+  .nav__list.nav__list--drawer {
+    min-height: 0;
+  }
+
+  .nav__cta.nav__cta--drawer {
+    flex-shrink: 0;
+    margin-bottom: 0.25rem;
+  }
+
   .hero__body,
   .page-doc .hero__body {
     min-width: 0;
