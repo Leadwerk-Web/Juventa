@@ -6070,6 +6070,17 @@ html.a11y-contrast .back-to-top {
     inset-inline: 0;
   }
 
+  /* The mobile drawer lives inside the hero header. Let the fixed drawer
+     escape the hero's visual bounds while keeping the media itself clipped. */
+  .hero,
+  .hero-shell {
+    overflow: visible;
+  }
+
+  .hero__media {
+    overflow: hidden;
+  }
+
   .header__bar {
     width: 100%;
     max-width: none;
