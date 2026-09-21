@@ -6083,7 +6083,8 @@ html.a11y-contrast .back-to-top {
 
   .nav {
     box-sizing: border-box;
-    max-height: 100dvh;
+    height: var(--mobile-menu-vh, 100dvh);
+    max-height: var(--mobile-menu-vh, 100dvh);
     padding-bottom: max(2rem, calc(env(safe-area-inset-bottom) + 1.5rem));
     -webkit-overflow-scrolling: touch;
     scroll-padding-bottom: 2rem;

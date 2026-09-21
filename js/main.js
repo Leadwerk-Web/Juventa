@@ -98,6 +98,13 @@
     document.documentElement.style.setProperty("--header-h", header.offsetHeight + "px");
   }
 
+  // Safari can report a stale dynamic viewport while the browser chrome is
+  // expanded. Keep the fixed mobile drawer aligned to the visible viewport.
+  function setMobileViewportHeight() {
+    const viewportHeight = window.visualViewport?.height || window.innerHeight;
+    document.documentElement.style.setProperty("--mobile-menu-vh", `${Math.round(viewportHeight)}px`);
+  }
+
   function updateHeaderState() {
     if (!header) return;
     header.classList.toggle("scrolled", window.scrollY > 40);
@@ -143,8 +150,10 @@
   });
 
   updateHeaderState();
+  setMobileViewportHeight();
   window.addEventListener("scroll", updateHeaderState, { passive: true });
   window.addEventListener("resize", setHeaderHeight, { passive: true });
+  window.visualViewport?.addEventListener("resize", setMobileViewportHeight, { passive: true });
 
   /* ---------- Hero-Hintergrund-Slider (BSP-Stil) ---------- */
   const heroSlider = document.getElementById("heroSlider");
