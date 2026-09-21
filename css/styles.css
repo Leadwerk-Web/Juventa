@@ -78,6 +78,14 @@ html {
 
 [hidden] { display: none !important; }
 
+/* Complianz reveals its consent-management launcher after a choice is saved.
+   The site keeps consent controls in the cookie dialog itself, so do not
+   leave a second fixed launcher at the bottom of the page. */
+body[data-cmplz="1"] #cmplz-manage-consent,
+body[data-cmplz="1"] .cmplz-manage-consent {
+  display: none !important;
+}
+
 body {
   margin: 0;
   font-family: var(--font-sans);
