@@ -6063,6 +6063,42 @@ html.a11y-contrast .back-to-top {
    Final mobile overrides · tables and overlay navigation
    ========================================================= */
 @media (max-width: 820px) {
+  /* Keep the overlay header inside the iOS safe area and prevent the
+     container's full-bleed hero padding from pinning copy to the edge. */
+  .header--overlay {
+    width: 100%;
+    inset-inline: 0;
+  }
+
+  .header__bar {
+    width: 100%;
+    max-width: none;
+    min-height: calc(var(--header-h) + env(safe-area-inset-top));
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .nav__toggle {
+    right: max(var(--gutter), env(safe-area-inset-right));
+  }
+
+  .hero__body,
+  .page-doc .hero__body {
+    min-width: 0;
+    padding-inline: max(var(--gutter), env(safe-area-inset-left))
+      max(var(--gutter), env(safe-area-inset-right));
+  }
+
+  .hero__content {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .hero__sub {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
   .header--overlay:not(.scrolled) .nav__toggle span {
     background: #fff;
   }
