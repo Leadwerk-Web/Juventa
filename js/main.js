@@ -42,6 +42,43 @@
   const navClose = document.getElementById("navClose");
   const navOverlay = document.getElementById("navOverlay");
   const navLinks = document.querySelectorAll(".nav__link, .nav__cta, .nav__sub a, .nav__drawer-sub a");
+  const drawerGroups = nav ? Array.from(nav.querySelectorAll(".nav__drawer-group")) : [];
+
+  function setDrawerGroup(group, isOpen) {
+    const button = group.querySelector(":scope > .nav__drawer-toggle");
+    const submenu = group.querySelector(":scope > .nav__drawer-sub");
+    const label = group.querySelector(":scope > .nav__link")?.textContent.trim() || "Menü";
+    if (!button || !submenu) return;
+    group.classList.toggle("is-open", isOpen);
+    button.setAttribute("aria-expanded", String(isOpen));
+    button.setAttribute("aria-label", `${label} alt menüsünü ${isOpen ? "kapat" : "aç"}`);
+    submenu.hidden = !isOpen;
+  }
+
+  if (nav && drawerGroups.length) {
+    nav.classList.add("nav-drawer-ready");
+    drawerGroups.forEach((group, index) => {
+      const link = group.querySelector(":scope > .nav__link");
+      const submenu = group.querySelector(":scope > .nav__drawer-sub");
+      if (!link || !submenu) return;
+
+      if (!submenu.id) submenu.id = `mobile-submenu-${index + 1}`;
+
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "nav__drawer-toggle";
+      button.setAttribute("aria-controls", submenu.id);
+      button.innerHTML = '<span class="nav__drawer-arrow" aria-hidden="true"></span>';
+      link.insertAdjacentElement("afterend", button);
+      setDrawerGroup(group, false);
+
+      button.addEventListener("click", () => {
+        const shouldOpen = button.getAttribute("aria-expanded") !== "true";
+        drawerGroups.forEach((item) => setDrawerGroup(item, false));
+        if (shouldOpen) setDrawerGroup(group, true);
+      });
+    });
+  }
 
   function setHeaderHeight() {
     if (!header) return;
@@ -57,6 +94,7 @@
   function closeNav() {
     if (!nav || !navToggle) return;
     nav.classList.remove("open");
+    drawerGroups.forEach((group) => setDrawerGroup(group, false));
     navToggle.setAttribute("aria-expanded", "false");
     navToggle.setAttribute("aria-label", "Menü öffnen");
     document.body.style.overflow = "";
