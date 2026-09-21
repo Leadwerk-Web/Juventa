@@ -2725,6 +2725,21 @@ a { color: inherit; }
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
   }
+  /* Single-image story blocks must use the full phone width. Without this
+     override the two-column collage grid leaves the only image in column one,
+     making it look like an unoptimized narrow thumbnail on mobile. */
+  .story__collage--single,
+  .about__collage--single {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+  }
+  .story__collage--single .story__collage-img--tall,
+  .about__collage--single .about__collage-img--tall {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+  }
   .story__collage-stack,
   .about__collage-stack { display: contents; }
   .story__collage-img--top,
@@ -2735,6 +2750,12 @@ a { color: inherit; }
   .about__collage-img--bottom { grid-column: 2; grid-row: 2; width: 100%; }
   .story__collage-img--tall img,
   .about__collage-img--tall img { min-height: 0; aspect-ratio: 3 / 4; }
+  .story__collage--single .story__collage-img--tall img,
+  .about__collage--single .about__collage-img--tall img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+  }
   .cafe__media {
     display: block;
     height: auto;
