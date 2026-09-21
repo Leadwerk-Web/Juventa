@@ -6176,11 +6176,16 @@ html.a11y-contrast .back-to-top {
    the styled icon wrapper. Keep those imported cards meaningful instead of
    leaving an empty tinted square; the fallback stays hidden when the SVG
    survived the import. */
-.bw-rates-include__icon:not(:has(svg))::before {
+[class*="__icon"]:not(:has(svg))::before {
   display: block;
-  color: var(--accent-1);
-  font: 700 1.05rem/1 "Inter", system-ui, sans-serif;
+  color: currentColor;
+  content: "✦";
+  font: 700 1rem/1 "Inter", system-ui, sans-serif;
   text-align: center;
+}
+.bw-rates-include__icon:not(:has(svg))::before {
+  color: var(--accent-1);
+  font-size: 1.05rem;
 }
 .bw-rates-include li:nth-child(1) .bw-rates-include__icon:not(:has(svg))::before { content: "⌂"; }
 .bw-rates-include li:nth-child(2) .bw-rates-include__icon:not(:has(svg))::before { content: "✓"; }
