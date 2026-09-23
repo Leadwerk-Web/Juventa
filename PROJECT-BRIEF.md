@@ -33,7 +33,7 @@
 ## İletişim, form ve hukuk
 
 - Adresse: Sonnenplatz 2, 76530 Baden-Baden
-- Telefon: +49 178 5254075 / +49 7221 9959934
+- Telefon: +49 175 4344681 / +49 7221 9959934
 - E-Mail / Formular: info@juventa-pflege.de
 - Danke-Seite: `danke.html`
 - Legal review: Inhalte aus dem Live-Impressum/Datenschutz übernommen
