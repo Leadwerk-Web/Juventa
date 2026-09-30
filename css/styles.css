@@ -578,11 +578,12 @@ a { color: inherit; }
 .nav-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(30, 45, 51, 0.38);
+  /* This remains an invisible click target for closing the drawer. Do not
+     tint or blur the underlying page at tablet/mobile breakpoints. */
+  background: transparent;
   z-index: 190;
   opacity: 0;
   transition: opacity 0.35s;
-  /* Dim the page without blurring either its content or the open drawer. */
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
 }
@@ -642,6 +643,16 @@ a { color: inherit; }
     border-radius: var(--r-sm);
     color: var(--c-ink);
     text-align: left;
+  }
+  /* The transparent desktop header uses white links over the hero. Its more
+     specific rule must not leak into the white tablet/mobile drawer. */
+  .header--overlay:not(.scrolled) .nav.open .nav__link {
+    color: var(--c-ink);
+  }
+  .header--overlay:not(.scrolled) .nav.open .nav__link:hover,
+  .header--overlay:not(.scrolled) .nav.open .nav__link:focus-visible,
+  .header--overlay:not(.scrolled) .nav.open .nav__link.active {
+    color: var(--primary);
   }
   .nav__link::after {
     left: 0;
