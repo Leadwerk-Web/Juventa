@@ -578,12 +578,13 @@ a { color: inherit; }
 .nav-overlay {
   position: fixed;
   inset: 0;
-  /* This remains an invisible click target for closing the drawer. Do not
-     tint or blur the underlying page at tablet/mobile breakpoints. */
+  /* Visual state only. Pointer handling lives on the document so this layer
+     can never sit above the drawer and consume navigation clicks. */
   background: transparent;
   z-index: 190;
   opacity: 0;
   transition: opacity 0.35s;
+  pointer-events: none;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
 }

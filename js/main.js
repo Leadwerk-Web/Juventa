@@ -142,8 +142,16 @@
     });
   }
   if (navClose) navClose.addEventListener("click", closeNav);
-  if (navOverlay) navOverlay.addEventListener("click", closeNav);
   navLinks.forEach((link) => link.addEventListener("click", closeNav));
+
+  // The overlay is deliberately non-interactive: on hero pages it lives in a
+  // different stacking context and could otherwise cover the fixed drawer.
+  // Detect outside presses at document level so links keep their native click.
+  document.addEventListener("click", (event) => {
+    if (!nav?.classList.contains("open")) return;
+    if (nav.contains(event.target) || navToggle?.contains(event.target)) return;
+    closeNav();
+  });
 
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") closeNav();
